@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>CREAIVA — AI-Powered Creative & Digital Advertising Studio · Dubai</title>
 <meta name="description" content="CREAIVA is a Dubai-based AI specialist and digital advertising studio — crafting AI video, motion design, branding, web, fintech and CRM platforms for ambitious brands worldwide." />
-<link rel="icon" type="image/png" href="CREAIVA%20Logo.png" />
+<link rel="icon" type="image/png" href="CREAIVA-icon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -48,7 +48,7 @@
 
   /* --- centered menu --- */
   .links{list-style:none;margin:0;padding:0;display:flex;gap:36px;align-items:center;justify-self:center}
-  .links > li{list-style:none;position:relative}
+  .links > li{list-style:none}
   .links > li > a{font-size:14px;font-weight:500;color:var(--muted);position:relative;transition:color .2s;display:inline-flex;align-items:center;gap:6px;padding:8px 0;cursor:pointer}
   .links > li > a:hover,
   .links > li.open > a{color:var(--text)}
@@ -59,35 +59,60 @@
     content:"";display:inline-block;width:6px;height:6px;
     border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;
     transform:rotate(45deg) translateY(-2px);margin-left:2px;order:2;
+    transition:transform .25s ease;
   }
+  .links > li.has-dd:hover > a::before,
+  .links > li.has-dd.open > a::before{transform:rotate(225deg) translateY(2px)}
 
-  /* --- dropdown panel --- */
-  .dropdown{
-    position:absolute;top:calc(100% + 12px);left:50%;transform:translate(-50%,10px);
-    min-width:260px;padding:14px;border-radius:16px;
+  /* --- mega menu panel ---
+     header.nav is position:fixed AND has backdrop-filter, which makes it the
+     containing block for absolutely-positioned descendants; since header.nav
+     spans the full viewport width, left:50% here centers the panel on the
+     *viewport*, not on whichever nav item triggered it — the standard
+     mega-menu pattern. (list items intentionally carry no position value.) */
+  .dropdown.mega{
+    position:absolute;top:100%;left:50%;transform:translate(-50%,10px);
+    width:min(860px,calc(100vw - 48px));
+    margin-top:14px;padding:28px;border-radius:22px;
     background:rgba(6,11,23,.98);border:1px solid var(--border);
-    box-shadow:0 30px 80px rgba(0,0,0,.55);
-    backdrop-filter:blur(14px);
+    box-shadow:0 40px 100px rgba(0,0,0,.6);
+    backdrop-filter:blur(18px);
     opacity:0;pointer-events:none;transition:opacity .25s ease,transform .25s ease;
-    display:grid;gap:2px;z-index:60;
+    display:block;z-index:60;
   }
-  .dropdown.wide{grid-template-columns:1fr 1fr;min-width:520px;padding:18px}
-  .dropdown a{
-    display:flex;align-items:center;gap:10px;
-    padding:10px 14px;border-radius:10px;
-    font-size:13px;font-weight:500;color:var(--muted);
-    transition:background .2s,color .2s;
+  .dropdown.mega.narrow{width:min(600px,calc(100vw - 48px))}
+  .links > li:hover > .dropdown.mega,
+  .links > li.open > .dropdown.mega{opacity:1;pointer-events:auto;transform:translate(-50%,0)}
+
+  .mega-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px 26px}
+  .mega-grid.cols-2{grid-template-columns:repeat(2,1fr)}
+  .mega-col h5{
+    font-family:'Poppins',sans-serif;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;
+    color:var(--brand-2);margin:0 0 10px 10px;font-weight:700;
   }
-  .dropdown a:hover{background:rgba(31,168,255,.12);color:#fff}
-  .dropdown a .dd-dot{width:5px;height:5px;border-radius:50%;background:var(--brand-2);opacity:.55}
-  .dropdown a:hover .dd-dot{opacity:1;box-shadow:0 0 8px var(--brand-2)}
-  .dropdown::before{
-    content:"";position:absolute;top:-6px;left:50%;transform:translateX(-50%) rotate(45deg);
-    width:12px;height:12px;background:rgba(6,11,23,.98);
-    border-left:1px solid var(--border);border-top:1px solid var(--border);
+  .mega-item{
+    display:flex;gap:12px;align-items:flex-start;
+    padding:9px 10px;border-radius:12px;
+    transition:background .2s;
   }
-  .links > li:hover > .dropdown,
-  .links > li.open > .dropdown{opacity:1;pointer-events:auto;transform:translate(-50%,0)}
+  .mega-item:hover{background:rgba(31,168,255,.1)}
+  .mega-item .m-ico{
+    width:34px;height:34px;border-radius:10px;flex-shrink:0;
+    background:linear-gradient(135deg,rgba(31,168,255,.25),rgba(0,212,255,.08));
+    border:1px solid rgba(31,168,255,.32);
+    display:grid;place-items:center;color:var(--brand-2);
+  }
+  .mega-item .m-ico svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+  .mega-item .m-txt h6{font-family:'Poppins',sans-serif;font-size:13px;font-weight:600;color:#fff;line-height:1.3}
+  .mega-item .m-txt p{font-size:11px;color:var(--muted);line-height:1.4;margin-top:2px}
+
+  .mega-foot{
+    margin-top:18px;padding-top:16px;border-top:1px solid var(--border);
+    display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  }
+  .mega-foot p{font-size:12px;color:var(--muted)}
+  .mega-foot a{font-size:12px;font-weight:600;color:var(--brand-2);display:inline-flex;align-items:center;gap:6px;transition:color .2s}
+  .mega-foot a:hover{color:#fff}
 
   .cta{padding:10px 22px;border-radius:999px;background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#001428;font-weight:600;font-size:14px;box-shadow:0 8px 30px rgba(31,168,255,.35);transition:transform .2s,box-shadow .2s;white-space:nowrap}
   .cta:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(31,168,255,.55)}
@@ -106,19 +131,23 @@
     .links.open{right:0}
     .links > li{width:100%;border-bottom:1px solid rgba(80,140,220,.08)}
     .links > li > a{padding:16px 4px;font-size:15px;width:100%;justify-content:space-between}
-    .links > li.has-dd > a::before{margin-left:auto;transform:rotate(45deg);transition:transform .25s}
-    .links > li.has-dd.open > a::before{transform:rotate(-135deg) translateY(2px)}
-    .dropdown{
-      position:static;transform:none;opacity:1;pointer-events:auto;
+    .links > li.has-dd > a::before{margin-left:auto}
+    .links > li.has-dd.open > a::before{transform:rotate(225deg) translateY(2px)}
+    .dropdown.mega{
+      position:static;width:auto;transform:none;opacity:1;pointer-events:auto;
       background:transparent;border:0;box-shadow:none;backdrop-filter:none;
-      padding:0 0 12px;grid-template-columns:1fr;min-width:auto;
-      max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease;display:block;
+      margin-top:0;padding:0 0 12px;
+      max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease;
     }
-    .dropdown.wide{grid-template-columns:1fr;min-width:auto}
-    .dropdown::before{display:none}
-    .links > li.has-dd:hover > .dropdown{max-height:0}
-    .links > li.has-dd.open > .dropdown{max-height:900px;padding:4px 0 12px}
-    .dropdown a{padding:10px 8px;font-size:13px}
+    .links > li.has-dd:hover > .dropdown.mega{max-height:0}
+    .links > li.has-dd.open > .dropdown.mega{max-height:1400px;padding:6px 0 16px}
+    .mega-grid{grid-template-columns:1fr;gap:2px}
+    .mega-grid.cols-2{grid-template-columns:1fr}
+    .mega-col{margin-bottom:10px}
+    .mega-col h5{margin-left:2px}
+    .mega-item{padding:9px 4px}
+    .mega-item .m-txt p{display:none}
+    .mega-foot{flex-direction:column;align-items:flex-start;gap:8px}
     .burger{display:block;z-index:60}
   }
 
@@ -486,7 +515,7 @@
 <!-- ============ NAV ============ -->
 <header class="nav" id="nav">
   <a href="#home" class="logo">
-    <img src="CREAIVA%20Logo.png" alt="CREAIVA logo" />
+    <img src="CREAIVA-icon.png" alt="CREAIVA logo" />
     <div class="logo-text">
       <span class="brand">CREAIVA</span>
       <span class="tag">AI · Advertising · Dubai</span>
@@ -496,35 +525,121 @@
   <ul class="links" id="navLinks">
     <li class="has-dd">
       <a role="button" tabindex="0">Services</a>
-      <div class="dropdown wide">
-        <a href="#services"><span class="dd-dot"></span>Logo &amp; Branding</a>
-        <a href="#services"><span class="dd-dot"></span>Social Media Management</a>
-        <a href="#services"><span class="dd-dot"></span>2D Animation</a>
-        <a href="#services"><span class="dd-dot"></span>Motion Design</a>
-        <a href="#services"><span class="dd-dot"></span>3D Animation</a>
-        <a href="#services"><span class="dd-dot"></span>AI Video (Realistic)</a>
-        <a href="#services"><span class="dd-dot"></span>Website Design</a>
-        <a href="#services"><span class="dd-dot"></span>E-Commerce</a>
-        <a href="#services"><span class="dd-dot"></span>Platform Web</a>
-        <a href="#services"><span class="dd-dot"></span>SEO &amp; Analytics</a>
-        <a href="#services"><span class="dd-dot"></span>Interactive Screen</a>
-        <a href="#services"><span class="dd-dot"></span>Photography &amp; Videography</a>
-        <a href="#services"><span class="dd-dot"></span>Presentation PRO</a>
-        <a href="#services"><span class="dd-dot"></span>Interactive Presentation</a>
+      <div class="dropdown mega">
+        <div class="mega-grid">
+          <div class="mega-col">
+            <h5>Creative &amp; Motion</h5>
+            <a class="mega-item" href="#services">
+              <span class="m-ico"><svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg></span>
+              <span class="m-txt"><h6>Logo &amp; Branding</h6><p>Identity systems &amp; guidelines</p></span>
+            </a>
+            <a class="mega-item" href="#services">
+              <span class="m-ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l6 3-6 3V9z" fill="currentColor" stroke="none"/></svg></span>
+              <span class="m-txt"><h6>2D Animation</h6><p>Illustrated explainers &amp; loops</p></span>
+            </a>
+            <a class="mega-item" href="#services">
+              <span class="m-ico"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z" fill="currentColor" stroke="none"/></svg></span>
+              <span class="m-txt"><h6>Motion Design</h6><p>Kinetic type &amp; brand animation</p></span>
+            </a>
+            <a class="mega-item" href="#services">
+              <span class="m-ico"><svg viewBox="0 0 24 24"><path d="M12 2l8 4.5v9L12 20l-8-4.5v-9L12 2z"/><path d="M4 6.5L12 11l8-4.5"/><path d="M12 11v9"/></svg></span>
+              <span class="m-txt"><h6>3D Animation</h6><p>Photoreal product &amp; world CGI</p></span>
+            </a>
+            <a class="mega-item" href="#services">
+              <span class="m-ico"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="13" height="10" rx="2"/><path d="M16 10l5-3v10l-5-3"/></svg></span>
+              <span class="m-txt"><h6>AI Video (Realistic)</h6><p>Generative, cinematic footage</p></span>
+            </a>
+            <a class="mega-item" href="#services">
+              <span class="m-ico"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="4"/></svg></span>
+              <span class="m-txt"><h6>Photography &amp; Video</h6><p>Studio &amp; on-location shoots</p></span>
+            </a>
+          </div>
+          <div class="mega-col">
+            <h5>Web &amp; Platforms</h5>
+            <a class="mega-item" href="#services">
+              <span class="m-ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><circle cx="6" cy="6.5" r=".6" fill="currentColor" stroke="none"/><circle cx="8.6" cy="6.5" r=".6" fill="currentColor" stroke="none"/></svg></span>
+              <span class="m-txt"><h6>Website Design</h6><p>Marketing sites that convert</p></span>
+            </a>
+            <a class="mega-item" href="#services">
+              <span class="m-ico"><svg viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg></span>
+              <span class="m-txt"><h6>E-Commerce</h6><p>Storefronts built to sell</p></span>
+            </a>
+            <a class="mega-item" href="#services">
+              <span class="m-ico"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="5" rx="1.5"/><rect x="4" y="14" width="16" height="5" rx="1.5"/><circle cx="7" cy="6.5" r=".6" fill="currentColor" stroke="none"/><circle cx="7" cy="16.5" r=".6" fill="currentColor" stroke="none"/></svg></span>
+              <span class="m-txt"><h6>Platform Web</h6><p>Custom dashboards &amp; tools</p></span>
+            </a>
+            <a class="mega-item" href="#services">
+              <span class="m-ico"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="7"/><path d="M15 15l6 6"/></svg></span>
+              <span class="m-txt"><h6>SEO &amp; Analytics</h6><p>Rank higher, measure growth</p></span>
+            </a>
+          </div>
+          <div class="mega-col">
+            <h5>Presence &amp; Experience</h5>
+            <a class="mega-item" href="#services">
+              <span class="m-ico"><svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="2.2"/><circle cx="19" cy="6" r="2.2"/><circle cx="19" cy="18" r="2.2"/><path d="M7 10.8L17 6.8M7 13.2L17 17.2"/></svg></span>
+              <span class="m-txt"><h6>Social Media Mgmt.</h6><p>Content &amp; community, daily</p></span>
+            </a>
+            <a class="mega-item" href="#services">
+              <span class="m-ico"><svg viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="2.5"/><circle cx="12" cy="18" r=".9" fill="currentColor" stroke="none"/></svg></span>
+              <span class="m-txt"><h6>Interactive Screen</h6><p>Kiosks &amp; touch experiences</p></span>
+            </a>
+            <a class="mega-item" href="#services">
+              <span class="m-ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4"/><path d="M6.5 12l3-3 2 2 4-4"/></svg></span>
+              <span class="m-txt"><h6>Presentation PRO</h6><p>Investor &amp; sales decks</p></span>
+            </a>
+            <a class="mega-item" href="#services">
+              <span class="m-ico"><svg viewBox="0 0 24 24"><path d="M5 3l14 8-6 2-2 6-6-16z"/></svg></span>
+              <span class="m-txt"><h6>Interactive Presentation</h6><p>Click-through live experiences</p></span>
+            </a>
+          </div>
+        </div>
+        <div class="mega-foot">
+          <p>14 disciplines, one creative engine.</p>
+          <a href="#services">View all services →</a>
+        </div>
       </div>
     </li>
+
     <li class="has-dd">
       <a role="button" tabindex="0">Solutions</a>
-      <div class="dropdown">
-        <a href="#services"><span class="dd-dot"></span>Brand Launch Package</a>
-        <a href="#services"><span class="dd-dot"></span>Digital Marketing Suite</a>
-        <a href="#services"><span class="dd-dot"></span>AI Content Studio</a>
-        <a href="#services"><span class="dd-dot"></span>E-Commerce &amp; Web Platforms</a>
-        <a href="#services"><span class="dd-dot"></span>Corporate Presentation Systems</a>
-        <a href="#services"><span class="dd-dot"></span>Interactive Experience Design</a>
-        <a href="#services"><span class="dd-dot"></span>Growth &amp; Analytics</a>
+      <div class="dropdown mega narrow">
+        <div class="mega-grid cols-2">
+          <a class="mega-item" href="#services">
+            <span class="m-ico"><svg viewBox="0 0 24 24"><path d="M12 2c3 2 5 6 5 10 0 2-1 4-2 5l-3 3-3-3c-1-1-2-3-2-5 0-4 2-8 5-10z"/><circle cx="12" cy="10" r="1.6" fill="currentColor" stroke="none"/><path d="M9 17l-2 4M15 17l2 4"/></svg></span>
+            <span class="m-txt"><h6>Brand Launch Package</h6><p>Identity + launch content, bundled</p></span>
+          </a>
+          <a class="mega-item" href="#services">
+            <span class="m-ico"><svg viewBox="0 0 24 24"><path d="M3 10v4h3l6 4V6L6 10H3z"/><path d="M15 9a4 4 0 0 1 0 6"/><path d="M18 6a8 8 0 0 1 0 12"/></svg></span>
+            <span class="m-txt"><h6>Digital Marketing Suite</h6><p>Social, ads &amp; SEO working together</p></span>
+          </a>
+          <a class="mega-item" href="#services">
+            <span class="m-ico"><svg viewBox="0 0 24 24"><path d="M12 3l1.6 4.4L18 9l-4.4 1.6L12 15l-1.6-4.4L6 9l4.4-1.6L12 3z"/><path d="M19 14l.8 2.2L22 17l-2.2.8L19 20l-.8-2.2L16 17l2.2-.8L19 14z"/></svg></span>
+            <span class="m-txt"><h6>AI Content Studio</h6><p>AI video &amp; imagery at scale</p></span>
+          </a>
+          <a class="mega-item" href="#services">
+            <span class="m-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span>
+            <span class="m-txt"><h6>E-Commerce &amp; Web</h6><p>Storefronts and web platforms</p></span>
+          </a>
+          <a class="mega-item" href="#services">
+            <span class="m-ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4"/><path d="M6.5 12l3-3 2 2 4-4"/></svg></span>
+            <span class="m-txt"><h6>Corporate Presentations</h6><p>Decks &amp; interactive systems</p></span>
+          </a>
+          <a class="mega-item" href="#services">
+            <span class="m-ico"><svg viewBox="0 0 24 24"><path d="M5 3l14 8-6 2-2 6-6-16z"/></svg></span>
+            <span class="m-txt"><h6>Interactive Experience</h6><p>Touch &amp; gesture-driven design</p></span>
+          </a>
+          <a class="mega-item" href="#services">
+            <span class="m-ico"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></span>
+            <span class="m-txt"><h6>Growth &amp; Analytics</h6><p>SEO, tracking &amp; conversion</p></span>
+          </a>
+        </div>
+        <div class="mega-foot">
+          <p>Not sure which fits your brand?</p>
+          <a href="#contact">Get a recommendation →</a>
+        </div>
       </div>
     </li>
+
     <li><a href="#about">Our Team</a></li>
     <li><a href="#portfolio">Portfolio</a></li>
   </ul>
@@ -646,7 +761,7 @@
       </div>
     </div>
     <div class="about-visual reveal">
-      <img src="CREAIVA%20Logo.png" alt="CREAIVA emblem" />
+      <img src="CREAIVA-icon.png" alt="CREAIVA emblem" />
     </div>
   </div>
 </section>
@@ -701,7 +816,7 @@
 <footer>
   <div class="footer-inner">
     <a href="#home" class="logo">
-      <img src="CREAIVA%20Logo.png" alt="CREAIVA" />
+      <img src="CREAIVA-icon.png" alt="CREAIVA" />
       <div class="logo-text">
         <span class="brand">CREAIVA</span>
         <span class="tag">AI · Advertising · Dubai</span>
