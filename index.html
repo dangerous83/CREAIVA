@@ -59,20 +59,70 @@
   }
 
   /* ================= HERO ================= */
-  .hero{position:relative;background:var(--bg-0);overflow:hidden}
+  /* one full-viewport hero — image at top (behind nav), heading overlay,
+     and feature cards + stat bar anchored to the bottom so nothing is
+     cut off on load */
+  .hero{
+    position:relative;
+    height:100vh;min-height:720px;max-height:1080px;
+    background:var(--bg-0);overflow:hidden;
+  }
 
-  /* ---- heading OVERLAYS the image ---- */
+  /* ---- heading OVERLAYS the image (top) ---- */
   .hero-heading{
     position:absolute;top:0;left:0;right:0;z-index:3;
     max-width:960px;margin:0 auto;
-    padding:130px 32px 40px;
+    padding:110px 32px 24px;
     text-align:center;
-    display:flex;flex-direction:column;align-items:center;gap:18px;
+    display:flex;flex-direction:column;align-items:center;gap:14px;
     pointer-events:none;
   }
   .hero-heading > *{pointer-events:auto}
   .hero-heading .swap{transition:opacity .5s ease, transform .5s ease}
   .hero-heading .swap.out{opacity:0;transform:translateY(-6px)}
+  .hero h1{font-size:clamp(26px,4vw,52px);max-width:820px}
+  .hero p.lead{max-width:600px;font-size:clamp(14px,1.3vw,16px)}
+
+  /* ---- floating orbs (wasp-like drift) ---- */
+  .orbs{position:absolute;inset:0;z-index:2;pointer-events:none;overflow:hidden}
+  .orb{
+    position:absolute;border-radius:50%;
+    background:radial-gradient(circle at 30% 30%,rgba(103,232,255,.7),rgba(31,168,255,.35) 45%,rgba(31,168,255,0) 70%);
+    filter:blur(1px);
+    box-shadow:0 0 30px rgba(31,168,255,.4);
+    opacity:.75;
+    will-change:transform;
+  }
+  .orb.o1{width:14px;height:14px;left:8%;top:35%;animation:drift1 14s ease-in-out infinite}
+  .orb.o2{width:8px;height:8px;left:18%;top:55%;animation:drift2 11s ease-in-out infinite}
+  .orb.o3{width:20px;height:20px;left:78%;top:28%;animation:drift3 17s ease-in-out infinite}
+  .orb.o4{width:10px;height:10px;left:88%;top:60%;animation:drift1 13s ease-in-out infinite reverse}
+  .orb.o5{width:6px;height:6px;left:40%;top:22%;animation:drift2 9s ease-in-out infinite}
+  .orb.o6{width:16px;height:16px;left:62%;top:70%;animation:drift3 15s ease-in-out infinite reverse}
+  .orb.o7{width:5px;height:5px;left:30%;top:75%;animation:drift1 12s ease-in-out infinite}
+  .orb.o8{width:22px;height:22px;left:52%;top:45%;opacity:.35;animation:drift3 20s ease-in-out infinite}
+
+  @keyframes drift1{
+    0%,100%{transform:translate(0,0)}
+    25%{transform:translate(40px,-30px)}
+    50%{transform:translate(80px,20px)}
+    75%{transform:translate(20px,40px)}
+  }
+  @keyframes drift2{
+    0%,100%{transform:translate(0,0)}
+    33%{transform:translate(-30px,-40px)}
+    66%{transform:translate(-60px,25px)}
+  }
+  @keyframes drift3{
+    0%,100%{transform:translate(0,0)}
+    20%{transform:translate(-50px,30px)}
+    50%{transform:translate(-20px,-40px)}
+    80%{transform:translate(35px,15px)}
+  }
+
+  @media(prefers-reduced-motion:reduce){
+    .orb{animation:none !important}
+  }
   .eyebrow{
     display:inline-flex;align-items:center;gap:12px;
     font-size:12px;letter-spacing:4px;color:var(--brand-2);
@@ -99,31 +149,27 @@
   .btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 50px rgba(31,168,255,.65)}
   .btn-primary .arw{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:rgba(0,20,40,.18);font-size:12px}
 
-  /* ---- image slider zone (image stays clear; only edge vignettes) ---- */
-  .hero-media{
-    position:relative;z-index:1;
-    height:min(92vh,880px);min-height:640px;
-    overflow:hidden;
-  }
+  /* ---- image slider zone (fills entire hero, top-to-bottom) ---- */
+  .hero-media{position:absolute;inset:0;z-index:1;overflow:hidden}
   .slides{position:absolute;inset:0}
   .slide{position:absolute;inset:0;opacity:0;transition:opacity 1.2s ease}
   .slide.active{opacity:1}
   .slide img{width:100%;height:100%;object-fit:cover;display:block}
-  /* soft top fade so the overlaid heading is readable */
+  /* soft top fade so the overlaid heading + nav are readable */
   .hero-media::before{
-    content:"";position:absolute;left:0;right:0;top:0;height:55%;
-    background:linear-gradient(180deg,rgba(3,6,13,.75) 0%,rgba(3,6,13,.35) 55%,transparent 100%);
+    content:"";position:absolute;left:0;right:0;top:0;height:50%;
+    background:linear-gradient(180deg,rgba(3,6,13,.75) 0%,rgba(3,6,13,.35) 50%,transparent 100%);
     z-index:2;pointer-events:none;
   }
   /* soft bottom fade so the feature cards read against the image */
   .hero-media::after{
-    content:"";position:absolute;left:0;right:0;bottom:0;height:40%;
-    background:linear-gradient(180deg,transparent 0%,rgba(3,6,13,.55) 55%,rgba(3,6,13,.95) 100%);
+    content:"";position:absolute;left:0;right:0;bottom:0;height:45%;
+    background:linear-gradient(180deg,transparent 0%,rgba(3,6,13,.55) 50%,rgba(3,6,13,.98) 100%);
     z-index:2;pointer-events:none;
   }
 
-  /* slide meta (small counter chip, bottom-left, above feature cards) */
-  .slide-meta{position:absolute;left:32px;bottom:170px;z-index:4;text-align:left}
+  /* slide meta (small counter chip, above feature cards) */
+  .slide-meta{position:absolute;left:32px;bottom:calc(24px + 190px + 90px);z-index:4;text-align:left}
   .slide-meta .chip{
     font-family:'Poppins',sans-serif;font-weight:600;font-size:12px;letter-spacing:3px;color:#fff;
     padding:8px 14px;background:rgba(3,6,13,.55);border:1px solid var(--border);border-radius:999px;
@@ -134,7 +180,7 @@
   @media (max-width:860px){.slide-meta{display:none}}
 
   /* dots + arrows */
-  .slider-controls{position:absolute;right:32px;bottom:170px;z-index:4;display:flex;align-items:center;gap:14px}
+  .slider-controls{position:absolute;right:32px;bottom:calc(24px + 190px + 90px);z-index:4;display:flex;align-items:center;gap:14px}
   .dots{display:flex;gap:8px;flex-wrap:wrap}
   .dot{width:26px;height:4px;border-radius:4px;background:rgba(255,255,255,.35);border:0;cursor:pointer;padding:0;position:relative;overflow:hidden;transition:background .2s}
   .dot:hover{background:rgba(255,255,255,.55)}
@@ -145,17 +191,16 @@
   .arrow:hover{border-color:var(--brand-2);background:rgba(31,168,255,.2)}
   .arrows{display:flex;gap:8px}
 
-  /* ---- feature cards row (overlaps bottom of image) ---- */
+  /* ---- feature cards row anchored to bottom of viewport ---- */
   .feature-wrap{
-    position:relative;z-index:5;
+    position:absolute;left:0;right:0;bottom:24px;z-index:5;
     max-width:var(--max);margin:0 auto;padding:0 32px;
-    margin-top:-120px;
   }
   .feature-cards{
-    display:grid;grid-template-columns:repeat(4,1fr);gap:20px;
+    display:grid;grid-template-columns:repeat(4,1fr);gap:16px;
   }
   .fcard{
-    padding:26px 22px;border-radius:16px;
+    padding:18px 16px;border-radius:14px;
     background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));
     backdrop-filter:blur(14px);
     border:1px solid rgba(255,255,255,.12);
@@ -163,37 +208,42 @@
   }
   .fcard:hover{transform:translateY(-6px);border-color:var(--brand);background:linear-gradient(180deg,rgba(31,168,255,.18),rgba(31,168,255,.04))}
   .fcard.active{background:linear-gradient(180deg,rgba(31,168,255,.22),rgba(31,168,255,.05));border-color:var(--brand)}
-  .fcard .ico{width:52px;height:52px;margin:0 auto 14px;border-radius:14px;background:linear-gradient(135deg,rgba(31,168,255,.25),rgba(0,212,255,.08));border:1px solid rgba(31,168,255,.35);display:grid;place-items:center;color:var(--brand-2)}
-  .fcard .ico svg{width:26px;height:26px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-  .fcard h4{font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;color:#fff;margin-bottom:4px}
-  .fcard .dots-ind{display:flex;gap:4px;justify-content:center;margin-top:12px}
+  .fcard .ico{width:44px;height:44px;margin:0 auto 10px;border-radius:12px;background:linear-gradient(135deg,rgba(31,168,255,.25),rgba(0,212,255,.08));border:1px solid rgba(31,168,255,.35);display:grid;place-items:center;color:var(--brand-2)}
+  .fcard .ico svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .fcard h4{font-family:'Poppins',sans-serif;font-weight:600;font-size:14px;color:#fff;margin-bottom:4px}
+  .fcard .dots-ind{display:flex;gap:4px;justify-content:center;margin-top:8px}
   .fcard .dots-ind span{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.25)}
   .fcard.active .dots-ind span{background:var(--brand-2)}
 
   /* ---- stat bar ---- */
   .stat-bar{
     position:relative;z-index:5;
-    max-width:var(--max);margin:24px auto 0;padding:20px 28px;
-    display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;
+    max-width:var(--max);margin:14px auto 0;padding:14px 22px;
+    display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;
     background:linear-gradient(180deg,rgba(15,26,48,.85),rgba(6,11,23,.85));
-    border:1px solid var(--border);border-radius:18px;backdrop-filter:blur(10px);
+    border:1px solid var(--border);border-radius:14px;backdrop-filter:blur(10px);
   }
-  .stat-bar .metrics{display:flex;gap:38px;flex-wrap:wrap}
-  .stat-bar .metric .n{font-family:'Poppins',sans-serif;font-weight:800;font-size:22px;background:linear-gradient(90deg,#fff,#8ea8cf);-webkit-background-clip:text;background-clip:text;color:transparent}
-  .stat-bar .metric .l{font-size:11px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin-top:2px}
-  .stat-bar .tagline{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:12px;letter-spacing:3px;text-transform:uppercase}
+  .stat-bar .metrics{display:flex;gap:32px;flex-wrap:wrap}
+  .stat-bar .metric .n{font-family:'Poppins',sans-serif;font-weight:800;font-size:20px;background:linear-gradient(90deg,#fff,#8ea8cf);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .stat-bar .metric .l{font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin-top:2px}
+  .stat-bar .tagline{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:11px;letter-spacing:3px;text-transform:uppercase}
   .stat-bar .tagline .sep{width:6px;height:6px;border-radius:50%;background:var(--brand-2);box-shadow:0 0 10px var(--brand-2)}
   @media(max-width:860px){
     .stat-bar{justify-content:center;text-align:center}
     .stat-bar .metrics{justify-content:center;gap:22px}
   }
 
-  /* wrap for feature block bottom spacer */
-  .hero-tail{height:90px}
-
-  /* responsive feature cards */
-  @media(max-width:1000px){.feature-cards{grid-template-columns:repeat(2,1fr)}}
-  @media(max-width:500px){.feature-cards{grid-template-columns:1fr}}
+  /* responsive: on smaller viewports let hero grow so cards remain visible */
+  @media(max-width:1000px){
+    .hero{height:auto;min-height:100vh;padding-bottom:220px}
+    .feature-cards{grid-template-columns:repeat(2,1fr)}
+  }
+  @media(max-width:500px){
+    .feature-cards{grid-template-columns:repeat(2,1fr)}
+    .hero-heading{padding:100px 20px 18px}
+    .feature-wrap{padding:0 16px}
+    .stat-bar{padding:12px 16px}
+  }
 
   /* ================= SECTION SHARED ================= */
   section{padding:120px 32px;position:relative}
@@ -312,14 +362,7 @@
 <!-- ============ HERO ============ -->
 <section class="hero" id="home">
 
-  <!-- heading OVERLAYS the image; copy swaps per slide -->
-  <div class="hero-heading">
-    <span class="eyebrow swap" id="heroEyebrow">Dubai · AI Specialists · Digital Advertising</span>
-    <h1 class="swap" id="heroTitle">Bold Brands, Powered by <span class="accent">Intelligence</span>.</h1>
-    <p class="lead swap" id="heroLead">A Dubai creative studio blending AI, design, and digital advertising to launch brands the world can't scroll past.</p>
-  </div>
-
-  <!-- clear image slider (no dark overlay) -->
+  <!-- clear image slider (full-bleed to viewport top, behind nav) -->
   <div class="hero-media">
     <div class="slides" id="slides">
       <div class="slide active"><img src="Ai%20Video%20and%20ImagesServices.png" alt="AI Video and Images" /></div>
@@ -348,7 +391,26 @@
     </div>
   </div>
 
-  <!-- feature cards overlap bottom of image -->
+  <!-- floating orbs (wasp-like drift for engagement) -->
+  <div class="orbs" aria-hidden="true">
+    <span class="orb o1"></span>
+    <span class="orb o2"></span>
+    <span class="orb o3"></span>
+    <span class="orb o4"></span>
+    <span class="orb o5"></span>
+    <span class="orb o6"></span>
+    <span class="orb o7"></span>
+    <span class="orb o8"></span>
+  </div>
+
+  <!-- heading OVERLAYS the image; copy swaps per slide -->
+  <div class="hero-heading">
+    <span class="eyebrow swap" id="heroEyebrow">Dubai · AI Specialists · Digital Advertising</span>
+    <h1 class="swap" id="heroTitle">Bold Brands, Powered by <span class="accent">Intelligence</span>.</h1>
+    <p class="lead swap" id="heroLead">A Dubai creative studio blending AI, design, and digital advertising to launch brands the world can't scroll past.</p>
+  </div>
+
+  <!-- feature cards + stat bar, anchored to bottom of viewport -->
   <div class="feature-wrap">
     <div class="feature-cards">
       <div class="fcard active">
@@ -391,8 +453,6 @@
       <a href="#contact" class="btn-primary">Get Free Quote <span class="arw">→</span></a>
     </div>
   </div>
-
-  <div class="hero-tail"></div>
 </section>
 
 <!-- ============ ABOUT ============ -->
