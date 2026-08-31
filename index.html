@@ -59,16 +59,20 @@
   }
 
   /* ================= HERO ================= */
-  .hero{position:relative;padding-top:82px;background:var(--bg-0);overflow:hidden}
+  .hero{position:relative;background:var(--bg-0);overflow:hidden}
 
-  /* ---- heading block sits ABOVE the image; no overlap ---- */
+  /* ---- heading OVERLAYS the image ---- */
   .hero-heading{
-    position:relative;z-index:2;
+    position:absolute;top:0;left:0;right:0;z-index:3;
     max-width:960px;margin:0 auto;
-    padding:56px 32px 46px;
+    padding:130px 32px 40px;
     text-align:center;
     display:flex;flex-direction:column;align-items:center;gap:18px;
+    pointer-events:none;
   }
+  .hero-heading > *{pointer-events:auto}
+  .hero-heading .swap{transition:opacity .5s ease, transform .5s ease}
+  .hero-heading .swap.out{opacity:0;transform:translateY(-6px)}
   .eyebrow{
     display:inline-flex;align-items:center;gap:12px;
     font-size:12px;letter-spacing:4px;color:var(--brand-2);
@@ -95,32 +99,42 @@
   .btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 50px rgba(31,168,255,.65)}
   .btn-primary .arw{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:rgba(0,20,40,.18);font-size:12px}
 
-  /* ---- image slider zone (CLEAR — no dark overlay) ---- */
+  /* ---- image slider zone (image stays clear; only edge vignettes) ---- */
   .hero-media{
     position:relative;z-index:1;
-    height:min(72vh,720px);min-height:420px;
+    height:min(92vh,880px);min-height:640px;
     overflow:hidden;
-    border-top:1px solid rgba(80,140,220,.15);
   }
   .slides{position:absolute;inset:0}
   .slide{position:absolute;inset:0;opacity:0;transition:opacity 1.2s ease}
   .slide.active{opacity:1}
   .slide img{width:100%;height:100%;object-fit:cover;display:block}
-  /* subtle bottom-only fade so the feature cards read against the image without darkening the whole image */
+  /* soft top fade so the overlaid heading is readable */
+  .hero-media::before{
+    content:"";position:absolute;left:0;right:0;top:0;height:55%;
+    background:linear-gradient(180deg,rgba(3,6,13,.75) 0%,rgba(3,6,13,.35) 55%,transparent 100%);
+    z-index:2;pointer-events:none;
+  }
+  /* soft bottom fade so the feature cards read against the image */
   .hero-media::after{
-    content:"";position:absolute;left:0;right:0;bottom:0;height:45%;
+    content:"";position:absolute;left:0;right:0;bottom:0;height:40%;
     background:linear-gradient(180deg,transparent 0%,rgba(3,6,13,.55) 55%,rgba(3,6,13,.95) 100%);
     z-index:2;pointer-events:none;
   }
 
-  /* slide meta */
-  .slide-meta{position:absolute;left:32px;top:24px;z-index:4;text-align:left;max-width:340px}
-  .slide-meta .num{font-family:'Poppins',sans-serif;color:var(--brand-2);font-size:12px;letter-spacing:3px;font-weight:600}
-  .slide-meta .title{font-family:'Poppins',sans-serif;font-weight:700;font-size:18px;margin-top:6px;color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.6);padding:6px 14px;background:rgba(3,6,13,.55);border:1px solid var(--border);border-radius:999px;backdrop-filter:blur(8px);display:inline-block}
+  /* slide meta (small counter chip, bottom-left, above feature cards) */
+  .slide-meta{position:absolute;left:32px;bottom:170px;z-index:4;text-align:left}
+  .slide-meta .chip{
+    font-family:'Poppins',sans-serif;font-weight:600;font-size:12px;letter-spacing:3px;color:#fff;
+    padding:8px 14px;background:rgba(3,6,13,.55);border:1px solid var(--border);border-radius:999px;
+    backdrop-filter:blur(8px);display:inline-flex;align-items:center;gap:10px;
+  }
+  .slide-meta .chip .num{color:var(--brand-2)}
+  .slide-meta .chip .dot-sep{width:4px;height:4px;border-radius:50%;background:var(--brand-2)}
   @media (max-width:860px){.slide-meta{display:none}}
 
   /* dots + arrows */
-  .slider-controls{position:absolute;right:32px;top:32px;z-index:4;display:flex;align-items:center;gap:14px}
+  .slider-controls{position:absolute;right:32px;bottom:170px;z-index:4;display:flex;align-items:center;gap:14px}
   .dots{display:flex;gap:8px;flex-wrap:wrap}
   .dot{width:26px;height:4px;border-radius:4px;background:rgba(255,255,255,.35);border:0;cursor:pointer;padding:0;position:relative;overflow:hidden;transition:background .2s}
   .dot:hover{background:rgba(255,255,255,.55)}
@@ -298,11 +312,11 @@
 <!-- ============ HERO ============ -->
 <section class="hero" id="home">
 
-  <!-- heading (its own block, no image behind) -->
+  <!-- heading OVERLAYS the image; copy swaps per slide -->
   <div class="hero-heading">
-    <span class="eyebrow">Dubai · AI Specialists · Digital Advertising</span>
-    <h1>Bold Brands, Powered by <span class="accent">Intelligence</span>.</h1>
-    <p class="lead">A Dubai creative studio blending AI, design, and digital advertising to launch brands the world can't scroll past.</p>
+    <span class="eyebrow swap" id="heroEyebrow">Dubai · AI Specialists · Digital Advertising</span>
+    <h1 class="swap" id="heroTitle">Bold Brands, Powered by <span class="accent">Intelligence</span>.</h1>
+    <p class="lead swap" id="heroLead">A Dubai creative studio blending AI, design, and digital advertising to launch brands the world can't scroll past.</p>
   </div>
 
   <!-- clear image slider (no dark overlay) -->
@@ -322,8 +336,7 @@
     </div>
 
     <div class="slide-meta" id="slideMeta">
-      <div class="num">01 / 11</div>
-      <div class="title">AI Video &amp; Images</div>
+      <span class="chip"><span class="num">01 / 11</span><span class="dot-sep"></span><span class="title">AI Video &amp; Images</span></span>
     </div>
 
     <div class="slider-controls">
@@ -470,25 +483,100 @@
 
 <script>
   /* ============ SLIDER ============ */
+  /* per-slide copy: eyebrow · h1 (with one accent word) · lead paragraph */
   const services = [
-    {title:'AI Video & Images', tag:'AI Media', desc:'Cinematic AI-generated visuals, product renders, and full campaign imagery.'},
-    {title:'Website Services', tag:'Web', desc:'Design + build for landing pages, marketing sites, and e-commerce.'},
-    {title:'Motion Design', tag:'Motion', desc:'Kinetic type, brand animations, and cinematic explainer motion.'},
-    {title:'3D Animation', tag:'3D', desc:'Photoreal product visualization and 3D storytelling.'},
-    {title:'2D Animation', tag:'2D', desc:'Illustrated explainers, character animation, and stylized loops.'},
-    {title:'Video Editing', tag:'Post', desc:'Story-first editing, color, and sound for ads, docs, and social.'},
-    {title:'Logo & Branding', tag:'Brand', desc:'Logos, visual identity systems, and complete brand guidelines.'},
-    {title:'Photography', tag:'Photo', desc:'Product, lifestyle, and campaign photography — studio & on-location.'},
-    {title:'Social Media Management', tag:'Social', desc:'Content strategy, calendars, and daily creative for every platform.'},
-    {title:'CRM & Platform Services', tag:'Platform', desc:'Custom CRMs, dashboards, and internal tools built to scale.'},
-    {title:'Fintech Platform Services', tag:'Fintech', desc:'Secure payment, ledger, and financial-product engineering.'},
+    {
+      title:'AI Video & Images', tag:'AI Media',
+      desc:'Cinematic AI-generated visuals, product renders, and full campaign imagery.',
+      eyebrow:'AI Media · Generative Creative',
+      h1:['AI Video & Imagery That','Feels','Cinematic.'],
+      lead:'Generative visuals, product renders, and hero campaigns — engineered by AI, finished by artists.'
+    },
+    {
+      title:'Website Services', tag:'Web',
+      desc:'Design + build for landing pages, marketing sites, and e-commerce.',
+      eyebrow:'Web · Design & Development',
+      h1:['Websites Built to','Convert','.'],
+      lead:'Landing pages, marketing sites, and e-commerce — designed to look premium and perform hard.'
+    },
+    {
+      title:'Motion Design', tag:'Motion',
+      desc:'Kinetic type, brand animations, and cinematic explainer motion.',
+      eyebrow:'Motion · Kinetic Storytelling',
+      h1:['Motion That','Moves','Markets.'],
+      lead:'Kinetic type, brand animations, and cinematic motion crafted to stop the scroll.'
+    },
+    {
+      title:'3D Animation', tag:'3D',
+      desc:'Photoreal product visualization and 3D storytelling.',
+      eyebrow:'3D · Product & World Building',
+      h1:['3D Worlds With','Photoreal','Craft.'],
+      lead:'Product visualization and 3D storytelling with cinematic light, texture, and detail.'
+    },
+    {
+      title:'2D Animation', tag:'2D',
+      desc:'Illustrated explainers, character animation, and stylized loops.',
+      eyebrow:'2D · Illustration & Character',
+      h1:['2D Stories,','Handcrafted','Style.'],
+      lead:'Illustrated explainers, character animation, and stylized loops with real personality.'
+    },
+    {
+      title:'Video Editing', tag:'Post',
+      desc:'Story-first editing, color, and sound for ads, docs, and social.',
+      eyebrow:'Post · Editorial · Color · Sound',
+      h1:['Video Editing With','Story First','.'],
+      lead:'Sharp cuts, color, and sound for ads, docs, and social — post-production done right.'
+    },
+    {
+      title:'Logo & Branding', tag:'Brand',
+      desc:'Logos, visual identity systems, and complete brand guidelines.',
+      eyebrow:'Brand · Identity Systems',
+      h1:['Brands With','Presence','.'],
+      lead:'Logos, identity systems, and guidelines that make your brand impossible to ignore.'
+    },
+    {
+      title:'Photography', tag:'Photo',
+      desc:'Product, lifestyle, and campaign photography — studio & on-location.',
+      eyebrow:'Photo · Studio & On-Location',
+      h1:['Photography With','Purpose','.'],
+      lead:'Product, lifestyle, and campaign photography — studio and on-location, ready to publish.'
+    },
+    {
+      title:'Social Media Management', tag:'Social',
+      desc:'Content strategy, calendars, and daily creative for every platform.',
+      eyebrow:'Social · Content & Community',
+      h1:['Social That','Compounds','.'],
+      lead:'Content strategy, calendars, and daily creative built for platform-native growth.'
+    },
+    {
+      title:'CRM & Platform Services', tag:'Platform',
+      desc:'Custom CRMs, dashboards, and internal tools built to scale.',
+      eyebrow:'Platform · CRM & Internal Tools',
+      h1:['Platforms Built to','Scale','.'],
+      lead:'Custom CRMs, dashboards, and internal tools engineered around the way your team actually works.'
+    },
+    {
+      title:'Fintech Platform Services', tag:'Fintech',
+      desc:'Secure payment, ledger, and financial-product engineering.',
+      eyebrow:'Fintech · Payments & Ledger',
+      h1:['Fintech Products,','Bank-Grade','.'],
+      lead:'Secure payment, ledger, and financial-product engineering — from MVP to production.'
+    },
   ];
 
   const slides = document.querySelectorAll('.slide');
   const dotsWrap = document.getElementById('dots');
   const meta = document.getElementById('slideMeta');
+  const heroEyebrow = document.getElementById('heroEyebrow');
+  const heroTitle = document.getElementById('heroTitle');
+  const heroLead = document.getElementById('heroLead');
+  const fcards = document.querySelectorAll('.fcard');
   let current = 0;
   let timer;
+
+  // map each slide to one of the 4 feature cards for the active highlight
+  // 0 AI Media, 1 Digital Ads, 2 Web & Apps, 3 24/7 Support
+  const cardMap = [0,2,0,0,0,0,1,1,1,2,2];
 
   // build dots
   slides.forEach((_,i)=>{
@@ -499,9 +587,31 @@
     dotsWrap.appendChild(b);
   });
 
+  function renderHeading(i){
+    const s = services[i];
+    heroEyebrow.textContent = s.eyebrow;
+    const [pre, accent, post] = s.h1;
+    heroTitle.innerHTML = `${pre} <span class="accent">${accent}</span>${post}`;
+    heroLead.textContent = s.lead;
+  }
+
   function updateMeta(i){
     const s = services[i];
-    meta.innerHTML = `<div class="num">${String(i+1).padStart(2,'0')} / ${String(slides.length).padStart(2,'0')}</div><div class="title">${s.title}</div>`;
+    const num = `${String(i+1).padStart(2,'0')} / ${String(slides.length).padStart(2,'0')}`;
+    meta.innerHTML = `<span class="chip"><span class="num">${num}</span><span class="dot-sep"></span><span class="title">${s.title}</span></span>`;
+  }
+
+  function swap(i){
+    // fade out
+    heroEyebrow.classList.add('out');
+    heroTitle.classList.add('out');
+    heroLead.classList.add('out');
+    setTimeout(()=>{
+      renderHeading(i);
+      heroEyebrow.classList.remove('out');
+      heroTitle.classList.remove('out');
+      heroLead.classList.remove('out');
+    }, 420);
   }
 
   function go(i,userTriggered){
@@ -512,9 +622,11 @@
     current = (i + slides.length) % slides.length;
     slides[current].classList.add('active');
     dots[current].classList.add('active');
-    // re-inject fill to restart CSS animation
     dots[current].innerHTML = '<span class="fill"></span>';
     updateMeta(current);
+    swap(current);
+    // sync active feature card
+    fcards.forEach((c,idx)=>c.classList.toggle('active', idx===cardMap[current]));
     if(userTriggered) restart();
   }
   function next(){ go(current+1); }
@@ -525,6 +637,8 @@
   document.getElementById('next').addEventListener('click',()=>{ next(); restart(); });
   document.getElementById('prev').addEventListener('click',()=>{ prev(); restart(); });
 
+  // initialize
+  renderHeading(0);
   updateMeta(0);
   start();
 
