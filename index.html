@@ -246,9 +246,11 @@
   }
 
   /* ================= SECTION SHARED ================= */
-  section{padding:120px 32px;position:relative}
+  /* consistent 100px vertical rhythm across all standard sections,
+     scaled sensibly on tablet and mobile */
+  section{padding:100px 32px;position:relative}
   .container{max-width:var(--max);margin:0 auto}
-  .section-head{text-align:center;margin-bottom:70px}
+  .section-head{text-align:center;margin-bottom:64px}
   .section-head .eyebrow{justify-content:center}
   .section-head .eyebrow::before{display:none}
   .section-head h2,.gradient-head{
@@ -335,6 +337,84 @@
   /* reveal on scroll */
   .reveal{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
   .reveal.in{opacity:1;transform:none}
+
+  /* ================= RESPONSIVE ================= */
+  /* widescreen: give more breathing room */
+  @media(min-width:1600px){
+    :root{--max:1360px}
+    section{padding:110px 40px}
+  }
+
+  /* tablet — laptops and iPads (landscape/portrait) */
+  @media(max-width:1024px){
+    section{padding:80px 28px}
+    .section-head{margin-bottom:48px}
+    header.nav{padding:12px 24px}
+    header.nav.scrolled{padding:8px 24px}
+    .logo img{height:38px}
+    .logo-text .brand{font-size:16px}
+    .logo-text .tag{font-size:9px;letter-spacing:3px}
+    .about-grid{gap:48px}
+    .about-text h2{font-size:clamp(24px,3.6vw,38px)}
+    .stat-row{grid-template-columns:repeat(3,1fr);gap:14px}
+    .stat{padding:16px}
+    .stat .num{font-size:26px}
+    .services-grid{grid-template-columns:repeat(2,1fr);gap:20px}
+    .process-grid{grid-template-columns:repeat(2,1fr)}
+    .contact-card{padding:48px 36px}
+    .contact-methods{gap:22px}
+    footer .footer-inner{justify-content:center;text-align:center}
+  }
+
+  /* mobile */
+  @media(max-width:640px){
+    section{padding:64px 20px}
+    .section-head{margin-bottom:36px}
+    .section-head p{font-size:15px}
+    header.nav{padding:10px 18px}
+    .cta{padding:8px 16px;font-size:13px}
+
+    /* hero can grow past 100vh on mobile so cards stay visible */
+    .hero{height:auto;min-height:auto;max-height:none;padding-bottom:32px}
+    .hero-heading{padding:96px 20px 20px;gap:12px}
+    .hero-media{position:relative;height:56vh;min-height:360px}
+    .slide-meta{display:none}
+    .slider-controls{
+      position:static;justify-content:center;
+      padding:16px 20px 0;background:transparent;
+    }
+    .feature-wrap{position:static;padding:20px;margin-top:-40px}
+    .stat-bar{padding:14px 18px;gap:14px}
+    .stat-bar .btn-primary{width:100%;justify-content:center}
+    .stat-bar .tagline{display:none}
+
+    /* about */
+    .about-grid{gap:36px}
+    .about-visual{max-width:280px}
+    .stat-row{grid-template-columns:1fr;gap:12px}
+
+    /* services */
+    .services-grid{grid-template-columns:1fr;gap:16px}
+    .service{aspect-ratio:16/12}
+
+    /* contact */
+    .contact-card{padding:36px 22px;border-radius:18px}
+    .contact-methods{flex-direction:column;gap:12px;margin-top:24px}
+
+    /* footer */
+    footer{padding:36px 20px 24px}
+    .socials{gap:10px}
+  }
+
+  /* very small phones */
+  @media(max-width:380px){
+    section{padding:56px 16px}
+    .hero-heading h1{font-size:26px}
+    .fcard{padding:14px 10px}
+    .fcard h4{font-size:13px}
+    .stat-bar .metrics{gap:14px}
+    .stat-bar .metric .n{font-size:18px}
+  }
 </style>
 </head>
 <body>
