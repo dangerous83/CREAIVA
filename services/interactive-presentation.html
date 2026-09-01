@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>CREAIVA — AI-Powered Creative & Digital Advertising Studio · Dubai</title>
-<meta name="description" content="CREAIVA is a Dubai-based AI specialist and digital advertising studio — crafting AI video, motion design, branding, web, fintech and CRM platforms for ambitious brands worldwide." />
-<link rel="icon" type="image/png" href="CREAIVA-icon.png" />
+<title>Interactive Presentation — CREAIVA · Dubai</title>
+<meta name="description" content="Click-through, non-linear presentations built for demos, showrooms, and self-guided pitches — where the audience explores at their own pace instead of sitting through a fixed deck." />
+<link rel="icon" type="image/png" href="../CREAIVA-icon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -566,14 +566,53 @@
     .stat-bar .metric .n{font-size:18px}
   }
 </style>
+<style>
+
+  /* ================= DETAIL PAGE ADDITIONS ================= */
+  .breadcrumb{font-size:12px;color:var(--muted);margin-bottom:18px;letter-spacing:.3px}
+  .breadcrumb a{color:var(--muted);transition:color .2s}
+  .breadcrumb a:hover{color:var(--brand-2)}
+  .breadcrumb .sep{margin:0 6px;opacity:.5}
+  .breadcrumb .current{color:var(--text)}
+
+  .page-hero{padding-top:150px}
+  .page-hero .hero-ctas{display:flex;gap:16px;flex-wrap:wrap;margin-top:26px}
+
+  .info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+  .info-card{
+    padding:26px;border-radius:18px;border:1px solid var(--border);background:var(--card);
+    transition:transform .3s,border-color .3s;
+  }
+  .info-card:hover{transform:translateY(-4px);border-color:var(--brand)}
+  .info-card .ico{
+    width:46px;height:46px;border-radius:12px;margin-bottom:16px;
+    background:linear-gradient(135deg,rgba(31,168,255,.25),rgba(0,212,255,.08));
+    border:1px solid rgba(31,168,255,.32);display:grid;place-items:center;color:var(--brand-2);
+  }
+  .info-card .ico svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+  .info-card h4{font-family:'Poppins',sans-serif;font-weight:600;font-size:16px;margin-bottom:8px;color:#fff}
+  .info-card p{color:var(--muted);font-size:14px;line-height:1.6}
+
+  .related-strip{display:flex;gap:14px;flex-wrap:wrap;margin-top:22px}
+  .related-chip{
+    padding:10px 18px;border-radius:999px;border:1px solid var(--border);
+    font-size:13px;color:var(--muted);transition:all .2s;
+  }
+  .related-chip:hover{border-color:var(--brand-2);color:#fff;background:rgba(31,168,255,.08)}
+
+  @media(max-width:640px){
+    .page-hero{padding-top:120px}
+  }
+
+</style>
 </head>
 <body>
 
 <!-- ============ NAV ============ -->
 <header class="nav" id="nav">
  <div class="nav-inner">
-  <a href="#home" class="logo">
-    <img src="CREAVA%20Logo%20Horizontal.png" alt="CREAIVA" />
+  <a href="../index.html" class="logo">
+    <img src="../CREAVA%20Logo%20Horizontal.png" alt="CREAIVA" />
   </a>
 
   <ul class="links" id="navLinks">
@@ -584,70 +623,70 @@
         <div class="mega-content">
         <h5 class="mega-label">All Services</h5>
         <div class="mega-grid">
-            <a class="mega-item" href="services/logo-branding.html">
+            <a class="mega-item" href="../services/logo-branding.html">
               <span class="m-ico"><svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg></span>
               <span class="m-txt"><h6>Logo &amp; Branding</h6><p>Identity systems &amp; guidelines</p></span>
             </a>
-            <a class="mega-item" href="services/2d-animation.html">
+            <a class="mega-item" href="../services/2d-animation.html">
               <span class="m-ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l6 3-6 3V9z" fill="currentColor" stroke="none"/></svg></span>
               <span class="m-txt"><h6>2D Animation</h6><p>Illustrated explainers &amp; loops</p></span>
             </a>
-            <a class="mega-item" href="services/motion-design.html">
+            <a class="mega-item" href="../services/motion-design.html">
               <span class="m-ico"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z" fill="currentColor" stroke="none"/></svg></span>
               <span class="m-txt"><h6>Motion Design</h6><p>Kinetic type &amp; brand animation</p></span>
             </a>
-            <a class="mega-item" href="services/3d-animation.html">
+            <a class="mega-item" href="../services/3d-animation.html">
               <span class="m-ico"><svg viewBox="0 0 24 24"><path d="M12 2l8 4.5v9L12 20l-8-4.5v-9L12 2z"/><path d="M4 6.5L12 11l8-4.5"/><path d="M12 11v9"/></svg></span>
               <span class="m-txt"><h6>3D Animation</h6><p>Photoreal product &amp; world CGI</p></span>
             </a>
-            <a class="mega-item" href="services/ai-video-realistic.html">
+            <a class="mega-item" href="../services/ai-video-realistic.html">
               <span class="m-ico"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="13" height="10" rx="2"/><path d="M16 10l5-3v10l-5-3"/></svg></span>
               <span class="m-txt"><h6>AI Video (Realistic)</h6><p>Generative, cinematic footage</p></span>
             </a>
-            <a class="mega-item" href="services/photography-videography.html">
+            <a class="mega-item" href="../services/photography-videography.html">
               <span class="m-ico"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="4"/></svg></span>
               <span class="m-txt"><h6>Photography &amp; Video</h6><p>Studio &amp; on-location shoots</p></span>
             </a>
-            <a class="mega-item" href="services/website-design.html">
+            <a class="mega-item" href="../services/website-design.html">
               <span class="m-ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><circle cx="6" cy="6.5" r=".6" fill="currentColor" stroke="none"/><circle cx="8.6" cy="6.5" r=".6" fill="currentColor" stroke="none"/></svg></span>
               <span class="m-txt"><h6>Website Design</h6><p>Marketing sites that convert</p></span>
             </a>
-            <a class="mega-item" href="services/ecommerce.html">
+            <a class="mega-item" href="../services/ecommerce.html">
               <span class="m-ico"><svg viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg></span>
               <span class="m-txt"><h6>E-Commerce</h6><p>Storefronts built to sell</p></span>
             </a>
-            <a class="mega-item" href="services/platform-web.html">
+            <a class="mega-item" href="../services/platform-web.html">
               <span class="m-ico"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="5" rx="1.5"/><rect x="4" y="14" width="16" height="5" rx="1.5"/><circle cx="7" cy="6.5" r=".6" fill="currentColor" stroke="none"/><circle cx="7" cy="16.5" r=".6" fill="currentColor" stroke="none"/></svg></span>
               <span class="m-txt"><h6>Platform Web</h6><p>Custom dashboards &amp; tools</p></span>
             </a>
-            <a class="mega-item" href="services/seo-analytics.html">
+            <a class="mega-item" href="../services/seo-analytics.html">
               <span class="m-ico"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="7"/><path d="M15 15l6 6"/></svg></span>
               <span class="m-txt"><h6>SEO &amp; Analytics</h6><p>Rank higher, measure growth</p></span>
             </a>
-            <a class="mega-item" href="services/social-media-management.html">
+            <a class="mega-item" href="../services/social-media-management.html">
               <span class="m-ico"><svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="2.2"/><circle cx="19" cy="6" r="2.2"/><circle cx="19" cy="18" r="2.2"/><path d="M7 10.8L17 6.8M7 13.2L17 17.2"/></svg></span>
               <span class="m-txt"><h6>Social Media Mgmt.</h6><p>Content &amp; community, daily</p></span>
             </a>
-            <a class="mega-item" href="services/interactive-screen.html">
+            <a class="mega-item" href="../services/interactive-screen.html">
               <span class="m-ico"><svg viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="2.5"/><circle cx="12" cy="18" r=".9" fill="currentColor" stroke="none"/></svg></span>
               <span class="m-txt"><h6>Interactive Screen</h6><p>Kiosks &amp; touch experiences</p></span>
             </a>
-            <a class="mega-item" href="services/presentation-pro.html">
+            <a class="mega-item" href="../services/presentation-pro.html">
               <span class="m-ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4"/><path d="M6.5 12l3-3 2 2 4-4"/></svg></span>
               <span class="m-txt"><h6>Presentation PRO</h6><p>Investor &amp; sales decks</p></span>
             </a>
-            <a class="mega-item" href="services/interactive-presentation.html">
+            <a class="mega-item" href="../services/interactive-presentation.html">
               <span class="m-ico"><svg viewBox="0 0 24 24"><path d="M5 3l14 8-6 2-2 6-6-16z"/></svg></span>
               <span class="m-txt"><h6>Interactive Presentation</h6><p>Click-through live experiences</p></span>
             </a>
         </div>
         <div class="mega-foot">
           <p>14 disciplines, one creative engine.</p>
-          <a href="index.html#services">View all services →</a>
+          <a href="../index.html#services">View all services →</a>
         </div>
         </div>
         <div class="mega-visual">
-          <img src="Ai%20Video%20and%20ImagesServices.png" alt="AI-powered creative work" />
+          <img src="../Ai%20Video%20and%20ImagesServices.png" alt="AI-powered creative work" />
           <div class="mv-txt">
             <span>Featured</span>
             <h6>AI-Powered Creative</h6>
@@ -665,42 +704,42 @@
         <div class="mega-content">
         <h5 class="mega-label">Packaged Solutions</h5>
         <div class="mega-grid">
-          <a class="mega-item" href="solutions/brand-launch-package.html">
+          <a class="mega-item" href="../solutions/brand-launch-package.html">
             <span class="m-ico"><svg viewBox="0 0 24 24"><path d="M12 2c3 2 5 6 5 10 0 2-1 4-2 5l-3 3-3-3c-1-1-2-3-2-5 0-4 2-8 5-10z"/><circle cx="12" cy="10" r="1.6" fill="currentColor" stroke="none"/><path d="M9 17l-2 4M15 17l2 4"/></svg></span>
             <span class="m-txt"><h6>Brand Launch Package</h6><p>Identity + launch content, bundled</p></span>
           </a>
-          <a class="mega-item" href="solutions/digital-marketing-suite.html">
+          <a class="mega-item" href="../solutions/digital-marketing-suite.html">
             <span class="m-ico"><svg viewBox="0 0 24 24"><path d="M3 10v4h3l6 4V6L6 10H3z"/><path d="M15 9a4 4 0 0 1 0 6"/><path d="M18 6a8 8 0 0 1 0 12"/></svg></span>
             <span class="m-txt"><h6>Digital Marketing Suite</h6><p>Social, ads &amp; SEO working together</p></span>
           </a>
-          <a class="mega-item" href="solutions/ai-content-studio.html">
+          <a class="mega-item" href="../solutions/ai-content-studio.html">
             <span class="m-ico"><svg viewBox="0 0 24 24"><path d="M12 3l1.6 4.4L18 9l-4.4 1.6L12 15l-1.6-4.4L6 9l4.4-1.6L12 3z"/><path d="M19 14l.8 2.2L22 17l-2.2.8L19 20l-.8-2.2L16 17l2.2-.8L19 14z"/></svg></span>
             <span class="m-txt"><h6>AI Content Studio</h6><p>AI video &amp; imagery at scale</p></span>
           </a>
-          <a class="mega-item" href="solutions/ecommerce-web-platforms.html">
+          <a class="mega-item" href="../solutions/ecommerce-web-platforms.html">
             <span class="m-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span>
             <span class="m-txt"><h6>E-Commerce &amp; Web</h6><p>Storefronts and web platforms</p></span>
           </a>
-          <a class="mega-item" href="solutions/corporate-presentations.html">
+          <a class="mega-item" href="../solutions/corporate-presentations.html">
             <span class="m-ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4"/><path d="M6.5 12l3-3 2 2 4-4"/></svg></span>
             <span class="m-txt"><h6>Corporate Presentations</h6><p>Decks &amp; interactive systems</p></span>
           </a>
-          <a class="mega-item" href="solutions/interactive-experience.html">
+          <a class="mega-item" href="../solutions/interactive-experience.html">
             <span class="m-ico"><svg viewBox="0 0 24 24"><path d="M5 3l14 8-6 2-2 6-6-16z"/></svg></span>
             <span class="m-txt"><h6>Interactive Experience</h6><p>Touch &amp; gesture-driven design</p></span>
           </a>
-          <a class="mega-item" href="solutions/growth-analytics.html">
+          <a class="mega-item" href="../solutions/growth-analytics.html">
             <span class="m-ico"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></span>
             <span class="m-txt"><h6>Growth &amp; Analytics</h6><p>SEO, tracking &amp; conversion</p></span>
           </a>
         </div>
         <div class="mega-foot">
           <p>Not sure which fits your brand?</p>
-          <a href="index.html#contact">Get a recommendation →</a>
+          <a href="../index.html#contact">Get a recommendation →</a>
         </div>
         </div>
         <div class="mega-visual">
-          <img src="Fintech%20Platform%20Services.png" alt="Platform &amp; fintech solutions" />
+          <img src="../Fintech%20Platform%20Services.png" alt="Platform &amp; fintech solutions" />
           <div class="mv-txt">
             <span>Featured</span>
             <h6>Platform &amp; Fintech Builds</h6>
@@ -711,142 +750,73 @@
       </div>
     </li>
 
-    <li><a href="index.html#about">Our Team</a></li>
-    <li><a href="index.html#portfolio">Portfolio</a></li>
+    <li><a href="../index.html#about">Our Team</a></li>
+    <li><a href="../index.html#portfolio">Portfolio</a></li>
   </ul>
 
   <div class="nav-right">
-    <a href="index.html#contact" class="cta">Start a Project</a>
+    <a href="../index.html#contact" class="cta">Start a Project</a>
     <button class="burger" id="burger" aria-label="Menu">☰</button>
   </div>
  </div>
 </header>
 
-<!-- ============ HERO ============ -->
-<section class="hero" id="home">
-
-  <!-- clear image slider (full-bleed to viewport top, behind nav) -->
-  <div class="hero-media">
-    <div class="slides" id="slides">
-      <div class="slide active"><img src="Ai%20Video%20and%20ImagesServices.png" alt="AI Video and Images" /></div>
-      <div class="slide"><img src="Website%20Services.png" alt="Website Services" /></div>
-      <div class="slide"><img src="Motion%20design%20Services.png" alt="Motion Design" /></div>
-      <div class="slide"><img src="3D%20Animaion%20Services.png" alt="3D Animation" /></div>
-      <div class="slide"><img src="2D%20Animation%20Services.png" alt="2D Animation" /></div>
-      <div class="slide"><img src="Video%20Editing%20Services.png" alt="Video Editing" /></div>
-      <div class="slide"><img src="Logo%20branding%202%20Services.png" alt="Logo Branding" /></div>
-      <div class="slide"><img src="Photography%20%202%20Services.png" alt="Photography" /></div>
-      <div class="slide"><img src="Social%20Media%20Management%20Services.png" alt="Social Media Management" /></div>
-      <div class="slide"><img src="CRM%20&%20Platform%20Services.png" alt="CRM and Platform" /></div>
-      <div class="slide"><img src="Fintech%20Platform%20Services.png" alt="Fintech Platform" /></div>
-    </div>
-
-    <div class="slide-meta" id="slideMeta">
-      <span class="chip"><span class="num">01 / 11</span><span class="dot-sep"></span><span class="title">AI Video &amp; Images</span></span>
-    </div>
-
-    <div class="slider-controls">
-      <div class="dots" id="dots"></div>
-      <div class="arrows">
-        <button class="arrow" id="prev" aria-label="Previous slide">‹</button>
-        <button class="arrow" id="next" aria-label="Next slide">›</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- floating orbs (wasp-like drift for engagement) -->
-  <div class="orbs" aria-hidden="true">
-    <span class="orb o1"></span>
-    <span class="orb o2"></span>
-    <span class="orb o3"></span>
-    <span class="orb o4"></span>
-    <span class="orb o5"></span>
-    <span class="orb o6"></span>
-    <span class="orb o7"></span>
-    <span class="orb o8"></span>
-  </div>
-
-  <!-- heading OVERLAYS the image; copy swaps per slide -->
-  <div class="hero-heading">
-    <span class="eyebrow swap" id="heroEyebrow">Dubai · AI Specialists · Digital Advertising</span>
-    <h1 class="swap" id="heroTitle">Bold Brands, Powered by <span class="accent">Intelligence</span>.</h1>
-    <p class="lead swap" id="heroLead">A Dubai creative studio blending AI, design, and digital advertising to launch brands the world can't scroll past.</p>
-  </div>
-
-  <!-- feature cards + stat bar, anchored to bottom of viewport -->
-  <div class="feature-wrap">
-    <div class="feature-cards">
-      <div class="fcard active">
-        <div class="ico">
-          <svg viewBox="0 0 24 24"><path d="M12 3l1.6 4.4L18 9l-4.4 1.6L12 15l-1.6-4.4L6 9l4.4-1.6L12 3z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8L19 15z"/></svg>
-        </div>
-        <h4>AI Media</h4>
-        <div class="dots-ind"><span></span><span></span><span></span></div>
-      </div>
-      <div class="fcard">
-        <div class="ico">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.6" fill="currentColor"/></svg>
-        </div>
-        <h4>Digital Ads</h4>
-        <div class="dots-ind"><span></span><span></span><span></span></div>
-      </div>
-      <div class="fcard">
-        <div class="ico">
-          <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18"/><path d="M8 21h8"/><path d="M12 18v3"/></svg>
-        </div>
-        <h4>Web &amp; Apps</h4>
-        <div class="dots-ind"><span></span><span></span><span></span></div>
-      </div>
-      <div class="fcard">
-        <div class="ico">
-          <svg viewBox="0 0 24 24"><path d="M4 13a8 8 0 0 1 16 0"/><rect x="3" y="13" width="4" height="7" rx="1.5"/><rect x="17" y="13" width="4" height="7" rx="1.5"/><path d="M18 20a3 3 0 0 1-3 3h-1"/></svg>
-        </div>
-        <h4>24/7 Support</h4>
-        <div class="dots-ind"><span></span><span></span><span></span></div>
-      </div>
-    </div>
-
-    <div class="stat-bar">
-      <div class="metrics">
-        <div class="metric"><div class="n">11+</div><div class="l">Services</div></div>
-        <div class="metric"><div class="n">100%</div><div class="l">In-House</div></div>
-        <div class="metric"><div class="n">24/7</div><div class="l">AI-Powered</div></div>
-      </div>
-      <div class="tagline">Modern <span class="sep"></span> Fast <span class="sep"></span> Intelligent</div>
-      <a href="#contact" class="btn-primary">Get Free Quote <span class="arw">→</span></a>
-    </div>
-  </div>
-</section>
-
-<!-- ============ ABOUT ============ -->
-<section id="about">
+<!-- ============ PAGE HERO ============ -->
+<section class="page-hero">
   <div class="container about-grid">
     <div class="about-text reveal">
-      <span class="eyebrow">About CREAIVA</span>
-      <h2 class="gradient-head">A Dubai studio built for the <span class="accent">AI era</span>.</h2>
-      <p>CREAIVA is an AI specialist and digital advertising company headquartered in Dubai. We blend generative AI, cinematic craft, and data-driven media to help brands launch faster, look bolder, and perform harder across every screen.</p>
-      <p>From AI-generated campaign visuals to full-stack fintech platforms, our team unites strategists, designers, motion artists, and engineers under one roof — so your brand ships as one seamless system.</p>
-      <div class="stat-row">
-        <div class="stat"><div class="num">11+</div><div class="lbl">Service Lines</div></div>
-        <div class="stat"><div class="num">100%</div><div class="lbl">In-House Talent</div></div>
-        <div class="stat"><div class="num">24/7</div><div class="lbl">AI-Powered</div></div>
+      <p class="breadcrumb">
+        <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#services">Services</a><span class="sep">/</span><span class="current">Interactive Presentation</span>
+      </p>
+      <span class="eyebrow">Experience · Click-Through</span>
+      <h2 class="gradient-head" style="margin-top:14px">Presentations You <span class="accent">Explore</span>.</h2>
+      <p>Click-through, non-linear presentations built for demos, showrooms, and self-guided pitches — where the audience explores at their own pace instead of sitting through a fixed deck.</p>
+      <div class="hero-ctas">
+        <a href="../index.html#contact" class="btn-primary">Start a Project →</a>
+        <a href="../index.html#services" class="btn-outline">Explore All Services</a>
       </div>
     </div>
     <div class="about-visual reveal">
-      <img src="CREAIVA-icon.png" alt="CREAIVA emblem" />
+      <img src="../Motion%20design%20Services.png" alt="Interactive Presentation" />
     </div>
   </div>
 </section>
 
-<!-- ============ SERVICES ============ -->
-<section id="services">
+<!-- ============ INCLUDED ============ -->
+<section id="included">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow">What We Do</span>
-      <h2>Our <span class="accent">Services</span></h2>
-      <p>Eleven specialized disciplines, one unified creative engine. Pick a service — or combine them into a complete brand system.</p>
+      <span class="eyebrow">What's Included</span>
+      <h2>Everything You <span class="accent">Need</span></h2>
+      <p>A complete, senior-led scope for interactive presentation — no vague retainers, no guesswork.</p>
     </div>
-    <div class="services-grid" id="servicesGrid"></div>
+    <div class="info-grid">
+            <div class="info-card reveal">
+              <div class="ico"><svg viewBox="0 0 24 24"><path d="M5 3l14 8-6 2-2 6-6-16z"/></svg></div>
+              <h4>Non-Linear Navigation</h4>
+              <p>Jump between sections instead of a fixed slide order.</p>
+            </div>
+            <div class="info-card reveal">
+              <div class="ico"><svg viewBox="0 0 24 24"><path d="M5 3l14 8-6 2-2 6-6-16z"/></svg></div>
+              <h4>Interactive Prototypes</h4>
+              <p>Clickable product demos built directly into the presentation.</p>
+            </div>
+            <div class="info-card reveal">
+              <div class="ico"><svg viewBox="0 0 24 24"><path d="M5 3l14 8-6 2-2 6-6-16z"/></svg></div>
+              <h4>Embedded Media</h4>
+              <p>Video, animation, and live data embedded natively.</p>
+            </div>
+            <div class="info-card reveal">
+              <div class="ico"><svg viewBox="0 0 24 24"><path d="M5 3l14 8-6 2-2 6-6-16z"/></svg></div>
+              <h4>Self-Guided Mode</h4>
+              <p>Built to work with or without someone presenting live.</p>
+            </div>
+            <div class="info-card reveal">
+              <div class="ico"><svg viewBox="0 0 24 24"><path d="M5 3l14 8-6 2-2 6-6-16z"/></svg></div>
+              <h4>Cross-Device Delivery</h4>
+              <p>Works on kiosk screens, tablets, and laptops alike.</p>
+            </div>
+    </div>
   </div>
 </section>
 
@@ -872,13 +842,13 @@
   <div class="container">
     <div class="contact-card reveal">
       <span class="eyebrow" style="justify-content:center">Ready When You Are</span>
-      <h2 class="gradient-head" style="margin-top:14px">Let's build something <span class="accent">unforgettable</span>.</h2>
-      <p>Tell us about your project — an AI campaign, a launch video, a website, a platform, or a full rebrand. We reply within 24 hours, in English or Arabic.</p>
+      <h2 class="gradient-head" style="margin-top:14px">Let's talk about <span class="accent">Interactive Presentation</span>.</h2>
+      <p>Tell us about your project — timeline, budget, and goals. We reply within 24 hours, in English or Arabic.</p>
       <a href="mailto:info@creaiva.ae" class="btn-primary">Start a Project</a>
       <div class="contact-methods">
         <a href="mailto:info@creaiva.ae">✉ info@creaiva.ae</a>
         <a href="tel:+971521559156">☎ Customer Services: +971.52.155.9156</a>
-        <a href="#">◎ Dubai, UAE · Worldwide</a>
+        <a href="../index.html">◎ Dubai, UAE · Worldwide</a>
       </div>
     </div>
   </div>
@@ -887,8 +857,8 @@
 <!-- ============ FOOTER ============ -->
 <footer>
   <div class="footer-inner">
-    <a href="#home" class="logo">
-      <img src="CREAVA%20Logo%20Horizontal.png" alt="CREAIVA" />
+    <a href="../index.html" class="logo">
+      <img src="../CREAVA%20Logo%20Horizontal.png" alt="CREAIVA" />
     </a>
     <div class="copy">© <span id="year"></span> CREAIVA Studio · Dubai, UAE. All rights reserved.</div>
     <div class="socials">
@@ -909,200 +879,6 @@
 </footer>
 
 <script>
-  /* ============ SLIDER ============ */
-  /* per-slide copy: eyebrow · h1 (with one accent word) · lead paragraph */
-  const services = [
-    {
-      title:'AI Video & Images', tag:'AI Media',
-      desc:'Cinematic AI-generated visuals, product renders, and full campaign imagery.',
-      eyebrow:'AI Media · Generative Creative',
-      h1:['AI Video & Imagery That','Feels','Cinematic.'],
-      lead:'Generative visuals, product renders, and hero campaigns — engineered by AI, finished by artists.'
-    },
-    {
-      title:'Website Services', tag:'Web',
-      desc:'Design + build for landing pages, marketing sites, and e-commerce.',
-      eyebrow:'Web · Design & Development',
-      h1:['Websites Built to','Convert','.'],
-      lead:'Landing pages, marketing sites, and e-commerce — designed to look premium and perform hard.'
-    },
-    {
-      title:'Motion Design', tag:'Motion',
-      desc:'Kinetic type, brand animations, and cinematic explainer motion.',
-      eyebrow:'Motion · Kinetic Storytelling',
-      h1:['Motion That','Moves','Markets.'],
-      lead:'Kinetic type, brand animations, and cinematic motion crafted to stop the scroll.'
-    },
-    {
-      title:'3D Animation', tag:'3D',
-      desc:'Photoreal product visualization and 3D storytelling.',
-      eyebrow:'3D · Product & World Building',
-      h1:['3D Worlds With','Photoreal','Craft.'],
-      lead:'Product visualization and 3D storytelling with cinematic light, texture, and detail.'
-    },
-    {
-      title:'2D Animation', tag:'2D',
-      desc:'Illustrated explainers, character animation, and stylized loops.',
-      eyebrow:'2D · Illustration & Character',
-      h1:['2D Stories,','Handcrafted','Style.'],
-      lead:'Illustrated explainers, character animation, and stylized loops with real personality.'
-    },
-    {
-      title:'Video Editing', tag:'Post',
-      desc:'Story-first editing, color, and sound for ads, docs, and social.',
-      eyebrow:'Post · Editorial · Color · Sound',
-      h1:['Video Editing With','Story First','.'],
-      lead:'Sharp cuts, color, and sound for ads, docs, and social — post-production done right.'
-    },
-    {
-      title:'Logo & Branding', tag:'Brand',
-      desc:'Logos, visual identity systems, and complete brand guidelines.',
-      eyebrow:'Brand · Identity Systems',
-      h1:['Brands With','Presence','.'],
-      lead:'Logos, identity systems, and guidelines that make your brand impossible to ignore.'
-    },
-    {
-      title:'Photography', tag:'Photo',
-      desc:'Product, lifestyle, and campaign photography — studio & on-location.',
-      eyebrow:'Photo · Studio & On-Location',
-      h1:['Photography With','Purpose','.'],
-      lead:'Product, lifestyle, and campaign photography — studio and on-location, ready to publish.'
-    },
-    {
-      title:'Social Media Management', tag:'Social',
-      desc:'Content strategy, calendars, and daily creative for every platform.',
-      eyebrow:'Social · Content & Community',
-      h1:['Social That','Compounds','.'],
-      lead:'Content strategy, calendars, and daily creative built for platform-native growth.'
-    },
-    {
-      title:'CRM & Platform Services', tag:'Platform',
-      desc:'Custom CRMs, dashboards, and internal tools built to scale.',
-      eyebrow:'Platform · CRM & Internal Tools',
-      h1:['Platforms Built to','Scale','.'],
-      lead:'Custom CRMs, dashboards, and internal tools engineered around the way your team actually works.'
-    },
-    {
-      title:'Fintech Platform Services', tag:'Fintech',
-      desc:'Secure payment, ledger, and financial-product engineering.',
-      eyebrow:'Fintech · Payments & Ledger',
-      h1:['Fintech Products,','Bank-Grade','.'],
-      lead:'Secure payment, ledger, and financial-product engineering — from MVP to production.'
-    },
-  ];
-
-  const slides = document.querySelectorAll('.slide');
-  const dotsWrap = document.getElementById('dots');
-  const meta = document.getElementById('slideMeta');
-  const heroEyebrow = document.getElementById('heroEyebrow');
-  const heroTitle = document.getElementById('heroTitle');
-  const heroLead = document.getElementById('heroLead');
-  const fcards = document.querySelectorAll('.fcard');
-  let current = 0;
-  let timer;
-
-  // map each slide to one of the 4 feature cards for the active highlight
-  // 0 AI Media, 1 Digital Ads, 2 Web & Apps, 3 24/7 Support
-  const cardMap = [0,2,0,0,0,0,1,1,1,2,2];
-
-  // build dots
-  slides.forEach((_,i)=>{
-    const b = document.createElement('button');
-    b.className = 'dot' + (i===0?' active':'');
-    b.innerHTML = i===0 ? '<span class="fill"></span>' : '';
-    b.addEventListener('click',()=>go(i,true));
-    dotsWrap.appendChild(b);
-  });
-
-  function renderHeading(i){
-    const s = services[i];
-    heroEyebrow.textContent = s.eyebrow;
-    const [pre, accent, post] = s.h1;
-    heroTitle.innerHTML = `${pre} <span class="accent">${accent}</span>${post}`;
-    heroLead.textContent = s.lead;
-  }
-
-  function updateMeta(i){
-    const s = services[i];
-    const num = `${String(i+1).padStart(2,'0')} / ${String(slides.length).padStart(2,'0')}`;
-    meta.innerHTML = `<span class="chip"><span class="num">${num}</span><span class="dot-sep"></span><span class="title">${s.title}</span></span>`;
-  }
-
-  function swap(i){
-    // fade out
-    heroEyebrow.classList.add('out');
-    heroTitle.classList.add('out');
-    heroLead.classList.add('out');
-    setTimeout(()=>{
-      renderHeading(i);
-      heroEyebrow.classList.remove('out');
-      heroTitle.classList.remove('out');
-      heroLead.classList.remove('out');
-    }, 420);
-  }
-
-  function go(i,userTriggered){
-    slides[current].classList.remove('active');
-    const dots = document.querySelectorAll('.dot');
-    dots[current].classList.remove('active');
-    dots[current].innerHTML = '';
-    current = (i + slides.length) % slides.length;
-    slides[current].classList.add('active');
-    dots[current].classList.add('active');
-    dots[current].innerHTML = '<span class="fill"></span>';
-    updateMeta(current);
-    swap(current);
-    // sync active feature card
-    fcards.forEach((c,idx)=>c.classList.toggle('active', idx===cardMap[current]));
-    if(userTriggered) restart();
-  }
-  function next(){ go(current+1); }
-  function prev(){ go(current-1); }
-  function start(){ timer = setInterval(next, 5000); }
-  function restart(){ clearInterval(timer); start(); }
-
-  document.getElementById('next').addEventListener('click',()=>{ next(); restart(); });
-  document.getElementById('prev').addEventListener('click',()=>{ prev(); restart(); });
-
-  // initialize
-  renderHeading(0);
-  updateMeta(0);
-  start();
-
-  /* pause on tab hidden */
-  document.addEventListener('visibilitychange',()=>{
-    if(document.hidden) clearInterval(timer);
-    else start();
-  });
-
-  /* ============ SERVICES GRID ============ */
-  const imgs = [
-    'Ai%20Video%20and%20ImagesServices.png',
-    'Website%20Services.png',
-    'Motion%20design%20Services.png',
-    '3D%20Animaion%20Services.png',
-    '2D%20Animation%20Services.png',
-    'Video%20Editing%20Services.png',
-    'Logo%20branding%202%20Services.png',
-    'Photography%20%202%20Services.png',
-    'Social%20Media%20Management%20Services.png',
-    'CRM%20&%20Platform%20Services.png',
-    'Fintech%20Platform%20Services.png',
-  ];
-  const grid = document.getElementById('servicesGrid');
-  services.forEach((s,i)=>{
-    const el = document.createElement('div');
-    el.className = 'service reveal';
-    el.innerHTML = `
-      <span class="service-tag">${s.tag}</span>
-      <img src="${imgs[i]}" alt="${s.title}" loading="lazy" />
-      <div class="service-info">
-        <h3>${s.title}</h3>
-        <p>${s.desc}</p>
-      </div>`;
-    grid.appendChild(el);
-  });
-
   /* ============ NAV ============ */
   const nav = document.getElementById('nav');
   window.addEventListener('scroll',()=>{
@@ -1163,6 +939,7 @@
   }
   positionMegaPanels();
   window.addEventListener('resize', positionMegaPanels);
+
 
   /* ============ REVEAL ON SCROLL ============ */
   const io = new IntersectionObserver(entries=>{
