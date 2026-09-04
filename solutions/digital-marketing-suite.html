@@ -62,58 +62,59 @@
      Every li stretches to the full height of .nav-inner (its parent .links
      inherits the grid's stretch too), so the entire header height under a
      trigger word is hoverable — not just the text line. Combined with the
-     mega panel sitting flush (top:100%, zero gap) against the li's bottom
-     edge, there is no dead zone between "hovering the word" and "hovering
-     the panel", so the menu can no longer vanish while the pointer is
-     still travelling from one to the other. */
-  .links{list-style:none;margin:0;padding:0;display:flex;gap:36px;justify-self:center}
-  .links > li{list-style:none;position:relative;height:100%;display:flex;align-items:center}
-  .links > li > a{font-size:14px;font-weight:500;color:var(--muted);position:relative;transition:color .2s;display:inline-flex;align-items:center;gap:6px;cursor:pointer}
+     mega panel sitting flush (top:100%, zero gap) against header.nav's own
+     bottom edge, there is no dead zone between "hovering the word" and
+     "hovering the panel", so the menu can't vanish while the pointer is
+     still travelling from one to the other — regardless of how the panel
+     is aligned horizontally. li intentionally carries no position value:
+     that leaves header.nav (position:fixed) as the containing block for
+     the mega panel below, which is what lets it center on the whole bar. */
+  .links{list-style:none;margin:0;padding:0;display:flex;gap:40px;justify-self:center}
+  .links > li{list-style:none;height:100%;display:flex;align-items:center}
+  .links > li > a{font-size:14.5px;font-weight:500;color:var(--muted);position:relative;transition:color .15s ease;display:inline-flex;align-items:center;gap:6px;cursor:pointer;border-radius:8px}
   .links > li > a:hover,
-  .links > li.open > a{color:var(--text)}
-  .links > li > a::after{content:"";position:absolute;left:0;bottom:-8px;width:0;height:2px;background:linear-gradient(90deg,var(--brand),var(--brand-2));transition:width .25s}
+  .links > li.open > a,
+  .links > li:focus-within > a{color:var(--text)}
+  .links > li > a::after{content:"";position:absolute;left:0;bottom:-8px;width:0;height:2px;background:linear-gradient(90deg,var(--brand),var(--brand-2));transition:width .2s ease}
   .links > li:hover > a::after,
-  .links > li.open > a::after{width:100%}
+  .links > li.open > a::after,
+  .links > li:focus-within > a::after{width:100%}
   .links > li.has-dd > a::before{
     content:"";display:inline-block;width:6px;height:6px;
     border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;
     transform:rotate(45deg) translateY(-2px);margin-left:2px;order:2;
-    transition:transform .25s ease;
+    transition:transform .2s ease;
   }
   .links > li.has-dd:hover > a::before,
-  .links > li.has-dd.open > a::before{transform:rotate(225deg) translateY(2px)}
+  .links > li.has-dd.open > a::before,
+  .links > li.has-dd:focus-within > a::before{transform:rotate(225deg) translateY(2px)}
 
   /* --- mega menu panel ---
-     Anchored to its own <li> (which now spans the full header height), and
-     sits flush against the header's bottom edge (top:100%, no margin-top
-     gap) so there is zero dead space to cross on the way from the trigger
-     to the panel.
-
-     Hover-out grace period: the CLOSED state below carries a .5s transition
-     delay, so leaving the trigger doesn't hide the panel instantly — only
-     the OPEN state (:hover/.open) resets the delay to 0, so it still opens
-     immediately. */
+     Centered on the full nav bar (standard mega-menu behavior) and sitting
+     flush against header.nav's bottom edge (top:100%, no gap) — combined
+     with the full-height li above, there's no dead space to lose hover in.
+     width:min(...) always leaves margin on both sides when centered, so it
+     never needs a JS edge-flip the way a left-anchored panel would.
+     Open AND close both use the same quick, un-delayed transition — no
+     artificial grace period, just a standard hover dropdown. */
   .dropdown.mega{
-    position:absolute;top:100%;left:0;transform:translateY(8px);
-    width:min(1180px,calc(100vw - 64px));
-    padding:28px;border-radius:0 22px 22px 22px;
+    position:absolute;top:100%;left:50%;transform:translate(-50%,6px);
+    width:min(1280px,calc(100vw - 64px));
+    padding:30px;border-radius:20px;
     background:rgba(6,11,23,.98);border:1px solid var(--border);border-top:0;
-    box-shadow:0 40px 100px rgba(0,0,0,.6);
+    box-shadow:0 40px 100px rgba(0,0,0,.55);
     backdrop-filter:blur(18px);
     opacity:0;pointer-events:none;
-    transition:opacity .25s ease .5s,transform .25s ease .5s;
+    transition:opacity .18s ease,transform .18s ease;
     display:block;z-index:60;
   }
-  /* flipped by JS (positionMegaPanels) when the default left-anchor would
-     push the panel past the right edge of the viewport */
-  .dropdown.mega.align-right{left:auto;right:0;border-radius:22px 0 22px 22px}
   .links > li:hover > .dropdown.mega,
-  .links > li.open > .dropdown.mega{
-    opacity:1;pointer-events:auto;transform:translateY(0);
-    transition:opacity .25s ease,transform .25s ease;
+  .links > li.open > .dropdown.mega,
+  .links > li:focus-within > .dropdown.mega{
+    opacity:1;pointer-events:auto;transform:translate(-50%,0);
   }
 
-  .mega-body{display:flex;gap:26px;align-items:stretch}
+  .mega-body{display:flex;gap:28px;align-items:stretch}
   .mega-content{flex:1;min-width:0}
 
   /* 3 ROWS (not 3 columns): items flow down 3 rows then wrap into a new
@@ -124,15 +125,16 @@
   }
   .mega-grid{
     display:grid;grid-auto-flow:column;
-    grid-template-rows:repeat(3,auto);grid-auto-columns:minmax(155px,1fr);
-    gap:6px 20px;
+    grid-template-rows:repeat(3,auto);grid-auto-columns:minmax(170px,1fr);
+    gap:6px 22px;
   }
   .mega-item{
     display:flex;gap:12px;align-items:flex-start;
     padding:10px 12px;border-radius:12px;
-    transition:background .2s;
+    transition:background .15s ease;
   }
-  .mega-item:hover{background:rgba(31,168,255,.1)}
+  .mega-item:hover,
+  .mega-item:focus-visible{background:rgba(31,168,255,.1)}
   .mega-item .m-ico{
     width:36px;height:36px;border-radius:10px;flex-shrink:0;
     background:linear-gradient(135deg,rgba(31,168,255,.25),rgba(0,212,255,.08));
@@ -145,7 +147,7 @@
 
   /* --- right-side visual panel --- */
   .mega-visual{
-    width:210px;flex-shrink:0;border-radius:16px;overflow:hidden;
+    width:220px;flex-shrink:0;border-radius:16px;overflow:hidden;
     position:relative;background:var(--bg-1);
   }
   .mega-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -623,66 +625,66 @@
         <div class="mega-content">
         <h5 class="mega-label">All Services</h5>
         <div class="mega-grid">
-            <a class="mega-item" href="../services/logo-branding.html">
+            <a class="mega-item" href="services/logo-branding.html">
               <span class="m-ico"><svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg></span>
               <span class="m-txt"><h6>Logo &amp; Branding</h6><p>Identity systems &amp; guidelines</p></span>
             </a>
-            <a class="mega-item" href="../services/2d-animation.html">
+            <a class="mega-item" href="services/2d-animation.html">
               <span class="m-ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l6 3-6 3V9z" fill="currentColor" stroke="none"/></svg></span>
               <span class="m-txt"><h6>2D Animation</h6><p>Illustrated explainers &amp; loops</p></span>
             </a>
-            <a class="mega-item" href="../services/motion-design.html">
+            <a class="mega-item" href="services/motion-design.html">
               <span class="m-ico"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z" fill="currentColor" stroke="none"/></svg></span>
               <span class="m-txt"><h6>Motion Design</h6><p>Kinetic type &amp; brand animation</p></span>
             </a>
-            <a class="mega-item" href="../services/3d-animation.html">
+            <a class="mega-item" href="services/3d-animation.html">
               <span class="m-ico"><svg viewBox="0 0 24 24"><path d="M12 2l8 4.5v9L12 20l-8-4.5v-9L12 2z"/><path d="M4 6.5L12 11l8-4.5"/><path d="M12 11v9"/></svg></span>
               <span class="m-txt"><h6>3D Animation</h6><p>Photoreal product &amp; world CGI</p></span>
             </a>
-            <a class="mega-item" href="../services/ai-video-realistic.html">
+            <a class="mega-item" href="services/ai-video-realistic.html">
               <span class="m-ico"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="13" height="10" rx="2"/><path d="M16 10l5-3v10l-5-3"/></svg></span>
               <span class="m-txt"><h6>AI Video (Realistic)</h6><p>Generative, cinematic footage</p></span>
             </a>
-            <a class="mega-item" href="../services/photography-videography.html">
+            <a class="mega-item" href="services/photography-videography.html">
               <span class="m-ico"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="4"/></svg></span>
               <span class="m-txt"><h6>Photography &amp; Video</h6><p>Studio &amp; on-location shoots</p></span>
             </a>
-            <a class="mega-item" href="../services/website-design.html">
+            <a class="mega-item" href="services/website-design.html">
               <span class="m-ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><circle cx="6" cy="6.5" r=".6" fill="currentColor" stroke="none"/><circle cx="8.6" cy="6.5" r=".6" fill="currentColor" stroke="none"/></svg></span>
               <span class="m-txt"><h6>Website Design</h6><p>Marketing sites that convert</p></span>
             </a>
-            <a class="mega-item" href="../services/ecommerce.html">
+            <a class="mega-item" href="services/ecommerce.html">
               <span class="m-ico"><svg viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg></span>
               <span class="m-txt"><h6>E-Commerce</h6><p>Storefronts built to sell</p></span>
             </a>
-            <a class="mega-item" href="../services/platform-web.html">
+            <a class="mega-item" href="services/platform-web.html">
               <span class="m-ico"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="5" rx="1.5"/><rect x="4" y="14" width="16" height="5" rx="1.5"/><circle cx="7" cy="6.5" r=".6" fill="currentColor" stroke="none"/><circle cx="7" cy="16.5" r=".6" fill="currentColor" stroke="none"/></svg></span>
               <span class="m-txt"><h6>Platform Web</h6><p>Custom dashboards &amp; tools</p></span>
             </a>
-            <a class="mega-item" href="../services/seo-analytics.html">
+            <a class="mega-item" href="services/seo-analytics.html">
               <span class="m-ico"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="7"/><path d="M15 15l6 6"/></svg></span>
               <span class="m-txt"><h6>SEO &amp; Analytics</h6><p>Rank higher, measure growth</p></span>
             </a>
-            <a class="mega-item" href="../services/social-media-management.html">
+            <a class="mega-item" href="services/social-media-management.html">
               <span class="m-ico"><svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="2.2"/><circle cx="19" cy="6" r="2.2"/><circle cx="19" cy="18" r="2.2"/><path d="M7 10.8L17 6.8M7 13.2L17 17.2"/></svg></span>
               <span class="m-txt"><h6>Social Media Mgmt.</h6><p>Content &amp; community, daily</p></span>
             </a>
-            <a class="mega-item" href="../services/interactive-screen.html">
+            <a class="mega-item" href="services/interactive-screen.html">
               <span class="m-ico"><svg viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="2.5"/><circle cx="12" cy="18" r=".9" fill="currentColor" stroke="none"/></svg></span>
               <span class="m-txt"><h6>Interactive Screen</h6><p>Kiosks &amp; touch experiences</p></span>
             </a>
-            <a class="mega-item" href="../services/presentation-pro.html">
+            <a class="mega-item" href="services/presentation-pro.html">
               <span class="m-ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4"/><path d="M6.5 12l3-3 2 2 4-4"/></svg></span>
               <span class="m-txt"><h6>Presentation PRO</h6><p>Investor &amp; sales decks</p></span>
             </a>
-            <a class="mega-item" href="../services/interactive-presentation.html">
+            <a class="mega-item" href="services/interactive-presentation.html">
               <span class="m-ico"><svg viewBox="0 0 24 24"><path d="M5 3l14 8-6 2-2 6-6-16z"/></svg></span>
               <span class="m-txt"><h6>Interactive Presentation</h6><p>Click-through live experiences</p></span>
             </a>
         </div>
         <div class="mega-foot">
           <p>14 disciplines, one creative engine.</p>
-          <a href="../index.html#services">View all services →</a>
+          <a href="index.html#services">View all services →</a>
         </div>
         </div>
         <div class="mega-visual">
@@ -704,38 +706,38 @@
         <div class="mega-content">
         <h5 class="mega-label">Packaged Solutions</h5>
         <div class="mega-grid">
-          <a class="mega-item" href="../solutions/brand-launch-package.html">
+          <a class="mega-item" href="solutions/brand-launch-package.html">
             <span class="m-ico"><svg viewBox="0 0 24 24"><path d="M12 2c3 2 5 6 5 10 0 2-1 4-2 5l-3 3-3-3c-1-1-2-3-2-5 0-4 2-8 5-10z"/><circle cx="12" cy="10" r="1.6" fill="currentColor" stroke="none"/><path d="M9 17l-2 4M15 17l2 4"/></svg></span>
             <span class="m-txt"><h6>Brand Launch Package</h6><p>Identity + launch content, bundled</p></span>
           </a>
-          <a class="mega-item" href="../solutions/digital-marketing-suite.html">
+          <a class="mega-item" href="solutions/digital-marketing-suite.html">
             <span class="m-ico"><svg viewBox="0 0 24 24"><path d="M3 10v4h3l6 4V6L6 10H3z"/><path d="M15 9a4 4 0 0 1 0 6"/><path d="M18 6a8 8 0 0 1 0 12"/></svg></span>
             <span class="m-txt"><h6>Digital Marketing Suite</h6><p>Social, ads &amp; SEO working together</p></span>
           </a>
-          <a class="mega-item" href="../solutions/ai-content-studio.html">
+          <a class="mega-item" href="solutions/ai-content-studio.html">
             <span class="m-ico"><svg viewBox="0 0 24 24"><path d="M12 3l1.6 4.4L18 9l-4.4 1.6L12 15l-1.6-4.4L6 9l4.4-1.6L12 3z"/><path d="M19 14l.8 2.2L22 17l-2.2.8L19 20l-.8-2.2L16 17l2.2-.8L19 14z"/></svg></span>
             <span class="m-txt"><h6>AI Content Studio</h6><p>AI video &amp; imagery at scale</p></span>
           </a>
-          <a class="mega-item" href="../solutions/ecommerce-web-platforms.html">
+          <a class="mega-item" href="solutions/ecommerce-web-platforms.html">
             <span class="m-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span>
             <span class="m-txt"><h6>E-Commerce &amp; Web</h6><p>Storefronts and web platforms</p></span>
           </a>
-          <a class="mega-item" href="../solutions/corporate-presentations.html">
+          <a class="mega-item" href="solutions/corporate-presentations.html">
             <span class="m-ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4"/><path d="M6.5 12l3-3 2 2 4-4"/></svg></span>
             <span class="m-txt"><h6>Corporate Presentations</h6><p>Decks &amp; interactive systems</p></span>
           </a>
-          <a class="mega-item" href="../solutions/interactive-experience.html">
+          <a class="mega-item" href="solutions/interactive-experience.html">
             <span class="m-ico"><svg viewBox="0 0 24 24"><path d="M5 3l14 8-6 2-2 6-6-16z"/></svg></span>
             <span class="m-txt"><h6>Interactive Experience</h6><p>Touch &amp; gesture-driven design</p></span>
           </a>
-          <a class="mega-item" href="../solutions/growth-analytics.html">
+          <a class="mega-item" href="solutions/growth-analytics.html">
             <span class="m-ico"><svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></span>
             <span class="m-txt"><h6>Growth &amp; Analytics</h6><p>SEO, tracking &amp; conversion</p></span>
           </a>
         </div>
         <div class="mega-foot">
           <p>Not sure which fits your brand?</p>
-          <a href="../index.html#contact">Get a recommendation →</a>
+          <a href="index.html#contact">Get a recommendation →</a>
         </div>
         </div>
         <div class="mega-visual">
@@ -750,12 +752,12 @@
       </div>
     </li>
 
-    <li><a href="../index.html#about">Our Team</a></li>
-    <li><a href="../index.html#portfolio">Portfolio</a></li>
+    <li><a href="index.html#about">Our Team</a></li>
+    <li><a href="index.html#portfolio">Portfolio</a></li>
   </ul>
 
   <div class="nav-right">
-    <a href="../index.html#contact" class="cta">Start a Project</a>
+    <a href="index.html#contact" class="cta">Start a Project</a>
     <button class="burger" id="burger" aria-label="Menu">☰</button>
   </div>
  </div>
@@ -927,21 +929,6 @@
     }
   });
 
-  // Mega panels open left-aligned under their trigger by default; on
-  // narrower desktop widths that can push the panel past the right edge
-  // of the viewport, so flip it to right-aligned when that would happen.
-  function positionMegaPanels(){
-    if(window.innerWidth <= 960) return; // mobile uses the static accordion layout
-    navLinks.querySelectorAll('li.has-dd').forEach(li=>{
-      const panel = li.querySelector('.dropdown.mega');
-      if(!panel) return;
-      const liRect = li.getBoundingClientRect();
-      const panelWidth = panel.offsetWidth;
-      panel.classList.toggle('align-right', liRect.left + panelWidth > window.innerWidth - 16);
-    });
-  }
-  positionMegaPanels();
-  window.addEventListener('resize', positionMegaPanels);
 
 
   /* ============ REVEAL ON SCROLL ============ */

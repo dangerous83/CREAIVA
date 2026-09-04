@@ -62,58 +62,59 @@
      Every li stretches to the full height of .nav-inner (its parent .links
      inherits the grid's stretch too), so the entire header height under a
      trigger word is hoverable — not just the text line. Combined with the
-     mega panel sitting flush (top:100%, zero gap) against the li's bottom
-     edge, there is no dead zone between "hovering the word" and "hovering
-     the panel", so the menu can no longer vanish while the pointer is
-     still travelling from one to the other. */
-  .links{list-style:none;margin:0;padding:0;display:flex;gap:36px;justify-self:center}
-  .links > li{list-style:none;position:relative;height:100%;display:flex;align-items:center}
-  .links > li > a{font-size:14px;font-weight:500;color:var(--muted);position:relative;transition:color .2s;display:inline-flex;align-items:center;gap:6px;cursor:pointer}
+     mega panel sitting flush (top:100%, zero gap) against header.nav's own
+     bottom edge, there is no dead zone between "hovering the word" and
+     "hovering the panel", so the menu can't vanish while the pointer is
+     still travelling from one to the other — regardless of how the panel
+     is aligned horizontally. li intentionally carries no position value:
+     that leaves header.nav (position:fixed) as the containing block for
+     the mega panel below, which is what lets it center on the whole bar. */
+  .links{list-style:none;margin:0;padding:0;display:flex;gap:40px;justify-self:center}
+  .links > li{list-style:none;height:100%;display:flex;align-items:center}
+  .links > li > a{font-size:14.5px;font-weight:500;color:var(--muted);position:relative;transition:color .15s ease;display:inline-flex;align-items:center;gap:6px;cursor:pointer;border-radius:8px}
   .links > li > a:hover,
-  .links > li.open > a{color:var(--text)}
-  .links > li > a::after{content:"";position:absolute;left:0;bottom:-8px;width:0;height:2px;background:linear-gradient(90deg,var(--brand),var(--brand-2));transition:width .25s}
+  .links > li.open > a,
+  .links > li:focus-within > a{color:var(--text)}
+  .links > li > a::after{content:"";position:absolute;left:0;bottom:-8px;width:0;height:2px;background:linear-gradient(90deg,var(--brand),var(--brand-2));transition:width .2s ease}
   .links > li:hover > a::after,
-  .links > li.open > a::after{width:100%}
+  .links > li.open > a::after,
+  .links > li:focus-within > a::after{width:100%}
   .links > li.has-dd > a::before{
     content:"";display:inline-block;width:6px;height:6px;
     border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;
     transform:rotate(45deg) translateY(-2px);margin-left:2px;order:2;
-    transition:transform .25s ease;
+    transition:transform .2s ease;
   }
   .links > li.has-dd:hover > a::before,
-  .links > li.has-dd.open > a::before{transform:rotate(225deg) translateY(2px)}
+  .links > li.has-dd.open > a::before,
+  .links > li.has-dd:focus-within > a::before{transform:rotate(225deg) translateY(2px)}
 
   /* --- mega menu panel ---
-     Anchored to its own <li> (which now spans the full header height), and
-     sits flush against the header's bottom edge (top:100%, no margin-top
-     gap) so there is zero dead space to cross on the way from the trigger
-     to the panel.
-
-     Hover-out grace period: the CLOSED state below carries a .5s transition
-     delay, so leaving the trigger doesn't hide the panel instantly — only
-     the OPEN state (:hover/.open) resets the delay to 0, so it still opens
-     immediately. */
+     Centered on the full nav bar (standard mega-menu behavior) and sitting
+     flush against header.nav's bottom edge (top:100%, no gap) — combined
+     with the full-height li above, there's no dead space to lose hover in.
+     width:min(...) always leaves margin on both sides when centered, so it
+     never needs a JS edge-flip the way a left-anchored panel would.
+     Open AND close both use the same quick, un-delayed transition — no
+     artificial grace period, just a standard hover dropdown. */
   .dropdown.mega{
-    position:absolute;top:100%;left:0;transform:translateY(8px);
-    width:min(1180px,calc(100vw - 64px));
-    padding:28px;border-radius:0 22px 22px 22px;
+    position:absolute;top:100%;left:50%;transform:translate(-50%,6px);
+    width:min(1280px,calc(100vw - 64px));
+    padding:30px;border-radius:20px;
     background:rgba(6,11,23,.98);border:1px solid var(--border);border-top:0;
-    box-shadow:0 40px 100px rgba(0,0,0,.6);
+    box-shadow:0 40px 100px rgba(0,0,0,.55);
     backdrop-filter:blur(18px);
     opacity:0;pointer-events:none;
-    transition:opacity .25s ease .5s,transform .25s ease .5s;
+    transition:opacity .18s ease,transform .18s ease;
     display:block;z-index:60;
   }
-  /* flipped by JS (positionMegaPanels) when the default left-anchor would
-     push the panel past the right edge of the viewport */
-  .dropdown.mega.align-right{left:auto;right:0;border-radius:22px 0 22px 22px}
   .links > li:hover > .dropdown.mega,
-  .links > li.open > .dropdown.mega{
-    opacity:1;pointer-events:auto;transform:translateY(0);
-    transition:opacity .25s ease,transform .25s ease;
+  .links > li.open > .dropdown.mega,
+  .links > li:focus-within > .dropdown.mega{
+    opacity:1;pointer-events:auto;transform:translate(-50%,0);
   }
 
-  .mega-body{display:flex;gap:26px;align-items:stretch}
+  .mega-body{display:flex;gap:28px;align-items:stretch}
   .mega-content{flex:1;min-width:0}
 
   /* 3 ROWS (not 3 columns): items flow down 3 rows then wrap into a new
@@ -124,15 +125,16 @@
   }
   .mega-grid{
     display:grid;grid-auto-flow:column;
-    grid-template-rows:repeat(3,auto);grid-auto-columns:minmax(155px,1fr);
-    gap:6px 20px;
+    grid-template-rows:repeat(3,auto);grid-auto-columns:minmax(170px,1fr);
+    gap:6px 22px;
   }
   .mega-item{
     display:flex;gap:12px;align-items:flex-start;
     padding:10px 12px;border-radius:12px;
-    transition:background .2s;
+    transition:background .15s ease;
   }
-  .mega-item:hover{background:rgba(31,168,255,.1)}
+  .mega-item:hover,
+  .mega-item:focus-visible{background:rgba(31,168,255,.1)}
   .mega-item .m-ico{
     width:36px;height:36px;border-radius:10px;flex-shrink:0;
     background:linear-gradient(135deg,rgba(31,168,255,.25),rgba(0,212,255,.08));
@@ -145,7 +147,7 @@
 
   /* --- right-side visual panel --- */
   .mega-visual{
-    width:210px;flex-shrink:0;border-radius:16px;overflow:hidden;
+    width:220px;flex-shrink:0;border-radius:16px;overflow:hidden;
     position:relative;background:var(--bg-1);
   }
   .mega-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -1148,21 +1150,6 @@
     }
   });
 
-  // Mega panels open left-aligned under their trigger by default; on
-  // narrower desktop widths that can push the panel past the right edge
-  // of the viewport, so flip it to right-aligned when that would happen.
-  function positionMegaPanels(){
-    if(window.innerWidth <= 960) return; // mobile uses the static accordion layout
-    navLinks.querySelectorAll('li.has-dd').forEach(li=>{
-      const panel = li.querySelector('.dropdown.mega');
-      if(!panel) return;
-      const liRect = li.getBoundingClientRect();
-      const panelWidth = panel.offsetWidth;
-      panel.classList.toggle('align-right', liRect.left + panelWidth > window.innerWidth - 16);
-    });
-  }
-  positionMegaPanels();
-  window.addEventListener('resize', positionMegaPanels);
 
   /* ============ REVEAL ON SCROLL ============ */
   const io = new IntersectionObserver(entries=>{
