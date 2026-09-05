@@ -489,8 +489,157 @@
   }
 
   /* reveal on scroll */
-  .reveal{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
+  .reveal{opacity:0;transform:translateY(30px);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1)}
   .reveal.in{opacity:1;transform:none}
+  /* directional + scale variants */
+  .reveal-left{opacity:0;transform:translateX(-40px);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1)}
+  .reveal-left.in{opacity:1;transform:none}
+  .reveal-right{opacity:0;transform:translateX(40px);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1)}
+  .reveal-right.in{opacity:1;transform:none}
+  .reveal-scale{opacity:0;transform:scale(.92);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1)}
+  .reveal-scale.in{opacity:1;transform:none}
+  /* stagger delays (apply to children) */
+  .stagger > *{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1)}
+  .stagger.in > *{opacity:1;transform:none}
+  .stagger.in > *:nth-child(1){transition-delay:.05s}
+  .stagger.in > *:nth-child(2){transition-delay:.13s}
+  .stagger.in > *:nth-child(3){transition-delay:.21s}
+  .stagger.in > *:nth-child(4){transition-delay:.29s}
+  .stagger.in > *:nth-child(5){transition-delay:.37s}
+  .stagger.in > *:nth-child(6){transition-delay:.45s}
+  .stagger.in > *:nth-child(7){transition-delay:.53s}
+  .stagger.in > *:nth-child(8){transition-delay:.61s}
+  @media(prefers-reduced-motion:reduce){
+    .reveal,.reveal-left,.reveal-right,.reveal-scale,.stagger > *{transition:none;opacity:1;transform:none}
+  }
+
+  /* ================= TRUSTED-BY MARQUEE ================= */
+  #trusted{padding:44px 0;border-top:1px solid rgba(80,140,220,.1);border-bottom:1px solid rgba(80,140,220,.1);background:var(--bg-1);overflow:hidden}
+  #trusted .lead-line{text-align:center;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-bottom:26px;font-weight:600}
+  .marquee{display:flex;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+  .marquee-track{display:flex;gap:64px;padding-right:64px;flex-shrink:0;animation:marquee 32s linear infinite}
+  .marquee:hover .marquee-track{animation-play-state:paused}
+  .marquee-track span{font-family:'Poppins',sans-serif;font-weight:700;font-size:22px;color:rgba(150,164,194,.55);white-space:nowrap;letter-spacing:1px;transition:color .3s}
+  .marquee-track span:hover{color:var(--brand-2)}
+  @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  /* ================= STATS BAND ================= */
+  #stats{background:linear-gradient(180deg,var(--bg-1),var(--bg-0));position:relative;overflow:hidden}
+  #stats::before{content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:700px;height:700px;background:radial-gradient(circle,rgba(31,168,255,.08),transparent 60%);filter:blur(60px);pointer-events:none}
+  .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;position:relative;z-index:1}
+  .stat-block{text-align:center;padding:34px 20px;border:1px solid var(--border);border-radius:18px;background:var(--card);backdrop-filter:blur(6px);transition:transform .3s,border-color .3s}
+  .stat-block:hover{transform:translateY(-6px);border-color:var(--brand)}
+  .stat-block .big{font-family:'Poppins',sans-serif;font-weight:900;font-size:clamp(38px,5vw,56px);line-height:1;background:linear-gradient(180deg,#fff,var(--brand-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .stat-block .cap{color:var(--muted);font-size:13px;letter-spacing:1.5px;text-transform:uppercase;margin-top:12px}
+  @media(max-width:860px){.stats-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:420px){.stats-grid{grid-template-columns:1fr}}
+
+  /* ================= WHY / CAPABILITIES ================= */
+  #why-home{background:var(--bg-0)}
+  .why-home-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  @media(max-width:960px){.why-home-grid{grid-template-columns:1fr}}
+  .cap-card{padding:34px 30px;border-radius:20px;border:1px solid var(--border);background:linear-gradient(180deg,rgba(15,26,48,.7),rgba(6,11,23,.5));position:relative;overflow:hidden;transition:transform .35s,border-color .35s}
+  .cap-card:hover{transform:translateY(-6px);border-color:var(--brand);box-shadow:0 24px 60px rgba(31,168,255,.15)}
+  .cap-card::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 100% 0%,rgba(31,168,255,.12),transparent 45%);opacity:0;transition:opacity .35s}
+  .cap-card:hover::after{opacity:1}
+  .cap-card > *{position:relative;z-index:1}
+  .cap-ico{width:54px;height:54px;border-radius:15px;margin-bottom:20px;background:linear-gradient(135deg,rgba(31,168,255,.28),rgba(0,212,255,.08));border:1px solid rgba(31,168,255,.35);display:grid;place-items:center;color:var(--brand-2)}
+  .cap-ico svg{width:26px;height:26px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+  .cap-card h4{font-family:'Poppins',sans-serif;font-weight:700;font-size:19px;color:#fff;margin-bottom:12px}
+  .cap-card p{color:var(--muted);font-size:14.5px;line-height:1.7}
+  .cap-card .cap-list{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-direction:column;gap:8px}
+  .cap-card .cap-list li{color:var(--muted);font-size:13.5px;display:flex;align-items:center;gap:9px}
+  .cap-card .cap-list li::before{content:"";width:15px;height:15px;flex-shrink:0;border-radius:50%;background:rgba(31,168,255,.15);border:1px solid var(--brand);position:relative}
+  .cap-card .cap-list li{position:relative}
+
+  /* ================= FEATURED WORK ================= */
+  #featured{background:linear-gradient(180deg,var(--bg-0),var(--bg-1))}
+  .feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  @media(max-width:900px){.feat-grid{grid-template-columns:1fr}}
+  .feat-card{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:4/5;border:1px solid var(--border);cursor:pointer;transition:transform .4s,border-color .4s}
+  .feat-card:hover{transform:translateY(-8px);border-color:var(--brand);box-shadow:0 30px 70px rgba(31,168,255,.2)}
+  .feat-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s ease}
+  .feat-card:hover img{transform:scale(1.08)}
+  .feat-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(3,6,13,.4) 55%,rgba(3,6,13,.96) 100%)}
+  .feat-info{position:absolute;left:24px;right:24px;bottom:24px;z-index:2}
+  .feat-info .cat{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--brand-2);font-weight:700}
+  .feat-info h4{font-family:'Poppins',sans-serif;font-weight:700;font-size:21px;color:#fff;margin:8px 0 8px}
+  .feat-info p{color:var(--muted);font-size:13.5px;line-height:1.55;opacity:0;max-height:0;transition:opacity .35s,max-height .4s}
+  .feat-card:hover .feat-info p{opacity:1;max-height:90px}
+  .feat-cta{text-align:center;margin-top:44px}
+
+  /* ================= TESTIMONIALS ================= */
+  #testimonials{background:var(--bg-1)}
+  .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  @media(max-width:960px){.testi-grid{grid-template-columns:1fr}}
+  .testi-card{padding:32px 30px;border-radius:20px;border:1px solid var(--border);background:var(--card);position:relative;transition:transform .3s,border-color .3s}
+  .testi-card:hover{transform:translateY(-5px);border-color:var(--brand)}
+  .testi-card .quote-mark{font-family:'Poppins',sans-serif;font-size:60px;line-height:.6;color:var(--brand);opacity:.35;height:30px}
+  .testi-card p.q{color:var(--text);font-size:15px;line-height:1.75;margin:14px 0 22px}
+  .testi-stars{color:var(--brand-2);font-size:14px;letter-spacing:2px;margin-bottom:16px}
+  .testi-author{display:flex;align-items:center;gap:13px}
+  .testi-author .av{width:44px;height:44px;border-radius:50%;flex-shrink:0;background:linear-gradient(135deg,var(--brand),var(--brand-2));display:grid;place-items:center;font-family:'Poppins',sans-serif;font-weight:700;color:#001428;font-size:16px}
+  .testi-author .who{line-height:1.3}
+  .testi-author .who .n{font-family:'Poppins',sans-serif;font-weight:600;font-size:14px;color:#fff}
+  .testi-author .who .r{color:var(--muted);font-size:12px}
+
+  /* ================= HOME FAQ ================= */
+  #home-faq{background:linear-gradient(180deg,var(--bg-1),var(--bg-0))}
+  .hfaq-list{max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+  .hfaq{border:1px solid var(--border);border-radius:14px;background:var(--card);overflow:hidden;transition:border-color .3s}
+  .hfaq[open]{border-color:var(--brand)}
+  .hfaq summary{list-style:none;cursor:pointer;padding:20px 24px;font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:20px}
+  .hfaq summary::-webkit-details-marker{display:none}
+  .hfaq summary::after{content:"";width:10px;height:10px;border-right:1.5px solid var(--brand-2);border-bottom:1.5px solid var(--brand-2);transform:rotate(45deg) translateY(-2px);transition:transform .25s ease;flex-shrink:0}
+  .hfaq[open] summary::after{transform:rotate(225deg) translateY(2px)}
+  .hfaq .hfaq-body{padding:0 24px 20px;color:var(--muted);font-size:14px;line-height:1.7}
+
+  /* ================= FLOATING WIDGETS ================= */
+  .fab-stack{position:fixed;right:22px;bottom:22px;z-index:200;display:flex;flex-direction:column;gap:14px;align-items:flex-end}
+  .fab{width:58px;height:58px;border-radius:50%;border:none;cursor:pointer;display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.4);transition:transform .25s,box-shadow .25s;position:relative}
+  .fab:hover{transform:scale(1.08)}
+  .fab svg{width:30px;height:30px}
+  .fab.wa{background:#25D366}
+  .fab.wa:hover{box-shadow:0 14px 40px rgba(37,211,102,.5)}
+  .fab.ai{background:linear-gradient(135deg,var(--brand),var(--brand-2))}
+  .fab.ai:hover{box-shadow:0 14px 40px rgba(31,168,255,.55)}
+  .fab .fab-pulse{position:absolute;inset:0;border-radius:50%;animation:fabpulse 2.4s ease-out infinite}
+  .fab.wa .fab-pulse{box-shadow:0 0 0 0 rgba(37,211,102,.5)}
+  .fab.ai .fab-pulse{box-shadow:0 0 0 0 rgba(31,168,255,.5)}
+  @keyframes fabpulse{to{box-shadow:0 0 0 16px rgba(0,0,0,0)}}
+  .fab-tip{position:absolute;right:70px;top:50%;transform:translateY(-50%);background:rgba(6,11,23,.96);border:1px solid var(--border);color:var(--text);font-size:12.5px;font-weight:500;padding:8px 14px;border-radius:10px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;backdrop-filter:blur(8px)}
+  .fab:hover .fab-tip{opacity:1;transform:translateY(-50%) translateX(-4px)}
+
+  /* AI chat panel */
+  .ai-panel{position:fixed;right:22px;bottom:94px;z-index:201;width:min(370px,calc(100vw - 44px));height:min(540px,calc(100vh - 140px));background:rgba(8,14,26,.98);border:1px solid var(--border);border-radius:22px;box-shadow:0 40px 100px rgba(0,0,0,.6);backdrop-filter:blur(20px);display:flex;flex-direction:column;overflow:hidden;opacity:0;pointer-events:none;transform:translateY(20px) scale(.96);transform-origin:bottom right;transition:opacity .28s ease,transform .28s ease}
+  .ai-panel.open{opacity:1;pointer-events:auto;transform:translateY(0) scale(1)}
+  .ai-head{padding:18px 20px;background:linear-gradient(135deg,rgba(31,168,255,.18),rgba(0,212,255,.05));border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px}
+  .ai-head .ai-avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--brand-2));display:grid;place-items:center;flex-shrink:0}
+  .ai-head .ai-avatar svg{width:22px;height:22px;stroke:#001428;fill:none;stroke-width:2}
+  .ai-head .ai-meta{flex:1;line-height:1.35}
+  .ai-head .ai-meta .name{font-family:'Poppins',sans-serif;font-weight:700;font-size:15px;color:#fff}
+  .ai-head .ai-meta .status{font-size:11.5px;color:var(--brand-2);display:flex;align-items:center;gap:6px}
+  .ai-head .ai-meta .status::before{content:"";width:7px;height:7px;border-radius:50%;background:#25D366;box-shadow:0 0 8px #25D366}
+  .ai-head .ai-close{background:none;border:none;color:var(--muted);font-size:22px;cursor:pointer;line-height:1;padding:4px;transition:color .2s}
+  .ai-head .ai-close:hover{color:#fff}
+  .ai-body{flex:1;overflow-y:auto;padding:20px;display:flex;flex-direction:column;gap:14px}
+  .ai-msg{max-width:82%;padding:12px 15px;border-radius:16px;font-size:14px;line-height:1.55;animation:msgin .3s ease}
+  @keyframes msgin{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  .ai-msg.bot{align-self:flex-start;background:rgba(31,168,255,.12);border:1px solid rgba(31,168,255,.2);color:var(--text);border-bottom-left-radius:4px}
+  .ai-msg.user{align-self:flex-end;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#001428;font-weight:500;border-bottom-right-radius:4px}
+  .ai-quick{display:flex;flex-wrap:wrap;gap:8px;padding:0 20px 12px}
+  .ai-quick button{background:rgba(31,168,255,.1);border:1px solid var(--border);color:var(--brand-2);font-size:12.5px;padding:8px 13px;border-radius:999px;cursor:pointer;transition:all .2s;font-family:inherit}
+  .ai-quick button:hover{background:rgba(31,168,255,.2);color:#fff;border-color:var(--brand)}
+  .ai-input{display:flex;gap:8px;padding:14px 16px;border-top:1px solid var(--border);background:rgba(6,11,23,.6)}
+  .ai-input input{flex:1;background:rgba(15,26,48,.8);border:1px solid var(--border);border-radius:999px;padding:11px 16px;color:var(--text);font-size:14px;font-family:inherit;outline:none;transition:border-color .2s}
+  .ai-input input:focus{border-color:var(--brand)}
+  .ai-input button{width:42px;height:42px;border-radius:50%;border:none;background:linear-gradient(135deg,var(--brand),var(--brand-2));cursor:pointer;display:grid;place-items:center;flex-shrink:0;transition:transform .2s}
+  .ai-input button:hover{transform:scale(1.08)}
+  .ai-input button svg{width:20px;height:20px;stroke:#001428;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  @media(max-width:520px){
+    .ai-panel{right:12px;bottom:88px}
+    .fab-stack{right:14px;bottom:14px}
+  }
 
   /* ================= RESPONSIVE ================= */
   /* widescreen: give more breathing room */
@@ -821,22 +970,44 @@
   </div>
 </section>
 
+<!-- ============ TRUSTED-BY MARQUEE ============ -->
+<section id="trusted">
+  <p class="lead-line">Trusted by ambitious brands across the UAE &amp; beyond</p>
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Aurora Fintech</span><span>Nova Motors</span><span>Skyline Interiors</span><span>Levant Group</span><span>Meridian</span><span>Zenith</span><span>Oasis Retail</span><span>Pearl Ventures</span>
+      <span>Aurora Fintech</span><span>Nova Motors</span><span>Skyline Interiors</span><span>Levant Group</span><span>Meridian</span><span>Zenith</span><span>Oasis Retail</span><span>Pearl Ventures</span>
+    </div>
+  </div>
+</section>
+
 <!-- ============ ABOUT ============ -->
 <section id="about">
   <div class="container about-grid">
-    <div class="about-text reveal">
+    <div class="about-text reveal-left">
       <span class="eyebrow">About CREAIVA</span>
       <h2 class="gradient-head">A Dubai studio built for the <span class="accent">AI era</span>.</h2>
       <p>CREAIVA is an AI specialist and digital advertising company headquartered in Dubai. We blend generative AI, cinematic craft, and data-driven media to help brands launch faster, look bolder, and perform harder across every screen.</p>
       <p>From AI-generated campaign visuals to full-stack fintech platforms, our team unites strategists, designers, motion artists, and engineers under one roof — so your brand ships as one seamless system.</p>
-      <div class="stat-row">
-        <div class="stat"><div class="num">11+</div><div class="lbl">Service Lines</div></div>
-        <div class="stat"><div class="num">100%</div><div class="lbl">In-House Talent</div></div>
-        <div class="stat"><div class="num">24/7</div><div class="lbl">AI-Powered</div></div>
+      <div class="hero-ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:28px">
+        <a href="#services" class="btn-primary">Explore Services →</a>
+        <a href="our-team.html" class="btn-outline">Meet the Team</a>
       </div>
     </div>
-    <div class="about-visual reveal">
+    <div class="about-visual reveal-right">
       <img src="creaiva-icon.png" alt="CREAIVA emblem" />
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS BAND ============ -->
+<section id="stats">
+  <div class="container">
+    <div class="stats-grid stagger">
+      <div class="stat-block"><div class="big" data-count="150" data-suffix="+">0</div><div class="cap">Projects Delivered</div></div>
+      <div class="stat-block"><div class="big" data-count="14" data-suffix="">0</div><div class="cap">Service Disciplines</div></div>
+      <div class="stat-block"><div class="big" data-count="40" data-suffix="+">0</div><div class="cap">Brands Served</div></div>
+      <div class="stat-block"><div class="big" data-count="98" data-suffix="%">0</div><div class="cap">Client Satisfaction</div></div>
     </div>
   </div>
 </section>
@@ -847,9 +1018,40 @@
     <div class="section-head reveal">
       <span class="eyebrow">What We Do</span>
       <h2>Our <span class="accent">Services</span></h2>
-      <p>Eleven specialized disciplines, one unified creative engine. Pick a service — or combine them into a complete brand system.</p>
+      <p>Fourteen specialized disciplines, one unified creative engine. Pick a service — or combine them into a complete brand system.</p>
     </div>
-    <div class="services-grid" id="servicesGrid"></div>
+    <div class="services-grid stagger" id="servicesGrid"></div>
+  </div>
+</section>
+
+<!-- ============ WHY / CAPABILITIES ============ -->
+<section id="why-home">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Why CREAIVA</span>
+      <h2>One Team, <span class="accent">Every Discipline</span></h2>
+      <p>Most brands juggle a design agency, a dev shop, a video house, and a marketing team. We're all of it — under one roof, sharing one brief.</p>
+    </div>
+    <div class="why-home-grid stagger">
+      <div class="cap-card">
+        <div class="cap-ico"><svg viewBox="0 0 24 24"><path d="M12 3l1.6 4.4L18 9l-4.4 1.6L12 15l-1.6-4.4L6 9l4.4-1.6L12 3z"/><path d="M19 14l.8 2.2L22 17l-2.2.8L19 20l-.8-2.2L16 17l2.2-.8L19 14z"/></svg></div>
+        <h4>AI-Native Craft</h4>
+        <p>We build with generative AI at the core of our pipeline — moving faster and testing more directions than a traditional studio, without losing the human finish.</p>
+        <ul class="cap-list"><li>Generative video &amp; imagery</li><li>Rapid concept iteration</li><li>Human quality pass on everything</li></ul>
+      </div>
+      <div class="cap-card">
+        <div class="cap-ico"><svg viewBox="0 0 24 24"><path d="M12 2l8 4.5v9L12 20l-8-4.5v-9L12 2z"/><path d="M4 6.5L12 11l8-4.5"/><path d="M12 11v9"/></svg></div>
+        <h4>End-to-End Delivery</h4>
+        <p>Brand, content, web, platforms, and growth — designed together as one system, so nothing you ship ever feels bolted on from a different vendor.</p>
+        <ul class="cap-list"><li>Strategy to launch, in-house</li><li>One accountable team</li><li>Consistent brand everywhere</li></ul>
+      </div>
+      <div class="cap-card">
+        <div class="cap-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
+        <h4>Dubai-Native, Globally Fluent</h4>
+        <p>Bilingual English + Arabic creative, deep GCC market fluency, and international polish — built for brands launching here and scaling worldwide.</p>
+        <ul class="cap-list"><li>EN + AR, RTL-native</li><li>Local payment &amp; platform stack</li><li>24-hour response, any timezone</li></ul>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -861,11 +1063,100 @@
       <h2>Our <span class="accent">Process</span></h2>
       <p>A lean, transparent workflow that gets your project from concept to launch — fast, without compromising craft.</p>
     </div>
-    <div class="process-grid">
-      <div class="step reveal"><div class="step-num">01</div><h4>Discover</h4><p>We dig into your brand, audience, and goals to shape a sharp creative brief.</p></div>
-      <div class="step reveal"><div class="step-num">02</div><h4>Design</h4><p>Concepts, storyboards, and prototypes — refined visually before a single frame ships.</p></div>
-      <div class="step reveal"><div class="step-num">03</div><h4>Build</h4><p>AI-assisted production and full-stack engineering — always in your voice, never generic.</p></div>
-      <div class="step reveal"><div class="step-num">04</div><h4>Launch</h4><p>Deploy, measure, iterate. We stay with you post-launch to keep the momentum.</p></div>
+    <div class="process-grid stagger">
+      <div class="step"><div class="step-num">01</div><h4>Discover</h4><p>We dig into your brand, audience, and goals to shape a sharp creative brief.</p></div>
+      <div class="step"><div class="step-num">02</div><h4>Design</h4><p>Concepts, storyboards, and prototypes — refined visually before a single frame ships.</p></div>
+      <div class="step"><div class="step-num">03</div><h4>Build</h4><p>AI-assisted production and full-stack engineering — always in your voice, never generic.</p></div>
+      <div class="step"><div class="step-num">04</div><h4>Launch</h4><p>Deploy, measure, iterate. We stay with you post-launch to keep the momentum.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED WORK ============ -->
+<section id="featured">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Recent Work</span>
+      <h2>Selected <span class="accent">Projects</span></h2>
+      <p>A small slice of what we've been shipping — from brand systems to AI campaigns to full platforms.</p>
+    </div>
+    <div class="feat-grid stagger">
+      <a class="feat-card" href="portfolio.html">
+        <img src="logo-branding-services.png" alt="Aurora Fintech Rebrand" loading="lazy" />
+        <div class="feat-info">
+          <span class="cat">Brand · Web</span>
+          <h4>Aurora Fintech Rebrand</h4>
+          <p>Full identity system and launch site for a UAE fintech Series A, delivered in six weeks.</p>
+        </div>
+      </a>
+      <a class="feat-card" href="portfolio.html">
+        <img src="ai-video-images-services.png" alt="Nova Motors AI Campaign" loading="lazy" />
+        <div class="feat-info">
+          <span class="cat">AI Video · Motion</span>
+          <h4>Nova Motors — AI Campaign</h4>
+          <p>Photoreal AI hero film and 12-variant paid social campaign for an EV launch.</p>
+        </div>
+      </a>
+      <a class="feat-card" href="portfolio.html">
+        <img src="3d-animation-services.png" alt="Skyline Interiors Configurator" loading="lazy" />
+        <div class="feat-info">
+          <span class="cat">3D · Platform</span>
+          <h4>Skyline Interiors</h4>
+          <p>Real-time 3D room configurator with photoreal materials, live on their storefront.</p>
+        </div>
+      </a>
+    </div>
+    <div class="feat-cta">
+      <a href="portfolio.html" class="btn-outline">View Full Portfolio →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section id="testimonials">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">What Clients Say</span>
+      <h2>Words From <span class="accent">Our Partners</span></h2>
+      <p>We measure our work by whether clients come back — and refer us. Most do.</p>
+    </div>
+    <div class="testi-grid stagger">
+      <div class="testi-card">
+        <div class="quote-mark">"</div>
+        <div class="testi-stars">★★★★★</div>
+        <p class="q">CREAIVA rebuilt our entire brand and launch site in six weeks. The AI-generated campaign visuals genuinely surprised our board — and cut our production budget in half.</p>
+        <div class="testi-author"><div class="av">A</div><div class="who"><div class="n">Amira K.</div><div class="r">CMO, Aurora Fintech</div></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="quote-mark">"</div>
+        <div class="testi-stars">★★★★★</div>
+        <p class="q">The one thing I value most is that everything comes from one team. Our social, our ads, our website — all finally look and feel like the same brand.</p>
+        <div class="testi-author"><div class="av">R</div><div class="who"><div class="n">Rashid M.</div><div class="r">Founder, Levant Group</div></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="quote-mark">"</div>
+        <div class="testi-stars">★★★★★</div>
+        <p class="q">Fast, senior, and genuinely creative. The 3D configurator they built lifted our conversion rate noticeably in the first month. Already briefing them on phase two.</p>
+        <div class="testi-author"><div class="av">S</div><div class="who"><div class="n">Sara L.</div><div class="r">Head of Digital, Skyline</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOME FAQ ============ -->
+<section id="home-faq">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Good to Know</span>
+      <h2>Frequently <span class="accent">Asked</span></h2>
+      <p>The questions we hear most often before a project kicks off.</p>
+    </div>
+    <div class="hfaq-list">
+      <details class="hfaq reveal"><summary>How quickly can you start?</summary><div class="hfaq-body">Most projects kick off within a week of a signed brief. For urgent launches, we can often start sooner — just tell us the deadline and we'll be honest about what's achievable.</div></details>
+      <details class="hfaq reveal"><summary>Do you work with international clients?</summary><div class="hfaq-body">Yes. We're headquartered in Dubai but work with brands across the GCC, Europe, and beyond. We reply within 24 hours in any timezone, in English or Arabic.</div></details>
+      <details class="hfaq reveal"><summary>Can I hire you for just one service?</summary><div class="hfaq-body">Absolutely. Every service stands on its own — pick a single discipline, or bundle several into one of our packaged Solutions. There's no minimum retainer to work with us.</div></details>
+      <details class="hfaq reveal"><summary>How do you price projects?</summary><div class="hfaq-body">Fixed-scope, fixed-price for defined projects — no surprise change orders. Ongoing work (social, ads, SEO) runs on a flat monthly retainer. We share a clear quote after a short discovery call.</div></details>
+      <details class="hfaq reveal"><summary>Do we own everything you create?</summary><div class="hfaq-body">Yes, always. Source files, brand assets, code, and full usage rights are yours in perpetuity the moment a project is paid in full.</div></details>
     </div>
   </div>
 </section>
@@ -911,6 +1202,43 @@
     </div>
   </div>
 </footer>
+
+<!-- ============ FLOATING WIDGETS ============ -->
+<div class="ai-panel" id="aiPanel" role="dialog" aria-label="CREAIVA AI Assistant">
+  <div class="ai-head">
+    <div class="ai-avatar"><svg viewBox="0 0 24 24"><path d="M12 3l1.5 4L18 8.5 14 10l-2 4-2-4-4-1.5L10.5 7 12 3z"/></svg></div>
+    <div class="ai-meta">
+      <div class="name">CREAIVA Assistant</div>
+      <div class="status">Online · replies instantly</div>
+    </div>
+    <button class="ai-close" id="aiClose" aria-label="Close chat">×</button>
+  </div>
+  <div class="ai-body" id="aiBody">
+    <div class="ai-msg bot">Hi! 👋 I'm CREAIVA's AI assistant. I can help you find the right service, explain what we do, or connect you with our team. What are you working on?</div>
+  </div>
+  <div class="ai-quick" id="aiQuick">
+    <button data-q="What services do you offer?">Our services</button>
+    <button data-q="How much does a project cost?">Pricing</button>
+    <button data-q="How do I start a project?">Start a project</button>
+  </div>
+  <form class="ai-input" id="aiForm">
+    <input type="text" id="aiInput" placeholder="Type your message…" autocomplete="off" aria-label="Message" />
+    <button type="submit" aria-label="Send"><svg viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></button>
+  </form>
+</div>
+
+<div class="fab-stack">
+  <a class="fab wa" href="https://wa.me/971521559156?text=Hi%20CREAIVA%2C%20I'd%20like%20to%20start%20a%20project" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <span class="fab-pulse"></span>
+    <span class="fab-tip">Chat on WhatsApp</span>
+    <svg viewBox="0 0 32 32" fill="#fff"><path d="M16 3C9 3 3.5 8.5 3.5 15.5c0 2.4.7 4.7 1.9 6.7L3 29l7-1.8c1.9 1 4 1.6 6.1 1.6 7 0 12.5-5.5 12.5-12.5S23 3 16 3zm0 22.8c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-3.9 1 1-3.8-.2-.4c-1.1-1.7-1.6-3.6-1.6-5.6C5.6 9.7 10.2 5.2 16 5.2s10.4 4.5 10.4 10.3S21.8 25.8 16 25.8zm5.7-7.7c-.3-.2-1.8-.9-2.1-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1c-1.8-.9-3-1.6-4.2-3.6-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5s-.7-1.7-1-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6 2 .8 2.7.9 3.7.8.6-.1 1.8-.7 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.2-.6-.4z"/></svg>
+  </a>
+  <button class="fab ai" id="aiToggle" aria-label="Open AI assistant">
+    <span class="fab-pulse"></span>
+    <span class="fab-tip">Ask our AI assistant</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="#001428" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-8.9 8.4c-1.4-.1-2.7-.5-3.9-1.1L3 20l1.3-4.1A8.4 8.4 0 0 1 12 3.5a8.4 8.4 0 0 1 9 8z"/><circle cx="8.5" cy="12" r="1" fill="#001428" stroke="none"/><circle cx="12" cy="12" r="1" fill="#001428" stroke="none"/><circle cx="15.5" cy="12" r="1" fill="#001428" stroke="none"/></svg>
+  </button>
+</div>
 
 <script>
   /* ============ SLIDER ============ */
@@ -1096,7 +1424,7 @@
   const grid = document.getElementById('servicesGrid');
   services.forEach((s,i)=>{
     const el = document.createElement('div');
-    el.className = 'service reveal';
+    el.className = 'service';
     el.innerHTML = `
       <span class="service-tag">${s.tag}</span>
       <img src="${imgs[i]}" alt="${s.title}" loading="lazy" />
@@ -1156,8 +1484,92 @@
   /* ============ REVEAL ON SCROLL ============ */
   const io = new IntersectionObserver(entries=>{
     entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
-  },{threshold:.15});
-  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  },{threshold:.12});
+  document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale, .stagger').forEach(el=>io.observe(el));
+
+  /* ============ COUNT-UP STATS ============ */
+  const countEls = document.querySelectorAll('[data-count]');
+  const countObs = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(!e.isIntersecting) return;
+      const el = e.target;
+      countObs.unobserve(el);
+      const target = parseInt(el.dataset.count, 10);
+      const suffix = el.dataset.suffix || '';
+      const dur = 1600, start = performance.now();
+      function tick(now){
+        const p = Math.min((now - start) / dur, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(target * eased) + suffix;
+        if(p < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    });
+  },{threshold:.4});
+  countEls.forEach(el=>countObs.observe(el));
+
+  /* ============ AI CHAT WIDGET ============ */
+  const aiToggle = document.getElementById('aiToggle');
+  const aiPanel  = document.getElementById('aiPanel');
+  const aiClose  = document.getElementById('aiClose');
+  const aiBody   = document.getElementById('aiBody');
+  const aiForm   = document.getElementById('aiForm');
+  const aiInput  = document.getElementById('aiInput');
+  const aiQuick  = document.getElementById('aiQuick');
+
+  function aiOpen(){ aiPanel.classList.add('open'); setTimeout(()=>aiInput.focus(),300); }
+  function aiToggleFn(){ aiPanel.classList.toggle('open'); if(aiPanel.classList.contains('open')) setTimeout(()=>aiInput.focus(),300); }
+  aiToggle.addEventListener('click', aiToggleFn);
+  aiClose.addEventListener('click', ()=>aiPanel.classList.remove('open'));
+
+  function addMsg(text, who){
+    const d = document.createElement('div');
+    d.className = 'ai-msg ' + who;
+    d.textContent = text;
+    aiBody.appendChild(d);
+    aiBody.scrollTop = aiBody.scrollHeight;
+    return d;
+  }
+
+  // lightweight keyword-matched responses (front-end only; wire to a real
+  // backend later by replacing aiReply)
+  function aiReply(q){
+    const s = q.toLowerCase();
+    if(/price|cost|budget|how much|quote/.test(s))
+      return "Great question! Projects are fixed-scope and fixed-price — no surprises. Ongoing work (social, ads, SEO) runs on a flat monthly retainer. Share a few details and we'll send a clear quote within 24 hours. Want me to connect you with the team?";
+    if(/service|do you|offer|what can/.test(s))
+      return "We cover 14 disciplines — AI video, motion & animation, branding, web & e-commerce, platforms, SEO, social, photography, and interactive experiences. What's your project about? I can point you to the right one.";
+    if(/start|begin|project|hire|work with|get started/.test(s))
+      return "Love it. The fastest way is to tap the WhatsApp button, email info@creaiva.ae, or call +971 52 155 9156. Tell us your goal and timeline and we'll reply within 24 hours — in English or Arabic.";
+    if(/contact|email|phone|call|reach|whatsapp/.test(s))
+      return "You can reach us at info@creaiva.ae, on +971 52 155 9156, or via the WhatsApp button on this page. We reply within 24 hours.";
+    if(/ai|generative|video/.test(s))
+      return "AI is core to how we work — generative video and imagery, produced fast and finished by real artists. Check out our AI Video service, or the AI Content Studio solution for high-volume production. Want the link?";
+    if(/web|website|site|ecommerce|shop|store/.test(s))
+      return "We build marketing sites, landing pages, and full e-commerce storefronts — fast, bilingual (EN/AR), and conversion-focused. Take a look at our Website Design and E-Commerce services. Shall I connect you with the team?";
+    if(/hello|hi|hey|salam|marhaba/.test(s))
+      return "Hello! 👋 How can I help — are you looking for a specific service, pricing, or to start a project?";
+    if(/thank/.test(s))
+      return "You're very welcome! Whenever you're ready, the team is one message away on WhatsApp or at info@creaiva.ae. 🚀";
+    return "Good question! For anything specific, the team can help best — reach us on WhatsApp, at info@creaiva.ae, or +971 52 155 9156. Meanwhile, is there a service or solution I can point you to?";
+  }
+
+  function aiHandle(q){
+    addMsg(q, 'user');
+    const typing = addMsg('…', 'bot');
+    setTimeout(()=>{ typing.textContent = aiReply(q); aiBody.scrollTop = aiBody.scrollHeight; }, 650);
+  }
+
+  aiForm.addEventListener('submit', e=>{
+    e.preventDefault();
+    const q = aiInput.value.trim();
+    if(!q) return;
+    aiInput.value = '';
+    aiHandle(q);
+  });
+  aiQuick.querySelectorAll('button').forEach(b=>{
+    b.addEventListener('click', ()=>aiHandle(b.dataset.q));
+  });
 
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
