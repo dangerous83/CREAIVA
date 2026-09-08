@@ -27,156 +27,68 @@
   html,body{background:var(--bg-0);color:var(--text);font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased;scroll-behavior:smooth;overflow-x:hidden}
   a{color:inherit;text-decoration:none}
 
-  /* ===== PASSWORD GATE ===== */
-  .pw-gate{
-    position:fixed;inset:0;z-index:999;
-    background:var(--bg-0);
-    display:flex;align-items:center;justify-content:center;
-    flex-direction:column;gap:24px;
-  }
+  .pw-gate{position:fixed;inset:0;z-index:999;background:var(--bg-0);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:24px}
   .pw-gate.hidden{display:none}
   .pw-gate img{height:40px;margin-bottom:8px}
   .pw-gate p{color:var(--muted);font-size:14px}
   .pw-gate form{display:flex;gap:10px}
-  .pw-gate input{
-    padding:12px 18px;border-radius:10px;border:1px solid var(--border);
-    background:var(--bg-2);color:var(--text);font-size:15px;outline:none;
-    width:260px;
-  }
+  .pw-gate input{padding:12px 18px;border-radius:10px;border:1px solid var(--border);background:var(--bg-2);color:var(--text);font-size:15px;outline:none;width:260px}
   .pw-gate input:focus{border-color:var(--brand)}
-  .pw-gate button{
-    padding:12px 24px;border-radius:10px;border:none;
-    background:linear-gradient(135deg,var(--brand),var(--brand-2));
-    color:#fff;font-weight:600;cursor:pointer;font-size:14px;
-  }
+  .pw-gate button{padding:12px 24px;border-radius:10px;border:none;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#fff;font-weight:600;cursor:pointer;font-size:14px}
   .pw-gate .error{color:#ff5c5c;font-size:13px;min-height:18px}
 
-  /* ===== MAIN CONTENT ===== */
   .main-content{display:none}
   .main-content.visible{display:block}
 
-  .page-header{
-    padding:100px 32px 50px;text-align:center;
-    background:linear-gradient(180deg,rgba(31,168,255,.08),transparent 60%);
-  }
-  .page-header h1{
-    font-family:'Poppins',sans-serif;font-size:clamp(28px,4vw,44px);
-    font-weight:800;margin-bottom:12px;
-    background:linear-gradient(135deg,var(--brand),var(--brand-2));
-    -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-  }
+  .page-header{padding:100px 32px 50px;text-align:center;background:linear-gradient(180deg,rgba(31,168,255,.08),transparent 60%)}
+  .page-header h1{font-family:'Poppins',sans-serif;font-size:clamp(28px,4vw,44px);font-weight:800;margin-bottom:12px;background:linear-gradient(135deg,var(--brand),var(--brand-2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
   .page-header p{color:var(--muted);font-size:16px;max-width:600px;margin:0 auto}
-  .page-header .badge{
-    display:inline-block;padding:6px 16px;border-radius:20px;
-    background:rgba(255,92,92,.15);color:#ff5c5c;font-size:12px;
-    font-weight:600;text-transform:uppercase;letter-spacing:1px;
-    margin-bottom:20px;
-  }
+  .page-header .badge{display:inline-block;padding:6px 16px;border-radius:20px;background:rgba(255,92,92,.15);color:#ff5c5c;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:20px}
 
   .pricing-container{max-width:var(--max);margin:0 auto;padding:0 32px 80px}
 
-  /* ===== SERVICE CARD ===== */
-  .service-card{
-    background:var(--card);border:1px solid var(--border);
-    border-radius:16px;margin-bottom:16px;overflow:hidden;
-    transition:border-color .2s;
-  }
+  .service-card{background:var(--card);border:1px solid var(--border);border-radius:16px;margin-bottom:16px;overflow:hidden;transition:border-color .2s}
   .service-card:hover{border-color:rgba(31,168,255,.4)}
-
-  .service-header{
-    display:flex;align-items:center;justify-content:space-between;
-    padding:22px 28px;cursor:pointer;gap:16px;
-    user-select:none;
-  }
+  .service-header{display:flex;align-items:center;justify-content:space-between;padding:22px 28px;cursor:pointer;gap:16px;user-select:none}
   .service-header:hover{background:rgba(31,168,255,.04)}
-
   .service-header .left{display:flex;align-items:center;gap:16px;flex:1;min-width:0}
-  .service-header .svc-icon{
-    width:42px;height:42px;border-radius:10px;
-    background:linear-gradient(135deg,rgba(31,168,255,.2),rgba(0,212,255,.1));
-    display:grid;place-items:center;flex-shrink:0;
-  }
+  .service-header .svc-icon{width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg,rgba(31,168,255,.2),rgba(0,212,255,.1));display:grid;place-items:center;flex-shrink:0}
   .service-header .svc-icon svg{width:20px;height:20px;stroke:var(--brand-2);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
   .service-header h3{font-family:'Poppins',sans-serif;font-size:16px;font-weight:600}
-  .service-header .price-tag{
-    padding:6px 16px;border-radius:8px;
-    background:rgba(31,168,255,.12);color:var(--brand-2);
-    font-size:14px;font-weight:600;white-space:nowrap;flex-shrink:0;
-  }
-  .service-header .chevron{
-    width:20px;height:20px;stroke:var(--muted);fill:none;
-    stroke-width:2;transition:transform .3s;flex-shrink:0;
-  }
+  .service-header .price-tag{padding:6px 16px;border-radius:8px;background:rgba(31,168,255,.12);color:var(--brand-2);font-size:14px;font-weight:600;white-space:nowrap;flex-shrink:0}
+  .service-header .chevron{width:20px;height:20px;stroke:var(--muted);fill:none;stroke-width:2;transition:transform .3s;flex-shrink:0}
   .service-card.open .chevron{transform:rotate(180deg)}
-
-  .service-body{
-    max-height:0;overflow:hidden;transition:max-height .4s ease;
-  }
-  .service-card.open .service-body{max-height:2000px}
+  .service-body{max-height:0;overflow:hidden;transition:max-height .4s ease}
+  .service-card.open .service-body{max-height:3000px}
   .service-body-inner{padding:0 28px 28px;border-top:1px solid var(--border)}
 
   .svc-desc{color:var(--muted);font-size:14px;line-height:1.7;margin:20px 0}
+  .svc-spec{color:var(--text);font-size:14px;line-height:1.8;margin:0 0 24px;padding:20px;border-radius:12px;background:rgba(31,168,255,.04);border:1px solid rgba(80,140,220,.1)}
 
-  /* Deliverables */
-  .deliverables-grid{
-    display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
-    gap:12px;margin-bottom:24px;
-  }
-  .deliverable{
-    padding:14px 16px;border-radius:10px;
-    background:rgba(31,168,255,.06);border:1px solid rgba(80,140,220,.12);
-    font-size:13px;color:var(--text);
-  }
+  .deliverables-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin-bottom:24px}
+  .deliverable{padding:14px 16px;border-radius:10px;background:rgba(31,168,255,.06);border:1px solid rgba(80,140,220,.12);font-size:13px;color:var(--text)}
   .deliverable strong{display:block;margin-bottom:4px;font-size:13px;color:var(--brand-2)}
 
-  /* Pricing tiers */
-  .tier-grid{
-    display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:14px;margin-top:20px;
-  }
-  .tier{
-    padding:20px;border-radius:12px;
-    background:var(--bg-2);border:1px solid var(--border);
-    text-align:center;
-  }
+  .tier-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:20px}
+  .tier{padding:20px;border-radius:12px;background:var(--bg-2);border:1px solid var(--border);text-align:center}
   .tier h5{font-family:'Poppins',sans-serif;font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--brand-2);margin-bottom:10px}
   .tier .tier-price{font-family:'Poppins',sans-serif;font-size:24px;font-weight:700;margin-bottom:6px}
   .tier .tier-note{font-size:12px;color:var(--muted)}
   .tier ul{list-style:none;text-align:left;margin-top:14px}
   .tier li{font-size:13px;color:var(--muted);padding:4px 0;padding-left:18px;position:relative}
-  .tier li::before{content:"✓";position:absolute;left:0;color:var(--brand-2);font-size:12px}
+  .tier li::before{content:"\2713";position:absolute;left:0;color:var(--brand-2);font-size:12px}
 
-  .section-label{
-    font-family:'Poppins',sans-serif;font-size:12px;font-weight:600;
-    text-transform:uppercase;letter-spacing:1.5px;color:var(--brand);
-    margin-bottom:8px;margin-top:20px;
-  }
+  .section-label{font-family:'Poppins',sans-serif;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1.5px;color:var(--brand);margin-bottom:8px;margin-top:20px}
 
-  .timeline-note{
-    margin-top:16px;padding:12px 16px;border-radius:8px;
-    background:rgba(0,212,255,.06);border-left:3px solid var(--brand-2);
-    font-size:13px;color:var(--muted);
-  }
+  .timeline-note{margin-top:16px;padding:12px 16px;border-radius:8px;background:rgba(0,212,255,.06);border-left:3px solid var(--brand-2);font-size:13px;color:var(--muted)}
   .timeline-note strong{color:var(--text)}
-
-  .sales-tip{
-    margin-top:16px;padding:12px 16px;border-radius:8px;
-    background:rgba(255,180,50,.08);border-left:3px solid #ffb432;
-    font-size:13px;color:var(--muted);
-  }
+  .sales-tip{margin-top:16px;padding:12px 16px;border-radius:8px;background:rgba(255,180,50,.08);border-left:3px solid #ffb432;font-size:13px;color:var(--muted)}
   .sales-tip strong{color:#ffb432}
 
-  /* ===== CATEGORY HEADER ===== */
-  .category{
-    font-family:'Poppins',sans-serif;font-size:20px;font-weight:700;
-    margin:48px 0 20px;padding-bottom:12px;
-    border-bottom:2px solid rgba(31,168,255,.2);
-    display:flex;align-items:center;gap:10px;
-  }
+  .category{font-family:'Poppins',sans-serif;font-size:20px;font-weight:700;margin:48px 0 20px;padding-bottom:12px;border-bottom:2px solid rgba(31,168,255,.2);display:flex;align-items:center;gap:10px}
   .category:first-of-type{margin-top:0}
   .cat-dot{width:10px;height:10px;border-radius:50%;background:var(--brand-2)}
 
-  /* ===== RESPONSIVE ===== */
   @media(max-width:768px){
     .service-header{padding:16px 20px;flex-wrap:wrap}
     .service-header .price-tag{font-size:13px}
@@ -187,22 +99,13 @@
     .page-header{padding:80px 20px 36px}
   }
 
-  /* back link */
-  .back-link{
-    position:fixed;top:24px;left:24px;z-index:60;
-    display:flex;align-items:center;gap:6px;
-    color:var(--muted);font-size:13px;
-    padding:8px 14px;border-radius:8px;
-    background:rgba(6,11,23,.8);backdrop-filter:blur(10px);
-    border:1px solid var(--border);transition:all .2s;
-  }
+  .back-link{position:fixed;top:24px;left:24px;z-index:60;display:flex;align-items:center;gap:6px;color:var(--muted);font-size:13px;padding:8px 14px;border-radius:8px;background:rgba(6,11,23,.8);backdrop-filter:blur(10px);border:1px solid var(--border);transition:all .2s}
   .back-link:hover{color:var(--brand-2);border-color:var(--brand-2)}
   .back-link svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 </style>
 </head>
 <body>
 
-<!-- PASSWORD GATE -->
 <div class="pw-gate" id="pwGate">
   <img src="creaiva-logo-horizontal.png" alt="CREAIVA" />
   <p>Internal access only — enter the team password</p>
@@ -213,7 +116,6 @@
   <div class="error" id="pwError"></div>
 </div>
 
-<!-- MAIN CONTENT -->
 <div class="main-content" id="mainContent">
 
 <a href="index.html" class="back-link">
@@ -223,80 +125,82 @@
 
 <div class="page-header">
   <div class="badge">Internal — Sales Team Only</div>
-  <h1>Services & Pricing Guide</h1>
-  <p>Everything your sales team needs to understand our services and quote clients accurately. All prices in AED.</p>
+  <h1>Services &amp; Pricing Guide</h1>
+  <p>Everything your sales team needs to understand our services and quote clients accurately. All prices in AED (UAE Dirham).</p>
 </div>
 
 <div class="pricing-container">
 
 <!-- ==================== BRANDING & CREATIVE ==================== -->
-<div class="category"><span class="cat-dot"></span> Branding & Creative</div>
+<div class="category"><span class="cat-dot"></span> Branding &amp; Creative</div>
 
 <!-- 1. Logo & Branding -->
 <div class="service-card">
   <div class="service-header" onclick="this.parentElement.classList.toggle('open')">
     <div class="left">
       <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg></div>
-      <h3>Logo & Branding</h3>
+      <h3>Logo &amp; Branding</h3>
     </div>
-    <span class="price-tag">AED 8,000 – 35,000</span>
+    <span class="price-tag">AED 1,200 – 6,300</span>
     <svg class="chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
   </div>
   <div class="service-body"><div class="service-body-inner">
-    <p class="svc-desc">A full identity system — logo, typography, color, voice — that holds up across every touchpoint. Not just a logo file, but a brand system with guidelines your client's team can actually follow.</p>
+    <p class="svc-desc">A complete brand identity system — not just a logo file. We build the mark, typography, color palette, and brand voice into a cohesive system with guidelines your client's team can follow across every touchpoint.</p>
+
+    <p class="svc-spec">This service covers the full brand identity lifecycle. We start with a discovery phase where we audit the client's market position, competitors, and target audience to define brand positioning. From there we develop 3-5 logo concept directions including primary logo, wordmark, icon/symbol mark, monochrome version, and reversed (white-on-dark) version. The color system includes primary, secondary, and accent color palettes with exact hex, RGB, and CMYK values for both digital and print use. Typography selection covers headline, body, and accent typefaces with size scales, line-height ratios, and pairing rules. The brand guidelines document (PDF, 20-60 pages depending on tier) covers logo clear space, minimum sizes, do's and don'ts, color application rules, photography style direction, tone of voice examples, and social media formatting. Stationery deliverables include business card (front/back), letterhead (A4), envelope (DL), email signature template, and a basic PowerPoint/Keynote template. All files are delivered in AI, EPS, SVG, PNG, and PDF formats organized in a clearly labeled folder structure. The client gets full ownership of all assets upon final payment.</p>
 
     <div class="section-label">What's Included</div>
     <div class="deliverables-grid">
-      <div class="deliverable"><strong>Logo & Wordmark</strong>Primary mark, wordmark, icon, monochrome & reversed versions</div>
-      <div class="deliverable"><strong>Color System</strong>Primary, secondary, accent palettes with hex/RGB/CMYK codes</div>
-      <div class="deliverable"><strong>Typography System</strong>Headline, body, accent type choices with usage rules</div>
-      <div class="deliverable"><strong>Brand Guidelines PDF</strong>40-60 page comprehensive guide for consistent application</div>
-      <div class="deliverable"><strong>Visual Identity Kit</strong>Patterns, icons, photography direction, social templates</div>
-      <div class="deliverable"><strong>Stationery & Templates</strong>Business card, letterhead, envelope, email signature, PPT template</div>
+      <div class="deliverable"><strong>Logo &amp; Wordmark</strong>Primary mark, wordmark, icon, monochrome &amp; reversed versions in AI/EPS/SVG/PNG</div>
+      <div class="deliverable"><strong>Color System</strong>Primary, secondary, accent palettes with hex/RGB/CMYK codes for digital &amp; print</div>
+      <div class="deliverable"><strong>Typography System</strong>Headline, body, accent typefaces with size scales and pairing rules</div>
+      <div class="deliverable"><strong>Brand Guidelines PDF</strong>20-60 page guide covering usage rules, clear space, do's/don'ts, tone of voice</div>
+      <div class="deliverable"><strong>Visual Identity Kit</strong>Patterns, custom icon set, photography direction, social media templates</div>
+      <div class="deliverable"><strong>Stationery &amp; Templates</strong>Business card, letterhead, envelope, email signature, PPT/Keynote template</div>
     </div>
 
     <div class="section-label">Pricing Tiers</div>
     <div class="tier-grid">
       <div class="tier">
         <h5>Starter</h5>
-        <div class="tier-price">AED 8,000</div>
+        <div class="tier-price">AED 1,200</div>
         <div class="tier-note">Logo-focused package</div>
         <ul>
-          <li>Logo & wordmark design</li>
-          <li>Color palette</li>
+          <li>Logo &amp; wordmark (3 concepts)</li>
+          <li>Color palette (primary only)</li>
           <li>Typography selection</li>
-          <li>Basic guidelines (8-10 pages)</li>
+          <li>Mini guidelines (6-8 pages)</li>
           <li>Business card design</li>
         </ul>
       </div>
       <div class="tier">
         <h5>Professional</h5>
-        <div class="tier-price">AED 18,000</div>
+        <div class="tier-price">AED 3,000</div>
         <div class="tier-note">Full brand identity</div>
         <ul>
           <li>Everything in Starter</li>
           <li>Full brand guidelines PDF</li>
-          <li>Stationery suite</li>
-          <li>Social media templates</li>
-          <li>Icon set (12 custom icons)</li>
+          <li>Stationery suite (4 items)</li>
+          <li>Social media templates (6)</li>
+          <li>Custom icon set (12 icons)</li>
         </ul>
       </div>
       <div class="tier">
         <h5>Enterprise</h5>
-        <div class="tier-price">AED 35,000</div>
+        <div class="tier-price">AED 6,300</div>
         <div class="tier-note">Complete brand system</div>
         <ul>
           <li>Everything in Professional</li>
           <li>Brand strategy workshop</li>
           <li>Motion brand guidelines</li>
           <li>Packaging design direction</li>
-          <li>Environmental / signage guide</li>
+          <li>Environmental/signage guide</li>
         </ul>
       </div>
     </div>
 
-    <div class="timeline-note"><strong>Timeline:</strong> 4-6 weeks across Discovery → Concepts → Refinement → Handoff</div>
-    <div class="sales-tip"><strong>Sales Tip:</strong> Most SMEs in Dubai go for the Professional tier. Enterprise suits clients with physical retail or franchises who need strict brand consistency across locations.</div>
+    <div class="timeline-note"><strong>Timeline:</strong> 3-6 weeks — Discovery (Week 1) → Concepts (Week 2) → Refinement (Weeks 3-4) → Handoff (Week 5-6 for Enterprise)</div>
+    <div class="sales-tip"><strong>Sales Tip:</strong> Most SMEs and startups in Dubai go for the Professional tier. Enterprise suits clients with physical retail, franchises, or government entities. Upsell bilingual AR/EN guidelines for +25%.</div>
   </div></div>
 </div>
 
@@ -305,32 +209,34 @@
   <div class="service-header" onclick="this.parentElement.classList.toggle('open')">
     <div class="left">
       <div class="svc-icon"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="4"/></svg></div>
-      <h3>Photography & Videography</h3>
+      <h3>Photography &amp; Videography</h3>
     </div>
-    <span class="price-tag">AED 5,000 – 40,000</span>
+    <span class="price-tag">AED 900 – 7,700</span>
     <svg class="chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
   </div>
   <div class="service-body"><div class="service-body-inner">
-    <p class="svc-desc">Product, lifestyle, and campaign photography and video — studio and on-location across Dubai and the UAE. Includes full post-production, retouching, and color grading.</p>
+    <p class="svc-desc">Product, lifestyle, and campaign photography and video — studio and on-location across Dubai and the UAE. Full post-production, retouching, and color grading included in every package.</p>
+
+    <p class="svc-spec">We handle the entire production pipeline from pre-production to final delivery. Pre-production includes creative brief alignment, mood board creation, shot list planning, location scouting (if on-location), and scheduling. For studio shoots, we use professional lighting setups (3-5 light rigs), seamless backdrops (white, colored, or textured), and prop styling. On-location shoots cover offices, retail spaces, outdoor environments, events, and construction sites across Dubai and the wider UAE — we handle DTCM permits when required (permit fees billed separately at cost). Video production includes 4K capture, gimbal/stabilizer work, drone shots (where permitted), and wireless audio for interviews or testimonials. Post-production covers professional retouching (skin, product cleanup, background removal), color grading to match brand guidelines, video editing with transitions and lower thirds, and final export in all required formats (web-optimized JPEG/PNG, print-ready TIFF, social-sized crops for Instagram/LinkedIn/TikTok, and video in MP4/MOV at multiple resolutions). Talent and casting coordination is available for campaign shoots — we source models through local casting agencies, handle contracts, and manage on-set direction. All raw files can be provided on request for an additional fee.</p>
 
     <div class="section-label">What's Included</div>
     <div class="deliverables-grid">
-      <div class="deliverable"><strong>Product Photography</strong>White background, styled, and contextual shots for e-commerce & marketing</div>
-      <div class="deliverable"><strong>Campaign Photography</strong>Brand-aligned editorial and lifestyle imagery</div>
-      <div class="deliverable"><strong>Videography</strong>Brand films, social content, behind-the-scenes, testimonials</div>
-      <div class="deliverable"><strong>On-Location Shoots</strong>Office, events, retail, outdoor — Dubai & UAE-wide</div>
-      <div class="deliverable"><strong>Retouching & Editing</strong>Professional color grading, skin retouching, compositing</div>
-      <div class="deliverable"><strong>Talent & Casting</strong>Model sourcing, casting, and coordination for campaigns</div>
+      <div class="deliverable"><strong>Product Photography</strong>White background, styled, and contextual shots for e-commerce &amp; marketing</div>
+      <div class="deliverable"><strong>Campaign Photography</strong>Brand-aligned editorial and lifestyle imagery with mood board direction</div>
+      <div class="deliverable"><strong>Videography</strong>Brand films, social content, behind-the-scenes, interviews, testimonials (4K)</div>
+      <div class="deliverable"><strong>On-Location Shoots</strong>Office, events, retail, outdoor — Dubai &amp; UAE-wide with permit handling</div>
+      <div class="deliverable"><strong>Retouching &amp; Editing</strong>Professional color grading, skin retouching, background removal, compositing</div>
+      <div class="deliverable"><strong>Talent &amp; Casting</strong>Model sourcing, contracts, and on-set direction for campaigns</div>
     </div>
 
     <div class="section-label">Pricing Tiers</div>
     <div class="tier-grid">
       <div class="tier">
         <h5>Half-Day Shoot</h5>
-        <div class="tier-price">AED 5,000</div>
+        <div class="tier-price">AED 900</div>
         <div class="tier-note">4 hours, 1 setup</div>
         <ul>
-          <li>Up to 20 edited photos OR</li>
+          <li>Up to 15 edited photos OR</li>
           <li>1 short video (30-60 sec)</li>
           <li>Basic retouching</li>
           <li>Studio or 1 location</li>
@@ -338,10 +244,10 @@
       </div>
       <div class="tier">
         <h5>Full-Day Shoot</h5>
-        <div class="tier-price">AED 12,000</div>
+        <div class="tier-price">AED 2,100</div>
         <div class="tier-note">8 hours, multi-setup</div>
         <ul>
-          <li>Up to 50 edited photos</li>
+          <li>Up to 40 edited photos</li>
           <li>2-3 short videos</li>
           <li>Advanced retouching</li>
           <li>Up to 2 locations</li>
@@ -349,25 +255,25 @@
       </div>
       <div class="tier">
         <h5>Campaign Package</h5>
-        <div class="tier-price">AED 25,000 – 40,000</div>
+        <div class="tier-price">AED 4,900 – 7,700</div>
         <div class="tier-note">Multi-day, full production</div>
         <ul>
           <li>2-3 shoot days</li>
-          <li>100+ edited photos</li>
+          <li>80+ edited photos</li>
           <li>Campaign video (2-3 min)</li>
-          <li>Talent & casting included</li>
+          <li>Talent &amp; casting included</li>
           <li>Full post-production</li>
         </ul>
       </div>
     </div>
 
-    <div class="timeline-note"><strong>Timeline:</strong> 3-4 weeks — Pre-Production → Shoot (1-3 days) → Post-Production → Delivery</div>
-    <div class="sales-tip"><strong>Sales Tip:</strong> Product shoots for e-commerce are high-volume recurring work. Offer monthly retainer packages for clients with 50+ SKUs. Location permits in Dubai can add 1-2 days lead time.</div>
+    <div class="timeline-note"><strong>Timeline:</strong> 2-4 weeks — Pre-Production (3-5 days) → Shoot (1-3 days) → Post-Production (5-10 days) → Delivery</div>
+    <div class="sales-tip"><strong>Sales Tip:</strong> Product shoots for e-commerce are high-volume recurring work — offer monthly retainer packages for clients with 50+ SKUs. DTCM location permits can add 1-2 days lead time and AED 500-1,500 in permit fees billed at cost.</div>
   </div></div>
 </div>
 
 <!-- ==================== ANIMATION & MOTION ==================== -->
-<div class="category"><span class="cat-dot"></span> Animation & Motion</div>
+<div class="category"><span class="cat-dot"></span> Animation &amp; Motion</div>
 
 <!-- 3. 2D Animation -->
 <div class="service-card">
@@ -376,53 +282,55 @@
       <div class="svc-icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l6 3-6 3V9z" fill="currentColor" stroke="none"/></svg></div>
       <h3>2D Animation</h3>
     </div>
-    <span class="price-tag">AED 8,000 – 45,000</span>
+    <span class="price-tag">AED 550 – 7,700</span>
     <svg class="chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
   </div>
   <div class="service-body"><div class="service-body-inner">
     <p class="svc-desc">Illustrated explainers, character animation, and stylized loops with real personality. Includes script, storyboard, and voice-over direction in Arabic or English.</p>
 
+    <p class="svc-spec">Our 2D animation service covers the full production pipeline from concept to final render. We begin with scriptwriting — a clear, concise narrative (typically 150-180 words per minute of screen time) that distills the client's message into a compelling story. The storyboard phase translates the script into a visual shot-by-shot plan (typically 15-25 frames per minute of animation) showing composition, character poses, key transitions, and text placement. The design phase establishes the illustration style — we offer flat/minimal, isometric, hand-drawn, infographic, and character-driven styles. For character animation, we design custom characters based on client direction, build them with digital rigs (bone-based in After Effects or Toon Boom) for smooth, repeatable motion, and animate them with lip-sync if voice-over is involved. Voice-over production includes casting from our pool of professional Arabic and English voice artists, studio recording, and precise sync to animation. Sound design covers background music (royalty-free or custom-composed), sound effects, and audio mixing to broadcast-standard loudness (LUFS -14 for social, -24 for broadcast). Final delivery includes master file (4K or 1080p, ProRes or H.264), social media cutdowns (1:1, 9:16, 16:9), subtitled versions (hardcoded or SRT), and a GIF/thumbnail export for marketing use. Revision policy: 2-3 rounds included depending on tier, with changes tracked via a shared feedback document.</p>
+
     <div class="section-label">What's Included</div>
     <div class="deliverables-grid">
-      <div class="deliverable"><strong>Explainer Videos</strong>60-90 second animated explainers for products, services, or campaigns</div>
-      <div class="deliverable"><strong>Character Animation</strong>Custom character design and frame-by-frame or rigged animation</div>
-      <div class="deliverable"><strong>Kinetic Illustration</strong>Animated infographics and data storytelling</div>
-      <div class="deliverable"><strong>Social-Ready Loops</strong>5-15 sec looping animations for Instagram, TikTok, Stories</div>
-      <div class="deliverable"><strong>Script & Storyboard</strong>Narrative development, shot-by-shot visual planning</div>
-      <div class="deliverable"><strong>Voice-Over Direction</strong>Arabic or English VO casting, recording, and sync</div>
+      <div class="deliverable"><strong>Explainer Videos</strong>60-90 sec animated explainers with script, storyboard, VO, and sound design</div>
+      <div class="deliverable"><strong>Character Animation</strong>Custom character design with digital rigging and lip-sync animation</div>
+      <div class="deliverable"><strong>Kinetic Illustration</strong>Animated infographics, data storytelling, and process visualizations</div>
+      <div class="deliverable"><strong>Social-Ready Loops</strong>5-15 sec looping animations optimized for Instagram, TikTok, Stories</div>
+      <div class="deliverable"><strong>Script &amp; Storyboard</strong>Narrative development, 15-25 frame shot plan per minute of animation</div>
+      <div class="deliverable"><strong>Voice-Over Direction</strong>Arabic or English VO casting, studio recording, lip-sync, and mixing</div>
     </div>
 
     <div class="section-label">Pricing Tiers</div>
     <div class="tier-grid">
       <div class="tier">
         <h5>Social Loops</h5>
-        <div class="tier-price">AED 3,000 – 5,000</div>
+        <div class="tier-price">AED 550 – 900</div>
         <div class="tier-note">Per loop (5-15 sec)</div>
         <ul>
           <li>Motion graphics style</li>
           <li>1-2 revisions</li>
           <li>Optimized for social</li>
-          <li>Music & SFX included</li>
+          <li>Music &amp; SFX included</li>
         </ul>
       </div>
       <div class="tier">
         <h5>Explainer Video</h5>
-        <div class="tier-price">AED 18,000 – 25,000</div>
+        <div class="tier-price">AED 2,800 – 4,200</div>
         <div class="tier-note">60-90 sec, full production</div>
         <ul>
-          <li>Script & storyboard</li>
+          <li>Script &amp; storyboard</li>
           <li>Custom illustration style</li>
           <li>Professional voice-over</li>
-          <li>Music & sound design</li>
+          <li>Music &amp; sound design</li>
           <li>2-3 revision rounds</li>
         </ul>
       </div>
       <div class="tier">
         <h5>Character Series</h5>
-        <div class="tier-price">AED 35,000 – 45,000</div>
+        <div class="tier-price">AED 6,300 – 7,700</div>
         <div class="tier-note">3-5 episodes, custom characters</div>
         <ul>
-          <li>Character design & rigging</li>
+          <li>Character design &amp; rigging</li>
           <li>3-5 episode scripts</li>
           <li>Full animation per episode</li>
           <li>Bilingual option</li>
@@ -431,8 +339,8 @@
       </div>
     </div>
 
-    <div class="timeline-note"><strong>Timeline:</strong> 4-5 weeks — Script & Storyboard → Design Pass → Animation → Delivery</div>
-    <div class="sales-tip"><strong>Sales Tip:</strong> Explainer videos are the bread and butter — banks, fintechs, and government clients in UAE love them for onboarding and awareness. Upsell bilingual (EN + AR) versions for +30%.</div>
+    <div class="timeline-note"><strong>Timeline:</strong> 3-5 weeks — Script &amp; Storyboard (Week 1) → Design Pass (Week 2) → Animation (Weeks 3-4) → Delivery (Week 5)</div>
+    <div class="sales-tip"><strong>Sales Tip:</strong> Explainer videos are the bread and butter — banks, fintechs, and government clients in UAE love them for onboarding and awareness. Upsell bilingual (EN + AR) versions for +25%. Social loops are an easy entry point for new clients.</div>
   </div></div>
 </div>
 
@@ -443,27 +351,29 @@
       <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z" fill="currentColor" stroke="none"/></svg></div>
       <h3>Motion Design</h3>
     </div>
-    <span class="price-tag">AED 5,000 – 35,000</span>
+    <span class="price-tag">AED 700 – 5,300</span>
     <svg class="chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
   </div>
   <div class="service-body"><div class="service-body-inner">
     <p class="svc-desc">Kinetic type, brand animations, and cinematic motion crafted to stop the scroll. Includes logo animations, ad motion, and full brand motion systems with After Effects source files.</p>
 
+    <p class="svc-spec">Motion design is about bringing static brand assets to life with movement. This service covers everything from a simple logo reveal animation to a full brand motion system that defines how your client's brand moves across all digital channels. Logo animation involves taking the client's existing logo and creating a 3-5 second animated reveal with sound design — we produce 3 concept directions and the client picks one to refine. The final logo animation is delivered in multiple formats: MP4 (H.264 for web), MOV (ProRes for broadcast), transparent PNG sequence (for compositing), and GIF (for email signatures). For campaign motion, we create 15-60 second animated videos combining kinetic typography, brand graphics, product imagery, and transitions — these are used for Meta/Instagram ads, YouTube pre-roll, Google Display, TikTok, and LinkedIn. We deliver the hero version plus 4-6 size cutdowns (1080x1080, 1080x1920, 1920x1080, 300x250, etc.) all optimized for each platform's specs. Brand motion systems are the premium tier — we define the brand's motion language (easing curves, timing, entrance/exit styles), build a transition library (15-20 reusable transitions), create animated templates in After Effects that your client's in-house team can edit, and document everything in a motion guidelines PDF. All projects include royalty-free music and custom sound design.</p>
+
     <div class="section-label">What's Included</div>
     <div class="deliverables-grid">
-      <div class="deliverable"><strong>Kinetic Typography</strong>Animated text for ads, intros, and social — bold, rhythmic type motion</div>
-      <div class="deliverable"><strong>Brand Motion System</strong>Transition library, motion language, and usage guide for your brand</div>
-      <div class="deliverable"><strong>Logo Animation</strong>Animated logo reveals for video intros, websites, and presentations</div>
-      <div class="deliverable"><strong>Ad & Campaign Motion</strong>Animated ads for Meta, Google Display, YouTube pre-roll, TikTok</div>
-      <div class="deliverable"><strong>UI & Product Motion</strong>Micro-interactions, loading states, onboarding flows for apps & web</div>
-      <div class="deliverable"><strong>Source Files & Templates</strong>After Effects project files, editable templates for your team</div>
+      <div class="deliverable"><strong>Kinetic Typography</strong>Animated text for ads, intros, social — bold, rhythmic type motion</div>
+      <div class="deliverable"><strong>Brand Motion System</strong>Motion language, transition library, and usage guide for consistent brand animation</div>
+      <div class="deliverable"><strong>Logo Animation</strong>3-5 sec animated reveals in MP4/MOV/PNG sequence/GIF with sound design</div>
+      <div class="deliverable"><strong>Ad &amp; Campaign Motion</strong>Animated ads for Meta, Google Display, YouTube pre-roll, TikTok, LinkedIn</div>
+      <div class="deliverable"><strong>UI &amp; Product Motion</strong>Micro-interactions, loading states, onboarding flows for apps &amp; web</div>
+      <div class="deliverable"><strong>Source Files &amp; Templates</strong>After Effects project files, editable templates for in-house teams</div>
     </div>
 
     <div class="section-label">Pricing Tiers</div>
     <div class="tier-grid">
       <div class="tier">
         <h5>Logo Animation</h5>
-        <div class="tier-price">AED 5,000</div>
+        <div class="tier-price">AED 700</div>
         <div class="tier-note">Single animated reveal</div>
         <ul>
           <li>3 concept directions</li>
@@ -474,30 +384,30 @@
       </div>
       <div class="tier">
         <h5>Campaign Motion</h5>
-        <div class="tier-price">AED 15,000 – 22,000</div>
+        <div class="tier-price">AED 2,100 – 3,200</div>
         <div class="tier-note">Ad set or brand video</div>
         <ul>
-          <li>30-60 sec hero video</li>
+          <li>15-60 sec hero video</li>
           <li>Social cutdowns (4-6 sizes)</li>
-          <li>Kinetic type & transitions</li>
-          <li>Music & SFX</li>
+          <li>Kinetic type &amp; transitions</li>
+          <li>Music &amp; SFX</li>
         </ul>
       </div>
       <div class="tier">
         <h5>Brand Motion System</h5>
-        <div class="tier-price">AED 28,000 – 35,000</div>
+        <div class="tier-price">AED 4,200 – 5,300</div>
         <div class="tier-note">Full motion identity</div>
         <ul>
-          <li>Motion language & principles</li>
-          <li>Transition & animation library</li>
-          <li>Template toolkit (AE files)</li>
+          <li>Motion language &amp; principles</li>
+          <li>Transition library (15-20)</li>
+          <li>AE template toolkit</li>
           <li>Usage guidelines PDF</li>
         </ul>
       </div>
     </div>
 
-    <div class="timeline-note"><strong>Timeline:</strong> 4-5 weeks — Concept & Style Frames → Storyboard → Animation & Sound → Master & Cutdowns</div>
-    <div class="sales-tip"><strong>Sales Tip:</strong> Logo animation is an easy upsell with any branding project. Brand motion systems work best for enterprise clients who produce frequent content in-house.</div>
+    <div class="timeline-note"><strong>Timeline:</strong> 2-4 weeks — Concept &amp; Style Frames (Week 1) → Storyboard &amp; Animatic (Week 2) → Animation &amp; Sound (Week 3) → Master &amp; Cutdowns (Week 4)</div>
+    <div class="sales-tip"><strong>Sales Tip:</strong> Logo animation is an easy upsell with any branding project — add AED 700 to any Logo &amp; Branding quote. Campaign motion pairs well with Social Media Management retainers.</div>
   </div></div>
 </div>
 
@@ -508,27 +418,29 @@
       <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M12 2l8 4.5v9L12 20l-8-4.5v-9L12 2z"/><path d="M4 6.5L12 11l8-4.5"/><path d="M12 11v9"/></svg></div>
       <h3>3D Animation</h3>
     </div>
-    <span class="price-tag">AED 15,000 – 80,000</span>
+    <span class="price-tag">AED 2,500 – 14,000</span>
     <svg class="chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
   </div>
   <div class="service-body"><div class="service-body-inner">
     <p class="svc-desc">Product visualization and 3D storytelling with cinematic lighting, texture, and detail. Photoreal renders, animated reveals, AR-ready assets (USDZ/GLB), and full CGI environments.</p>
 
+    <p class="svc-spec">Our 3D pipeline covers modeling, texturing, lighting, animation, and rendering using industry-standard tools (Blender, Cinema 4D, or Maya depending on project needs). For product visualization, the client provides reference photos, CAD files, or physical samples — we build a high-poly 3D model, apply photorealistic PBR materials (metal, glass, fabric, plastic, etc.), set up HDRI-based lighting environments, and render at up to 8K resolution. Product renders include 5-8 beauty angles, hero composition shots, detail/macro views, and lifestyle context scenes. Turntable loops are 360-degree product spins (typically 5-8 seconds, 60-120 frames) delivered as MP4 and GIF. For animated reveals, we choreograph camera movements, product assembly/disassembly sequences, feature highlight callouts, and environment transitions — typically 30-60 seconds with sound design. AR-ready assets are exported in USDZ (Apple AR Quick Look) and GLB (Android/web AR) formats, optimized for mobile rendering with reduced polygon counts and baked textures while maintaining visual quality. Full CGI campaigns involve building custom 3D environments (architectural spaces, abstract worlds, product ecosystems), character modeling and animation, and rendering cinematic hero films at broadcast quality. All renders use physically-accurate global illumination and can match any specific lighting scenario (studio, outdoor, interior, dramatic). Delivery includes high-res stills (TIFF/PNG), video (ProRes/H.264), and source files on request.</p>
+
     <div class="section-label">What's Included</div>
     <div class="deliverables-grid">
-      <div class="deliverable"><strong>Product Visualization</strong>Photoreal 3D renders for marketing, e-commerce, and catalogs</div>
+      <div class="deliverable"><strong>Product Visualization</strong>High-poly modeling, PBR texturing, HDRI lighting, up to 8K renders</div>
       <div class="deliverable"><strong>3D Environments</strong>Architectural visualizations, virtual showrooms, scene builds</div>
-      <div class="deliverable"><strong>Character & Object Modeling</strong>High-poly modeling, texturing, rigging for any use case</div>
-      <div class="deliverable"><strong>Animated Product Reveals</strong>Cinematic unboxing, assembly, and feature highlight sequences</div>
-      <div class="deliverable"><strong>AR-Ready Assets</strong>USDZ, GLB, and web AR exports for Apple/Google AR viewers</div>
-      <div class="deliverable"><strong>Turntables & Loops</strong>360° product spins for web, social, and presentations</div>
+      <div class="deliverable"><strong>Character &amp; Object Modeling</strong>High-poly modeling, texturing, rigging for animation or stills</div>
+      <div class="deliverable"><strong>Animated Product Reveals</strong>30-60 sec cinematic unboxing, assembly, and feature highlight sequences</div>
+      <div class="deliverable"><strong>AR-Ready Assets</strong>USDZ &amp; GLB exports optimized for Apple/Google AR Quick Look</div>
+      <div class="deliverable"><strong>Turntables &amp; Loops</strong>360-degree product spins (5-8 sec) for web, social, and presentations</div>
     </div>
 
     <div class="section-label">Pricing Tiers</div>
     <div class="tier-grid">
       <div class="tier">
         <h5>Product Renders</h5>
-        <div class="tier-price">AED 15,000</div>
+        <div class="tier-price">AED 2,500</div>
         <div class="tier-note">Single product, 5-8 angles</div>
         <ul>
           <li>3D modeling from reference</li>
@@ -539,19 +451,19 @@
       </div>
       <div class="tier">
         <h5>Animated Reveal</h5>
-        <div class="tier-price">AED 35,000 – 50,000</div>
+        <div class="tier-price">AED 5,300 – 7,700</div>
         <div class="tier-note">30-60 sec cinematic</div>
         <ul>
           <li>Product animation</li>
           <li>Camera choreography</li>
-          <li>Lighting & environment</li>
+          <li>Lighting &amp; environment</li>
           <li>Sound design</li>
           <li>Social cutdowns</li>
         </ul>
       </div>
       <div class="tier">
         <h5>Full CGI Campaign</h5>
-        <div class="tier-price">AED 60,000 – 80,000</div>
+        <div class="tier-price">AED 10,500 – 14,000</div>
         <div class="tier-note">Environment + characters</div>
         <ul>
           <li>Custom 3D world build</li>
@@ -563,8 +475,8 @@
       </div>
     </div>
 
-    <div class="timeline-note"><strong>Timeline:</strong> 5-6 weeks — Modeling → Lookdev → Animation & Render → Delivery</div>
-    <div class="sales-tip"><strong>Sales Tip:</strong> Real estate developers and luxury product brands in Dubai are the biggest buyers. AR-ready assets are a strong upsell for retail/FMCG clients. Product renders pair well with e-commerce builds.</div>
+    <div class="timeline-note"><strong>Timeline:</strong> 4-6 weeks — Modeling (Week 1-2) → Lookdev/Texturing (Week 2-3) → Animation &amp; Render (Week 3-5) → Delivery (Week 6)</div>
+    <div class="sales-tip"><strong>Sales Tip:</strong> Real estate developers and luxury product brands in Dubai are the biggest buyers. AR-ready assets are a strong upsell for retail/FMCG clients — let them put the product in their living room via phone camera. Product renders pair well with e-commerce builds.</div>
   </div></div>
 </div>
 
@@ -575,28 +487,30 @@
       <div class="svc-icon"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="13" height="10" rx="2"/><path d="M16 10l5-3v10l-5-3"/></svg></div>
       <h3>AI Video (Realistic)</h3>
     </div>
-    <span class="price-tag">AED 8,000 – 30,000</span>
+    <span class="price-tag">AED 1,100 – 5,300</span>
     <svg class="chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
   </div>
   <div class="service-body"><div class="service-body-inner">
-    <p class="svc-desc">Generative AI visuals, product renders, and hero campaigns — engineered by AI (Runway, Kling, Sora), finished by human artists. Includes virtual presenters in Arabic or English and rapid concept iteration.</p>
+    <p class="svc-desc">Generative AI visuals, product renders, and hero campaigns — engineered by AI tools (Runway, Kling, Higgsfield, Sora), finished by human artists. Includes virtual presenters in Arabic or English.</p>
+
+    <p class="svc-spec">This service uses the latest generative AI video and image tools to produce cinematic-quality content at a fraction of traditional production costs and timelines. We use a combination of Runway Gen-3, Kling, Higgsfield, and Sora depending on the specific look and output needed — our team selects the best tool for each shot. The process starts with a creative brief and art direction phase where we define the visual style, camera angles, mood, color palette, and pacing. During the generation sprint, we produce 50-100+ raw AI outputs per project and curate the best 10-20% for refinement. The human finishing pass is what separates our work from raw AI output — our artists apply professional color grading (DaVinci Resolve), compositing to fix artifacts or merge multiple AI shots, editorial cuts with pacing and rhythm, and broadcast-standard audio mixing. Virtual presenters are AI-generated human figures that speak directly to camera in Arabic or English — they're cloned from stock reference footage (not real people's likenesses without permission) and lip-synced to professional voice-over recordings. AI product imagery generates lifestyle scenes, studio-quality product shots, and campaign visuals without a physical photoshoot — ideal for pre-launch marketing, variant visualization, or seasonal content at scale. All deliverables go through a quality control checklist: artifact check, color consistency, motion smoothness, audio sync, and platform optimization. Final delivery includes hero video (ProRes + H.264), social cutdowns (all required aspect ratios), AI product images (high-res PNG/JPEG), and a creative brief document summarizing the prompts and direction used for future consistency.</p>
 
     <div class="section-label">What's Included</div>
     <div class="deliverables-grid">
-      <div class="deliverable"><strong>AI-Generated Video</strong>Cinematic AI footage for hero campaigns, intros, and social</div>
-      <div class="deliverable"><strong>AI Product Imagery</strong>AI-generated product shots and lifestyle scenes at scale</div>
-      <div class="deliverable"><strong>Virtual Presenters</strong>AI-generated presenters speaking Arabic or English</div>
-      <div class="deliverable"><strong>Rapid Concept Iteration</strong>10-20 visual concepts in days instead of weeks</div>
-      <div class="deliverable"><strong>AI-Assisted VFX</strong>Background replacement, scene extension, style transfer</div>
-      <div class="deliverable"><strong>Human Finishing Pass</strong>Color grade, compositing, and editorial polish by our artists</div>
+      <div class="deliverable"><strong>AI-Generated Video</strong>Cinematic AI footage for hero campaigns, intros, social — curated from 50-100+ outputs</div>
+      <div class="deliverable"><strong>AI Product Imagery</strong>Studio-quality product shots and lifestyle scenes without a physical photoshoot</div>
+      <div class="deliverable"><strong>Virtual Presenters</strong>AI-generated presenters speaking Arabic or English with professional VO lip-sync</div>
+      <div class="deliverable"><strong>Rapid Concept Iteration</strong>10-20 visual concepts in days instead of weeks for fast direction testing</div>
+      <div class="deliverable"><strong>AI-Assisted VFX</strong>Background replacement, scene extension, style transfer, artifact cleanup</div>
+      <div class="deliverable"><strong>Human Finishing Pass</strong>Color grade (DaVinci), compositing, editorial cuts, broadcast-standard audio</div>
     </div>
 
     <div class="section-label">Pricing Tiers</div>
     <div class="tier-grid">
       <div class="tier">
         <h5>AI Content Pack</h5>
-        <div class="tier-price">AED 8,000</div>
-        <div class="tier-note">Social & marketing assets</div>
+        <div class="tier-price">AED 1,100</div>
+        <div class="tier-note">Social &amp; marketing assets</div>
         <ul>
           <li>10-15 AI product images</li>
           <li>2-3 short AI videos (15 sec)</li>
@@ -606,19 +520,19 @@
       </div>
       <div class="tier">
         <h5>AI Hero Video</h5>
-        <div class="tier-price">AED 18,000</div>
+        <div class="tier-price">AED 2,600</div>
         <div class="tier-note">30-60 sec cinematic</div>
         <ul>
           <li>AI-generated footage</li>
           <li>Professional editing</li>
-          <li>Sound design & music</li>
+          <li>Sound design &amp; music</li>
           <li>Color grading</li>
           <li>Multiple cutdowns</li>
         </ul>
       </div>
       <div class="tier">
         <h5>AI Campaign Suite</h5>
-        <div class="tier-price">AED 25,000 – 30,000</div>
+        <div class="tier-price">AED 4,200 – 5,300</div>
         <div class="tier-note">Full campaign production</div>
         <ul>
           <li>Hero video + variations</li>
@@ -630,13 +544,13 @@
       </div>
     </div>
 
-    <div class="timeline-note"><strong>Timeline:</strong> 2-3 weeks — Brief & Direction → Generation Sprint → Human Finishing → Delivery</div>
-    <div class="sales-tip"><strong>Sales Tip:</strong> AI video is the fastest-growing service. Position it as 60-70% cost savings vs. traditional production. Great entry point for clients who need content fast. Virtual presenters are popular with government and corporate clients.</div>
+    <div class="timeline-note"><strong>Timeline:</strong> 1-3 weeks — Brief &amp; Direction (2-3 days) → Generation Sprint (3-5 days) → Human Finishing (3-5 days) → Delivery</div>
+    <div class="sales-tip"><strong>Sales Tip:</strong> AI video is the fastest-growing service. Position it as 50-70% cost savings vs. traditional production. Great entry point for new clients who need content fast. Virtual presenters are popular with government and corporate training.</div>
   </div></div>
 </div>
 
 <!-- ==================== WEB & DIGITAL ==================== -->
-<div class="category"><span class="cat-dot"></span> Web & Digital</div>
+<div class="category"><span class="cat-dot"></span> Web &amp; Digital</div>
 
 <!-- 7. Website Design -->
 <div class="service-card">
@@ -645,27 +559,29 @@
       <div class="svc-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><circle cx="6" cy="6.5" r=".6" fill="currentColor" stroke="none"/><circle cx="8.6" cy="6.5" r=".6" fill="currentColor" stroke="none"/></svg></div>
       <h3>Website Design</h3>
     </div>
-    <span class="price-tag">AED 12,000 – 55,000</span>
+    <span class="price-tag">AED 1,800 – 9,800</span>
     <svg class="chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
   </div>
   <div class="service-body"><div class="service-body-inner">
-    <p class="svc-desc">Landing pages, marketing sites, and full site builds — designed to look premium and convert. Built on Webflow, Framer, or headless WordPress with 90+ Lighthouse scores, bilingual EN/AR with RTL support, and 30 days post-launch support.</p>
+    <p class="svc-desc">Landing pages, marketing sites, and full site builds — designed to look premium and convert. Built on Webflow, Framer, or headless WordPress with 90+ Lighthouse scores and bilingual EN/AR RTL support.</p>
+
+    <p class="svc-spec">We handle the full website lifecycle from information architecture to post-launch support. Discovery starts with a sitemap and user flow workshop to define page structure, navigation hierarchy, and conversion funnels. UI/UX design is done in Figma — we deliver wireframes first for structural approval, then high-fidelity mockups with full visual design for desktop and mobile breakpoints. Interactive prototypes (clickable Figma flows) are provided for stakeholder review before development begins. Development is primarily on Webflow (our default for marketing sites — fast, CMS-friendly, SEO-strong), Framer (for highly animated, design-forward sites), or headless WordPress/Sanity (for content-heavy sites needing editorial flexibility). Every site is built mobile-first with responsive breakpoints at 1440px, 1024px, 768px, and 375px. Performance targets: 90+ Lighthouse score across Performance, Accessibility, Best Practices, and SEO. Technical SEO is built in: semantic HTML structure, Open Graph tags, Twitter Cards, JSON-LD structured data, auto-generated XML sitemap, robots.txt, and canonical URLs. Analytics setup includes GA4 property creation, conversion event tracking (form submissions, button clicks, scroll depth), Meta Pixel installation, and Google Search Console verification. Bilingual support (EN/AR) includes full RTL stylesheet, language switcher component, and separate CMS content entries for each language — RTL is not just flipped CSS, we redesign navigation and reading flow for Arabic users. Post-launch support covers bug fixes, minor content updates, and performance monitoring for 14-30 days depending on tier. Domain and hosting setup assistance is included (client pays hosting costs directly to provider — we recommend Webflow hosting, Vercel, or Cloudflare Pages).</p>
 
     <div class="section-label">What's Included</div>
     <div class="deliverables-grid">
-      <div class="deliverable"><strong>UI/UX Design</strong>Wireframes, high-fidelity mockups, interactive prototypes</div>
-      <div class="deliverable"><strong>Responsive Development</strong>Pixel-perfect build across desktop, tablet, and mobile</div>
-      <div class="deliverable"><strong>CMS Integration</strong>Webflow, Framer, Sanity, or headless WordPress</div>
-      <div class="deliverable"><strong>Performance & SEO</strong>90+ Lighthouse score, semantic HTML, structured data</div>
-      <div class="deliverable"><strong>Analytics & Tracking</strong>GA4, Search Console, Meta Pixel, conversion tracking</div>
-      <div class="deliverable"><strong>Bilingual EN/AR</strong>Full RTL support, language switcher, localized content</div>
+      <div class="deliverable"><strong>UI/UX Design</strong>Figma wireframes, high-fidelity mockups, interactive prototypes for desktop &amp; mobile</div>
+      <div class="deliverable"><strong>Responsive Development</strong>Mobile-first build with breakpoints at 1440/1024/768/375px</div>
+      <div class="deliverable"><strong>CMS Integration</strong>Webflow, Framer, Sanity, or headless WordPress — client-editable content</div>
+      <div class="deliverable"><strong>Performance &amp; SEO</strong>90+ Lighthouse, semantic HTML, JSON-LD, Open Graph, XML sitemap</div>
+      <div class="deliverable"><strong>Analytics &amp; Tracking</strong>GA4, Search Console, Meta Pixel, conversion event tracking</div>
+      <div class="deliverable"><strong>Bilingual EN/AR</strong>Full RTL support, language switcher, separate CMS entries per language</div>
     </div>
 
     <div class="section-label">Pricing Tiers</div>
     <div class="tier-grid">
       <div class="tier">
         <h5>Landing Page</h5>
-        <div class="tier-price">AED 12,000</div>
+        <div class="tier-price">AED 1,800</div>
         <div class="tier-note">Single page, conversion-focused</div>
         <ul>
           <li>1 page with sections</li>
@@ -677,19 +593,19 @@
       </div>
       <div class="tier">
         <h5>Business Website</h5>
-        <div class="tier-price">AED 25,000 – 35,000</div>
+        <div class="tier-price">AED 4,200 – 6,300</div>
         <div class="tier-note">5-10 pages, CMS</div>
         <ul>
           <li>5-10 custom pages</li>
           <li>CMS for blog/news</li>
           <li>SEO optimization</li>
-          <li>Bilingual option</li>
+          <li>Bilingual option (+25%)</li>
           <li>30 days support</li>
         </ul>
       </div>
       <div class="tier">
         <h5>Premium Website</h5>
-        <div class="tier-price">AED 42,000 – 55,000</div>
+        <div class="tier-price">AED 7,700 – 9,800</div>
         <div class="tier-note">15+ pages, custom features</div>
         <ul>
           <li>15+ pages with animations</li>
@@ -701,8 +617,8 @@
       </div>
     </div>
 
-    <div class="timeline-note"><strong>Timeline:</strong> 5-6 weeks — Discovery & IA → Design → Build → Launch (+ 30 days post-launch support)</div>
-    <div class="sales-tip"><strong>Sales Tip:</strong> Bilingual (EN/AR) adds ~30% to the price but is almost always needed in UAE. Bundle with SEO & Analytics for ongoing revenue. Webflow is the default CMS — mention it for clients who want to edit content themselves.</div>
+    <div class="timeline-note"><strong>Timeline:</strong> 4-6 weeks — Discovery &amp; IA (Week 1) → Design (Weeks 2-3) → Build (Weeks 3-5) → Launch + 30 days support</div>
+    <div class="sales-tip"><strong>Sales Tip:</strong> Bilingual (EN/AR) adds ~25% to the price but is almost always needed in UAE. Bundle with SEO &amp; Analytics for ongoing retainer revenue. Webflow is the default CMS — mention it for clients who want to edit content themselves.</div>
   </div></div>
 </div>
 
@@ -713,39 +629,41 @@
       <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg></div>
       <h3>E-Commerce</h3>
     </div>
-    <span class="price-tag">AED 20,000 – 75,000</span>
+    <span class="price-tag">AED 3,500 – 12,300</span>
     <svg class="chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
   </div>
   <div class="service-body"><div class="service-body-inner">
-    <p class="svc-desc">Full e-commerce builds on Shopify or headless (Shopify + Next.js). From product pages to checkout, integrated with UAE/GCC payment (Stripe, Tabby, Tamara, Apple Pay, COD) and shipping (Aramex, DHL).</p>
+    <p class="svc-desc">Full e-commerce builds on Shopify or headless (Shopify + Next.js). From product pages to checkout, integrated with UAE/GCC payment and shipping providers.</p>
+
+    <p class="svc-spec">We build e-commerce stores that are specifically optimized for the UAE and GCC market. The platform of choice is Shopify (standard or Plus) for most clients, with headless architecture (Shopify Storefront API + Next.js frontend) for clients needing custom UX, extreme performance, or multi-storefront setups. Storefront design includes custom theme design (not a template tweak — we design from scratch in Figma, then build), product page layouts with gallery, variant selectors, size guides, and trust badges, collection/category pages with filtering and sorting, and a cart/checkout flow optimized for mobile conversion. Payment integration covers the full UAE stack: Stripe (cards), Tabby (buy-now-pay-later in 4 installments — this is essential for fashion/lifestyle), Tamara (BNPL alternative popular in Saudi/GCC), Apple Pay, and Cash on Delivery (COD, still 30-40% of UAE e-commerce). Shipping integration includes Aramex (domestic and GCC), DHL Express (international), local same-day couriers (Fetchr, Quiqup), automated tracking notifications via SMS/email, and shipping rate calculation at checkout. Inventory management covers product upload (we handle bulk import via CSV), variant management (size/color/material), collection organization, inventory tracking with low-stock alerts, and barcode/SKU management. The checkout is optimized for UAE: guest checkout enabled by default (reduces friction), Arabic/English language support, AED as primary currency with multi-currency option, VAT-inclusive pricing display (5% UAE VAT), and abandoned cart recovery emails. Post-launch includes staff training (2-hour session covering order management, product updates, and discount creation), 14-30 days of bug fixes and support, and documentation for ongoing store management.</p>
 
     <div class="section-label">What's Included</div>
     <div class="deliverables-grid">
-      <div class="deliverable"><strong>Storefront Design</strong>Custom theme design, product pages, collection pages, brand-aligned UX</div>
-      <div class="deliverable"><strong>Checkout Optimization</strong>Streamlined checkout with guest checkout, saved carts, upsells</div>
-      <div class="deliverable"><strong>Payment Integration</strong>Stripe, Tabby (BNPL), Tamara, Apple Pay, COD for UAE/GCC</div>
-      <div class="deliverable"><strong>Inventory & Catalog</strong>Product upload, variants, collections, filters, search</div>
-      <div class="deliverable"><strong>Shipping Integration</strong>Aramex, DHL, local couriers, tracking, auto-notifications</div>
-      <div class="deliverable"><strong>Post-Launch Support</strong>Bug fixes, performance monitoring, and training</div>
+      <div class="deliverable"><strong>Storefront Design</strong>Custom theme from scratch in Figma, product/collection pages, brand-aligned UX</div>
+      <div class="deliverable"><strong>Checkout Optimization</strong>Guest checkout, saved carts, abandoned cart emails, mobile-optimized flow</div>
+      <div class="deliverable"><strong>Payment Integration</strong>Stripe, Tabby (BNPL), Tamara, Apple Pay, COD — full UAE/GCC stack</div>
+      <div class="deliverable"><strong>Inventory &amp; Catalog</strong>Bulk CSV import, variants, collections, filters, SKU/barcode management</div>
+      <div class="deliverable"><strong>Shipping Integration</strong>Aramex, DHL, local couriers, auto-tracking, rate calculation at checkout</div>
+      <div class="deliverable"><strong>Post-Launch Support</strong>Staff training (2hr), bug fixes, documentation, 14-30 days support</div>
     </div>
 
     <div class="section-label">Pricing Tiers</div>
     <div class="tier-grid">
       <div class="tier">
         <h5>Starter Store</h5>
-        <div class="tier-price">AED 20,000</div>
+        <div class="tier-price">AED 3,500</div>
         <div class="tier-note">Up to 50 products</div>
         <ul>
           <li>Shopify theme customization</li>
-          <li>Product & catalog setup</li>
-          <li>Payment gateway</li>
+          <li>Product &amp; catalog setup</li>
+          <li>Payment gateway (Stripe)</li>
           <li>1 shipping method</li>
           <li>14 days support</li>
         </ul>
       </div>
       <div class="tier">
         <h5>Growth Store</h5>
-        <div class="tier-price">AED 38,000 – 48,000</div>
+        <div class="tier-price">AED 6,300 – 7,700</div>
         <div class="tier-note">Up to 500 products</div>
         <ul>
           <li>Custom Shopify theme</li>
@@ -757,7 +675,7 @@
       </div>
       <div class="tier">
         <h5>Enterprise / Headless</h5>
-        <div class="tier-price">AED 60,000 – 75,000</div>
+        <div class="tier-price">AED 9,800 – 12,300</div>
         <div class="tier-note">Shopify + Next.js, unlimited</div>
         <ul>
           <li>Headless architecture</li>
@@ -769,8 +687,8 @@
       </div>
     </div>
 
-    <div class="timeline-note"><strong>Timeline:</strong> 6-7 weeks — Discovery (Week 1) → Design (Weeks 2-3) → Build & Integrate (Weeks 4-6) → Launch (Week 7)</div>
-    <div class="sales-tip"><strong>Sales Tip:</strong> Tabby and Tamara (buy-now-pay-later) are essential for UAE e-commerce — always include them. Fashion, beauty, and F&B brands are the biggest buyers. Offer product photography as an add-on.</div>
+    <div class="timeline-note"><strong>Timeline:</strong> 5-7 weeks — Discovery (Week 1) → Design (Weeks 2-3) → Build &amp; Integrate (Weeks 4-6) → Launch (Week 7)</div>
+    <div class="sales-tip"><strong>Sales Tip:</strong> Tabby and Tamara (BNPL) are essential for UAE e-commerce — always include them. Fashion, beauty, and F&amp;B brands are the biggest buyers. Offer product photography as an add-on. Shopify subscription fees (AED 130-2,000/mo) are paid by the client directly.</div>
   </div></div>
 </div>
 
@@ -779,33 +697,35 @@
   <div class="service-header" onclick="this.parentElement.classList.toggle('open')">
     <div class="left">
       <div class="svc-icon"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="5" rx="1.5"/><rect x="4" y="14" width="16" height="5" rx="1.5"/><circle cx="7" cy="6.5" r=".6" fill="currentColor" stroke="none"/><circle cx="7" cy="16.5" r=".6" fill="currentColor" stroke="none"/></svg></div>
-      <h3>Platform Web (Custom CRM & Dashboards)</h3>
+      <h3>Platform Web (Custom CRM &amp; Dashboards)</h3>
     </div>
-    <span class="price-tag">AED 50,000 – 200,000+</span>
+    <span class="price-tag">AED 8,800 – 35,000+</span>
     <svg class="chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
   </div>
   <div class="service-body"><div class="service-body-inner">
-    <p class="svc-desc">Custom CRMs, dashboards, and internal tools engineered around the way your client's team actually works. Built with React + TypeScript, Node/Python backends, Postgres, with role-based access and API integrations.</p>
+    <p class="svc-desc">Custom CRMs, dashboards, and internal tools engineered around the way your client's team works. Built with React + TypeScript, Node/Python backends, and Postgres.</p>
+
+    <p class="svc-spec">This is our most complex and highest-value service — it covers custom web application development for businesses that have outgrown spreadsheets, generic SaaS tools, or legacy systems. We build bespoke platforms from scratch using a modern stack: React + TypeScript for the frontend (fast, maintainable, component-based), Node.js or Python for the backend (depending on data/ML requirements), PostgreSQL for the database, and deployment on AWS, Google Cloud, or Vercel. The discovery phase (2 weeks) involves stakeholder interviews, workflow mapping, pain point identification, and a detailed requirements document with user stories and acceptance criteria — this phase is often sold as a standalone paid engagement (AED 2,800-3,500) before committing to the full build. Design follows with wireframes and a clickable Figma prototype that the client tests before any code is written. Build phase follows agile sprints (2-week cycles) with a demo at the end of each sprint so the client sees progress and can redirect early. Core features typically include: user authentication (email/social/SSO), role-based access control (admin/manager/agent with granular permissions), CRUD operations for business entities (leads, contacts, orders, inventory, etc.), dashboard with KPI widgets and real-time charts, reporting with filters and CSV/PDF export, notification system (email + in-app), and API integrations with existing tools (HubSpot, SAP, Salesforce, payment gateways, WhatsApp Business API, etc.). The platform is containerized (Docker) for consistent deployment and can scale horizontally. Post-launch support includes bug fixes, performance monitoring, and a 2-hour team training session. Ongoing maintenance retainers (AED 1,050-2,800/mo) cover hosting management, security patches, feature iterations, and 4-8 hour monthly dev allocation.</p>
 
     <div class="section-label">What's Included</div>
     <div class="deliverables-grid">
-      <div class="deliverable"><strong>Discovery Workshop</strong>2-week deep dive into workflows, pain points, and requirements</div>
-      <div class="deliverable"><strong>Custom CRM Builds</strong>Lead management, pipeline, contacts, activity tracking</div>
-      <div class="deliverable"><strong>Internal Dashboards</strong>KPI reporting, data visualization, real-time metrics</div>
-      <div class="deliverable"><strong>Workflow Automation</strong>Automated tasks, notifications, approval chains, reminders</div>
-      <div class="deliverable"><strong>Role-Based Access</strong>Admin, manager, agent roles with granular permissions</div>
-      <div class="deliverable"><strong>API & Integrations</strong>Connect to existing tools: HubSpot, SAP, payment gateways, etc.</div>
+      <div class="deliverable"><strong>Discovery Workshop</strong>2-week deep dive: stakeholder interviews, workflow mapping, requirements doc</div>
+      <div class="deliverable"><strong>Custom CRM Builds</strong>Lead management, pipeline tracking, contacts, activity logs, deal stages</div>
+      <div class="deliverable"><strong>Internal Dashboards</strong>KPI widgets, real-time charts, reporting with filters, CSV/PDF export</div>
+      <div class="deliverable"><strong>Workflow Automation</strong>Automated tasks, email notifications, approval chains, scheduled reminders</div>
+      <div class="deliverable"><strong>Role-Based Access</strong>Admin/manager/agent roles with granular permissions per feature</div>
+      <div class="deliverable"><strong>API &amp; Integrations</strong>HubSpot, SAP, Salesforce, payment gateways, WhatsApp Business API, etc.</div>
     </div>
 
     <div class="section-label">Pricing Tiers</div>
     <div class="tier-grid">
       <div class="tier">
         <h5>MVP Dashboard</h5>
-        <div class="tier-price">AED 50,000 – 75,000</div>
-        <div class="tier-note">8-10 weeks, core features</div>
+        <div class="tier-price">AED 8,800 – 14,000</div>
+        <div class="tier-note">6-8 weeks, core features</div>
         <ul>
           <li>3-5 core screens</li>
-          <li>User auth & roles</li>
+          <li>User auth &amp; roles</li>
           <li>Basic reporting</li>
           <li>1-2 integrations</li>
           <li>30 days support</li>
@@ -813,8 +733,8 @@
       </div>
       <div class="tier">
         <h5>Full Platform</h5>
-        <div class="tier-price">AED 120,000 – 160,000</div>
-        <div class="tier-note">14-18 weeks, full build</div>
+        <div class="tier-price">AED 21,000 – 28,000</div>
+        <div class="tier-note">12-16 weeks, full build</div>
         <ul>
           <li>10-20 screens</li>
           <li>Complex workflows</li>
@@ -825,91 +745,93 @@
       </div>
       <div class="tier">
         <h5>Enterprise</h5>
-        <div class="tier-price">AED 200,000+</div>
+        <div class="tier-price">AED 35,000+</div>
         <div class="tier-note">Custom scope, ongoing</div>
         <ul>
           <li>Unlimited screens</li>
           <li>Multi-tenant / white-label</li>
-          <li>CI/CD & DevOps</li>
-          <li>SLA & dedicated support</li>
+          <li>CI/CD &amp; DevOps</li>
+          <li>SLA &amp; dedicated support</li>
           <li>Ongoing retainer</li>
         </ul>
       </div>
     </div>
 
-    <div class="timeline-note"><strong>Timeline:</strong> 10-20+ weeks — Discovery (Weeks 1-2) → Design (Weeks 3-4) → Build MVP (Weeks 5-10) → Iterate (Ongoing)</div>
-    <div class="sales-tip"><strong>Sales Tip:</strong> This is the highest-value service. Target fintech, logistics, and real estate companies in Dubai who have outgrown spreadsheets. Always start with a paid discovery workshop (AED 15,000-20,000) before quoting the full build.</div>
+    <div class="timeline-note"><strong>Timeline:</strong> 8-20+ weeks — Discovery (Weeks 1-2) → Design (Weeks 3-4) → Build MVP (Weeks 5-8) → Iterate (Ongoing)</div>
+    <div class="sales-tip"><strong>Sales Tip:</strong> This is the highest-value service. Target fintech, logistics, and real estate companies in Dubai who have outgrown spreadsheets. Always start with a paid discovery workshop (AED 2,800-3,500) before quoting the full build — it de-risks the project for both sides.</div>
   </div></div>
 </div>
 
 <!-- ==================== MARKETING & GROWTH ==================== -->
-<div class="category"><span class="cat-dot"></span> Marketing & Growth</div>
+<div class="category"><span class="cat-dot"></span> Marketing &amp; Growth</div>
 
 <!-- 10. SEO & Analytics -->
 <div class="service-card">
   <div class="service-header" onclick="this.parentElement.classList.toggle('open')">
     <div class="left">
       <div class="svc-icon"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="7"/><path d="M15 15l6 6"/></svg></div>
-      <h3>SEO & Analytics</h3>
+      <h3>SEO &amp; Analytics</h3>
     </div>
-    <span class="price-tag">AED 5,000 – 12,000/mo</span>
+    <span class="price-tag">AED 1,100 – 2,500/mo</span>
     <svg class="chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
   </div>
   <div class="service-body"><div class="service-body-inner">
-    <p class="svc-desc">Technical SEO, content strategy, and analytics set up correctly from the start. Includes GA4, Search Console, Meta Pixel setup, growth dashboards, and monthly reporting.</p>
+    <p class="svc-desc">Technical SEO, content strategy, and analytics set up correctly from the start. GA4, Search Console, Meta Pixel setup, growth dashboards, and monthly reporting included.</p>
+
+    <p class="svc-spec">Our SEO service is structured in two parts: an initial audit-and-setup phase (one-time), followed by an ongoing growth retainer (monthly). The technical SEO audit is a comprehensive review of the client's website covering: site speed analysis (Core Web Vitals — LCP, FID, CLS), crawlability assessment (robots.txt, XML sitemap, internal link structure, orphan pages), indexation review (Google Search Console coverage report, index bloat, duplicate content), mobile-first readiness (responsive design, tap targets, font sizes), schema markup audit (JSON-LD structured data for business, product, FAQ, article, breadcrumb, and local business types), and security (HTTPS, mixed content, HSTS headers). On-page optimization covers meta title and description optimization for target keywords (following Google's 60/160 character guidelines), heading hierarchy (H1-H6 structure), internal linking strategy with anchor text optimization, image optimization (alt text, WebP conversion, lazy loading), URL structure cleanup, and canonical tag implementation. Content strategy includes keyword research using Ahrefs/SEMrush (identifying 50-100 target keywords per quarter ranked by search volume, difficulty, and commercial intent), topic cluster mapping (pillar pages + supporting articles), content calendar with publishing cadence, and blog/landing page writing (if included in retainer). Analytics setup covers: GA4 property creation with enhanced measurement, custom event tracking (form submissions, button clicks, scroll depth, file downloads, video views), conversion goal setup, Google Search Console property verification and monitoring, Meta Pixel installation with standard events (ViewContent, Lead, Purchase), and Google Tag Manager container setup for clean tracking management. Growth dashboards are built in Looker Studio (formerly Google Data Studio) — a live, shareable dashboard showing traffic trends, keyword rankings, conversion rates, page performance, and channel attribution. Monthly reporting includes a 30-minute call reviewing performance, wins, issues, and next-month priorities, plus a written PDF report the client can share with their team.</p>
 
     <div class="section-label">What's Included</div>
     <div class="deliverables-grid">
-      <div class="deliverable"><strong>Technical SEO Audit</strong>Site speed, crawlability, indexation, schema markup, mobile-first</div>
-      <div class="deliverable"><strong>On-Page Optimization</strong>Meta tags, headings, internal linking, image alt text, URL structure</div>
-      <div class="deliverable"><strong>Content Strategy</strong>Keyword research, topic clusters, content calendar, blog/landing pages</div>
-      <div class="deliverable"><strong>Analytics Setup</strong>GA4, Search Console, Meta Pixel, custom event tracking</div>
-      <div class="deliverable"><strong>Growth Dashboards</strong>Real-time KPI dashboards in Looker Studio or custom build</div>
-      <div class="deliverable"><strong>Monthly Reporting</strong>Traffic, rankings, conversions, recommendations — every 30 days</div>
+      <div class="deliverable"><strong>Technical SEO Audit</strong>Core Web Vitals, crawlability, indexation, schema markup, mobile-first, security</div>
+      <div class="deliverable"><strong>On-Page Optimization</strong>Meta tags, heading hierarchy, internal linking, image optimization, canonicals</div>
+      <div class="deliverable"><strong>Content Strategy</strong>Keyword research (Ahrefs/SEMrush), topic clusters, content calendar</div>
+      <div class="deliverable"><strong>Analytics Setup</strong>GA4 with custom events, Search Console, Meta Pixel, Google Tag Manager</div>
+      <div class="deliverable"><strong>Growth Dashboards</strong>Live Looker Studio dashboard with traffic, rankings, conversions, attribution</div>
+      <div class="deliverable"><strong>Monthly Reporting</strong>30-min review call + PDF report with performance, wins, and priorities</div>
     </div>
 
     <div class="section-label">Pricing Tiers</div>
     <div class="tier-grid">
       <div class="tier">
-        <h5>SEO Audit & Setup</h5>
-        <div class="tier-price">AED 8,000</div>
+        <h5>SEO Audit &amp; Setup</h5>
+        <div class="tier-price">AED 1,400</div>
         <div class="tier-note">One-time, 2-week sprint</div>
         <ul>
           <li>Full technical audit</li>
           <li>On-page fixes</li>
-          <li>Analytics setup (GA4)</li>
-          <li>Search Console config</li>
+          <li>GA4 + Search Console</li>
+          <li>Meta Pixel setup</li>
           <li>Recommendations report</li>
         </ul>
       </div>
       <div class="tier">
         <h5>Growth Retainer</h5>
-        <div class="tier-price">AED 5,000/mo</div>
-        <div class="tier-note">Ongoing SEO & reporting</div>
+        <div class="tier-price">AED 1,100/mo</div>
+        <div class="tier-note">Ongoing SEO &amp; reporting</div>
         <ul>
           <li>Monthly optimization</li>
           <li>4 blog posts/month</li>
           <li>Keyword tracking</li>
           <li>Monthly report call</li>
-          <li>Min. 6-month commitment</li>
+          <li>Min. 3-month commitment</li>
         </ul>
       </div>
       <div class="tier">
         <h5>Premium Growth</h5>
-        <div class="tier-price">AED 12,000/mo</div>
+        <div class="tier-price">AED 2,500/mo</div>
         <div class="tier-note">Full growth management</div>
         <ul>
           <li>Everything in Growth</li>
           <li>8 content pieces/month</li>
-          <li>Link building</li>
+          <li>Link building outreach</li>
           <li>Conversion optimization</li>
-          <li>Custom dashboards</li>
+          <li>Custom Looker dashboard</li>
         </ul>
       </div>
     </div>
 
-    <div class="timeline-note"><strong>Timeline:</strong> Audit (Weeks 1-2) → Fix & Setup (Weeks 3-4) → Content & Growth (Ongoing) → Monthly Reviews</div>
-    <div class="sales-tip"><strong>Sales Tip:</strong> Always bundle SEO setup with website builds — it's an easy add-on. Monthly retainers are recurring revenue. Position as "your website without SEO is a billboard in the desert."</div>
+    <div class="timeline-note"><strong>Timeline:</strong> Audit (Weeks 1-2) → Fix &amp; Setup (Weeks 3-4) → Content &amp; Growth (Ongoing) → Monthly Reviews every 30 days</div>
+    <div class="sales-tip"><strong>Sales Tip:</strong> Always bundle SEO setup with website builds — it's an easy AED 1,400 add-on. Monthly retainers are recurring revenue. Position as "your website without SEO is a billboard in the desert — nobody finds it."</div>
   </div></div>
 </div>
 
@@ -920,27 +842,29 @@
       <div class="svc-icon"><svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="2.2"/><circle cx="19" cy="6" r="2.2"/><circle cx="19" cy="18" r="2.2"/><path d="M7 10.8L17 6.8M7 13.2L17 17.2"/></svg></div>
       <h3>Social Media Management</h3>
     </div>
-    <span class="price-tag">AED 6,000 – 18,000/mo</span>
+    <span class="price-tag">AED 1,200 – 3,500/mo</span>
     <svg class="chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
   </div>
   <div class="service-body"><div class="service-body-inner">
-    <p class="svc-desc">Full-funnel social media — strategy, content calendars, daily creative production, community management in Arabic or English. Built for platform-native growth across up to 3 platforms (Instagram, LinkedIn, TikTok, X, YouTube Shorts, Snapchat).</p>
+    <p class="svc-desc">Full-funnel social media — strategy, content calendars, daily creative production, and community management in Arabic or English. Built for platform-native growth across up to 3 platforms.</p>
+
+    <p class="svc-spec">Our social media management is a full-service retainer that covers everything from strategy to daily execution. We start with a 2-week audit phase: reviewing the client's current social presence, analyzing competitors (3-5 competitor accounts benchmarked), defining target audience personas, establishing brand voice guidelines for social, and selecting the right 1-3 platforms based on where the audience actually spends time (not where the client thinks they should be). Supported platforms: Instagram, LinkedIn, TikTok, X (Twitter), YouTube Shorts, and Snapchat. We create a quarterly content strategy document that defines content pillars (typically 4-6 themes like "Behind the Scenes," "Product Showcase," "Industry Tips," "Team Culture," etc.), content mix ratios (e.g., 40% value/educational, 30% engagement, 20% promotional, 10% user-generated), and KPI targets (follower growth rate, engagement rate, reach, website clicks). Monthly content calendars are planned 2 weeks in advance with the full month visible — each post includes copy (caption text with hashtag strategy), visual direction, posting date/time (optimized per platform algorithm), and call-to-action. Creative production covers static feed posts (designed in Figma/Canva at brand-quality level), Instagram/TikTok Reels (short-form vertical video, 15-60 sec, filmed or animated), Stories (daily ephemeral content with polls, Q&A, links), and YouTube Shorts (repurposed vertical content). Community management includes responding to DMs within 4 business hours, moderating comments (hiding spam, replying to genuine engagement), handling negative feedback with pre-approved escalation protocols, and basic crisis response coordination. Paid boost setup (organic budget, not managed ad campaigns) covers Meta Business Suite ad account configuration, audience creation (lookalikes, interest-based, custom audiences from pixel data), and budget allocation guidance — the client provides the ad spend budget directly to Meta/Google. Monthly reporting covers: follower growth, engagement rate (likes, comments, shares, saves), reach and impressions, top-performing posts, website traffic from social, and next-month recommendations. Reports are delivered as a PDF + a 20-30 minute video call.</p>
 
     <div class="section-label">What's Included</div>
     <div class="deliverables-grid">
-      <div class="deliverable"><strong>Content Strategy</strong>Quarterly strategy with brand voice, pillars, and audience targeting</div>
-      <div class="deliverable"><strong>Monthly Calendar</strong>20-30 posts per platform, planned and approved in advance</div>
-      <div class="deliverable"><strong>Daily Creative</strong>Feed posts, Reels, Stories, Shorts — designed and produced daily</div>
-      <div class="deliverable"><strong>Community Management</strong>DM responses, comment management, crisis handling (AR or EN)</div>
-      <div class="deliverable"><strong>Paid Boost Setup</strong>Ad account setup, audience targeting, budget allocation</div>
-      <div class="deliverable"><strong>Monthly Reporting</strong>Growth metrics, engagement rates, content performance, insights</div>
+      <div class="deliverable"><strong>Content Strategy</strong>Quarterly strategy with audience personas, content pillars, KPI targets</div>
+      <div class="deliverable"><strong>Monthly Calendar</strong>15-30 posts per platform, planned 2 weeks ahead with copy and visual direction</div>
+      <div class="deliverable"><strong>Daily Creative</strong>Feed posts, Reels/TikToks, Stories, Shorts — designed and produced daily</div>
+      <div class="deliverable"><strong>Community Management</strong>DM responses (4hr SLA), comment moderation, crisis handling (AR or EN)</div>
+      <div class="deliverable"><strong>Paid Boost Setup</strong>Meta ad account config, audience creation, budget allocation guidance</div>
+      <div class="deliverable"><strong>Monthly Reporting</strong>Growth metrics, engagement, top posts, traffic — PDF + 20-30 min call</div>
     </div>
 
     <div class="section-label">Pricing Tiers</div>
     <div class="tier-grid">
       <div class="tier">
         <h5>Starter</h5>
-        <div class="tier-price">AED 6,000/mo</div>
+        <div class="tier-price">AED 1,200/mo</div>
         <div class="tier-note">1 platform, 15 posts/mo</div>
         <ul>
           <li>1 platform</li>
@@ -952,10 +876,10 @@
       </div>
       <div class="tier">
         <h5>Growth</h5>
-        <div class="tier-price">AED 12,000/mo</div>
-        <div class="tier-note">2-3 platforms, 25 posts/mo</div>
+        <div class="tier-price">AED 2,300/mo</div>
+        <div class="tier-note">2 platforms, 25 posts/mo</div>
         <ul>
-          <li>2-3 platforms</li>
+          <li>2 platforms</li>
           <li>25 posts + 12 Stories/mo</li>
           <li>4 Reels/Shorts/month</li>
           <li>Full community mgmt</li>
@@ -964,7 +888,7 @@
       </div>
       <div class="tier">
         <h5>Premium</h5>
-        <div class="tier-price">AED 18,000/mo</div>
+        <div class="tier-price">AED 3,500/mo</div>
         <div class="tier-note">3 platforms, full service</div>
         <ul>
           <li>3 platforms</li>
@@ -977,13 +901,13 @@
       </div>
     </div>
 
-    <div class="timeline-note"><strong>Timeline:</strong> Audit & Strategy (Weeks 1-2) → Content Sprint (Week 3) → Go Live (Week 4) → Monthly Rhythm (Ongoing)</div>
-    <div class="sales-tip"><strong>Sales Tip:</strong> Social media is the most consistent recurring revenue. Min. 3-month contracts, ideally 6-month. F&B, retail, and hospitality clients in Dubai always need this. Upsell photography packages for original content.</div>
+    <div class="timeline-note"><strong>Timeline:</strong> Audit &amp; Strategy (Weeks 1-2) → Content Sprint (Week 3) → Go Live (Week 4) → Monthly Rhythm (Ongoing)</div>
+    <div class="sales-tip"><strong>Sales Tip:</strong> Social media is the most consistent recurring revenue. Min. 3-month contracts, ideally 6-month. F&amp;B, retail, and hospitality clients in Dubai always need this. Upsell photography packages for original content instead of stock.</div>
   </div></div>
 </div>
 
 <!-- ==================== PRESENTATIONS & EXPERIENCES ==================== -->
-<div class="category"><span class="cat-dot"></span> Presentations & Experiences</div>
+<div class="category"><span class="cat-dot"></span> Presentations &amp; Experiences</div>
 
 <!-- 12. Presentation PRO -->
 <div class="service-card">
@@ -992,27 +916,29 @@
       <div class="svc-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4"/><path d="M6.5 12l3-3 2 2 4-4"/></svg></div>
       <h3>Presentation PRO</h3>
     </div>
-    <span class="price-tag">AED 8,000 – 30,000</span>
+    <span class="price-tag">AED 1,100 – 4,900</span>
     <svg class="chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
   </div>
   <div class="service-body"><div class="service-body-inner">
-    <p class="svc-desc">Investor decks, sales presentations, and board packs designed to hold a room's attention. Clear narrative, sharp visual system, and slides that make sense even without a presenter. Delivered in Keynote, PowerPoint, PDF, or Google Slides.</p>
+    <p class="svc-desc">Investor decks, sales presentations, and board packs designed to hold a room's attention. Delivered in Keynote, PowerPoint, PDF, or Google Slides.</p>
+
+    <p class="svc-spec">This service covers the full presentation lifecycle from narrative strategy to final delivery. We start with a story workshop (1-2 hour session) to understand the audience, the ask (investment, partnership, sale, board approval), the key message hierarchy, and objection handling. From there we build a narrative arc — typically: hook/problem → market opportunity → solution → traction/proof → team → financials → ask/next steps. We then design the deck slide-by-slide in Figma before building it in the client's preferred format (PowerPoint, Keynote, Google Slides, or PDF). Design includes custom slide layouts (not templates — every slide is designed for its specific content), data visualization (charts, graphs, and infographics built from raw data, not stock chart templates), custom icon sets matching the client's brand, photography direction and image sourcing, and consistent typography with the client's brand fonts (or our recommended alternatives). For investor decks, we follow the format that VCs in the UAE and internationally expect: 10-15 slides, clean and data-driven, with appendix slides for deep-dive questions. Sales presentations include two versions: a presenter version (minimal text, speaker-dependent) and a leave-behind version (self-explanatory with more detail). Template systems (Enterprise tier) include 30-50+ master slide layouts covering every content type (title, section divider, text + image, data chart, comparison, team, timeline, quote, full-bleed image, etc.), a component library (callout boxes, stat cards, icon grids, process diagrams), and instructions documentation so the client's team can build new decks on-brand without designer help. All files are delivered with source files (AI/EPS for icons, Figma link for design reference). Speaker coaching (optional, Enterprise tier) includes a 1-hour dry run with feedback on pacing, body language, slide transitions, and Q&A preparation.</p>
 
     <div class="section-label">What's Included</div>
     <div class="deliverables-grid">
-      <div class="deliverable"><strong>Narrative & Structure</strong>Story workshop, message hierarchy, slide architecture</div>
-      <div class="deliverable"><strong>Investor Deck Design</strong>10-15 slides for VC, Series A-B, or board presentations</div>
-      <div class="deliverable"><strong>Sales Presentations</strong>Customer-facing decks + leave-behind version</div>
-      <div class="deliverable"><strong>Data Visualization</strong>Charts, infographics, and data storytelling layouts</div>
-      <div class="deliverable"><strong>Template System</strong>Slide masters, layouts, component library for your team</div>
-      <div class="deliverable"><strong>Speaker Coaching</strong>Optional presentation delivery coaching</div>
+      <div class="deliverable"><strong>Narrative &amp; Structure</strong>Story workshop, message hierarchy, narrative arc, objection handling</div>
+      <div class="deliverable"><strong>Investor Deck Design</strong>10-15 slides designed from scratch for VC, Series A-B, or board presentations</div>
+      <div class="deliverable"><strong>Sales Presentations</strong>Presenter version (minimal) + leave-behind version (self-explanatory)</div>
+      <div class="deliverable"><strong>Data Visualization</strong>Custom charts, graphs, and infographics built from raw data</div>
+      <div class="deliverable"><strong>Template System</strong>30-50+ master layouts, component library, instructions for in-house use</div>
+      <div class="deliverable"><strong>Speaker Coaching</strong>Optional 1-hour dry run with pacing, body language, and Q&amp;A feedback</div>
     </div>
 
     <div class="section-label">Pricing Tiers</div>
     <div class="tier-grid">
       <div class="tier">
         <h5>Pitch Deck</h5>
-        <div class="tier-price">AED 8,000 – 12,000</div>
+        <div class="tier-price">AED 1,100 – 1,800</div>
         <div class="tier-note">10-15 slides</div>
         <ul>
           <li>Narrative structuring</li>
@@ -1024,19 +950,19 @@
       </div>
       <div class="tier">
         <h5>Corporate Deck Suite</h5>
-        <div class="tier-price">AED 18,000 – 22,000</div>
+        <div class="tier-price">AED 2,800 – 3,500</div>
         <div class="tier-note">20-30 slides + template</div>
         <ul>
           <li>Multiple deck versions</li>
           <li>Master template system</li>
-          <li>Icon & illustration set</li>
+          <li>Icon &amp; illustration set</li>
           <li>Leave-behind PDF</li>
           <li>Team training session</li>
         </ul>
       </div>
       <div class="tier">
         <h5>Enterprise System</h5>
-        <div class="tier-price">AED 28,000 – 30,000</div>
+        <div class="tier-price">AED 4,200 – 4,900</div>
         <div class="tier-note">Full presentation ecosystem</div>
         <ul>
           <li>Slide library (50+ layouts)</li>
@@ -1048,8 +974,8 @@
       </div>
     </div>
 
-    <div class="timeline-note"><strong>Timeline:</strong> 3-4 weeks — Story Workshop (Week 1) → Content Draft (Week 2) → Design (Weeks 3-4) → Rehearsal</div>
-    <div class="sales-tip"><strong>Sales Tip:</strong> Startups raising Series A-B are the primary audience. Pair with branding for first-time founders. Corporate clients often want a template system their whole team can use — that's the Enterprise tier.</div>
+    <div class="timeline-note"><strong>Timeline:</strong> 2-4 weeks — Story Workshop (Week 1) → Content Draft (Week 2) → Design (Weeks 3-4) → Rehearsal</div>
+    <div class="sales-tip"><strong>Sales Tip:</strong> Startups raising Series A-B and SMEs pitching government contracts are the primary audience. Pair with branding for first-time founders. Corporate clients often want a template system their whole team can use — that's the Enterprise tier.</div>
   </div></div>
 </div>
 
@@ -1060,27 +986,29 @@
       <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M5 3l14 8-6 2-2 6-6-16z"/></svg></div>
       <h3>Interactive Presentation</h3>
     </div>
-    <span class="price-tag">AED 25,000 – 65,000</span>
+    <span class="price-tag">AED 4,200 – 10,500</span>
     <svg class="chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
   </div>
   <div class="service-body"><div class="service-body-inner">
-    <p class="svc-desc">Click-through, non-linear presentations built for demos, showrooms, and self-guided pitches. The audience explores at their own pace with embedded video, 3D, animation, and live data. Works on kiosks, tablets, and laptops.</p>
+    <p class="svc-desc">Click-through, non-linear presentations for demos, showrooms, and self-guided pitches. Audiences explore at their own pace with embedded video, 3D, animation, and live data.</p>
+
+    <p class="svc-spec">Unlike a traditional slide deck that follows a fixed linear sequence, interactive presentations are web-based experiences where the viewer navigates freely — clicking into sections, exploring product features, watching embedded videos, and interacting with calculators or configurators. These are built as responsive web applications (HTML/CSS/JS, React, or Vue depending on complexity) that run in any modern browser on any device — no software installation required. The client shares a URL or loads it on a kiosk/tablet. Content structure uses branching navigation: a home screen with clear entry points (e.g., "About Us," "Products," "Case Studies," "Contact") that each lead into sub-sections with back/forward navigation and breadcrumbs. Media embeds include video (hosted or streamed), 3D models (interactive WebGL viewers where the user can rotate/zoom), animation sequences (Lottie or MP4), live data feeds (API-connected charts that update in real time), and downloadable PDFs. Self-guided mode includes attract loops — when idle for 30-60 seconds, the presentation plays an animated screensaver/attract sequence that draws attention in showroom or exhibition settings; touch/click returns to the home screen. For product configurators, we build interactive tools where the viewer selects options (color, size, material, features) and sees the result update in real time — these are scoped and priced per feature. A CMS backend (typically Sanity or a custom admin panel) lets the client update text, images, and pricing without developer help. Cross-device delivery ensures the same presentation works on large-format kiosk displays (46-85 inch touch screens), tablets (iPad, Samsung Tab), and laptops. Analytics tracking records which sections viewers visit, how long they spend, which paths they take, and which CTAs they click — helping the sales team understand what resonates.</p>
 
     <div class="section-label">What's Included</div>
     <div class="deliverables-grid">
-      <div class="deliverable"><strong>Non-Linear Navigation</strong>Branching flows — viewers choose their own path through content</div>
-      <div class="deliverable"><strong>Interactive Prototypes</strong>Clickable product demos, configurators, calculators</div>
-      <div class="deliverable"><strong>Embedded Media</strong>Video, 3D models, animation, and live data feeds within slides</div>
-      <div class="deliverable"><strong>Self-Guided Mode</strong>Attract-loops when idle, auto-play for unattended displays</div>
-      <div class="deliverable"><strong>Cross-Device Delivery</strong>Works on kiosk, tablet, laptop — any screen</div>
-      <div class="deliverable"><strong>Content Management</strong>CMS backend for updating content without developer help</div>
+      <div class="deliverable"><strong>Non-Linear Navigation</strong>Branching flows with home screen, sub-sections, breadcrumbs, back/forward</div>
+      <div class="deliverable"><strong>Interactive Prototypes</strong>Clickable product demos, configurators, calculators — scoped per feature</div>
+      <div class="deliverable"><strong>Embedded Media</strong>Video, interactive 3D (WebGL), Lottie animation, live data feeds, PDFs</div>
+      <div class="deliverable"><strong>Self-Guided Mode</strong>Attract loops when idle, auto-play for unattended showroom/exhibition displays</div>
+      <div class="deliverable"><strong>Cross-Device Delivery</strong>Works on kiosk (46-85"), tablet (iPad/Samsung), and laptop — one URL</div>
+      <div class="deliverable"><strong>Content Management</strong>CMS backend (Sanity or custom) for text/image/pricing updates without a developer</div>
     </div>
 
     <div class="section-label">Pricing Tiers</div>
     <div class="tier-grid">
       <div class="tier">
         <h5>Standard</h5>
-        <div class="tier-price">AED 25,000 – 35,000</div>
+        <div class="tier-price">AED 4,200 – 5,600</div>
         <div class="tier-note">10-15 screens, basic nav</div>
         <ul>
           <li>10-15 interactive screens</li>
@@ -1092,7 +1020,7 @@
       </div>
       <div class="tier">
         <h5>Advanced</h5>
-        <div class="tier-price">AED 45,000 – 55,000</div>
+        <div class="tier-price">AED 7,000 – 8,800</div>
         <div class="tier-note">20+ screens, rich media</div>
         <ul>
           <li>20+ interactive screens</li>
@@ -1104,20 +1032,20 @@
       </div>
       <div class="tier">
         <h5>Enterprise</h5>
-        <div class="tier-price">AED 55,000 – 65,000</div>
+        <div class="tier-price">AED 9,800 – 10,500</div>
         <div class="tier-note">Full experience platform</div>
         <ul>
           <li>Unlimited screens</li>
           <li>Live data integration</li>
-          <li>Multi-language</li>
+          <li>Multi-language (EN/AR)</li>
           <li>Analytics dashboard</li>
           <li>On-site installation</li>
         </ul>
       </div>
     </div>
 
-    <div class="timeline-note"><strong>Timeline:</strong> 7-9 weeks — Concept & Story (Weeks 1-2) → Design (Weeks 3-4) → Build (Weeks 5-8) → Launch (Week 9)</div>
-    <div class="sales-tip"><strong>Sales Tip:</strong> Real estate developers, automotive showrooms, and exhibition stands in Dubai are the prime audience. Always demo with an iPad — it closes faster. Bundle with Interactive Screen for full showroom experiences.</div>
+    <div class="timeline-note"><strong>Timeline:</strong> 5-9 weeks — Concept &amp; Story (Weeks 1-2) → Design (Weeks 3-4) → Build (Weeks 5-7) → Launch (Week 8-9)</div>
+    <div class="sales-tip"><strong>Sales Tip:</strong> Real estate developers, automotive showrooms, and exhibition stands in Dubai are the prime audience. Always demo with an iPad — it closes faster. Bundle with Interactive Screen for full showroom installations.</div>
   </div></div>
 </div>
 
@@ -1126,32 +1054,34 @@
   <div class="service-header" onclick="this.parentElement.classList.toggle('open')">
     <div class="left">
       <div class="svc-icon"><svg viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="2.5"/><circle cx="12" cy="18" r=".9" fill="currentColor" stroke="none"/></svg></div>
-      <h3>Interactive Screen (Kiosks & Touch)</h3>
+      <h3>Interactive Screen (Kiosks &amp; Touch)</h3>
     </div>
-    <span class="price-tag">AED 30,000 – 90,000</span>
+    <span class="price-tag">AED 5,300 – 15,800</span>
     <svg class="chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
   </div>
   <div class="service-body"><div class="service-body-inner">
-    <p class="svc-desc">Kiosks, touchscreens, and in-venue displays for retail, events, showrooms, and lobbies. Includes software, hardware integration, content management dashboard, and on-site installation support.</p>
+    <p class="svc-desc">Kiosks, touchscreens, and in-venue displays for retail, events, showrooms, and lobbies. Includes software, hardware integration, content management, and on-site installation.</p>
+
+    <p class="svc-spec">This service covers the full stack for in-venue interactive installations — from the software that runs on the screens to the hardware consultation and on-site installation. The software is a custom-built web application (runs in a kiosk browser like Porteus Kiosk, KioWare, or Chrome Kiosk Mode) designed specifically for touch interaction: large tap targets (minimum 48px), swipe navigation, pinch-to-zoom for maps/images, and no hover states (touch screens don't hover). We support common kiosk use cases: wayfinding (interactive floor maps with search and directions for malls, hotels, and office buildings), product catalogs (browse and filter products with images, specs, and pricing — connects to inventory API for real-time availability), visitor check-in (name/phone entry, badge printing integration, host notification via SMS/email), product configurators (select options, see pricing, request quote), and digital signage with schedule rotation (different content at different times of day). Hardware integration covers consultation on screen selection (we work with LG, Samsung, Elo, iiyama, and iPad-based setups), enclosure/mount specification (floor-standing, wall-mounted, or tabletop), and connection to peripherals (receipt printers, QR scanners, NFC readers, badge printers). We don't sell hardware directly — we spec it and either source it for the client (billed at cost + handling) or provide a detailed spec sheet for them to purchase. The content management dashboard is a web-based admin panel (accessible from any browser) where the client can update text, images, pricing, floor maps, and display schedules without developer help — changes publish to the screens within minutes. Multi-screen sync allows coordinated content across 2-20+ screens in a venue — a central controller ensures all screens show synchronized content, can be individually addressed, and report status (online/offline, content version). On-site support covers installation (mounting, wiring, network config, software setup), testing (touch calibration, content verification, failover testing), and launch-day support (2-4 hours on-site during opening). Maintenance retainers (AED 500-1,050/mo) include remote monitoring, content updates, software patches, and 4-hour response SLA for hardware issues.</p>
 
     <div class="section-label">What's Included</div>
     <div class="deliverables-grid">
-      <div class="deliverable"><strong>Touchscreen UI Design</strong>Intuitive touch interfaces designed for first-time users</div>
-      <div class="deliverable"><strong>Kiosk Software</strong>Wayfinding, catalogs, check-in, product configurators</div>
-      <div class="deliverable"><strong>Content Management</strong>Remote dashboard to update content without on-site visits</div>
-      <div class="deliverable"><strong>Hardware Integration</strong>LG, Samsung, Elo, iiyama, iPad — we spec and source</div>
-      <div class="deliverable"><strong>Multi-Screen Sync</strong>Coordinated content across multiple screens in a venue</div>
-      <div class="deliverable"><strong>On-Site Support</strong>Installation, testing, and launch-day support</div>
+      <div class="deliverable"><strong>Touchscreen UI Design</strong>Touch-optimized interfaces with 48px+ tap targets, swipe nav, no hover states</div>
+      <div class="deliverable"><strong>Kiosk Software</strong>Wayfinding, catalogs, check-in, configurators, digital signage with scheduling</div>
+      <div class="deliverable"><strong>Content Management</strong>Web-based admin panel for text/image/pricing updates — publishes in minutes</div>
+      <div class="deliverable"><strong>Hardware Integration</strong>LG, Samsung, Elo, iiyama, iPad — spec, sourcing, peripheral connectivity</div>
+      <div class="deliverable"><strong>Multi-Screen Sync</strong>Coordinated content across 2-20+ screens with central controller and status monitoring</div>
+      <div class="deliverable"><strong>On-Site Support</strong>Installation, testing, touch calibration, failover testing, launch-day presence</div>
     </div>
 
     <div class="section-label">Pricing Tiers</div>
     <div class="tier-grid">
       <div class="tier">
         <h5>Single Kiosk</h5>
-        <div class="tier-price">AED 30,000 – 40,000</div>
+        <div class="tier-price">AED 5,300 – 7,000</div>
         <div class="tier-note">1 screen, software only</div>
         <ul>
-          <li>Touch UI design & build</li>
+          <li>Touch UI design &amp; build</li>
           <li>CMS dashboard</li>
           <li>Hardware consultation</li>
           <li>Remote installation guide</li>
@@ -1160,7 +1090,7 @@
       </div>
       <div class="tier">
         <h5>Multi-Screen Setup</h5>
-        <div class="tier-price">AED 55,000 – 70,000</div>
+        <div class="tier-price">AED 9,800 – 12,300</div>
         <div class="tier-note">2-5 screens, synced</div>
         <ul>
           <li>Multi-screen software</li>
@@ -1172,25 +1102,25 @@
       </div>
       <div class="tier">
         <h5>Venue Experience</h5>
-        <div class="tier-price">AED 75,000 – 90,000</div>
+        <div class="tier-price">AED 13,300 – 15,800</div>
         <div class="tier-note">Full venue, 5+ screens</div>
         <ul>
           <li>5+ synchronized screens</li>
           <li>Wayfinding + interactive</li>
-          <li>Analytics & heatmaps</li>
+          <li>Analytics &amp; heatmaps</li>
           <li>Full hardware + install</li>
           <li>Quarterly content updates</li>
         </ul>
       </div>
     </div>
 
-    <div class="timeline-note"><strong>Timeline:</strong> 8-9 weeks — Discovery (Weeks 1-2) → Design & Prototype (Weeks 3-4) → Build (Weeks 5-8) → Install & Launch (Week 9)</div>
-    <div class="sales-tip"><strong>Sales Tip:</strong> Malls, hotels, and real estate showrooms in Dubai are the top buyers. Hardware cost is separate — help clients budget for it (AED 5,000-25,000 per screen depending on size). Annual content maintenance retainers are strong recurring revenue (AED 3,000-5,000/mo).</div>
+    <div class="timeline-note"><strong>Timeline:</strong> 6-9 weeks — Discovery (Weeks 1-2) → Design &amp; Prototype (Weeks 3-4) → Build (Weeks 5-7) → Install &amp; Launch (Week 8-9)</div>
+    <div class="sales-tip"><strong>Sales Tip:</strong> Malls, hotels, and real estate showrooms in Dubai are the top buyers. Hardware cost is separate — help clients budget AED 3,000-15,000 per screen depending on size and enclosure. Annual content maintenance retainers (AED 500-1,050/mo) are strong recurring revenue.</div>
   </div></div>
 </div>
 
-</div><!-- /pricing-container -->
-</div><!-- /main-content -->
+</div>
+</div>
 
 <script>
   document.getElementById('pwForm').addEventListener('submit', function(e) {
@@ -1206,7 +1136,6 @@
       document.getElementById('pwInput').focus();
     }
   });
-
   if (sessionStorage.getItem('creaiva_sales') === '1') {
     document.getElementById('pwGate').classList.add('hidden');
     document.getElementById('mainContent').classList.add('visible');
