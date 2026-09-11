@@ -429,9 +429,9 @@
   .stat{padding:20px;border:1px solid var(--border);border-radius:14px;background:var(--card)}
   .stat .num{font-family:'Poppins',sans-serif;font-weight:900;font-size:32px;background:linear-gradient(90deg,var(--brand),var(--brand-2));-webkit-background-clip:text;background-clip:text;color:transparent}
   .stat .lbl{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:1.5px;margin-top:6px}
-  .about-visual{position:relative;aspect-ratio:1/1;max-width:520px;justify-self:center;width:100%}
+  .about-visual{position:relative;aspect-ratio:16/9;max-width:600px;justify-self:center;width:100%}
   .about-visual::before{content:"";position:absolute;inset:-30px;background:radial-gradient(circle at center,var(--brand-glow),transparent 60%);filter:blur(40px);z-index:0}
-  .about-visual img{position:relative;z-index:1;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 0 40px var(--brand-glow))}
+  .about-visual img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover;border-radius:20px;border:1px solid var(--border);box-shadow:0 30px 70px rgba(0,0,0,.5)}
 
   /* ================= SERVICES ================= */
   #services{background:var(--bg-1)}
@@ -558,7 +558,7 @@
 
     /* about */
     .about-grid{gap:36px}
-    .about-visual{max-width:280px}
+    .about-visual{max-width:520px}
     .stat-row{grid-template-columns:1fr;gap:12px}
 
     /* services */
@@ -818,7 +818,7 @@
   </ul>
 
   <div class="nav-right">
-    <a href="../index.html#contact" class="cta">Start a Project</a>
+    <a href="../contact.html" class="cta">Start a Project</a>
     <button class="burger" id="burger" aria-label="Menu">☰</button>
   </div>
  </div>
@@ -835,7 +835,7 @@
       <h2 class="gradient-head" style="margin-top:14px">Presentations You <span class="accent">Explore</span>.</h2>
       <p>Click-through, non-linear presentations built for demos, showrooms, and self-guided pitches — where the audience explores at their own pace instead of sitting through a fixed deck.</p>
       <div class="hero-ctas">
-        <a href="../index.html#contact" class="btn-primary">Start a Project →</a>
+        <a href="../contact.html" class="btn-primary">Start a Project →</a>
         <a href="../services/logo-branding.html" class="btn-outline">Explore All Services</a>
       </div>
     </div>
@@ -1023,7 +1023,7 @@
       <span class="eyebrow" style="justify-content:center">Ready When You Are</span>
       <h2 class="gradient-head" style="margin-top:14px">Let's talk about <span class="accent">Interactive Presentation</span>.</h2>
       <p>Tell us about your project — timeline, budget, and goals. We reply within 24 hours, in English or Arabic.</p>
-      <a href="mailto:info@creaiva.ae" class="btn-primary">Start a Project</a>
+      <a href="../contact.html" class="btn-primary">Start a Project</a>
       <div class="contact-methods">
         <a href="mailto:info@creaiva.ae">✉ info@creaiva.ae</a>
         <a href="tel:+971521559156">☎ Customer Services: +971.52.155.9156</a>
