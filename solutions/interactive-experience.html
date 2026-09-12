@@ -667,6 +667,8 @@
   }
 
 </style>
+<link rel="stylesheet" href="../assets/page-hero.css">
+<link rel="stylesheet" href="../assets/assistant.css">
 </head>
 <body>
 
@@ -825,27 +827,26 @@
 </header>
 
 <!-- ============ PAGE HERO ============ -->
-<section class="page-hero">
-  <div class="container about-grid">
-    <div class="about-text reveal">
+<section class="page-hero page-hero--immersive">
+  <div class="page-hero-media" aria-hidden="true"><img src="../motion-design-services.png" alt="" fetchpriority="high" decoding="async" /></div>
+  <div class="container page-hero-content">
+    <div class="about-text">
       <p class="breadcrumb">
-        <a href="../index.html">Home</a><span class="sep">/</span><a href="../solutions/brand-launch-package.html">Solutions</a><span class="sep">/</span><span class="current">Interactive Experience Design</span>
+        <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#solutions">Solutions</a><span class="sep">/</span><span class="current">Interactive Experience Design</span>
       </p>
       <span class="eyebrow">Solution · Touch & Gesture</span>
-      <h2 class="gradient-head" style="margin-top:14px">Experiences People <span class="accent">Remember</span>.</h2>
+      <h1 class="gradient-head">Experiences People <span class="accent">Remember</span>.</h1>
       <p>Touch, gesture, and click-driven experiences for events, showrooms, and retail — designed so the interaction itself becomes part of the story you're telling.</p>
       <div class="hero-ctas">
         <a href="../contact.html" class="btn-primary">Start a Project →</a>
-        <a href="../solutions/brand-launch-package.html" class="btn-outline">Explore All Solutions</a>
+        <a href="../index.html#solutions" class="btn-outline">Explore All Solutions</a>
       </div>
         <div class="combines-row">
           <span class="lbl">This solution combines</span>
           <div class="items"><a href="../services/interactive-screen.html">Interactive Screen</a><a href="../services/interactive-presentation.html">Interactive Presentation</a></div>
         </div>
     </div>
-    <div class="about-visual reveal">
-      <img src="../motion-design-services.png" alt="Interactive Experience Design" />
-    </div>
+
   </div>
 </section>
 
@@ -1167,5 +1168,6 @@
 
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
+<script type="module" src="../assets/assistant.mjs"></script>
 </body>
 </html>

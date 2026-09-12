@@ -1,0 +1,26 @@
+{
+  "name": "creaiva",
+  "version": "1.0.0",
+  "description": "CREAIVA static website and source-grounded site assistant",
+  "scripts": {
+    "build:knowledge": "node scripts/build-knowledge.mjs",
+    "test": "node scripts/build-knowledge.mjs --check && node --test tests/*.test.mjs",
+    "test:browser": "node scripts/check-browser.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dangerous83/CREAIVA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/dangerous83/CREAIVA/issues"
+  },
+  "homepage": "https://github.com/dangerous83/CREAIVA#readme",
+  "devDependencies": {
+    "linkedom": "^0.18.13",
+    "playwright": "^1.63.0"
+  },
+  "private": true
+}

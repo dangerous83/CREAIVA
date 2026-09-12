@@ -667,6 +667,8 @@
   }
 
 </style>
+<link rel="stylesheet" href="../assets/page-hero.css">
+<link rel="stylesheet" href="../assets/assistant.css">
 </head>
 <body>
 
@@ -825,27 +827,26 @@
 </header>
 
 <!-- ============ PAGE HERO ============ -->
-<section class="page-hero">
-  <div class="container about-grid">
-    <div class="about-text reveal">
+<section class="page-hero page-hero--immersive">
+  <div class="page-hero-media" aria-hidden="true"><img src="../ai-video-images-services.png" alt="" fetchpriority="high" decoding="async" /></div>
+  <div class="container page-hero-content">
+    <div class="about-text">
       <p class="breadcrumb">
-        <a href="../index.html">Home</a><span class="sep">/</span><a href="../solutions/brand-launch-package.html">Solutions</a><span class="sep">/</span><span class="current">AI Content Studio</span>
+        <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#solutions">Solutions</a><span class="sep">/</span><span class="current">AI Content Studio</span>
       </p>
       <span class="eyebrow">Solution · AI Media at Scale</span>
-      <h2 class="gradient-head" style="margin-top:14px">Content, at <span class="accent">AI Speed</span>.</h2>
+      <h1 class="gradient-head">Content, at <span class="accent">AI Speed</span>.</h1>
       <p>AI video and imagery production at a volume traditional shoots can't match — for brands that need a constant stream of fresh, on-brand creative across every channel.</p>
       <div class="hero-ctas">
         <a href="../contact.html" class="btn-primary">Start a Project →</a>
-        <a href="../solutions/brand-launch-package.html" class="btn-outline">Explore All Solutions</a>
+        <a href="../index.html#solutions" class="btn-outline">Explore All Solutions</a>
       </div>
         <div class="combines-row">
           <span class="lbl">This solution combines</span>
           <div class="items"><a href="../services/ai-video-realistic.html">AI Video (Realistic)</a><a href="../services/motion-design.html">Motion Design</a></div>
         </div>
     </div>
-    <div class="about-visual reveal">
-      <img src="../ai-video-images-services.png" alt="AI Content Studio" />
-    </div>
+
   </div>
 </section>
 
@@ -1167,5 +1168,6 @@
 
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
+<script type="module" src="../assets/assistant.mjs"></script>
 </body>
 </html>
