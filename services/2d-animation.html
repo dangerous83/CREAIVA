@@ -667,6 +667,8 @@
   }
 
 </style>
+<link rel="stylesheet" href="../assets/page-hero.css">
+<link rel="stylesheet" href="../assets/assistant.css">
 </head>
 <body>
 
@@ -825,23 +827,22 @@
 </header>
 
 <!-- ============ PAGE HERO ============ -->
-<section class="page-hero">
-  <div class="container about-grid">
-    <div class="about-text reveal">
+<section class="page-hero page-hero--immersive">
+  <div class="page-hero-media" aria-hidden="true"><img src="../2d-animation-services.png" alt="" fetchpriority="high" decoding="async" /></div>
+  <div class="container page-hero-content">
+    <div class="about-text">
       <p class="breadcrumb">
-        <a href="../index.html">Home</a><span class="sep">/</span><a href="../services/logo-branding.html">Services</a><span class="sep">/</span><span class="current">2D Animation</span>
+        <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#services">Services</a><span class="sep">/</span><span class="current">2D Animation</span>
       </p>
       <span class="eyebrow">2D · Illustration & Character</span>
-      <h2 class="gradient-head" style="margin-top:14px">2D Stories, <span class="accent">Handcrafted</span> Style.</h2>
+      <h1 class="gradient-head">2D Stories, <span class="accent">Handcrafted</span> Style.</h1>
       <p>Illustrated explainers, character animation, and stylized loops with real personality. We hand-craft every frame so your story lands with warmth a template never could.</p>
       <div class="hero-ctas">
         <a href="../contact.html" class="btn-primary">Start a Project →</a>
-        <a href="../services/logo-branding.html" class="btn-outline">Explore All Services</a>
+        <a href="../index.html#services" class="btn-outline">Explore All Services</a>
       </div>
     </div>
-    <div class="about-visual reveal">
-      <img src="../2d-animation-services.png" alt="2D Animation" />
-    </div>
+
   </div>
 </section>
 
@@ -1163,5 +1164,6 @@
 
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
+<script type="module" src="../assets/assistant.mjs"></script>
 </body>
 </html>

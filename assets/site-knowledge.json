@@ -1,0 +1,3319 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "path": "index.html",
+      "title": "About CREAIVA",
+      "category": "company",
+      "summary": "CREAIVA is an AI specialist and digital advertising company headquartered in Dubai. We blend generative AI, cinematic craft, and data-driven media to help brands launch faster, look bolder, and perform harder across every screen.",
+      "faqs": [
+        {
+          "question": "How quickly can you start?",
+          "answer": "Most projects kick off within a week of a signed brief. For urgent launches, we can often start sooner — just tell us the deadline and we'll be honest about what's achievable.",
+          "anchor": "home-faq"
+        },
+        {
+          "question": "Do you work with international clients?",
+          "answer": "Yes. We're headquartered in Dubai but work with brands across the GCC, Europe, and beyond. We reply within 24 hours in any timezone, in English or Arabic.",
+          "anchor": "home-faq"
+        },
+        {
+          "question": "Can I hire you for just one service?",
+          "answer": "Absolutely. Every service stands on its own — pick a single discipline, or bundle several into one of our packaged Solutions. There's no minimum retainer to work with us.",
+          "anchor": "home-faq"
+        },
+        {
+          "question": "How do you price projects?",
+          "answer": "Fixed-scope, fixed-price for defined projects — no surprise change orders. Ongoing work (social, ads, SEO) runs on a flat monthly retainer. We share a clear quote after a short discovery call.",
+          "anchor": "home-faq"
+        },
+        {
+          "question": "Do we own everything you create?",
+          "answer": "Yes, always. Source files, brand assets, code, and full usage rights are yours in perpetuity the moment a project is paid in full.",
+          "anchor": "home-faq"
+        }
+      ],
+      "deliverables": [],
+      "process": [],
+      "contacts": [],
+      "combines": [],
+      "sections": [
+        {
+          "title": "Bold Brands, Powered by Intelligence.",
+          "anchor": "home",
+          "paragraphs": [
+            "A Dubai creative studio blending AI, design, and digital advertising to launch brands the world can't scroll past."
+          ]
+        },
+        {
+          "title": "A Dubai studio built for the AI era.",
+          "anchor": "about",
+          "paragraphs": [
+            "CREAIVA is an AI specialist and digital advertising company headquartered in Dubai. We blend generative AI, cinematic craft, and data-driven media to help brands launch faster, look bolder, and perform harder across every screen.",
+            "From AI-generated campaign visuals to full-stack fintech platforms, our team unites strategists, designers, motion artists, and engineers under one roof — so your brand ships as one seamless system."
+          ]
+        },
+        {
+          "title": "Our Services",
+          "anchor": "services",
+          "paragraphs": [
+            "Fourteen specialized disciplines, one unified creative engine. Pick a service — or combine them into a complete brand system."
+          ]
+        },
+        {
+          "title": "Complete Solutions",
+          "anchor": "solutions",
+          "paragraphs": [
+            "Services combined around your next business goal. Explore the scope, process, and FAQs for each package.",
+            "AI Video (Realistic) + Motion Design",
+            "Logo & Branding + Website Design + Social Media Management",
+            "Presentation PRO + Interactive Presentation",
+            "Social Media Management + SEO & Analytics",
+            "E-Commerce + Platform Web",
+            "SEO & Analytics + Website Design",
+            "Interactive Screen + Interactive Presentation"
+          ]
+        },
+        {
+          "title": "One Team, Every Discipline",
+          "anchor": "why-home",
+          "paragraphs": [
+            "Most brands juggle a design agency, a dev shop, a video house, and a marketing team. We're all of it — under one roof, sharing one brief.",
+            "We build with generative AI at the core of our pipeline — moving faster and testing more directions than a traditional studio, without losing the human finish.",
+            "Generative video & imagery",
+            "Rapid concept iteration",
+            "Human quality pass on everything",
+            "Brand, content, web, platforms, and growth — designed together as one system, so nothing you ship ever feels bolted on from a different vendor.",
+            "Strategy to launch, in-house",
+            "One accountable team",
+            "Consistent brand everywhere",
+            "Bilingual English + Arabic creative, deep GCC market fluency, and international polish — built for brands launching here and scaling worldwide.",
+            "EN + AR, RTL-native",
+            "Local payment & platform stack",
+            "24-hour response, any timezone"
+          ]
+        },
+        {
+          "title": "Our Process",
+          "anchor": "process",
+          "paragraphs": [
+            "A lean, transparent workflow that gets your project from concept to launch — fast, without compromising craft.",
+            "We dig into your brand, audience, and goals to shape a sharp creative brief.",
+            "Concepts, storyboards, and prototypes — refined visually before a single frame ships.",
+            "AI-assisted production and full-stack engineering — always in your voice, never generic.",
+            "Deploy, measure, iterate. We stay with you post-launch to keep the momentum."
+          ]
+        },
+        {
+          "title": "Selected Projects",
+          "anchor": "featured",
+          "paragraphs": [
+            "A small slice of what we've been shipping — from brand systems to AI campaigns to full platforms.",
+            "Full identity system and launch site for a UAE fintech Series A, delivered in six weeks.",
+            "Photoreal AI hero film and 12-variant paid social campaign for an EV launch.",
+            "Real-time 3D room configurator with photoreal materials, live on their storefront."
+          ]
+        },
+        {
+          "title": "Words From Our Partners",
+          "anchor": "testimonials",
+          "paragraphs": [
+            "We measure our work by whether clients come back — and refer us. Most do.",
+            "CREAIVA rebuilt our entire brand and launch site in six weeks. The AI-generated campaign visuals genuinely surprised our board — and cut our production budget in half.",
+            "The one thing I value most is that everything comes from one team. Our social, our ads, our website — all finally look and feel like the same brand.",
+            "Fast, senior, and genuinely creative. The 3D configurator they built lifted our conversion rate noticeably in the first month. Already briefing them on phase two."
+          ]
+        },
+        {
+          "title": "Frequently Asked",
+          "anchor": "home-faq",
+          "paragraphs": [
+            "The questions we hear most often before a project kicks off."
+          ]
+        },
+        {
+          "title": "Let's build something unforgettable.",
+          "anchor": "contact",
+          "paragraphs": [
+            "Tell us about your project — an AI campaign, a launch video, a website, a platform, or a full rebrand. Fill in the form and it goes straight to our team on WhatsApp. We reply within 24 hours, in English or Arabic."
+          ]
+        }
+      ]
+    },
+    {
+      "path": "contact.html",
+      "title": "Contact",
+      "category": "company",
+      "summary": "Tell us what you're building — an AI campaign, a launch video, a website, a platform, or a full rebrand. Fill in the form and it goes straight to our team on WhatsApp. We reply within 24 hours, in English or Arabic.",
+      "faqs": [],
+      "deliverables": [],
+      "process": [],
+      "contacts": [
+        {
+          "title": "WhatsApp",
+          "text": "+971 52 155 9156"
+        },
+        {
+          "title": "Customer Services",
+          "text": "+971 52 155 9156"
+        },
+        {
+          "title": "Email",
+          "text": "info@creaiva.ae"
+        },
+        {
+          "title": "Studio",
+          "text": "Dubai, UAE · Working worldwide"
+        },
+        {
+          "title": "Hours",
+          "text": "Sun–Thu · 9am–6pm GST · Replies within 24 hrs"
+        }
+      ],
+      "combines": [],
+      "sections": [
+        {
+          "title": "Let's start your project.",
+          "anchor": "",
+          "paragraphs": [
+            "Tell us what you're building — an AI campaign, a launch video, a website, a platform, or a full rebrand. Fill in the form and it goes straight to our team on WhatsApp. We reply within 24 hours, in English or Arabic."
+          ]
+        },
+        {
+          "title": "Talk to a human.",
+          "anchor": "contact",
+          "paragraphs": [
+            "No call centres and no account managers between you and the people making the work. Reach us on whichever channel suits you — WhatsApp is fastest."
+          ]
+        }
+      ]
+    },
+    {
+      "path": "our-team.html",
+      "title": "Our Team",
+      "category": "company",
+      "summary": "CREAIVA is a Dubai-based studio of creative directors, motion artists, engineers, and strategists — working as one team on every project you brief us. No account managers between you and the people making the work.",
+      "faqs": [],
+      "deliverables": [],
+      "process": [],
+      "contacts": [],
+      "combines": [],
+      "sections": [
+        {
+          "title": "Small team, senior craft.",
+          "anchor": "",
+          "paragraphs": [
+            "CREAIVA is a Dubai-based studio of creative directors, motion artists, engineers, and strategists — working as one team on every project you brief us. No account managers between you and the people making the work."
+          ]
+        },
+        {
+          "title": "Six Disciplines, One Team",
+          "anchor": "team",
+          "paragraphs": [
+            "Every project pulls the specific people it needs from six senior-led disciplines. You get the right team for your brief — not a fixed pod.",
+            "The team that shapes every campaign — art direction, brand systems, and creative strategy.",
+            "Generative video specialists, motion designers, and 2D/3D animators who ship weekly.",
+            "Full-stack engineers building storefronts, CRMs, and platforms in production every day.",
+            "Social strategists, copywriters (EN + AR), and community managers running your daily presence.",
+            "SEO, CRO, and paid media specialists who translate marketing spend into revenue you can prove.",
+            "Studio and on-location production — photographers, videographers, editors, and colorists."
+          ]
+        },
+        {
+          "title": "Our Values",
+          "anchor": "values",
+          "paragraphs": [
+            "Four principles that shape how we scope, ship, and stay accountable.",
+            "We ship fewer things per week than a farm, and better things than a boutique.",
+            "Every deliverable is a piece of a system your team can extend.",
+            "Honest reporting, honest timelines, honest scope.",
+            "English and Arabic, in and out — MENA-native creative fluency."
+          ]
+        },
+        {
+          "title": "Want to work together?",
+          "anchor": "contact",
+          "paragraphs": [
+            "Tell us about your project or brand — we reply within 24 hours, in English or Arabic."
+          ]
+        }
+      ]
+    },
+    {
+      "path": "portfolio.html",
+      "title": "Portfolio",
+      "category": "company",
+      "summary": "A small slice of what we've been shipping — brand systems, AI campaigns, storefronts, platforms, and interactive experiences. Full case studies available on request.",
+      "faqs": [],
+      "deliverables": [],
+      "process": [],
+      "contacts": [],
+      "combines": [],
+      "sections": [
+        {
+          "title": "Selected Portfolio.",
+          "anchor": "",
+          "paragraphs": [
+            "A small slice of what we've been shipping — brand systems, AI campaigns, storefronts, platforms, and interactive experiences. Full case studies available on request."
+          ]
+        },
+        {
+          "title": "Let's build something worth showing.",
+          "anchor": "contact",
+          "paragraphs": [
+            "Tell us about your brand, product, or launch. We reply within 24 hours, in English or Arabic."
+          ]
+        }
+      ]
+    },
+    {
+      "path": "services/2d-animation.html",
+      "title": "2D Animation",
+      "category": "service",
+      "summary": "Illustrated explainers, character animation, and stylized loops with real personality. We hand-craft every frame so your story lands with warmth a template never could.",
+      "faqs": [
+        {
+          "question": "What's a typical length?",
+          "answer": "Sweet spot is 60–90 seconds — long enough to say something, short enough to hold attention. We also do 15-second cutdowns for social.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Do you handle voice-over?",
+          "answer": "Yes — casting, direction, and mix in Arabic or English (male, female, and neutral options).",
+          "anchor": "faq"
+        },
+        {
+          "question": "Can you match our brand's existing illustration style?",
+          "answer": "Yes. If you have a brand illustration library, we build on it. If not, we develop a style before starting.",
+          "anchor": "faq"
+        },
+        {
+          "question": "What if we need a whole series later?",
+          "answer": "That's the plan. We deliver reusable character rigs and scene templates, so episode two ships in half the time.",
+          "anchor": "faq"
+        }
+      ],
+      "deliverables": [
+        {
+          "title": "Explainer Videos",
+          "text": "60–90 second product or concept explainers that make complex ideas click on the first watch."
+        },
+        {
+          "title": "Character Animation",
+          "text": "Original characters designed, rigged, and animated with a consistent library of poses and expressions."
+        },
+        {
+          "title": "Kinetic Illustration",
+          "text": "Illustrated scenes brought to life with purposeful motion — not just moving stills."
+        },
+        {
+          "title": "Social-Ready Loops",
+          "text": "Short, seamless loops built for feeds and stories, delivered in every needed aspect ratio."
+        },
+        {
+          "title": "Script & Storyboard",
+          "text": "A tight script and full frame-by-frame storyboard approved before a single frame is animated."
+        },
+        {
+          "title": "Voice-Over Direction",
+          "text": "Voice-over casting, direction, and full mix — in Arabic or English."
+        }
+      ],
+      "process": [
+        {
+          "title": "Script & Storyboard",
+          "text": "Week 1 — Script, style frames, and full storyboard — all approved before animation begins."
+        },
+        {
+          "title": "Design Pass",
+          "text": "Week 2 — Character design, color, and scene design finalized."
+        },
+        {
+          "title": "Animation",
+          "text": "Weeks 3–4 — Full animation, voice-over, and sound design."
+        },
+        {
+          "title": "Delivery",
+          "text": "Week 5 — Final master plus every aspect ratio and language version."
+        }
+      ],
+      "contacts": [],
+      "combines": [],
+      "sections": [
+        {
+          "title": "2D Stories, Handcrafted Style.",
+          "anchor": "",
+          "paragraphs": [
+            "Illustrated explainers, character animation, and stylized loops with real personality. We hand-craft every frame so your story lands with warmth a template never could."
+          ]
+        },
+        {
+          "title": "Everything You Need",
+          "anchor": "deliverables",
+          "paragraphs": [
+            "A complete, senior-led scope for 2d animation — no vague retainers, no guesswork.",
+            "60–90 second product or concept explainers that make complex ideas click on the first watch.",
+            "Original characters designed, rigged, and animated with a consistent library of poses and expressions.",
+            "Illustrated scenes brought to life with purposeful motion — not just moving stills.",
+            "Short, seamless loops built for feeds and stories, delivered in every needed aspect ratio.",
+            "A tight script and full frame-by-frame storyboard approved before a single frame is animated.",
+            "Voice-over casting, direction, and full mix — in Arabic or English."
+          ]
+        },
+        {
+          "title": "Why Us",
+          "anchor": "why",
+          "paragraphs": [
+            "Three specific things you get from us that you don't get from a generic agency or a freelancer.",
+            "Every animation is drawn and rigged from scratch — no stock characters, no library scenes.",
+            "The script and storyboard are approved before we open the animation software, so revisions happen cheap and early.",
+            "Characters and scenes are delivered as reusable rigs, so follow-up videos ship in half the time."
+          ]
+        },
+        {
+          "title": "Who This Is For",
+          "anchor": "use-cases",
+          "paragraphs": [
+            "Common briefs where 2d animation is exactly the right investment.",
+            "Explain a new feature or app.",
+            "Walk new users through key flows.",
+            "Turn pitch decks into shareable video.",
+            "Loops and shorts for feeds."
+          ]
+        },
+        {
+          "title": "How It Runs",
+          "anchor": "timeline",
+          "paragraphs": [
+            "A predictable four-phase engagement — clear milestones, clear deliverables per phase.",
+            "Script, style frames, and full storyboard — all approved before animation begins.",
+            "Character design, color, and scene design finalized.",
+            "Full animation, voice-over, and sound design.",
+            "Final master plus every aspect ratio and language version."
+          ]
+        },
+        {
+          "title": "FAQ",
+          "anchor": "faq",
+          "paragraphs": [
+            "The questions we get most often about 2d animation."
+          ]
+        },
+        {
+          "title": "Let's talk about 2D Animation.",
+          "anchor": "contact",
+          "paragraphs": [
+            "Tell us about your project — timeline, budget, and goals. We reply within 24 hours, in English or Arabic."
+          ]
+        }
+      ]
+    },
+    {
+      "path": "services/3d-animation.html",
+      "title": "3D Animation",
+      "category": "service",
+      "summary": "Product visualization and 3D storytelling with cinematic light, texture, and detail. From a single hero render to a full animated world, built to survive close-up scrutiny.",
+      "faqs": [
+        {
+          "question": "Do you work from our CAD files?",
+          "answer": "Yes — we work from STEP, IGES, SolidWorks, and other standard CAD formats. If you don't have CAD, we model from photographs and drawings.",
+          "anchor": "faq"
+        },
+        {
+          "question": "What resolution do you deliver at?",
+          "answer": "Stills up to 8K, video masters at 4K, and cutdowns for every needed platform aspect ratio.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Can you deliver AR-ready 3D too?",
+          "answer": "Yes. Every model is built with a real-time-friendly topology, so we can export USDZ, GLB, and web AR versions alongside the render.",
+          "anchor": "faq"
+        },
+        {
+          "question": "How much does 3D cost vs. a photo shoot?",
+          "answer": "For a single hero shot, photography is cheaper. For 10+ angles, product variants, or shots that don't physically exist yet, 3D is typically cheaper — and always more flexible.",
+          "anchor": "faq"
+        }
+      ],
+      "deliverables": [
+        {
+          "title": "Product Visualization",
+          "text": "Photoreal 3D renders of your product from any angle, in any light, on any set."
+        },
+        {
+          "title": "3D Environments",
+          "text": "Full scenes and worlds built for launches, ads, and campaigns — hero shots or full walk-throughs."
+        },
+        {
+          "title": "Character & Object Modeling",
+          "text": "Custom 3D assets modeled, textured, and rigged to your specifications."
+        },
+        {
+          "title": "Animated Product Reveals",
+          "text": "Cinematic reveal sequences for launches, keynotes, and paid social — every angle, every light."
+        },
+        {
+          "title": "AR-Ready Assets",
+          "text": "Optimized models exported for web AR, iOS/Android AR, and real-time engines."
+        },
+        {
+          "title": "Turntables & Loops",
+          "text": "Seamless 360° product turntables and looped hero shots for e-commerce and social."
+        }
+      ],
+      "process": [
+        {
+          "title": "Modeling",
+          "text": "Weeks 1–2 — CAD import or from-scratch modeling with materials and UVs."
+        },
+        {
+          "title": "Lookdev",
+          "text": "Week 3 — Lighting, shaders, and camera direction — approved on stills first."
+        },
+        {
+          "title": "Animation & Render",
+          "text": "Weeks 4–5 — Full animation and final render pass at target resolution."
+        },
+        {
+          "title": "Delivery",
+          "text": "Week 6 — Master files, aspect-ratio cutdowns, and optional AR-ready assets."
+        }
+      ],
+      "contacts": [],
+      "combines": [],
+      "sections": [
+        {
+          "title": "3D Worlds With Photoreal Craft.",
+          "anchor": "",
+          "paragraphs": [
+            "Product visualization and 3D storytelling with cinematic light, texture, and detail. From a single hero render to a full animated world, built to survive close-up scrutiny."
+          ]
+        },
+        {
+          "title": "Everything You Need",
+          "anchor": "deliverables",
+          "paragraphs": [
+            "A complete, senior-led scope for 3d animation — no vague retainers, no guesswork.",
+            "Photoreal 3D renders of your product from any angle, in any light, on any set.",
+            "Full scenes and worlds built for launches, ads, and campaigns — hero shots or full walk-throughs.",
+            "Custom 3D assets modeled, textured, and rigged to your specifications.",
+            "Cinematic reveal sequences for launches, keynotes, and paid social — every angle, every light.",
+            "Optimized models exported for web AR, iOS/Android AR, and real-time engines.",
+            "Seamless 360° product turntables and looped hero shots for e-commerce and social."
+          ]
+        },
+        {
+          "title": "Why Us",
+          "anchor": "why",
+          "paragraphs": [
+            "Three specific things you get from us that you don't get from a generic agency or a freelancer.",
+            "Every render uses physical light and shader models — no faked reflections, no flat plastic.",
+            "Assets are built to also run in real-time engines, so we can output stills, video, AR, and interactive from one source.",
+            "For products that don't exist yet — or that would need 40 shots to cover every variant — 3D beats the studio every time."
+          ]
+        },
+        {
+          "title": "Who This Is For",
+          "anchor": "use-cases",
+          "paragraphs": [
+            "Common briefs where 3d animation is exactly the right investment.",
+            "Photoreal renders before the product ships.",
+            "Every variant, every angle, no reshoots.",
+            "Interior and architectural walkthroughs.",
+            "Abstract world-building for concept ads."
+          ]
+        },
+        {
+          "title": "How It Runs",
+          "anchor": "timeline",
+          "paragraphs": [
+            "A predictable four-phase engagement — clear milestones, clear deliverables per phase.",
+            "CAD import or from-scratch modeling with materials and UVs.",
+            "Lighting, shaders, and camera direction — approved on stills first.",
+            "Full animation and final render pass at target resolution.",
+            "Master files, aspect-ratio cutdowns, and optional AR-ready assets."
+          ]
+        },
+        {
+          "title": "FAQ",
+          "anchor": "faq",
+          "paragraphs": [
+            "The questions we get most often about 3d animation."
+          ]
+        },
+        {
+          "title": "Let's talk about 3D Animation.",
+          "anchor": "contact",
+          "paragraphs": [
+            "Tell us about your project — timeline, budget, and goals. We reply within 24 hours, in English or Arabic."
+          ]
+        }
+      ]
+    },
+    {
+      "path": "services/ai-video-realistic.html",
+      "title": "AI Video (Realistic)",
+      "category": "service",
+      "summary": "Generative visuals, product renders, and hero campaigns — engineered by AI, finished by artists. We use generative tools to move fast without losing the craft your brand deserves.",
+      "faqs": [
+        {
+          "question": "Which AI models do you use?",
+          "answer": "A working combination of Runway, Kling, Higgsfield, Sora when available, and specialist tools per project — chosen for the specific brief.",
+          "anchor": "faq"
+        },
+        {
+          "question": "How realistic is 'realistic'?",
+          "answer": "For most campaign use cases, indistinguishable from a shoot. For extremely close-up human faces or complex hands, we combine AI base with hand-finished VFX.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Do you disclose AI in the final content?",
+          "answer": "That's your call. Some brands lean into it as part of the story, others don't. We're happy to advise on the current disclosure norms in the UAE and EU markets.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Can you use real footage or product photos as reference?",
+          "answer": "Absolutely — real-world reference is often the fastest way to lock in a look, and we can seed the AI with your existing assets.",
+          "anchor": "faq"
+        }
+      ],
+      "deliverables": [
+        {
+          "title": "AI-Generated Video",
+          "text": "Photoreal video generated and directed for your campaign brief — from concept to color grade."
+        },
+        {
+          "title": "AI Product Imagery",
+          "text": "Studio-quality product shots without a physical shoot, every angle and every lighting setup on demand."
+        },
+        {
+          "title": "Virtual Presenters",
+          "text": "Realistic AI presenters for training, explainer, and ad content — Arabic or English."
+        },
+        {
+          "title": "Rapid Concept Iteration",
+          "text": "Multiple creative directions explored in days, not weeks, so you approve the direction, not just the final."
+        },
+        {
+          "title": "AI-Assisted VFX",
+          "text": "Backgrounds, sky replacements, and object removal — done AI-first, hand-finished for cinema quality."
+        },
+        {
+          "title": "Human Finishing Pass",
+          "text": "Every AI output reviewed, graded, and polished by our creative team before you ever see it."
+        }
+      ],
+      "process": [
+        {
+          "title": "Brief & Direction",
+          "text": "Week 1 — Concept, script, references, and shot list."
+        },
+        {
+          "title": "Generation Sprint",
+          "text": "Week 2 — Multiple takes, iterations, and directed refinement."
+        },
+        {
+          "title": "Human Finishing",
+          "text": "Week 3 — Grading, sound, edit, and final polish by our team."
+        },
+        {
+          "title": "Delivery",
+          "text": "Week 3 — Final master plus every aspect ratio and language version."
+        }
+      ],
+      "contacts": [],
+      "combines": [],
+      "sections": [
+        {
+          "title": "AI Video That Feels Cinematic.",
+          "anchor": "",
+          "paragraphs": [
+            "Generative visuals, product renders, and hero campaigns — engineered by AI, finished by artists. We use generative tools to move fast without losing the craft your brand deserves."
+          ]
+        },
+        {
+          "title": "Everything You Need",
+          "anchor": "deliverables",
+          "paragraphs": [
+            "A complete, senior-led scope for ai video (realistic) — no vague retainers, no guesswork.",
+            "Photoreal video generated and directed for your campaign brief — from concept to color grade.",
+            "Studio-quality product shots without a physical shoot, every angle and every lighting setup on demand.",
+            "Realistic AI presenters for training, explainer, and ad content — Arabic or English.",
+            "Multiple creative directions explored in days, not weeks, so you approve the direction, not just the final.",
+            "Backgrounds, sky replacements, and object removal — done AI-first, hand-finished for cinema quality.",
+            "Every AI output reviewed, graded, and polished by our creative team before you ever see it."
+          ]
+        },
+        {
+          "title": "Why Us",
+          "anchor": "why",
+          "paragraphs": [
+            "Three specific things you get from us that you don't get from a generic agency or a freelancer.",
+            "This is a core discipline for us, not an experiment. Our pipeline is built around the current tools' actual strengths and known failure modes.",
+            "We don't ship the first output — every video is directed like a real shoot, iterated until it hits the brief.",
+            "AI lets us test creative directions in hours instead of weeks — so your campaigns launch faster and cheaper without cutting the quality."
+          ]
+        },
+        {
+          "title": "Who This Is For",
+          "anchor": "use-cases",
+          "paragraphs": [
+            "Common briefs where ai video (realistic) is exactly the right investment.",
+            "Pre-shoot direction validation.",
+            "When physical shooting is impractical.",
+            "AI presenters instead of hired talent.",
+            "Multiple variants for A/B testing."
+          ]
+        },
+        {
+          "title": "How It Runs",
+          "anchor": "timeline",
+          "paragraphs": [
+            "A predictable four-phase engagement — clear milestones, clear deliverables per phase.",
+            "Concept, script, references, and shot list.",
+            "Multiple takes, iterations, and directed refinement.",
+            "Grading, sound, edit, and final polish by our team.",
+            "Final master plus every aspect ratio and language version."
+          ]
+        },
+        {
+          "title": "FAQ",
+          "anchor": "faq",
+          "paragraphs": [
+            "The questions we get most often about ai video (realistic)."
+          ]
+        },
+        {
+          "title": "Let's talk about AI Video (Realistic).",
+          "anchor": "contact",
+          "paragraphs": [
+            "Tell us about your project — timeline, budget, and goals. We reply within 24 hours, in English or Arabic."
+          ]
+        }
+      ]
+    },
+    {
+      "path": "services/ecommerce.html",
+      "title": "E-Commerce",
+      "category": "service",
+      "summary": "From product pages to checkout, we build e-commerce experiences that turn browsers into buyers — fast, mobile-first, and integrated with the payment and shipping stack you need.",
+      "faqs": [
+        {
+          "question": "Which platform do you build on?",
+          "answer": "Shopify for most projects, Webflow Ecommerce for smaller catalogs, and headless (Shopify + Next.js) when performance is critical.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Do you integrate with Tabby and Tamara?",
+          "answer": "Yes — BNPL is standard for our UAE and Saudi builds.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Can you migrate from another platform?",
+          "answer": "Yes. We handle catalog, customer, and order-history migration from WooCommerce, Magento, Salla, and others.",
+          "anchor": "faq"
+        },
+        {
+          "question": "What about post-launch marketing?",
+          "answer": "See our Digital Marketing Suite solution — social, ads, and SEO working together on top of the storefront.",
+          "anchor": "faq"
+        }
+      ],
+      "deliverables": [
+        {
+          "title": "Storefront Design",
+          "text": "Product-first layouts that make browsing effortless — hero, collection, and product pages designed as one system."
+        },
+        {
+          "title": "Checkout Optimization",
+          "text": "A streamlined single-page or short-step checkout, built to reduce cart abandonment."
+        },
+        {
+          "title": "Payment Integration",
+          "text": "Localized payment options — Stripe, Tabby, Tamara, Apple Pay, cash-on-delivery — configured for the UAE and wider GCC."
+        },
+        {
+          "title": "Inventory & Catalog Setup",
+          "text": "A product catalog structured with variants, categories, and filters that scale as your range grows."
+        },
+        {
+          "title": "Order & Shipping Integration",
+          "text": "Wired into your fulfillment: Aramex, DHL, in-house couriers, or a mix — with automated status emails."
+        },
+        {
+          "title": "Post-Launch Support",
+          "text": "Ongoing updates, seasonal campaign builds, and platform maintenance."
+        }
+      ],
+      "process": [
+        {
+          "title": "Discovery",
+          "text": "Week 1 — Catalog audit, payment stack decision, and shipping integration plan."
+        },
+        {
+          "title": "Design",
+          "text": "Weeks 2–3 — Full storefront design — home, collection, product, cart, checkout."
+        },
+        {
+          "title": "Build & Integrate",
+          "text": "Weeks 4–6 — Development, payment and shipping integration, catalog import."
+        },
+        {
+          "title": "Launch",
+          "text": "Week 7 — QA with real payments, soft launch, then full go-live."
+        }
+      ],
+      "contacts": [],
+      "combines": [],
+      "sections": [
+        {
+          "title": "Storefronts Built to Sell.",
+          "anchor": "",
+          "paragraphs": [
+            "From product pages to checkout, we build e-commerce experiences that turn browsers into buyers — fast, mobile-first, and integrated with the payment and shipping stack you need."
+          ]
+        },
+        {
+          "title": "Everything You Need",
+          "anchor": "deliverables",
+          "paragraphs": [
+            "A complete, senior-led scope for e-commerce — no vague retainers, no guesswork.",
+            "Product-first layouts that make browsing effortless — hero, collection, and product pages designed as one system.",
+            "A streamlined single-page or short-step checkout, built to reduce cart abandonment.",
+            "Localized payment options — Stripe, Tabby, Tamara, Apple Pay, cash-on-delivery — configured for the UAE and wider GCC.",
+            "A product catalog structured with variants, categories, and filters that scale as your range grows.",
+            "Wired into your fulfillment: Aramex, DHL, in-house couriers, or a mix — with automated status emails.",
+            "Ongoing updates, seasonal campaign builds, and platform maintenance."
+          ]
+        },
+        {
+          "title": "Why Us",
+          "anchor": "why",
+          "paragraphs": [
+            "Three specific things you get from us that you don't get from a generic agency or a freelancer.",
+            "Tabby, Tamara, Apple Pay, Mada, cash-on-delivery — configured properly from day one for UAE and Saudi shoppers.",
+            "80%+ of GCC e-commerce traffic is mobile — every design decision is made mobile-first, desktop is the adaptation.",
+            "Full Arabic RTL support in the storefront and checkout, not a translation plugin bolted on."
+          ]
+        },
+        {
+          "title": "Who This Is For",
+          "anchor": "use-cases",
+          "paragraphs": [
+            "Common briefs where e-commerce is exactly the right investment.",
+            "First storefront or replatforming.",
+            "Large catalogs with variants.",
+            "Menu, order, and delivery flows.",
+            "Adding UAE/GCC to an existing store."
+          ]
+        },
+        {
+          "title": "How It Runs",
+          "anchor": "timeline",
+          "paragraphs": [
+            "A predictable four-phase engagement — clear milestones, clear deliverables per phase.",
+            "Catalog audit, payment stack decision, and shipping integration plan.",
+            "Full storefront design — home, collection, product, cart, checkout.",
+            "Development, payment and shipping integration, catalog import.",
+            "QA with real payments, soft launch, then full go-live."
+          ]
+        },
+        {
+          "title": "FAQ",
+          "anchor": "faq",
+          "paragraphs": [
+            "The questions we get most often about e-commerce."
+          ]
+        },
+        {
+          "title": "Let's talk about E-Commerce.",
+          "anchor": "contact",
+          "paragraphs": [
+            "Tell us about your project — timeline, budget, and goals. We reply within 24 hours, in English or Arabic."
+          ]
+        }
+      ]
+    },
+    {
+      "path": "services/interactive-presentation.html",
+      "title": "Interactive Presentation",
+      "category": "service",
+      "summary": "Click-through, non-linear presentations built for demos, showrooms, and self-guided pitches — where the audience explores at their own pace instead of sitting through a fixed deck.",
+      "faqs": [
+        {
+          "question": "How is this different from PowerPoint or Prezi?",
+          "answer": "PowerPoint is linear. Prezi is a zoomable canvas. This is a real interactive app — with configurators, embedded 3D, calculators, and click-through product demos.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Can it run offline?",
+          "answer": "Yes — content is cached locally and syncs when connected, so unstable venue Wi-Fi doesn't take you down mid-pitch.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Can the sales team update content themselves?",
+          "answer": "Yes. Every project ships with a simple CMS. New sections, media swaps, and copy edits are all a few clicks.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Do you work with our existing brand system?",
+          "answer": "Yes — the interactive is built on top of your existing visual identity, not a generic template.",
+          "anchor": "faq"
+        }
+      ],
+      "deliverables": [
+        {
+          "title": "Non-Linear Navigation",
+          "text": "Menu-driven exploration — jump between sections instead of a fixed slide order."
+        },
+        {
+          "title": "Interactive Prototypes",
+          "text": "Clickable product demos, configurators, or calculators built directly into the presentation."
+        },
+        {
+          "title": "Embedded Media",
+          "text": "Video, 3D models, animation, and live data embedded natively — no external links."
+        },
+        {
+          "title": "Self-Guided Mode",
+          "text": "Built to work with or without someone presenting live — attract-loops when idle."
+        },
+        {
+          "title": "Cross-Device Delivery",
+          "text": "One codebase runs on kiosk screens, tablets, and laptops."
+        },
+        {
+          "title": "Content Management",
+          "text": "Update content, add sections, and swap media from a simple dashboard."
+        }
+      ],
+      "process": [
+        {
+          "title": "Concept & Story",
+          "text": "Weeks 1–2 — Section map, user flow, and interactive touchpoints planned."
+        },
+        {
+          "title": "Design",
+          "text": "Weeks 3–4 — Full UI design across every screen size and section."
+        },
+        {
+          "title": "Build",
+          "text": "Weeks 5–8 — Development, CMS setup, and content integration."
+        },
+        {
+          "title": "Launch",
+          "text": "Week 9 — On-device testing, deploy, and handover."
+        }
+      ],
+      "contacts": [],
+      "combines": [],
+      "sections": [
+        {
+          "title": "Presentations You Explore.",
+          "anchor": "",
+          "paragraphs": [
+            "Click-through, non-linear presentations built for demos, showrooms, and self-guided pitches — where the audience explores at their own pace instead of sitting through a fixed deck."
+          ]
+        },
+        {
+          "title": "Everything You Need",
+          "anchor": "deliverables",
+          "paragraphs": [
+            "A complete, senior-led scope for interactive presentation — no vague retainers, no guesswork.",
+            "Menu-driven exploration — jump between sections instead of a fixed slide order.",
+            "Clickable product demos, configurators, or calculators built directly into the presentation.",
+            "Video, 3D models, animation, and live data embedded natively — no external links.",
+            "Built to work with or without someone presenting live — attract-loops when idle.",
+            "One codebase runs on kiosk screens, tablets, and laptops.",
+            "Update content, add sections, and swap media from a simple dashboard."
+          ]
+        },
+        {
+          "title": "Why Us",
+          "anchor": "why",
+          "paragraphs": [
+            "Three specific things you get from us that you don't get from a generic agency or a freelancer.",
+            "These aren't Prezi zooms — they're actual interactive experiences with configurators, calculators, and product demos built in.",
+            "One codebase deploys to kiosk, tablet, laptop, and web — no separate builds.",
+            "Every project ships with a CMS so your team can add sections and swap media without touching the code."
+          ]
+        },
+        {
+          "title": "Who This Is For",
+          "anchor": "use-cases",
+          "paragraphs": [
+            "Common briefs where interactive presentation is exactly the right investment.",
+            "Retail product exploration.",
+            "Interactive brand storytelling.",
+            "Configurable product walkthroughs.",
+            "Deep-dive interactive decks."
+          ]
+        },
+        {
+          "title": "How It Runs",
+          "anchor": "timeline",
+          "paragraphs": [
+            "A predictable four-phase engagement — clear milestones, clear deliverables per phase.",
+            "Section map, user flow, and interactive touchpoints planned.",
+            "Full UI design across every screen size and section.",
+            "Development, CMS setup, and content integration.",
+            "On-device testing, deploy, and handover."
+          ]
+        },
+        {
+          "title": "FAQ",
+          "anchor": "faq",
+          "paragraphs": [
+            "The questions we get most often about interactive presentation."
+          ]
+        },
+        {
+          "title": "Let's talk about Interactive Presentation.",
+          "anchor": "contact",
+          "paragraphs": [
+            "Tell us about your project — timeline, budget, and goals. We reply within 24 hours, in English or Arabic."
+          ]
+        }
+      ]
+    },
+    {
+      "path": "services/interactive-screen.html",
+      "title": "Interactive Screen",
+      "category": "service",
+      "summary": "Kiosks, touchscreens, and in-venue displays designed for real interaction — built to be intuitive on first touch, in retail, events, showrooms, and lobbies.",
+      "faqs": [
+        {
+          "question": "What kind of hardware works?",
+          "answer": "Most modern touchscreens (LG, Samsung, Elo, iiyama) and iPad-based installations. We advise on hardware selection as part of discovery.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Can content be updated remotely?",
+          "answer": "Yes — every installation comes with a simple content dashboard. Content updates happen in minutes, without a developer.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Does it work offline?",
+          "answer": "Yes. Every kiosk caches content locally and syncs when connected — so a network outage doesn't take the screen down.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Do you handle physical installation?",
+          "answer": "We coordinate with your venue's AV or fit-out team and are on-site for launch. Hardware installation itself is typically handled by your AV vendor.",
+          "anchor": "faq"
+        }
+      ],
+      "deliverables": [
+        {
+          "title": "Touchscreen UI Design",
+          "text": "Interfaces built for fingers, not mice — big targets, clear flows, no hidden gestures."
+        },
+        {
+          "title": "Kiosk Software",
+          "text": "Custom software for wayfinding, catalogs, check-in, product configurators — whatever your venue needs."
+        },
+        {
+          "title": "Content Management",
+          "text": "Update screen content remotely from a simple dashboard, no developer needed."
+        },
+        {
+          "title": "Hardware Integration",
+          "text": "Works with the screens and hardware you already have or plan to buy — we advise on both."
+        },
+        {
+          "title": "Multi-Screen Sync",
+          "text": "For installations with multiple linked screens, we build the sync layer that makes them behave as one."
+        },
+        {
+          "title": "On-Site Support",
+          "text": "Installation guidance, launch-day support, and a maintenance runbook for your on-site team."
+        }
+      ],
+      "process": [
+        {
+          "title": "Discovery",
+          "text": "Weeks 1–2 — Venue site visit, user-flow mapping, hardware recommendation."
+        },
+        {
+          "title": "Design & Prototype",
+          "text": "Weeks 3–4 — Full UI design and on-device prototype for testing."
+        },
+        {
+          "title": "Build",
+          "text": "Weeks 5–8 — Software build, content system, and hardware integration."
+        },
+        {
+          "title": "Install & Launch",
+          "text": "Week 9 — On-site install, testing, and launch-day support."
+        }
+      ],
+      "contacts": [],
+      "combines": [],
+      "sections": [
+        {
+          "title": "Screens People Actually Use.",
+          "anchor": "",
+          "paragraphs": [
+            "Kiosks, touchscreens, and in-venue displays designed for real interaction — built to be intuitive on first touch, in retail, events, showrooms, and lobbies."
+          ]
+        },
+        {
+          "title": "Everything You Need",
+          "anchor": "deliverables",
+          "paragraphs": [
+            "A complete, senior-led scope for interactive screen — no vague retainers, no guesswork.",
+            "Interfaces built for fingers, not mice — big targets, clear flows, no hidden gestures.",
+            "Custom software for wayfinding, catalogs, check-in, product configurators — whatever your venue needs.",
+            "Update screen content remotely from a simple dashboard, no developer needed.",
+            "Works with the screens and hardware you already have or plan to buy — we advise on both.",
+            "For installations with multiple linked screens, we build the sync layer that makes them behave as one.",
+            "Installation guidance, launch-day support, and a maintenance runbook for your on-site team."
+          ]
+        },
+        {
+          "title": "Why Us",
+          "anchor": "why",
+          "paragraphs": [
+            "Three specific things you get from us that you don't get from a generic agency or a freelancer.",
+            "Every interface is prototyped on real hardware and tested with real users before it ships to a venue.",
+            "Built to run all-day, every-day without freezing, memory leaks, or need for a restart.",
+            "We design the UI AND write the software AND commission the hardware — one team, one accountability."
+          ]
+        },
+        {
+          "title": "Who This Is For",
+          "anchor": "use-cases",
+          "paragraphs": [
+            "Common briefs where interactive screen is exactly the right investment.",
+            "Product explorers and configurators.",
+            "Wayfinding and self check-in.",
+            "Registration and branded activations.",
+            "Visitor info and brand storytelling."
+          ]
+        },
+        {
+          "title": "How It Runs",
+          "anchor": "timeline",
+          "paragraphs": [
+            "A predictable four-phase engagement — clear milestones, clear deliverables per phase.",
+            "Venue site visit, user-flow mapping, hardware recommendation.",
+            "Full UI design and on-device prototype for testing.",
+            "Software build, content system, and hardware integration.",
+            "On-site install, testing, and launch-day support."
+          ]
+        },
+        {
+          "title": "FAQ",
+          "anchor": "faq",
+          "paragraphs": [
+            "The questions we get most often about interactive screen."
+          ]
+        },
+        {
+          "title": "Let's talk about Interactive Screen.",
+          "anchor": "contact",
+          "paragraphs": [
+            "Tell us about your project — timeline, budget, and goals. We reply within 24 hours, in English or Arabic."
+          ]
+        }
+      ]
+    },
+    {
+      "path": "services/logo-branding.html",
+      "title": "Logo & Branding",
+      "category": "service",
+      "summary": "A logo is one asset. A brand system is what actually gets recognized. We build identity systems — mark, type, color, voice — that hold up across every touchpoint you'll ever ship.",
+      "faqs": [
+        {
+          "question": "How long does a full brand build take?",
+          "answer": "A typical engagement runs 5–6 weeks from kickoff to handoff. Rush timelines are possible when the strategy is already clear.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Do you provide the brand strategy too, or just the visuals?",
+          "answer": "Both. Every project starts with a positioning and audience workshop — the visuals follow the strategy, not the other way around.",
+          "anchor": "faq"
+        },
+        {
+          "question": "What files will I receive?",
+          "answer": "Native design files (Figma, Illustrator), exported logos in every format (SVG, PNG, PDF, EPS, favicon set), a full guidelines PDF, and any custom fonts we license for you.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Can you match an existing product or website we already have?",
+          "answer": "Yes. When you have existing assets, we treat the brand refresh as an evolution — pulling forward what already works, replacing what doesn't.",
+          "anchor": "faq"
+        }
+      ],
+      "deliverables": [
+        {
+          "title": "Logo & Wordmark",
+          "text": "Primary, secondary, and icon-only lockups delivered in every format your team, printer, and platforms will ever ask for."
+        },
+        {
+          "title": "Color System",
+          "text": "A primary palette, extended tints and shades, and accessibility-checked pairings for light and dark surfaces."
+        },
+        {
+          "title": "Typography System",
+          "text": "A curated type stack with weights, sizes, and pairings — mapped to real UI and print use cases."
+        },
+        {
+          "title": "Brand Guidelines PDF",
+          "text": "A living style guide with usage rules, do's and don'ts, spacing, and voice — your team's single source of truth."
+        },
+        {
+          "title": "Visual Identity Kit",
+          "text": "Patterns, iconography, illustration direction, and layout templates that keep every asset on-brand."
+        },
+        {
+          "title": "Stationery & Templates",
+          "text": "Business cards, letterheads, email signatures, social templates, and pitch deck starter — ready to deploy."
+        }
+      ],
+      "process": [
+        {
+          "title": "Discovery",
+          "text": "Week 1 — Brand audit, competitor scan, and strategy workshop."
+        },
+        {
+          "title": "Concepts",
+          "text": "Weeks 2–3 — Two to three distinct creative directions, presented and refined."
+        },
+        {
+          "title": "Refinement",
+          "text": "Weeks 4–5 — One chosen direction, taken to a full identity system."
+        },
+        {
+          "title": "Handoff",
+          "text": "Week 6 — Guidelines PDF, source files, and a launch-ready toolkit."
+        }
+      ],
+      "contacts": [],
+      "combines": [],
+      "sections": [
+        {
+          "title": "Brands With Presence.",
+          "anchor": "",
+          "paragraphs": [
+            "A logo is one asset. A brand system is what actually gets recognized. We build identity systems — mark, type, color, voice — that hold up across every touchpoint you'll ever ship."
+          ]
+        },
+        {
+          "title": "Everything You Need",
+          "anchor": "deliverables",
+          "paragraphs": [
+            "A complete, senior-led scope for logo & branding — no vague retainers, no guesswork.",
+            "Primary, secondary, and icon-only lockups delivered in every format your team, printer, and platforms will ever ask for.",
+            "A primary palette, extended tints and shades, and accessibility-checked pairings for light and dark surfaces.",
+            "A curated type stack with weights, sizes, and pairings — mapped to real UI and print use cases.",
+            "A living style guide with usage rules, do's and don'ts, spacing, and voice — your team's single source of truth.",
+            "Patterns, iconography, illustration direction, and layout templates that keep every asset on-brand.",
+            "Business cards, letterheads, email signatures, social templates, and pitch deck starter — ready to deploy."
+          ]
+        },
+        {
+          "title": "Why Us",
+          "anchor": "why",
+          "paragraphs": [
+            "Three specific things you get from us that you don't get from a generic agency or a freelancer.",
+            "We design the mark, but we also design the rules — so your brand still looks like itself six months and six designers later.",
+            "Every asset ships with editable source files and prompts, so your team can extend the system with AI tools without breaking it.",
+            "Bilingual EN/AR type pairings baked in from day one, so your brand works across the UAE market and international launches alike."
+          ]
+        },
+        {
+          "title": "Who This Is For",
+          "anchor": "use-cases",
+          "paragraphs": [
+            "Common briefs where logo & branding is exactly the right investment.",
+            "Founders launching in stealth or public.",
+            "Existing companies outgrowing their old identity.",
+            "New product lines that need to sit inside a house.",
+            "Pre-fundraise polish before the deck goes out."
+          ]
+        },
+        {
+          "title": "How It Runs",
+          "anchor": "timeline",
+          "paragraphs": [
+            "A predictable four-phase engagement — clear milestones, clear deliverables per phase.",
+            "Brand audit, competitor scan, and strategy workshop.",
+            "Two to three distinct creative directions, presented and refined.",
+            "One chosen direction, taken to a full identity system.",
+            "Guidelines PDF, source files, and a launch-ready toolkit."
+          ]
+        },
+        {
+          "title": "FAQ",
+          "anchor": "faq",
+          "paragraphs": [
+            "The questions we get most often about logo & branding."
+          ]
+        },
+        {
+          "title": "Let's talk about Logo & Branding.",
+          "anchor": "contact",
+          "paragraphs": [
+            "Tell us about your project — timeline, budget, and goals. We reply within 24 hours, in English or Arabic."
+          ]
+        }
+      ]
+    },
+    {
+      "path": "services/motion-design.html",
+      "title": "Motion Design",
+      "category": "service",
+      "summary": "Kinetic type, brand animations, and cinematic motion crafted to stop the scroll. Every project starts from your brand system, so the motion always feels like you — not a template.",
+      "faqs": [
+        {
+          "question": "How long is a typical spot?",
+          "answer": "15s and 30s for paid social, 60–90s for brand films and product reveals, 5–10s for logo stings and openers.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Do you also compose the sound design?",
+          "answer": "Yes. Every project includes original sound design and mix, plus music licensing when needed.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Can you match a look we've seen elsewhere?",
+          "answer": "We can take references as a starting point, but we won't copy — the final direction is always tuned to your brand's own visual system.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Do you deliver source files?",
+          "answer": "Yes. Every project ships with After Effects source files and any custom rigs or expressions we build.",
+          "anchor": "faq"
+        }
+      ],
+      "deliverables": [
+        {
+          "title": "Kinetic Typography",
+          "text": "Type-driven animation for ads, intros, opening titles, and social content."
+        },
+        {
+          "title": "Brand Motion System",
+          "text": "A signature motion language — easing curves, timing, transitions — unique to your brand."
+        },
+        {
+          "title": "Logo Animation",
+          "text": "A signature reveal, hold, and outro sting for every video you publish going forward."
+        },
+        {
+          "title": "Ad & Campaign Motion",
+          "text": "Motion graphics tuned for paid social — subtitled, hook-forward, first-three-seconds obsessed."
+        },
+        {
+          "title": "UI & Product Motion",
+          "text": "Micro-interactions, loading states, and product-walkthrough animation for apps and sites."
+        },
+        {
+          "title": "Source Files & Templates",
+          "text": "After Effects source files delivered alongside every project — plus a template pack for your team."
+        }
+      ],
+      "process": [
+        {
+          "title": "Concept & Style Frames",
+          "text": "Week 1 — Direction, style frames, and moodboard — three options, one chosen."
+        },
+        {
+          "title": "Storyboard & Animatic",
+          "text": "Week 2 — Frame-by-frame board with rough timing, approved before final animation."
+        },
+        {
+          "title": "Animation & Sound",
+          "text": "Weeks 3–4 — Final animation, sound design, and mix."
+        },
+        {
+          "title": "Master & Cutdowns",
+          "text": "Week 5 — Master file plus every needed aspect ratio and length version."
+        }
+      ],
+      "contacts": [],
+      "combines": [],
+      "sections": [
+        {
+          "title": "Motion That Moves Markets.",
+          "anchor": "",
+          "paragraphs": [
+            "Kinetic type, brand animations, and cinematic motion crafted to stop the scroll. Every project starts from your brand system, so the motion always feels like you — not a template."
+          ]
+        },
+        {
+          "title": "Everything You Need",
+          "anchor": "deliverables",
+          "paragraphs": [
+            "A complete, senior-led scope for motion design — no vague retainers, no guesswork.",
+            "Type-driven animation for ads, intros, opening titles, and social content.",
+            "A signature motion language — easing curves, timing, transitions — unique to your brand.",
+            "A signature reveal, hold, and outro sting for every video you publish going forward.",
+            "Motion graphics tuned for paid social — subtitled, hook-forward, first-three-seconds obsessed.",
+            "Micro-interactions, loading states, and product-walkthrough animation for apps and sites.",
+            "After Effects source files delivered alongside every project — plus a template pack for your team."
+          ]
+        },
+        {
+          "title": "Why Us",
+          "anchor": "why",
+          "paragraphs": [
+            "Three specific things you get from us that you don't get from a generic agency or a freelancer.",
+            "The motion system is designed alongside your brand identity — same easing, same rhythm, same personality across every video.",
+            "Motion built for the ad it's going into — 3-second hook, subtitled, aspect-ratio-native, sound-off friendly.",
+            "From concept to storyboard to mograph to sound design and mix, delivered under one roof — no vendor handoffs."
+          ]
+        },
+        {
+          "title": "Who This Is For",
+          "anchor": "use-cases",
+          "paragraphs": [
+            "Common briefs where motion design is exactly the right investment.",
+            "60-second brand statements.",
+            "Cinematic reveal sequences.",
+            "Scroll-stopping paid creative.",
+            "Event and conference titles."
+          ]
+        },
+        {
+          "title": "How It Runs",
+          "anchor": "timeline",
+          "paragraphs": [
+            "A predictable four-phase engagement — clear milestones, clear deliverables per phase.",
+            "Direction, style frames, and moodboard — three options, one chosen.",
+            "Frame-by-frame board with rough timing, approved before final animation.",
+            "Final animation, sound design, and mix.",
+            "Master file plus every needed aspect ratio and length version."
+          ]
+        },
+        {
+          "title": "FAQ",
+          "anchor": "faq",
+          "paragraphs": [
+            "The questions we get most often about motion design."
+          ]
+        },
+        {
+          "title": "Let's talk about Motion Design.",
+          "anchor": "contact",
+          "paragraphs": [
+            "Tell us about your project — timeline, budget, and goals. We reply within 24 hours, in English or Arabic."
+          ]
+        }
+      ]
+    },
+    {
+      "path": "services/photography-videography.html",
+      "title": "Photography & Videography",
+      "category": "service",
+      "summary": "Product, lifestyle, and campaign photography and video — studio and on-location, shot and edited to be ready for your feed, your site, and your next campaign.",
+      "faqs": [
+        {
+          "question": "Do you have a studio?",
+          "answer": "Yes, in Dubai — plus a network of trusted on-location partners across the UAE and wider GCC.",
+          "anchor": "faq"
+        },
+        {
+          "question": "How many photos do we get?",
+          "answer": "Depends on shoot size, but a typical single-day product shoot delivers 30–60 fully-retouched finals plus a wider proof set.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Can you shoot video and photo at the same time?",
+          "answer": "Yes — we plan hybrid shoots so you get both from a single production day.",
+          "anchor": "faq"
+        },
+        {
+          "question": "What about usage rights?",
+          "answer": "Full commercial usage rights for your brand, in perpetuity, across all channels — included in every shoot.",
+          "anchor": "faq"
+        }
+      ],
+      "deliverables": [
+        {
+          "title": "Product Photography",
+          "text": "Studio-quality product shots on white, lifestyle, or custom sets — every angle you need."
+        },
+        {
+          "title": "Campaign Photography",
+          "text": "Full campaign shoots, art-directed to your brand's world."
+        },
+        {
+          "title": "Videography",
+          "text": "Brand films, product videos, and social content shoots."
+        },
+        {
+          "title": "On-Location Shoots",
+          "text": "Full production handled at your venue or location of choice — permits, gear, crew, catering."
+        },
+        {
+          "title": "Retouching & Editing",
+          "text": "Every shot color-graded, retouched, and delivered in every needed aspect ratio."
+        },
+        {
+          "title": "Talent & Casting",
+          "text": "Model, presenter, and voice-over casting when your brief needs people in the shot."
+        }
+      ],
+      "process": [
+        {
+          "title": "Pre-Production",
+          "text": "Weeks 1–2 — Shot list, moodboard, location scout, casting."
+        },
+        {
+          "title": "Shoot Days",
+          "text": "1–3 days — Studio or on-location production."
+        },
+        {
+          "title": "Post-Production",
+          "text": "Weeks 3–4 — Retouching, editing, color grading, and delivery."
+        },
+        {
+          "title": "Delivery",
+          "text": "Week 4 — Every needed aspect ratio and format, tagged and organized."
+        }
+      ],
+      "contacts": [],
+      "combines": [],
+      "sections": [
+        {
+          "title": "Photography With Purpose.",
+          "anchor": "",
+          "paragraphs": [
+            "Product, lifestyle, and campaign photography and video — studio and on-location, shot and edited to be ready for your feed, your site, and your next campaign."
+          ]
+        },
+        {
+          "title": "Everything You Need",
+          "anchor": "deliverables",
+          "paragraphs": [
+            "A complete, senior-led scope for photography & videography — no vague retainers, no guesswork.",
+            "Studio-quality product shots on white, lifestyle, or custom sets — every angle you need.",
+            "Full campaign shoots, art-directed to your brand's world.",
+            "Brand films, product videos, and social content shoots.",
+            "Full production handled at your venue or location of choice — permits, gear, crew, catering.",
+            "Every shot color-graded, retouched, and delivered in every needed aspect ratio.",
+            "Model, presenter, and voice-over casting when your brief needs people in the shot."
+          ]
+        },
+        {
+          "title": "Why Us",
+          "anchor": "why",
+          "paragraphs": [
+            "Three specific things you get from us that you don't get from a generic agency or a freelancer.",
+            "Every shoot is planned around where the content is going — feed, story, site, billboard — so you don't have to crop compromises later.",
+            "Retouching and edit happen on our side, so what you see at the shoot is what ships two weeks later.",
+            "A single shoot day delivers hero images, cutdowns, social content, and behind-the-scenes — all planned and captured together."
+          ]
+        },
+        {
+          "title": "Who This Is For",
+          "anchor": "use-cases",
+          "paragraphs": [
+            "Common briefs where photography & videography is exactly the right investment.",
+            "Hero and lifestyle shots for launch.",
+            "Menu, room, and ambiance.",
+            "Full look-books and campaigns.",
+            "Team headshots and office visuals."
+          ]
+        },
+        {
+          "title": "How It Runs",
+          "anchor": "timeline",
+          "paragraphs": [
+            "A predictable four-phase engagement — clear milestones, clear deliverables per phase.",
+            "Shot list, moodboard, location scout, casting.",
+            "Studio or on-location production.",
+            "Retouching, editing, color grading, and delivery.",
+            "Every needed aspect ratio and format, tagged and organized."
+          ]
+        },
+        {
+          "title": "FAQ",
+          "anchor": "faq",
+          "paragraphs": [
+            "The questions we get most often about photography & videography."
+          ]
+        },
+        {
+          "title": "Let's talk about Photography & Videography.",
+          "anchor": "contact",
+          "paragraphs": [
+            "Tell us about your project — timeline, budget, and goals. We reply within 24 hours, in English or Arabic."
+          ]
+        }
+      ]
+    },
+    {
+      "path": "services/platform-web.html",
+      "title": "Platform Web",
+      "category": "service",
+      "summary": "Custom CRMs, dashboards, and internal tools engineered around the way your team actually works — not a rigid template you have to bend your business around.",
+      "faqs": [
+        {
+          "question": "How is this different from Airtable or Notion?",
+          "answer": "Off-the-shelf tools work great until they don't. When your workflow needs custom logic, external integrations, or scale that no-code can't hit — that's when a custom platform pays back.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Do we own the code?",
+          "answer": "Yes, always. Source lives in your GitHub, infra is on your accounts, and we hand over full documentation at launch.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Can you integrate with our accounting or ERP?",
+          "answer": "Yes — QuickBooks, Xero, Zoho, SAP, Odoo, and most modern accounting/ERP tools. Custom integrations are our normal day.",
+          "anchor": "faq"
+        },
+        {
+          "question": "What about ongoing support after launch?",
+          "answer": "We offer 30 days of post-launch support included, plus optional monthly retainers for iteration and new features.",
+          "anchor": "faq"
+        }
+      ],
+      "deliverables": [
+        {
+          "title": "Discovery Workshop",
+          "text": "A structured audit of your current process and pain points, mapped into user flows and data models."
+        },
+        {
+          "title": "Custom CRM Builds",
+          "text": "A CRM shaped around your sales, service, or operations process — not a generic template with your logo on it."
+        },
+        {
+          "title": "Internal Dashboards",
+          "text": "Real-time data your team can act on — KPIs, ops metrics, and per-team views."
+        },
+        {
+          "title": "Workflow Automation",
+          "text": "Repetitive tasks automated so your team can focus on the work only humans should be doing."
+        },
+        {
+          "title": "Role-Based Access",
+          "text": "Permissions and views tailored to every team and role, with proper audit trails."
+        },
+        {
+          "title": "API & Integrations",
+          "text": "Connected to the tools you already run on — accounting, comms, storage, third-party APIs — via clean, versioned APIs."
+        }
+      ],
+      "process": [
+        {
+          "title": "Discovery",
+          "text": "Weeks 1–2 — Workshop, user flow mapping, and data model design."
+        },
+        {
+          "title": "Design",
+          "text": "Weeks 3–4 — Full UI design and interactive prototypes."
+        },
+        {
+          "title": "Build (MVP)",
+          "text": "Weeks 5–10 — First production-ready version with core workflows."
+        },
+        {
+          "title": "Iterate",
+          "text": "Ongoing — Post-launch iteration based on real usage."
+        }
+      ],
+      "contacts": [],
+      "combines": [],
+      "sections": [
+        {
+          "title": "Platforms Built to Scale.",
+          "anchor": "",
+          "paragraphs": [
+            "Custom CRMs, dashboards, and internal tools engineered around the way your team actually works — not a rigid template you have to bend your business around."
+          ]
+        },
+        {
+          "title": "Everything You Need",
+          "anchor": "deliverables",
+          "paragraphs": [
+            "A complete, senior-led scope for platform web — no vague retainers, no guesswork.",
+            "A structured audit of your current process and pain points, mapped into user flows and data models.",
+            "A CRM shaped around your sales, service, or operations process — not a generic template with your logo on it.",
+            "Real-time data your team can act on — KPIs, ops metrics, and per-team views.",
+            "Repetitive tasks automated so your team can focus on the work only humans should be doing.",
+            "Permissions and views tailored to every team and role, with proper audit trails.",
+            "Connected to the tools you already run on — accounting, comms, storage, third-party APIs — via clean, versioned APIs."
+          ]
+        },
+        {
+          "title": "Why Us",
+          "anchor": "why",
+          "paragraphs": [
+            "Three specific things you get from us that you don't get from a generic agency or a freelancer.",
+            "Every platform we build is treated like our own product — with architecture, monitoring, and documentation to match.",
+            "React + TypeScript, Node or Python backends, Postgres, on serverless or containerized infra — chosen per project, not by default.",
+            "Full documentation, source in your GitHub, deploy pipelines you control. When it's time to hire internally, your team walks into a clean codebase."
+          ]
+        },
+        {
+          "title": "Who This Is For",
+          "anchor": "use-cases",
+          "paragraphs": [
+            "Common briefs where platform web is exactly the right investment.",
+            "Sales, service, or ops.",
+            "Real-time operations metrics.",
+            "External-facing dashboards.",
+            "Retiring spreadsheets and old tools."
+          ]
+        },
+        {
+          "title": "How It Runs",
+          "anchor": "timeline",
+          "paragraphs": [
+            "A predictable four-phase engagement — clear milestones, clear deliverables per phase.",
+            "Workshop, user flow mapping, and data model design.",
+            "Full UI design and interactive prototypes.",
+            "First production-ready version with core workflows.",
+            "Post-launch iteration based on real usage."
+          ]
+        },
+        {
+          "title": "FAQ",
+          "anchor": "faq",
+          "paragraphs": [
+            "The questions we get most often about platform web."
+          ]
+        },
+        {
+          "title": "Let's talk about Platform Web.",
+          "anchor": "contact",
+          "paragraphs": [
+            "Tell us about your project — timeline, budget, and goals. We reply within 24 hours, in English or Arabic."
+          ]
+        }
+      ]
+    },
+    {
+      "path": "services/presentation-pro.html",
+      "title": "Presentation PRO",
+      "category": "service",
+      "summary": "Investor decks and sales presentations designed to hold a room's attention — clear narrative, sharp visual system, and slides that still make sense without you talking over them.",
+      "faqs": [
+        {
+          "question": "What format do you deliver?",
+          "answer": "Keynote and PowerPoint as standard, plus a PDF export and a shareable web version if needed. Google Slides on request.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Can you help write the deck too, not just design it?",
+          "answer": "Yes — narrative and copy are core to every project. We're not a design-only vendor.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Will our team be able to edit it after?",
+          "answer": "Yes. Every deck ships with a proper template system — slide masters, layouts, and an on-brand style — so your team can add slides without breaking the design.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Do you help with pitch practice?",
+          "answer": "Optional but highly recommended — speaker coaching and rehearsal is available as an add-on before big meetings.",
+          "anchor": "faq"
+        }
+      ],
+      "deliverables": [
+        {
+          "title": "Narrative & Structure",
+          "text": "A tight story arc — problem, insight, solution, ask — that a reader can follow without you in the room."
+        },
+        {
+          "title": "Investor Deck Design",
+          "text": "10–15 slides polished for VC, Series A/B, and board audiences."
+        },
+        {
+          "title": "Sales Presentations",
+          "text": "Full sales deck built for your team to actually close with — plus a leave-behind version."
+        },
+        {
+          "title": "Data Visualization",
+          "text": "Charts, financials, and metrics made instantly readable, not just accurate."
+        },
+        {
+          "title": "Template System",
+          "text": "A reusable deck template your whole team can build from — with slide masters, layouts, and a component library."
+        },
+        {
+          "title": "Speaker Coaching",
+          "text": "Optional talk-track development and rehearsal sessions before your biggest meeting."
+        }
+      ],
+      "process": [
+        {
+          "title": "Story Workshop",
+          "text": "Week 1 — Narrative, structure, and key-message workshop with founders."
+        },
+        {
+          "title": "Content Draft",
+          "text": "Week 2 — Slide-by-slide content — words and data — approved before design."
+        },
+        {
+          "title": "Design",
+          "text": "Weeks 3–4 — Full deck design, chart production, and template system."
+        },
+        {
+          "title": "Rehearsal",
+          "text": "Week 4 — Optional speaker coaching and talk-track review."
+        }
+      ],
+      "contacts": [],
+      "combines": [],
+      "sections": [
+        {
+          "title": "Decks That Close Deals.",
+          "anchor": "",
+          "paragraphs": [
+            "Investor decks and sales presentations designed to hold a room's attention — clear narrative, sharp visual system, and slides that still make sense without you talking over them."
+          ]
+        },
+        {
+          "title": "Everything You Need",
+          "anchor": "deliverables",
+          "paragraphs": [
+            "A complete, senior-led scope for presentation pro — no vague retainers, no guesswork.",
+            "A tight story arc — problem, insight, solution, ask — that a reader can follow without you in the room.",
+            "10–15 slides polished for VC, Series A/B, and board audiences.",
+            "Full sales deck built for your team to actually close with — plus a leave-behind version.",
+            "Charts, financials, and metrics made instantly readable, not just accurate.",
+            "A reusable deck template your whole team can build from — with slide masters, layouts, and a component library.",
+            "Optional talk-track development and rehearsal sessions before your biggest meeting."
+          ]
+        },
+        {
+          "title": "Why Us",
+          "anchor": "why",
+          "paragraphs": [
+            "Three specific things you get from us that you don't get from a generic agency or a freelancer.",
+            "Every deck starts with a story workshop — the visual system is designed after the story is locked, not before.",
+            "We've built decks for pre-seed to Series C rounds — we know what each stage's audience actually reads for.",
+            "You leave with a template system your team can extend, not just a single PDF."
+          ]
+        },
+        {
+          "title": "Who This Is For",
+          "anchor": "use-cases",
+          "paragraphs": [
+            "Common briefs where presentation pro is exactly the right investment.",
+            "Pre-seed through Series C.",
+            "Long-cycle B2B pitches.",
+            "Board and quarterly review decks.",
+            "Conference and event talks."
+          ]
+        },
+        {
+          "title": "How It Runs",
+          "anchor": "timeline",
+          "paragraphs": [
+            "A predictable four-phase engagement — clear milestones, clear deliverables per phase.",
+            "Narrative, structure, and key-message workshop with founders.",
+            "Slide-by-slide content — words and data — approved before design.",
+            "Full deck design, chart production, and template system.",
+            "Optional speaker coaching and talk-track review."
+          ]
+        },
+        {
+          "title": "FAQ",
+          "anchor": "faq",
+          "paragraphs": [
+            "The questions we get most often about presentation pro."
+          ]
+        },
+        {
+          "title": "Let's talk about Presentation PRO.",
+          "anchor": "contact",
+          "paragraphs": [
+            "Tell us about your project — timeline, budget, and goals. We reply within 24 hours, in English or Arabic."
+          ]
+        }
+      ]
+    },
+    {
+      "path": "services/seo-analytics.html",
+      "title": "SEO & Analytics",
+      "category": "service",
+      "summary": "Technical SEO, content strategy, and analytics set up correctly from the start — so you know exactly what's driving traffic, and what to double down on.",
+      "faqs": [
+        {
+          "question": "How long until we see results?",
+          "answer": "Technical fixes and tracking impact are visible in weeks. Ranking gains for competitive terms typically take 3–6 months of sustained work.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Do you guarantee first-page rankings?",
+          "answer": "No — no honest SEO does. We do commit to visible improvement in the metrics that actually move revenue.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Can you handle Arabic SEO?",
+          "answer": "Yes. Arabic search intent, keyword research, and content are all part of our standard toolkit.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Do you do link building?",
+          "answer": "Only ethical, editorial-quality outreach. No PBNs, no bought links, nothing that puts your rankings at future risk.",
+          "anchor": "faq"
+        }
+      ],
+      "deliverables": [
+        {
+          "title": "Technical SEO Audit",
+          "text": "A full site health, indexing, structure, and Core Web Vitals audit with a prioritized fix list."
+        },
+        {
+          "title": "On-Page Optimization",
+          "text": "Titles, meta descriptions, headings, internal links, and schema tuned for the keywords that matter."
+        },
+        {
+          "title": "Content Strategy",
+          "text": "A content plan built around real search demand, tied to your business goals."
+        },
+        {
+          "title": "Analytics & Tracking Setup",
+          "text": "GA4, Search Console, Meta Pixel, and event tracking configured for full-funnel attribution."
+        },
+        {
+          "title": "Growth Dashboards",
+          "text": "One clean dashboard covering rankings, traffic, conversions, and revenue — no logging into five tools."
+        },
+        {
+          "title": "Monthly Growth Reporting",
+          "text": "Clear, honest reporting on rankings, traffic, conversions, and what we're doing next month."
+        }
+      ],
+      "process": [
+        {
+          "title": "Audit",
+          "text": "Weeks 1–2 — Full technical, content, and tracking audit."
+        },
+        {
+          "title": "Fix & Set Up",
+          "text": "Weeks 3–4 — Priority technical fixes, tracking configured, quick wins shipped."
+        },
+        {
+          "title": "Content & Growth",
+          "text": "Ongoing — Monthly content sprints and continuous optimization."
+        },
+        {
+          "title": "Monthly Reviews",
+          "text": "Every 30 days — Reporting call, wins/losses, and the plan for the next month."
+        }
+      ],
+      "contacts": [],
+      "combines": [],
+      "sections": [
+        {
+          "title": "Rank Higher, Measure Everything.",
+          "anchor": "",
+          "paragraphs": [
+            "Technical SEO, content strategy, and analytics set up correctly from the start — so you know exactly what's driving traffic, and what to double down on."
+          ]
+        },
+        {
+          "title": "Everything You Need",
+          "anchor": "deliverables",
+          "paragraphs": [
+            "A complete, senior-led scope for seo & analytics — no vague retainers, no guesswork.",
+            "A full site health, indexing, structure, and Core Web Vitals audit with a prioritized fix list.",
+            "Titles, meta descriptions, headings, internal links, and schema tuned for the keywords that matter.",
+            "A content plan built around real search demand, tied to your business goals.",
+            "GA4, Search Console, Meta Pixel, and event tracking configured for full-funnel attribution.",
+            "One clean dashboard covering rankings, traffic, conversions, and revenue — no logging into five tools.",
+            "Clear, honest reporting on rankings, traffic, conversions, and what we're doing next month."
+          ]
+        },
+        {
+          "title": "Why Us",
+          "anchor": "why",
+          "paragraphs": [
+            "Three specific things you get from us that you don't get from a generic agency or a freelancer.",
+            "White-hat only. Nothing we do puts your rankings at risk when Google shifts the algorithm.",
+            "Before we optimize anything, we set up proper tracking — because you can't fix what you can't see.",
+            "Arabic search intent is different from English. We handle both, natively."
+          ]
+        },
+        {
+          "title": "Who This Is For",
+          "anchor": "use-cases",
+          "paragraphs": [
+            "Common briefs where seo & analytics is exactly the right investment.",
+            "SEO baked in from launch day.",
+            "Regaining rankings after a drop.",
+            "Ongoing content built for search.",
+            "Product and category page optimization."
+          ]
+        },
+        {
+          "title": "How It Runs",
+          "anchor": "timeline",
+          "paragraphs": [
+            "A predictable four-phase engagement — clear milestones, clear deliverables per phase.",
+            "Full technical, content, and tracking audit.",
+            "Priority technical fixes, tracking configured, quick wins shipped.",
+            "Monthly content sprints and continuous optimization.",
+            "Reporting call, wins/losses, and the plan for the next month."
+          ]
+        },
+        {
+          "title": "FAQ",
+          "anchor": "faq",
+          "paragraphs": [
+            "The questions we get most often about seo & analytics."
+          ]
+        },
+        {
+          "title": "Let's talk about SEO & Analytics.",
+          "anchor": "contact",
+          "paragraphs": [
+            "Tell us about your project — timeline, budget, and goals. We reply within 24 hours, in English or Arabic."
+          ]
+        }
+      ]
+    },
+    {
+      "path": "services/social-media-management.html",
+      "title": "Social Media Management",
+      "category": "service",
+      "summary": "Consistency beats bursts. We run full-funnel social — strategy, content calendars, daily creative, and community management — built for platform-native growth, not vanity metrics.",
+      "faqs": [
+        {
+          "question": "How many platforms do you cover?",
+          "answer": "Any three platforms as standard (Instagram, LinkedIn, TikTok, X, YouTube Shorts, Snap). Additional platforms are a straightforward add-on.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Do you handle both Arabic and English content?",
+          "answer": "Yes. Every post ships with an Arabic and English caption pair, and Arabic voice-over is available for reels.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Who owns the accounts?",
+          "answer": "You do, always. We work as an authorized manager on your accounts — never as owner.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Can you run paid ads on top of organic?",
+          "answer": "Yes. Paid boost of best-performing organic is included; full campaign management is available as part of the Digital Marketing Suite solution.",
+          "anchor": "faq"
+        }
+      ],
+      "deliverables": [
+        {
+          "title": "Content Strategy",
+          "text": "A quarterly plan tied to real business goals — launches, campaigns, seasons — not just filling the grid."
+        },
+        {
+          "title": "Monthly Content Calendar",
+          "text": "20–30 posts per platform, planned, scripted, and scheduled a month in advance so nothing goes live in a rush."
+        },
+        {
+          "title": "Daily Creative Production",
+          "text": "Feed posts, reels, stories, and shorts — filmed, designed, edited, and captioned in-house."
+        },
+        {
+          "title": "Community Management",
+          "text": "Comments and DMs answered in your brand voice, in Arabic or English, within business hours."
+        },
+        {
+          "title": "Paid Boost Setup",
+          "text": "Best-performing organic posts identified and boosted with tight targeting and A/B-tested creative."
+        },
+        {
+          "title": "Monthly Reporting",
+          "text": "Clear numbers on reach, engagement, growth, and top posts — plus what we're doing differently next month."
+        }
+      ],
+      "process": [
+        {
+          "title": "Audit & Strategy",
+          "text": "Weeks 1–2 — Full audit of current channels, audience map, and 90-day strategy."
+        },
+        {
+          "title": "Content Sprint",
+          "text": "Week 3 — First month's content produced, filmed, and approved as a batch."
+        },
+        {
+          "title": "Go Live",
+          "text": "Week 4 — Publishing starts, community management activated."
+        },
+        {
+          "title": "Monthly Rhythm",
+          "text": "Ongoing — New content batch every month, reporting call every 30 days."
+        }
+      ],
+      "contacts": [],
+      "combines": [],
+      "sections": [
+        {
+          "title": "Social That Compounds.",
+          "anchor": "",
+          "paragraphs": [
+            "Consistency beats bursts. We run full-funnel social — strategy, content calendars, daily creative, and community management — built for platform-native growth, not vanity metrics."
+          ]
+        },
+        {
+          "title": "Everything You Need",
+          "anchor": "deliverables",
+          "paragraphs": [
+            "A complete, senior-led scope for social media management — no vague retainers, no guesswork.",
+            "A quarterly plan tied to real business goals — launches, campaigns, seasons — not just filling the grid.",
+            "20–30 posts per platform, planned, scripted, and scheduled a month in advance so nothing goes live in a rush.",
+            "Feed posts, reels, stories, and shorts — filmed, designed, edited, and captioned in-house.",
+            "Comments and DMs answered in your brand voice, in Arabic or English, within business hours.",
+            "Best-performing organic posts identified and boosted with tight targeting and A/B-tested creative.",
+            "Clear numbers on reach, engagement, growth, and top posts — plus what we're doing differently next month."
+          ]
+        },
+        {
+          "title": "Why Us",
+          "anchor": "why",
+          "paragraphs": [
+            "Three specific things you get from us that you don't get from a generic agency or a freelancer.",
+            "A reel doesn't ship as a resized ad. Every post is built for the format it lives in — hooks, pacing, aspect ratio, subtitles, all of it.",
+            "Arabic and English caption pairs, with dialect-aware copy for UAE, Saudi, and wider MENA audiences.",
+            "We watch what works weekly and shift the calendar accordingly — no fixed content pillars staying frozen for a year."
+          ]
+        },
+        {
+          "title": "Who This Is For",
+          "anchor": "use-cases",
+          "paragraphs": [
+            "Common briefs where social media management is exactly the right investment.",
+            "Product-led feeds that convert.",
+            "Story-heavy, location-driven content.",
+            "Listing showcases and market authority.",
+            "LinkedIn-first thought leadership."
+          ]
+        },
+        {
+          "title": "How It Runs",
+          "anchor": "timeline",
+          "paragraphs": [
+            "A predictable four-phase engagement — clear milestones, clear deliverables per phase.",
+            "Full audit of current channels, audience map, and 90-day strategy.",
+            "First month's content produced, filmed, and approved as a batch.",
+            "Publishing starts, community management activated.",
+            "New content batch every month, reporting call every 30 days."
+          ]
+        },
+        {
+          "title": "FAQ",
+          "anchor": "faq",
+          "paragraphs": [
+            "The questions we get most often about social media management."
+          ]
+        },
+        {
+          "title": "Let's talk about Social Media Management.",
+          "anchor": "contact",
+          "paragraphs": [
+            "Tell us about your project — timeline, budget, and goals. We reply within 24 hours, in English or Arabic."
+          ]
+        }
+      ]
+    },
+    {
+      "path": "services/website-design.html",
+      "title": "Website Design",
+      "category": "service",
+      "summary": "Landing pages, marketing sites, and full site builds — designed to look premium and perform hard. Every page is built with conversion, speed, and SEO in mind from the first sketch.",
+      "faqs": [
+        {
+          "question": "Which platforms do you build on?",
+          "answer": "Webflow, Framer, and headless (Sanity + Next.js) for marketing sites. WordPress if you specifically need it. Never Wix or Squarespace as our primary.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Do you handle hosting and domain?",
+          "answer": "Yes. We set up hosting, DNS, SSL, and email routing as part of launch. You own everything from day one.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Can we add e-commerce later?",
+          "answer": "Yes — the sites we build are structured to grow. See our E-Commerce service for the full storefront build.",
+          "anchor": "faq"
+        },
+        {
+          "question": "What about SEO?",
+          "answer": "Technical SEO (speed, schema, sitemaps, meta) is included in every build. Ongoing content SEO is a separate SEO & Analytics engagement.",
+          "anchor": "faq"
+        }
+      ],
+      "deliverables": [
+        {
+          "title": "UI/UX Design",
+          "text": "Wireframes and polished UI built around how your users actually move — not just what looks good in Figma."
+        },
+        {
+          "title": "Responsive Development",
+          "text": "Pixel-accurate builds across desktop, tablet, and mobile — with real edge-case coverage."
+        },
+        {
+          "title": "CMS Integration",
+          "text": "Easy-to-edit content in a modern CMS — Webflow, Framer, Sanity, or headless WordPress — no developer required for updates."
+        },
+        {
+          "title": "Performance & SEO",
+          "text": "90+ Lighthouse scores, technical SEO baked in, and Core Web Vitals monitored post-launch."
+        },
+        {
+          "title": "Analytics & Tracking",
+          "text": "GA4, Meta Pixel, and conversion tracking configured so you can see what's actually working."
+        },
+        {
+          "title": "Bilingual EN/AR",
+          "text": "Full Arabic RTL support with proper mirroring, typography, and content flow — not just a translation layer."
+        }
+      ],
+      "process": [
+        {
+          "title": "Discovery & IA",
+          "text": "Week 1 — Sitemap, content plan, and user flow — all approved before design."
+        },
+        {
+          "title": "Design",
+          "text": "Weeks 2–3 — Wireframes, then high-fidelity design across every needed breakpoint."
+        },
+        {
+          "title": "Build",
+          "text": "Weeks 4–5 — Development, CMS setup, and content population."
+        },
+        {
+          "title": "Launch",
+          "text": "Week 6 — QA, staging, DNS, and go-live — plus 30 days of post-launch support."
+        }
+      ],
+      "contacts": [],
+      "combines": [],
+      "sections": [
+        {
+          "title": "Websites Built to Convert.",
+          "anchor": "",
+          "paragraphs": [
+            "Landing pages, marketing sites, and full site builds — designed to look premium and perform hard. Every page is built with conversion, speed, and SEO in mind from the first sketch."
+          ]
+        },
+        {
+          "title": "Everything You Need",
+          "anchor": "deliverables",
+          "paragraphs": [
+            "A complete, senior-led scope for website design — no vague retainers, no guesswork.",
+            "Wireframes and polished UI built around how your users actually move — not just what looks good in Figma.",
+            "Pixel-accurate builds across desktop, tablet, and mobile — with real edge-case coverage.",
+            "Easy-to-edit content in a modern CMS — Webflow, Framer, Sanity, or headless WordPress — no developer required for updates.",
+            "90+ Lighthouse scores, technical SEO baked in, and Core Web Vitals monitored post-launch.",
+            "GA4, Meta Pixel, and conversion tracking configured so you can see what's actually working.",
+            "Full Arabic RTL support with proper mirroring, typography, and content flow — not just a translation layer."
+          ]
+        },
+        {
+          "title": "Why Us",
+          "anchor": "why",
+          "paragraphs": [
+            "Three specific things you get from us that you don't get from a generic agency or a freelancer.",
+            "Our designers work in real code, so every design decision is checked against build feasibility and performance before it's finalized.",
+            "Every page is designed with a specific conversion action in mind — copy, layout, and CTAs are tuned around it, not decorated around it.",
+            "No page builder bloat, no plugin sprawl — clean, maintainable code your future team can actually work with."
+          ]
+        },
+        {
+          "title": "Who This Is For",
+          "anchor": "use-cases",
+          "paragraphs": [
+            "Common briefs where website design is exactly the right investment.",
+            "High-conversion campaign pages.",
+            "5–15 page marketing sites.",
+            "Pre-launch and Series A.",
+            "New site alongside a new identity."
+          ]
+        },
+        {
+          "title": "How It Runs",
+          "anchor": "timeline",
+          "paragraphs": [
+            "A predictable four-phase engagement — clear milestones, clear deliverables per phase.",
+            "Sitemap, content plan, and user flow — all approved before design.",
+            "Wireframes, then high-fidelity design across every needed breakpoint.",
+            "Development, CMS setup, and content population.",
+            "QA, staging, DNS, and go-live — plus 30 days of post-launch support."
+          ]
+        },
+        {
+          "title": "FAQ",
+          "anchor": "faq",
+          "paragraphs": [
+            "The questions we get most often about website design."
+          ]
+        },
+        {
+          "title": "Let's talk about Website Design.",
+          "anchor": "contact",
+          "paragraphs": [
+            "Tell us about your project — timeline, budget, and goals. We reply within 24 hours, in English or Arabic."
+          ]
+        }
+      ]
+    },
+    {
+      "path": "solutions/ai-content-studio.html",
+      "title": "AI Content Studio",
+      "category": "solution",
+      "summary": "AI video and imagery production at a volume traditional shoots can't match — for brands that need a constant stream of fresh, on-brand creative across every channel.",
+      "faqs": [
+        {
+          "question": "How many assets per month?",
+          "answer": "A typical starter engagement is 4–8 videos and 40+ imagery variants per month — scaling up from there.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Which AI models do you use?",
+          "answer": "A working combination of Runway, Kling, Higgsfield, Sora when available, and specialist tools per project.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Do we own the AI outputs?",
+          "answer": "Yes — same rights as any other commissioned work. Model provider terms apply for commercial use, which we handle.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Will people know it's AI?",
+          "answer": "Depends on the project. Most campaign work is indistinguishable from a shoot; explicit AI content is a creative choice, not a giveaway.",
+          "anchor": "faq"
+        }
+      ],
+      "deliverables": [
+        {
+          "title": "AI Video Production",
+          "text": "Cinematic campaign video generated and directed at production speed."
+        },
+        {
+          "title": "AI Product Imagery",
+          "text": "Endless product shots without repeat physical shoots — every angle, every set."
+        },
+        {
+          "title": "Motion Add-Ons",
+          "text": "2D and 3D motion layered onto AI-generated bases for higher-craft outputs."
+        },
+        {
+          "title": "Batch Creative Variants",
+          "text": "10+ ad variants produced per week for continuous A/B testing."
+        },
+        {
+          "title": "Brand Style Locking",
+          "text": "Your visual system locked into AI prompts and reference sets — so every output feels like you."
+        },
+        {
+          "title": "Human Quality Pass",
+          "text": "Every asset reviewed, graded, and polished by our creative team before delivery."
+        }
+      ],
+      "process": [
+        {
+          "title": "Brand & Style Setup",
+          "text": "Weeks 1–2 — Reference library, prompt system, and brand-lock kit."
+        },
+        {
+          "title": "Production Sprint",
+          "text": "Week 3+ — Weekly batches of video and imagery, delivered."
+        },
+        {
+          "title": "Review & Iterate",
+          "text": "Every week — Weekly review call, direction adjustment, next batch briefed."
+        },
+        {
+          "title": "Scale",
+          "text": "Ongoing — Volume grows as prompt system and reference library mature."
+        }
+      ],
+      "contacts": [],
+      "combines": [
+        {
+          "title": "AI Video (Realistic)",
+          "path": "services/ai-video-realistic.html"
+        },
+        {
+          "title": "Motion Design",
+          "path": "services/motion-design.html"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Content, at AI Speed.",
+          "anchor": "",
+          "paragraphs": [
+            "AI video and imagery production at a volume traditional shoots can't match — for brands that need a constant stream of fresh, on-brand creative across every channel."
+          ]
+        },
+        {
+          "title": "Everything You Need",
+          "anchor": "deliverables",
+          "paragraphs": [
+            "A complete, senior-led scope for ai content studio — no vague retainers, no guesswork.",
+            "Cinematic campaign video generated and directed at production speed.",
+            "Endless product shots without repeat physical shoots — every angle, every set.",
+            "2D and 3D motion layered onto AI-generated bases for higher-craft outputs.",
+            "10+ ad variants produced per week for continuous A/B testing.",
+            "Your visual system locked into AI prompts and reference sets — so every output feels like you.",
+            "Every asset reviewed, graded, and polished by our creative team before delivery."
+          ]
+        },
+        {
+          "title": "Why Us",
+          "anchor": "why",
+          "paragraphs": [
+            "Three specific things you get from us that you don't get from a generic agency or a freelancer.",
+            "AI lets us ship 5-10× the creative volume of a traditional studio — without sacrificing the finish.",
+            "We build a reference library and prompt system for your brand, so every AI output feels like the same world.",
+            "Every output is directed and iterated by real creative directors — never shipped as first-try output."
+          ]
+        },
+        {
+          "title": "Who This Is For",
+          "anchor": "use-cases",
+          "paragraphs": [
+            "Common briefs where ai content studio is exactly the right investment.",
+            "High-volume ad creative testing.",
+            "Product imagery across a wide catalog.",
+            "Weekly video without weekly shoots.",
+            "Rapid direction validation."
+          ]
+        },
+        {
+          "title": "How It Runs",
+          "anchor": "timeline",
+          "paragraphs": [
+            "A predictable four-phase engagement — clear milestones, clear deliverables per phase.",
+            "Reference library, prompt system, and brand-lock kit.",
+            "Weekly batches of video and imagery, delivered.",
+            "Weekly review call, direction adjustment, next batch briefed.",
+            "Volume grows as prompt system and reference library mature."
+          ]
+        },
+        {
+          "title": "FAQ",
+          "anchor": "faq",
+          "paragraphs": [
+            "The questions we get most often about ai content studio."
+          ]
+        },
+        {
+          "title": "Let's talk about AI Content Studio.",
+          "anchor": "contact",
+          "paragraphs": [
+            "Tell us about your project — timeline, budget, and goals. We reply within 24 hours, in English or Arabic."
+          ]
+        }
+      ]
+    },
+    {
+      "path": "solutions/brand-launch-package.html",
+      "title": "Brand Launch Package",
+      "category": "solution",
+      "summary": "Identity and launch content, bundled into one sprint. Logo, brand system, and your first wave of launch creative — designed together so nothing feels bolted on.",
+      "faqs": [
+        {
+          "question": "What's the total timeline?",
+          "answer": "6–7 weeks from kickoff to launch day. Rush timelines are possible when brand strategy is already in place.",
+          "anchor": "faq"
+        },
+        {
+          "question": "What if we want to add more services later?",
+          "answer": "The bundle is deliberately focused. Motion, ongoing social, and paid ads are natural add-ons after launch.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Can we own the brand elements after?",
+          "answer": "Fully — source files, guidelines, and every asset are yours in perpetuity.",
+          "anchor": "faq"
+        },
+        {
+          "question": "What if we already have a logo?",
+          "answer": "We can start from an existing mark and build the surrounding system, or refresh the mark itself as part of the sprint.",
+          "anchor": "faq"
+        }
+      ],
+      "deliverables": [
+        {
+          "title": "Logo & Identity System",
+          "text": "A complete visual identity — mark, wordmark, color, typography — ready before day one."
+        },
+        {
+          "title": "Brand Guidelines",
+          "text": "A full guidelines PDF your team can follow long after we hand off."
+        },
+        {
+          "title": "Launch Landing Page",
+          "text": "A production-ready one-page site built on the new identity, live for launch."
+        },
+        {
+          "title": "Launch Content Set",
+          "text": "Social launch assets, first-wave posts, and hero visuals across every platform."
+        },
+        {
+          "title": "Investor One-Pager",
+          "text": "A polished one-page investor / partner deck built into the launch."
+        },
+        {
+          "title": "Launch Strategy Session",
+          "text": "A plan for where, when, and how to introduce the brand — with a 30/60/90 day roadmap."
+        }
+      ],
+      "process": [
+        {
+          "title": "Discovery",
+          "text": "Week 1 — Strategy, positioning, and creative brief."
+        },
+        {
+          "title": "Identity Design",
+          "text": "Weeks 2–4 — Full brand system, approved and finalized."
+        },
+        {
+          "title": "Launch Assets",
+          "text": "Weeks 5–6 — Site, social, and one-pager built on the new brand."
+        },
+        {
+          "title": "Go Live",
+          "text": "Week 7 — Launch day support and 30-day post-launch check-in."
+        }
+      ],
+      "contacts": [],
+      "combines": [
+        {
+          "title": "Logo & Branding",
+          "path": "services/logo-branding.html"
+        },
+        {
+          "title": "Website Design",
+          "path": "services/website-design.html"
+        },
+        {
+          "title": "Social Media Management",
+          "path": "services/social-media-management.html"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Launch With a Finished Brand.",
+          "anchor": "",
+          "paragraphs": [
+            "Identity and launch content, bundled into one sprint. Logo, brand system, and your first wave of launch creative — designed together so nothing feels bolted on."
+          ]
+        },
+        {
+          "title": "Everything You Need",
+          "anchor": "deliverables",
+          "paragraphs": [
+            "A complete, senior-led scope for brand launch package — no vague retainers, no guesswork.",
+            "A complete visual identity — mark, wordmark, color, typography — ready before day one.",
+            "A full guidelines PDF your team can follow long after we hand off.",
+            "A production-ready one-page site built on the new identity, live for launch.",
+            "Social launch assets, first-wave posts, and hero visuals across every platform.",
+            "A polished one-page investor / partner deck built into the launch.",
+            "A plan for where, when, and how to introduce the brand — with a 30/60/90 day roadmap."
+          ]
+        },
+        {
+          "title": "Why Us",
+          "anchor": "why",
+          "paragraphs": [
+            "Three specific things you get from us that you don't get from a generic agency or a freelancer.",
+            "Every asset is designed as part of one system — no mismatched font from your logo agency and your website agency.",
+            "Fixed scope, fixed timeline, fixed price — no surprise change orders when the logo and site need to talk to each other.",
+            "You leave with assets already live, not a folder of files waiting for another agency to implement."
+          ]
+        },
+        {
+          "title": "Who This Is For",
+          "anchor": "use-cases",
+          "paragraphs": [
+            "Common briefs where brand launch package is exactly the right investment.",
+            "Pre-launch startups going public.",
+            "Existing brands unveiling a new identity.",
+            "New product lines inside an existing house.",
+            "Getting brand-ready before the raise."
+          ]
+        },
+        {
+          "title": "How It Runs",
+          "anchor": "timeline",
+          "paragraphs": [
+            "A predictable four-phase engagement — clear milestones, clear deliverables per phase.",
+            "Strategy, positioning, and creative brief.",
+            "Full brand system, approved and finalized.",
+            "Site, social, and one-pager built on the new brand.",
+            "Launch day support and 30-day post-launch check-in."
+          ]
+        },
+        {
+          "title": "FAQ",
+          "anchor": "faq",
+          "paragraphs": [
+            "The questions we get most often about brand launch package."
+          ]
+        },
+        {
+          "title": "Let's talk about Brand Launch Package.",
+          "anchor": "contact",
+          "paragraphs": [
+            "Tell us about your project — timeline, budget, and goals. We reply within 24 hours, in English or Arabic."
+          ]
+        }
+      ]
+    },
+    {
+      "path": "solutions/corporate-presentations.html",
+      "title": "Corporate Presentation Systems",
+      "category": "solution",
+      "summary": "A presentation system covering the boardroom pitch and the showroom demo — a consistent deck template plus a click-through interactive version for self-guided moments.",
+      "faqs": [
+        {
+          "question": "Can we update it after handoff?",
+          "answer": "Yes — the static deck lives in Keynote/PowerPoint your team owns, and the interactive version has a CMS for content updates.",
+          "anchor": "faq"
+        },
+        {
+          "question": "What if we only need the static deck?",
+          "answer": "Then you want the Presentation PRO service instead — that's the standalone deck offering.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Does the interactive version work offline?",
+          "answer": "Yes — content is cached locally, so it runs at trade shows with unstable Wi-Fi.",
+          "anchor": "faq"
+        },
+        {
+          "question": "How many slides in the master?",
+          "answer": "A typical corporate master deck runs 20–30 slides, with layouts covering every common use case — plus a component library for building more.",
+          "anchor": "faq"
+        }
+      ],
+      "deliverables": [
+        {
+          "title": "Master Deck System",
+          "text": "A full investor / sales deck with slide masters, layouts, and a component library."
+        },
+        {
+          "title": "Interactive Showroom Version",
+          "text": "A click-through version of the same content for kiosks, tablets, and self-guided demos."
+        },
+        {
+          "title": "Reusable Template Kit",
+          "text": "Your team can build new decks from the same master — every slide stays on-brand."
+        },
+        {
+          "title": "Data Visualization Kit",
+          "text": "A chart and metric library designed specifically for your data types."
+        },
+        {
+          "title": "Video & Media Assets",
+          "text": "Embedded product videos, animations, and 3D — same assets across static and interactive."
+        },
+        {
+          "title": "Team Training",
+          "text": "One session to onboard your sales / IR / marketing teams on using the system."
+        }
+      ],
+      "process": [
+        {
+          "title": "Story Workshop",
+          "text": "Weeks 1–2 — Master narrative and content structure."
+        },
+        {
+          "title": "Static Deck",
+          "text": "Weeks 3–4 — Full deck design and template system."
+        },
+        {
+          "title": "Interactive Version",
+          "text": "Weeks 5–7 — Interactive build with embedded media and demos."
+        },
+        {
+          "title": "Handoff & Training",
+          "text": "Week 8 — Team training session and full asset handoff."
+        }
+      ],
+      "contacts": [],
+      "combines": [
+        {
+          "title": "Presentation PRO",
+          "path": "services/presentation-pro.html"
+        },
+        {
+          "title": "Interactive Presentation",
+          "path": "services/interactive-presentation.html"
+        }
+      ],
+      "sections": [
+        {
+          "title": "One Deck System, Every Room.",
+          "anchor": "",
+          "paragraphs": [
+            "A presentation system covering the boardroom pitch and the showroom demo — a consistent deck template plus a click-through interactive version for self-guided moments."
+          ]
+        },
+        {
+          "title": "Everything You Need",
+          "anchor": "deliverables",
+          "paragraphs": [
+            "A complete, senior-led scope for corporate presentation systems — no vague retainers, no guesswork.",
+            "A full investor / sales deck with slide masters, layouts, and a component library.",
+            "A click-through version of the same content for kiosks, tablets, and self-guided demos.",
+            "Your team can build new decks from the same master — every slide stays on-brand.",
+            "A chart and metric library designed specifically for your data types.",
+            "Embedded product videos, animations, and 3D — same assets across static and interactive.",
+            "One session to onboard your sales / IR / marketing teams on using the system."
+          ]
+        },
+        {
+          "title": "Why Us",
+          "anchor": "why",
+          "paragraphs": [
+            "Three specific things you get from us that you don't get from a generic agency or a freelancer.",
+            "Same content in every room — boardroom, showroom, sales meeting, trade show — never a mismatched version.",
+            "The template system means your team can build new decks without breaking the design.",
+            "The click-through version turns a static deck into a self-guided sales tool that works even when nobody's in the room."
+          ]
+        },
+        {
+          "title": "Who This Is For",
+          "anchor": "use-cases",
+          "paragraphs": [
+            "Common briefs where corporate presentation systems is exactly the right investment.",
+            "Multiple sellers, one story.",
+            "Consistent IR presentations.",
+            "Static + interactive together.",
+            "Investor + sales + PR versions."
+          ]
+        },
+        {
+          "title": "How It Runs",
+          "anchor": "timeline",
+          "paragraphs": [
+            "A predictable four-phase engagement — clear milestones, clear deliverables per phase.",
+            "Master narrative and content structure.",
+            "Full deck design and template system.",
+            "Interactive build with embedded media and demos.",
+            "Team training session and full asset handoff."
+          ]
+        },
+        {
+          "title": "FAQ",
+          "anchor": "faq",
+          "paragraphs": [
+            "The questions we get most often about corporate presentation systems."
+          ]
+        },
+        {
+          "title": "Let's talk about Corporate Presentation Systems.",
+          "anchor": "contact",
+          "paragraphs": [
+            "Tell us about your project — timeline, budget, and goals. We reply within 24 hours, in English or Arabic."
+          ]
+        }
+      ]
+    },
+    {
+      "path": "solutions/digital-marketing-suite.html",
+      "title": "Digital Marketing Suite",
+      "category": "solution",
+      "summary": "Social, paid ads, and SEO run as one connected system instead of three disconnected vendors — so your budget and your message reinforce each other, not compete.",
+      "faqs": [
+        {
+          "question": "How much ad spend do we need?",
+          "answer": "Meaningful UAE B2C testing starts at roughly AED 25K/month in ad spend; B2B and enterprise can start lower. Our fee is separate from ad spend.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Do you take a cut of ad spend?",
+          "answer": "No — flat monthly fee, so incentives stay honest. We optimize for your results, not our margin.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Can we start with just one channel?",
+          "answer": "Yes — a subset of the suite (e.g., social + ads only) is available. The magic is compounding, though, so most clients add channels within a few months.",
+          "anchor": "faq"
+        },
+        {
+          "question": "What if we already have a social team internally?",
+          "answer": "We can partner with them — running paid and SEO around your existing organic, or upskilling them alongside our work.",
+          "anchor": "faq"
+        }
+      ],
+      "deliverables": [
+        {
+          "title": "Social Media Management",
+          "text": "Daily content and community management across three primary platforms."
+        },
+        {
+          "title": "Paid Campaign Management",
+          "text": "Meta, Google, TikTok, and LinkedIn ads — creative, targeting, and optimization."
+        },
+        {
+          "title": "SEO & Content",
+          "text": "Organic growth running alongside your paid efforts, sharing creative assets and audiences."
+        },
+        {
+          "title": "Landing Page Optimization",
+          "text": "Ad-specific landing pages tested and iterated against real conversion data."
+        },
+        {
+          "title": "Unified Reporting Dashboard",
+          "text": "One dashboard covering every channel — no logging into five tools."
+        },
+        {
+          "title": "Quarterly Strategy Reviews",
+          "text": "A standing quarterly check-in to adjust the plan as results come in."
+        }
+      ],
+      "process": [
+        {
+          "title": "Audit & Strategy",
+          "text": "Weeks 1–2 — Full channel audit, competitive scan, and 90-day plan."
+        },
+        {
+          "title": "Setup Sprint",
+          "text": "Weeks 3–4 — Tracking, campaigns, and first content batch shipped."
+        },
+        {
+          "title": "Go Live",
+          "text": "Week 5 — Campaigns activated, publishing starts, first optimization cycle."
+        },
+        {
+          "title": "Monthly Rhythm",
+          "text": "Ongoing — Weekly optimization, monthly reporting, quarterly strategy reviews."
+        }
+      ],
+      "contacts": [],
+      "combines": [
+        {
+          "title": "Social Media Management",
+          "path": "services/social-media-management.html"
+        },
+        {
+          "title": "SEO & Analytics",
+          "path": "services/seo-analytics.html"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Marketing That Works Together.",
+          "anchor": "",
+          "paragraphs": [
+            "Social, paid ads, and SEO run as one connected system instead of three disconnected vendors — so your budget and your message reinforce each other, not compete."
+          ]
+        },
+        {
+          "title": "Everything You Need",
+          "anchor": "deliverables",
+          "paragraphs": [
+            "A complete, senior-led scope for digital marketing suite — no vague retainers, no guesswork.",
+            "Daily content and community management across three primary platforms.",
+            "Meta, Google, TikTok, and LinkedIn ads — creative, targeting, and optimization.",
+            "Organic growth running alongside your paid efforts, sharing creative assets and audiences.",
+            "Ad-specific landing pages tested and iterated against real conversion data.",
+            "One dashboard covering every channel — no logging into five tools.",
+            "A standing quarterly check-in to adjust the plan as results come in."
+          ]
+        },
+        {
+          "title": "Why Us",
+          "anchor": "why",
+          "paragraphs": [
+            "Three specific things you get from us that you don't get from a generic agency or a freelancer.",
+            "Your social, ads, and SEO share creative, audiences, and reporting — instead of three vendors sending you separate PDFs.",
+            "Ads inform SEO content, SEO wins fuel social, social builds paid audiences — every channel gets more efficient the longer you run it.",
+            "Deep understanding of UAE/GCC audiences, platforms, and ad-spend economics."
+          ]
+        },
+        {
+          "title": "Who This Is For",
+          "anchor": "use-cases",
+          "paragraphs": [
+            "Common briefs where digital marketing suite is exactly the right investment.",
+            "Ready to scale paid on top of organic.",
+            "Multi-location businesses in UAE.",
+            "Long-cycle demand generation.",
+            "Full-funnel storefront growth."
+          ]
+        },
+        {
+          "title": "How It Runs",
+          "anchor": "timeline",
+          "paragraphs": [
+            "A predictable four-phase engagement — clear milestones, clear deliverables per phase.",
+            "Full channel audit, competitive scan, and 90-day plan.",
+            "Tracking, campaigns, and first content batch shipped.",
+            "Campaigns activated, publishing starts, first optimization cycle.",
+            "Weekly optimization, monthly reporting, quarterly strategy reviews."
+          ]
+        },
+        {
+          "title": "FAQ",
+          "anchor": "faq",
+          "paragraphs": [
+            "The questions we get most often about digital marketing suite."
+          ]
+        },
+        {
+          "title": "Let's talk about Digital Marketing Suite.",
+          "anchor": "contact",
+          "paragraphs": [
+            "Tell us about your project — timeline, budget, and goals. We reply within 24 hours, in English or Arabic."
+          ]
+        }
+      ]
+    },
+    {
+      "path": "solutions/ecommerce-web-platforms.html",
+      "title": "E-Commerce & Web Platforms",
+      "category": "solution",
+      "summary": "Your storefront and your back-office platform, built as one connected system — inventory, CRM, and checkout that actually talk to each other.",
+      "faqs": [
+        {
+          "question": "Which platform for the storefront?",
+          "answer": "Shopify for most, headless Shopify + Next.js when performance is critical. The custom platform is built on modern React/Node/Postgres.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Can we migrate from an existing setup?",
+          "answer": "Yes — catalog, customers, and order history are migrated as part of the build.",
+          "anchor": "faq"
+        },
+        {
+          "question": "What's the ongoing cost?",
+          "answer": "Platform hosting is typically AED 500–3,000/month depending on scale. Retainer for ongoing work is separate and optional.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Do you handle post-launch marketing?",
+          "answer": "Marketing is separate — see our Digital Marketing Suite solution to run social, ads, and SEO on top.",
+          "anchor": "faq"
+        }
+      ],
+      "deliverables": [
+        {
+          "title": "E-Commerce Storefront",
+          "text": "A conversion-focused storefront, mobile-first, bilingual, and integrated with local payments."
+        },
+        {
+          "title": "Custom Platform Backend",
+          "text": "A CRM or ops dashboard that manages orders, customers, inventory, and team workflows."
+        },
+        {
+          "title": "Payment & Logistics Integration",
+          "text": "Connected to your payment (Stripe, Tabby, Tamara) and shipping (Aramex, DHL, in-house) providers."
+        },
+        {
+          "title": "Inventory Sync",
+          "text": "Stock levels kept accurate across every sales channel — no oversells."
+        },
+        {
+          "title": "Customer Data Layer",
+          "text": "One customer profile across storefront, CRM, and marketing — no data silos."
+        },
+        {
+          "title": "Ongoing Platform Support",
+          "text": "Updates, fixes, and new-feature builds as your business grows."
+        }
+      ],
+      "process": [
+        {
+          "title": "Discovery",
+          "text": "Weeks 1–2 — Storefront and platform scoping, integration plan."
+        },
+        {
+          "title": "Design",
+          "text": "Weeks 3–5 — Full storefront design plus platform UI."
+        },
+        {
+          "title": "Build",
+          "text": "Weeks 6–12 — Storefront and back-office development, integration, and QA."
+        },
+        {
+          "title": "Launch",
+          "text": "Week 13 — Soft launch, real-payment testing, then full go-live."
+        }
+      ],
+      "contacts": [],
+      "combines": [
+        {
+          "title": "E-Commerce",
+          "path": "services/ecommerce.html"
+        },
+        {
+          "title": "Platform Web",
+          "path": "services/platform-web.html"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Storefronts and Systems, Together.",
+          "anchor": "",
+          "paragraphs": [
+            "Your storefront and your back-office platform, built as one connected system — inventory, CRM, and checkout that actually talk to each other."
+          ]
+        },
+        {
+          "title": "Everything You Need",
+          "anchor": "deliverables",
+          "paragraphs": [
+            "A complete, senior-led scope for e-commerce & web platforms — no vague retainers, no guesswork.",
+            "A conversion-focused storefront, mobile-first, bilingual, and integrated with local payments.",
+            "A CRM or ops dashboard that manages orders, customers, inventory, and team workflows.",
+            "Connected to your payment (Stripe, Tabby, Tamara) and shipping (Aramex, DHL, in-house) providers.",
+            "Stock levels kept accurate across every sales channel — no oversells.",
+            "One customer profile across storefront, CRM, and marketing — no data silos.",
+            "Updates, fixes, and new-feature builds as your business grows."
+          ]
+        },
+        {
+          "title": "Why Us",
+          "anchor": "why",
+          "paragraphs": [
+            "Three specific things you get from us that you don't get from a generic agency or a freelancer.",
+            "Storefront, CRM, and ops share the same customer, product, and order data — instead of syncing three tools with duct tape.",
+            "Tabby, Tamara, cash-on-delivery, Aramex, in-house couriers — all configured properly for UAE/GCC.",
+            "The platform grows with the business — when Shopify's admin can't hold your workflow anymore, the custom layer is already there."
+          ]
+        },
+        {
+          "title": "Who This Is For",
+          "anchor": "use-cases",
+          "paragraphs": [
+            "Common briefs where e-commerce & web platforms is exactly the right investment.",
+            "Outgrowing Shopify's built-in admin.",
+            "Multiple storefronts, one back office.",
+            "Multi-vendor storefront + admin.",
+            "B2B and B2C in one system."
+          ]
+        },
+        {
+          "title": "How It Runs",
+          "anchor": "timeline",
+          "paragraphs": [
+            "A predictable four-phase engagement — clear milestones, clear deliverables per phase.",
+            "Storefront and platform scoping, integration plan.",
+            "Full storefront design plus platform UI.",
+            "Storefront and back-office development, integration, and QA.",
+            "Soft launch, real-payment testing, then full go-live."
+          ]
+        },
+        {
+          "title": "FAQ",
+          "anchor": "faq",
+          "paragraphs": [
+            "The questions we get most often about e-commerce & web platforms."
+          ]
+        },
+        {
+          "title": "Let's talk about E-Commerce & Web Platforms.",
+          "anchor": "contact",
+          "paragraphs": [
+            "Tell us about your project — timeline, budget, and goals. We reply within 24 hours, in English or Arabic."
+          ]
+        }
+      ]
+    },
+    {
+      "path": "solutions/growth-analytics.html",
+      "title": "Growth & Analytics",
+      "category": "solution",
+      "summary": "SEO, conversion tracking, and rate optimization run as one growth engine — so every dirham of marketing spend is traceable back to a real result.",
+      "faqs": [
+        {
+          "question": "How long until we see growth?",
+          "answer": "Tracking and quick-win fixes: weeks. Ranking gains on competitive terms: 3–6 months. Compound growth: 6–12 months.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Do you guarantee rankings?",
+          "answer": "No — no honest SEO does. We commit to visible improvement in metrics that actually move revenue.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Can you work with our existing dev team?",
+          "answer": "Yes — we work alongside your team, providing specs and prioritized fix lists rather than replacing them.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Do you handle paid too?",
+          "answer": "Paid ads are in our Digital Marketing Suite solution — SEO and CRO are the focus here.",
+          "anchor": "faq"
+        }
+      ],
+      "deliverables": [
+        {
+          "title": "Technical SEO",
+          "text": "Site health, speed, and structure fixed at the source — Core Web Vitals, schema, indexing."
+        },
+        {
+          "title": "Conversion Tracking",
+          "text": "Every meaningful action tracked and attributed correctly across GA4, Meta, and CRM."
+        },
+        {
+          "title": "Conversion Rate Optimization",
+          "text": "Landing pages A/B tested and improved against real user behavior."
+        },
+        {
+          "title": "Growth Dashboards",
+          "text": "One dashboard showing traffic, conversions, and revenue by channel — updated in real time."
+        },
+        {
+          "title": "Content SEO",
+          "text": "Monthly content built around real search demand, optimized for rankings and conversion."
+        },
+        {
+          "title": "Monthly Growth Reviews",
+          "text": "A standing review of what's working, what's not, and what's next."
+        }
+      ],
+      "process": [
+        {
+          "title": "Audit & Setup",
+          "text": "Weeks 1–3 — Full audit, tracking configured, quick-win fixes."
+        },
+        {
+          "title": "Foundation Work",
+          "text": "Weeks 4–8 — Technical SEO fixes, first CRO tests, dashboards live."
+        },
+        {
+          "title": "Growth Program",
+          "text": "Ongoing — Monthly content, continuous CRO tests, monthly reviews."
+        },
+        {
+          "title": "Quarterly Strategy",
+          "text": "Every 90 days — Standing quarterly session to adjust the growth plan."
+        }
+      ],
+      "contacts": [],
+      "combines": [
+        {
+          "title": "SEO & Analytics",
+          "path": "services/seo-analytics.html"
+        },
+        {
+          "title": "Website Design",
+          "path": "services/website-design.html"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Growth You Can Prove.",
+          "anchor": "",
+          "paragraphs": [
+            "SEO, conversion tracking, and rate optimization run as one growth engine — so every dirham of marketing spend is traceable back to a real result."
+          ]
+        },
+        {
+          "title": "Everything You Need",
+          "anchor": "deliverables",
+          "paragraphs": [
+            "A complete, senior-led scope for growth & analytics — no vague retainers, no guesswork.",
+            "Site health, speed, and structure fixed at the source — Core Web Vitals, schema, indexing.",
+            "Every meaningful action tracked and attributed correctly across GA4, Meta, and CRM.",
+            "Landing pages A/B tested and improved against real user behavior.",
+            "One dashboard showing traffic, conversions, and revenue by channel — updated in real time.",
+            "Monthly content built around real search demand, optimized for rankings and conversion.",
+            "A standing review of what's working, what's not, and what's next."
+          ]
+        },
+        {
+          "title": "Why Us",
+          "anchor": "why",
+          "paragraphs": [
+            "Three specific things you get from us that you don't get from a generic agency or a freelancer.",
+            "You can't optimize what you can't see — we set up proper tracking before we optimize anything.",
+            "Technical SEO + content + CRO working together produces compounding results, not spikes.",
+            "No cherry-picked charts. Every report shows what worked AND what didn't, with the reasoning."
+          ]
+        },
+        {
+          "title": "Who This Is For",
+          "anchor": "use-cases",
+          "paragraphs": [
+            "Common briefs where growth & analytics is exactly the right investment.",
+            "Turning a launch into steady growth.",
+            "Regaining ground after a drop.",
+            "Squeezing more from existing traffic.",
+            "SEO + CRO for pipeline growth."
+          ]
+        },
+        {
+          "title": "How It Runs",
+          "anchor": "timeline",
+          "paragraphs": [
+            "A predictable four-phase engagement — clear milestones, clear deliverables per phase.",
+            "Full audit, tracking configured, quick-win fixes.",
+            "Technical SEO fixes, first CRO tests, dashboards live.",
+            "Monthly content, continuous CRO tests, monthly reviews.",
+            "Standing quarterly session to adjust the growth plan."
+          ]
+        },
+        {
+          "title": "FAQ",
+          "anchor": "faq",
+          "paragraphs": [
+            "The questions we get most often about growth & analytics."
+          ]
+        },
+        {
+          "title": "Let's talk about Growth & Analytics.",
+          "anchor": "contact",
+          "paragraphs": [
+            "Tell us about your project — timeline, budget, and goals. We reply within 24 hours, in English or Arabic."
+          ]
+        }
+      ]
+    },
+    {
+      "path": "solutions/interactive-experience.html",
+      "title": "Interactive Experience Design",
+      "category": "solution",
+      "summary": "Touch, gesture, and click-driven experiences for events, showrooms, and retail — designed so the interaction itself becomes part of the story you're telling.",
+      "faqs": [
+        {
+          "question": "Do you provide the hardware?",
+          "answer": "We advise on hardware selection but typically source through your preferred AV partner. We handle software and design end-to-end.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Can it be permanent or event-only?",
+          "answer": "Both. We build permanent installations and event-scale activations — the software layer is the same, the hardware differs.",
+          "anchor": "faq"
+        },
+        {
+          "question": "What's the smallest project?",
+          "answer": "A single-screen interactive presentation is a natural entry point. Multi-screen installations scale from there.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Do you support after launch?",
+          "answer": "Yes — every project ships with a support runbook and 30 days of post-launch support. Ongoing maintenance retainers are optional.",
+          "anchor": "faq"
+        }
+      ],
+      "deliverables": [
+        {
+          "title": "Touchscreen Experiences",
+          "text": "Kiosk and screen-based interactives built for real venues and real usage patterns."
+        },
+        {
+          "title": "Interactive Presentations",
+          "text": "Click-through, self-guided presentation experiences for sales and marketing."
+        },
+        {
+          "title": "Motion-Responsive Design",
+          "text": "Interfaces that react to touch, gesture, and movement in real time."
+        },
+        {
+          "title": "Event & Showroom Builds",
+          "text": "Full production for launch events, activations, and permanent installations."
+        },
+        {
+          "title": "Content Management Layer",
+          "text": "Update interactive content without rebuilding the experience."
+        },
+        {
+          "title": "On-Site Launch Support",
+          "text": "Installation, launch-day support, and post-launch maintenance runbook."
+        }
+      ],
+      "process": [
+        {
+          "title": "Concept",
+          "text": "Weeks 1–3 — Story, interaction design, hardware planning."
+        },
+        {
+          "title": "Design & Prototype",
+          "text": "Weeks 4–6 — Full design and on-device prototype."
+        },
+        {
+          "title": "Build",
+          "text": "Weeks 7–12 — Software build, hardware coordination, content."
+        },
+        {
+          "title": "Install & Launch",
+          "text": "Week 13 — On-site install, launch-day, and post-launch support."
+        }
+      ],
+      "contacts": [],
+      "combines": [
+        {
+          "title": "Interactive Screen",
+          "path": "services/interactive-screen.html"
+        },
+        {
+          "title": "Interactive Presentation",
+          "path": "services/interactive-presentation.html"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Experiences People Remember.",
+          "anchor": "",
+          "paragraphs": [
+            "Touch, gesture, and click-driven experiences for events, showrooms, and retail — designed so the interaction itself becomes part of the story you're telling."
+          ]
+        },
+        {
+          "title": "Everything You Need",
+          "anchor": "deliverables",
+          "paragraphs": [
+            "A complete, senior-led scope for interactive experience design — no vague retainers, no guesswork.",
+            "Kiosk and screen-based interactives built for real venues and real usage patterns.",
+            "Click-through, self-guided presentation experiences for sales and marketing.",
+            "Interfaces that react to touch, gesture, and movement in real time.",
+            "Full production for launch events, activations, and permanent installations.",
+            "Update interactive content without rebuilding the experience.",
+            "Installation, launch-day support, and post-launch maintenance runbook."
+          ]
+        },
+        {
+          "title": "Why Us",
+          "anchor": "why",
+          "paragraphs": [
+            "Three specific things you get from us that you don't get from a generic agency or a freelancer.",
+            "The interaction is the story — the visitor walks away remembering how it felt, not just what it looked like.",
+            "Every experience is prototyped on real hardware and tested with real users before it ships.",
+            "Concept, design, build, install, and support — all in-house, one accountability."
+          ]
+        },
+        {
+          "title": "Who This Is For",
+          "anchor": "use-cases",
+          "paragraphs": [
+            "Common briefs where interactive experience design is exactly the right investment.",
+            "Pop-ups and store openings.",
+            "Interactive booth centerpieces.",
+            "Permanent brand experiences.",
+            "Hero interactive experiences."
+          ]
+        },
+        {
+          "title": "How It Runs",
+          "anchor": "timeline",
+          "paragraphs": [
+            "A predictable four-phase engagement — clear milestones, clear deliverables per phase.",
+            "Story, interaction design, hardware planning.",
+            "Full design and on-device prototype.",
+            "Software build, hardware coordination, content.",
+            "On-site install, launch-day, and post-launch support."
+          ]
+        },
+        {
+          "title": "FAQ",
+          "anchor": "faq",
+          "paragraphs": [
+            "The questions we get most often about interactive experience design."
+          ]
+        },
+        {
+          "title": "Let's talk about Interactive Experience Design.",
+          "anchor": "contact",
+          "paragraphs": [
+            "Tell us about your project — timeline, budget, and goals. We reply within 24 hours, in English or Arabic."
+          ]
+        }
+      ]
+    }
+  ]
+}

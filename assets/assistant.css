@@ -1,0 +1,36 @@
+.ca-launchers { position: fixed; right: 22px; bottom: 22px; z-index: 200; display: flex; align-items: center; gap: 12px; }
+.ca-launchers button, .ca-whatsapp { border: 1px solid rgba(80,140,220,.3); box-shadow: 0 10px 32px rgba(0,0,0,.4); cursor: pointer; }
+.ca-launch { display: flex; align-items: center; gap: 10px; min-height: 54px; padding: 14px 21px; border-radius: 999px; background: linear-gradient(110deg,#1fa8ff,#00d4ff); color: #001428; font: 700 14px 'Inter',sans-serif; }
+.ca-launch svg { width: 24px; height: 24px; }
+.ca-whatsapp { display: grid; place-items: center; width: 50px; height: 50px; border-radius: 50%; background: #25d366; color: #002d13; font: 800 12px 'Inter',sans-serif; }
+.ca-panel { box-sizing: border-box; position: fixed; inset: auto 22px 88px auto; margin: 0; padding: 0; width: min(420px,calc(100vw - 32px)); max-width: none; height: min(620px,calc(100dvh - 112px)); max-height: none; color: #e7eefc; background: #080e1a; border: 1px solid rgba(80,140,220,.32); border-radius: 22px; box-shadow: 0 32px 100px rgba(0,0,0,.65); font: 14px/1.6 'Inter',sans-serif; overflow: hidden; }
+.ca-panel[open] { display: flex; flex-direction: column; }
+.ca-panel::backdrop { background: rgba(3,6,13,.3); }
+.ca-panel * { box-sizing: border-box; }
+.ca-head { display: flex; align-items: center; gap: 12px; padding: 18px; background: linear-gradient(120deg,rgba(31,168,255,.2),rgba(0,212,255,.03)); border-bottom: 1px solid rgba(80,140,220,.22); }
+.ca-avatar { display: grid; place-items: center; width: 40px; height: 40px; flex-shrink: 0; border-radius: 13px; background: linear-gradient(135deg,#1fa8ff,#00d4ff); color: #001428; }
+.ca-avatar svg { width: 24px; height: 24px; }
+.ca-head h2 { margin: 0; color: #fff; font: 700 15px 'Poppins',sans-serif; }
+.ca-status { margin: 3px 0 0; color: #a3dfff; font-size: 11px; }
+.ca-close { margin-left: auto; min-width: 36px; min-height: 36px; padding: 4px; background: transparent; color: #c1cde2; border: 0; border-radius: 8px; font-size: 25px; cursor: pointer; }
+.ca-messages { flex: 1; min-height: 0; padding: 18px; overflow-y: auto; overscroll-behavior: contain; display: flex; flex-direction: column; gap: 14px; }
+.ca-message { max-width: 96%; padding: 12px 14px; border-radius: 16px 16px 16px 4px; background: rgba(31,168,255,.1); border: 1px solid rgba(31,168,255,.18); overflow-wrap: anywhere; }
+.ca-message p { margin: 0; white-space: pre-line; font-size: 13px; line-height: 1.65; color: inherit; }
+.ca-message.ca-user { align-self: flex-end; max-width: 86%; border-radius: 16px 16px 4px 16px; background: #139edc; color: #001428; font-weight: 600; }
+.ca-sources { margin-top: 12px; padding-top: 10px; border-top: 1px solid rgba(80,140,220,.22); display: flex; flex-wrap: wrap; gap: 7px; }
+.ca-sources a { color: #a9e6ff; font-size: 12px; padding: 5px 9px; border: 1px solid rgba(31,168,255,.3); background: #0a1b30; border-radius: 8px; text-decoration: none; }
+.ca-sources a:hover { border-color: #00d4ff; color: #fff; }
+.ca-quick { display: flex; gap: 7px; flex-wrap: wrap; padding: 0 16px 12px; }
+.ca-quick button { padding: 7px 10px; border: 1px solid rgba(80,140,220,.3); border-radius: 999px; background: #0d2037; color: #a9e6ff; font: 12px 'Inter',sans-serif; cursor: pointer; }
+.ca-form { padding: 12px 14px; display: flex; gap: 8px; border-top: 1px solid rgba(80,140,220,.22); background: #060b17; }
+.ca-form input { min-width: 0; width: 100%; padding: 12px 14px; border: 1px solid rgba(80,140,220,.3); border-radius: 22px; color: #e7eefc; background: #0d182a; font: 16px 'Inter',sans-serif; }
+.ca-form button { padding: 10px 15px; border: 0; border-radius: 22px; color: #001428; background: #1fb8fa; font: 700 13px 'Inter',sans-serif; cursor: pointer; }
+.ca-panel button:disabled { opacity: .55; cursor: wait; }
+.ca-panel :focus-visible, .ca-launchers :focus-visible { outline: 2px solid #00d4ff; outline-offset: 3px; }
+.ca-note { margin: 0; padding: 0 18px 12px; background: #060b17; color: #aab9d4; font-size: 10px; line-height: 1.5; }
+@media(max-width: 640px) {
+  .ca-launchers { right: 14px; bottom: max(14px,env(safe-area-inset-bottom)); gap: 8px; }
+  .ca-launch { min-height: 50px; padding: 12px 16px; }
+  .ca-panel { right: 12px; bottom: max(78px,calc(env(safe-area-inset-bottom) + 64px)); width: calc(100vw - 24px); height: min(620px,calc(100dvh - 96px)); }
+}
+@media(prefers-reduced-motion: reduce) { .ca-panel *, .ca-launchers * { animation: none !important; transition: none !important; } }

@@ -667,6 +667,8 @@
   }
 
 </style>
+<link rel="stylesheet" href="../assets/page-hero.css">
+<link rel="stylesheet" href="../assets/assistant.css">
 </head>
 <body>
 
@@ -825,27 +827,26 @@
 </header>
 
 <!-- ============ PAGE HERO ============ -->
-<section class="page-hero">
-  <div class="container about-grid">
-    <div class="about-text reveal">
+<section class="page-hero page-hero--immersive">
+  <div class="page-hero-media" aria-hidden="true"><img src="../fintech-platform-services.png" alt="" fetchpriority="high" decoding="async" /></div>
+  <div class="container page-hero-content">
+    <div class="about-text">
       <p class="breadcrumb">
-        <a href="../index.html">Home</a><span class="sep">/</span><a href="../solutions/brand-launch-package.html">Solutions</a><span class="sep">/</span><span class="current">Growth & Analytics</span>
+        <a href="../index.html">Home</a><span class="sep">/</span><a href="../index.html#solutions">Solutions</a><span class="sep">/</span><span class="current">Growth & Analytics</span>
       </p>
       <span class="eyebrow">Solution · SEO, Tracking & CRO</span>
-      <h2 class="gradient-head" style="margin-top:14px">Growth You Can <span class="accent">Prove</span>.</h2>
+      <h1 class="gradient-head">Growth You Can <span class="accent">Prove</span>.</h1>
       <p>SEO, conversion tracking, and rate optimization run as one growth engine — so every dirham of marketing spend is traceable back to a real result.</p>
       <div class="hero-ctas">
         <a href="../contact.html" class="btn-primary">Start a Project →</a>
-        <a href="../solutions/brand-launch-package.html" class="btn-outline">Explore All Solutions</a>
+        <a href="../index.html#solutions" class="btn-outline">Explore All Solutions</a>
       </div>
         <div class="combines-row">
           <span class="lbl">This solution combines</span>
           <div class="items"><a href="../services/seo-analytics.html">SEO & Analytics</a><a href="../services/website-design.html">Website Design</a></div>
         </div>
     </div>
-    <div class="about-visual reveal">
-      <img src="../fintech-platform-services.png" alt="Growth & Analytics" />
-    </div>
+
   </div>
 </section>
 
@@ -1167,5 +1168,6 @@
 
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
+<script type="module" src="../assets/assistant.mjs"></script>
 </body>
 </html>
