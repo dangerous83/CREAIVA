@@ -434,18 +434,34 @@
   .about-visual img{position:relative;z-index:1;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 0 40px var(--brand-glow))}
 
   /* ================= SERVICES ================= */
+  #services,#solutions{position:relative;overflow:hidden;isolation:isolate}
   #services{background:var(--bg-1)}
-  .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
-  .service{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:16/11;cursor:pointer;border:1px solid var(--border);transition:transform .35s,border-color .35s,box-shadow .35s}
-  .service:hover{transform:translateY(-6px);border-color:var(--brand);box-shadow:0 20px 60px rgba(31,168,255,.25)}
-  .service img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
-  .service:hover img{transform:scale(1.08)}
-  .service::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(3,6,13,.35) 55%,rgba(3,6,13,.96) 100%)}
-  .service-info{position:absolute;left:22px;right:22px;bottom:22px;z-index:2}
-  .service-info h3{font-family:'Poppins',sans-serif;font-weight:700;font-size:19px;color:#fff}
-  .service-info p{color:var(--muted);font-size:13px;margin-top:6px;line-height:1.5;opacity:0;max-height:0;transition:opacity .3s,max-height .35s}
-  .service:hover .service-info p{opacity:1;max-height:80px}
-  .service-tag{position:absolute;top:16px;left:16px;z-index:2;padding:6px 12px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--brand-2);background:rgba(3,6,13,.7);border:1px solid var(--border);border-radius:999px;backdrop-filter:blur(6px)}
+  #services::before,#solutions::before{content:"";position:absolute;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(0,212,255,.1),rgba(31,168,255,.025) 45%,transparent 70%);filter:blur(10px);pointer-events:none;z-index:-1;animation:sectionGlow 14s ease-in-out infinite alternate}
+  #services::before{left:-260px;top:12%}
+  #solutions::before{right:-260px;top:18%;animation-delay:-7s}
+  @keyframes sectionGlow{to{transform:translate3d(80px,55px,0) scale(1.12);opacity:.7}}
+  #services .section-head,#solutions .section-head{max-width:760px;margin-left:auto;margin-right:auto}
+  .services-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;perspective:1200px}
+  .service{grid-column:span 4;position:relative;border-radius:22px;overflow:hidden;aspect-ratio:16/11;cursor:pointer;border:1px solid rgba(94,160,235,.22);background:#07101f;box-shadow:0 18px 50px rgba(0,0,0,.2);transform-style:preserve-3d;will-change:transform;transition:transform .45s cubic-bezier(.22,1,.36,1),border-color .35s,box-shadow .45s}
+  #services .service:nth-child(-n+2){grid-column:span 6;aspect-ratio:16/8.6}
+  #solutions .service:nth-child(1){grid-column:span 7;aspect-ratio:16/8.4}
+  #solutions .service:nth-child(2){grid-column:span 5;aspect-ratio:16/11.8}
+  #solutions .service:nth-child(n+3):nth-child(-n+5){grid-column:span 4}
+  #solutions .service:nth-child(n+6){grid-column:span 6;aspect-ratio:16/8.8}
+  .service img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.92) contrast(1.03);transition:transform .9s cubic-bezier(.22,1,.36,1),filter .5s ease}
+  .service::before{content:"";position:absolute;inset:0;z-index:2;background:radial-gradient(360px circle at var(--mx,50%) var(--my,50%),rgba(95,222,255,.2),transparent 62%);mix-blend-mode:screen;opacity:0;transition:opacity .4s;pointer-events:none}
+  .service::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(2,8,18,.02) 22%,rgba(3,6,13,.28) 55%,rgba(3,6,13,.97) 100%)}
+  .service:hover{border-color:rgba(62,205,255,.68);box-shadow:0 28px 70px rgba(0,0,0,.42),0 0 0 1px rgba(0,212,255,.08)}
+  .service:hover::before{opacity:1}
+  .service:hover img{transform:scale(1.065);filter:saturate(1.08) contrast(1.06)}
+  .service-info{position:absolute;left:22px;right:22px;bottom:20px;z-index:3;padding-right:48px;transform:translateZ(18px)}
+  a.service .service-info::after{content:"↗";position:absolute;right:0;bottom:0;display:grid;place-items:center;width:38px;height:38px;border-radius:50%;color:#dff8ff;background:rgba(10,30,52,.78);border:1px solid rgba(98,210,255,.35);font:500 18px/1 'Inter',sans-serif;transform:translateY(8px) scale(.9);opacity:0;transition:opacity .3s,transform .35s cubic-bezier(.22,1,.36,1)}
+  a.service:hover .service-info::after{opacity:1;transform:none}
+  .service-info h3{font-family:'Poppins',sans-serif;font-weight:700;font-size:clamp(17px,1.45vw,21px);line-height:1.28;color:#fff;text-wrap:balance}
+  .service-info p{color:#b8c8e2;font-size:13px;margin-top:7px;line-height:1.5;opacity:0;max-height:0;transform:translateY(8px);transition:opacity .3s,max-height .35s,transform .35s}
+  #services .service:nth-child(-n+2) .service-info p,#solutions .service:nth-child(-n+2) .service-info p{opacity:.88;max-height:80px;transform:none}
+  .service:hover .service-info p{opacity:1;max-height:80px;transform:none}
+  .service-tag{position:absolute;top:16px;left:16px;z-index:3;padding:7px 12px;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#7ceaff;background:rgba(3,10,22,.72);border:1px solid rgba(76,198,255,.3);border-radius:999px;backdrop-filter:blur(12px);box-shadow:0 8px 24px rgba(0,0,0,.2);transform:translateZ(16px)}
 
   /* ================= PROCESS ================= */
   #process{background:linear-gradient(180deg,var(--bg-1),var(--bg-0))}
@@ -553,8 +569,12 @@
   .stagger.in > *:nth-child(6){transition-delay:.45s}
   .stagger.in > *:nth-child(7){transition-delay:.53s}
   .stagger.in > *:nth-child(8){transition-delay:.61s}
+  .stagger.in > *{transition-delay:var(--stagger-delay,0ms)}
+  .services-grid.in .service:hover{transform:translateY(-9px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg))}
   @media(prefers-reduced-motion:reduce){
     .reveal,.reveal-left,.reveal-right,.reveal-scale,.stagger > *{transition:none;opacity:1;transform:none}
+    #services::before,#solutions::before{animation:none}
+    .services-grid.in .service:hover{transform:translateY(-4px)}
   }
 
   /* ================= TRUSTED-BY MARQUEE ================= */
@@ -657,7 +677,8 @@
     .stat-row{grid-template-columns:repeat(3,1fr);gap:14px}
     .stat{padding:16px}
     .stat .num{font-size:26px}
-    .services-grid{grid-template-columns:repeat(2,1fr);gap:20px}
+    .services-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+    #services .service,#solutions .service{grid-column:span 1;aspect-ratio:16/11}
     .process-grid{grid-template-columns:repeat(2,1fr)}
     .contact-card{padding:48px 36px}
     .contact-methods{gap:22px}
@@ -694,6 +715,7 @@
 
     /* services */
     .services-grid{grid-template-columns:1fr;gap:16px}
+    #services .service,#solutions .service{grid-column:1;aspect-ratio:16/11}
     .service{aspect-ratio:16/12}
 
     /* contact */
@@ -1029,7 +1051,7 @@
 <section id="solutions">
   <div class="container">
     <div class="section-head reveal"><span class="eyebrow">Built Together</span><h2>Complete <span class="accent">Solutions</span></h2><p>Services combined around your next business goal. Explore the scope, process, and FAQs for each package.</p></div>
-    <div class="services-grid">
+    <div class="services-grid stagger" id="solutionsGrid">
       <a class="service reveal" href="solutions/ai-content-studio.html"><img src="assets/thumbnails/solution-ai-content.jpg" alt="" loading="lazy"/><span class="service-tag">Solution</span><div class="service-info"><h3>AI Content Studio</h3><p>AI Video (Realistic) + Motion Design</p></div></a>
       <a class="service reveal" href="solutions/brand-launch-package.html"><img src="assets/thumbnails/solution-brand-launch.jpg" alt="" loading="lazy"/><span class="service-tag">Solution</span><div class="service-info"><h3>Brand Launch Package</h3><p>Logo &amp; Branding + Website Design + Social Media Management</p></div></a>
       <a class="service reveal" href="solutions/corporate-presentations.html"><img src="assets/thumbnails/solution-presentations.jpg" alt="" loading="lazy"/><span class="service-tag">Solution</span><div class="service-info"><h3>Corporate Presentation Systems</h3><p>Presentation PRO + Interactive Presentation</p></div></a>
@@ -1548,6 +1570,25 @@
         <p>${s.desc}</p>
       </div>`;
     grid.appendChild(el);
+  });
+
+  /* Subtle pointer depth for service and solution cards. */
+  document.querySelectorAll('#services .service, #solutions .service').forEach((card,i)=>{
+    card.style.setProperty('--stagger-delay',`${Math.min(i,8)*70}ms`);
+    card.addEventListener('pointermove',e=>{
+      if(!window.matchMedia('(hover:hover) and (prefers-reduced-motion:no-preference)').matches) return;
+      const r=card.getBoundingClientRect();
+      const x=(e.clientX-r.left)/r.width;
+      const y=(e.clientY-r.top)/r.height;
+      card.style.setProperty('--mx',`${x*100}%`);
+      card.style.setProperty('--my',`${y*100}%`);
+      card.style.setProperty('--rx',`${(0.5-y)*3}deg`);
+      card.style.setProperty('--ry',`${(x-0.5)*3}deg`);
+    });
+    card.addEventListener('pointerleave',()=>{
+      card.style.setProperty('--rx','0deg');
+      card.style.setProperty('--ry','0deg');
+    });
   });
 
   /* ============ NAV ============ */
