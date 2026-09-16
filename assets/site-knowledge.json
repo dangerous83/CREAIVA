@@ -1119,6 +1119,144 @@
       ]
     },
     {
+      "path": "services/lifestyle-consultancy.html",
+      "title": "Lifestyle Consultancy",
+      "category": "service",
+      "summary": "Practical, personal guidance to help you move from a sedentary routine toward healthier habits, greater confidence, and meaningful progress in life and work.",
+      "faqs": [
+        {
+          "question": "Who is Lifestyle Consultancy for?",
+          "answer": "It is for adults who want structured support to become more active, improve daily routines, strengthen confidence, or make progress toward personal and professional goals.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Is the programme personalised?",
+          "answer": "Yes. Guidance is shaped around your current lifestyle, priorities, schedule, and the outcomes you want to pursue.",
+          "anchor": "faq"
+        },
+        {
+          "question": "Is this a medical or clinical service?",
+          "answer": "No. Lifestyle Consultancy is a non-regulated coaching and consultancy service. It does not diagnose, treat, or replace advice from a qualified healthcare professional.",
+          "anchor": "faq"
+        },
+        {
+          "question": "How do I arrange an initial conversation?",
+          "answer": "Call or message Glen Apostol on +971 56 664 4147 to discuss your goals and the most suitable next step.",
+          "anchor": "faq"
+        }
+      ],
+      "deliverables": [
+        {
+          "title": "Healthier Daily Habits",
+          "text": "Practical steps that help replace sedentary patterns with sustainable movement and healthier routines."
+        },
+        {
+          "title": "Personal Coaching",
+          "text": "One-to-one guidance that respects your pace, lifestyle, responsibilities, and motivation."
+        },
+        {
+          "title": "Active Lifestyle Planning",
+          "text": "A realistic activity framework designed to fit your schedule and make consistency easier."
+        },
+        {
+          "title": "Goal-Focused Progress",
+          "text": "Clear personal, professional, sport, social, or family goals translated into manageable actions."
+        },
+        {
+          "title": "Confidence & Appearance",
+          "text": "Lifestyle choices that support stronger self-presentation, personal confidence, and feeling your best."
+        },
+        {
+          "title": "Sustainable Change",
+          "text": "Steady accountability and behavior-change support designed for progress that lasts."
+        }
+      ],
+      "process": [
+        {
+          "title": "Discovery",
+          "text": "Listen & understand — Discuss your current routine, priorities, challenges, and the change you want to create."
+        },
+        {
+          "title": "Personal Plan",
+          "text": "Define the path — Turn your goals into realistic actions suited to your schedule and circumstances."
+        },
+        {
+          "title": "Guided Action",
+          "text": "Build momentum — Put the plan into practice with focused coaching, review, and encouragement."
+        },
+        {
+          "title": "Sustainable Routine",
+          "text": "Make it last — Refine what works and build habits that remain useful beyond the engagement."
+        }
+      ],
+      "contacts": [],
+      "combines": [],
+      "sections": [
+        {
+          "title": "Build a Life That Moves With You.",
+          "anchor": "",
+          "paragraphs": [
+            "Practical, personal guidance to help you move from a sedentary routine toward healthier habits, greater confidence, and meaningful progress in life and work."
+          ]
+        },
+        {
+          "title": "Progress Built Around Your Life",
+          "anchor": "approach",
+          "paragraphs": [
+            "Focused lifestyle consultancy and coaching shaped around your routines, priorities, and personal or professional goals.",
+            "Practical steps that help replace sedentary patterns with sustainable movement and healthier routines.",
+            "One-to-one guidance that respects your pace, lifestyle, responsibilities, and motivation.",
+            "A realistic activity framework designed to fit your schedule and make consistency easier.",
+            "Clear personal, professional, sport, social, or family goals translated into manageable actions.",
+            "Lifestyle choices that support stronger self-presentation, personal confidence, and feeling your best.",
+            "Steady accountability and behavior-change support designed for progress that lasts."
+          ]
+        },
+        {
+          "title": "Glen Apostol",
+          "anchor": "consultant",
+          "paragraphs": [
+            "Glen provides thoughtful, practical coaching for clients who want to live more actively, strengthen their everyday habits, and move toward specific personal or professional goals with clarity and consistency."
+          ]
+        },
+        {
+          "title": "Clear, Professional & Personal",
+          "anchor": "details",
+          "paragraphs": [
+            "Lifestyle Consultancy is offered as a non-regulated professional service in Dubai.",
+            "9609011",
+            "Services",
+            "Non-Regulated"
+          ]
+        },
+        {
+          "title": "A Simple Path to Lasting Progress",
+          "anchor": "process",
+          "paragraphs": [
+            "Each engagement begins with your real situation and develops into a practical plan you can maintain.",
+            "Discuss your current routine, priorities, challenges, and the change you want to create.",
+            "Turn your goals into realistic actions suited to your schedule and circumstances.",
+            "Put the plan into practice with focused coaching, review, and encouragement.",
+            "Refine what works and build habits that remain useful beyond the engagement."
+          ]
+        },
+        {
+          "title": "FAQ",
+          "anchor": "faq",
+          "paragraphs": [
+            "Helpful details before speaking with Glen."
+          ]
+        },
+        {
+          "title": "Your next chapter can start with one step.",
+          "anchor": "contact",
+          "paragraphs": [
+            "Speak directly with Glen Apostol about your goals and the lifestyle changes you would like to make."
+          ]
+        }
+      ]
+    },
+    {
       "path": "services/logo-branding.html",
       "title": "Logo & Branding",
       "category": "service",
