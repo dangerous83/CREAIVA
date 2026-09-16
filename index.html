@@ -1416,77 +1416,88 @@
       desc:'Cinematic AI-generated visuals, product renders, and full campaign imagery.',
       eyebrow:'AI Media · Generative Creative',
       h1:['AI Video & Imagery That','Feels','Cinematic.'],
-      lead:'Generative visuals, product renders, and hero campaigns — engineered by AI, finished by artists.'
+      lead:'Generative visuals, product renders, and hero campaigns — engineered by AI, finished by artists.',
+      link:'services/ai-video-realistic.html'
     },
     {
       title:'Website Services', tag:'Web',
       desc:'Design + build for landing pages, marketing sites, and e-commerce.',
       eyebrow:'Web · Design & Development',
       h1:['Websites Built to','Convert','.'],
-      lead:'Landing pages, marketing sites, and e-commerce — designed to look premium and perform hard.'
+      lead:'Landing pages, marketing sites, and e-commerce — designed to look premium and perform hard.',
+      link:'services/website-design.html'
     },
     {
       title:'Motion Design', tag:'Motion',
       desc:'Kinetic type, brand animations, and cinematic explainer motion.',
       eyebrow:'Motion · Kinetic Storytelling',
       h1:['Motion That','Moves','Markets.'],
-      lead:'Kinetic type, brand animations, and cinematic motion crafted to stop the scroll.'
+      lead:'Kinetic type, brand animations, and cinematic motion crafted to stop the scroll.',
+      link:'services/motion-design.html'
     },
     {
       title:'3D Animation', tag:'3D',
       desc:'Photoreal product visualization and 3D storytelling.',
       eyebrow:'3D · Product & World Building',
       h1:['3D Worlds With','Photoreal','Craft.'],
-      lead:'Product visualization and 3D storytelling with cinematic light, texture, and detail.'
+      lead:'Product visualization and 3D storytelling with cinematic light, texture, and detail.',
+      link:'services/3d-animation.html'
     },
     {
       title:'2D Animation', tag:'2D',
       desc:'Illustrated explainers, character animation, and stylized loops.',
       eyebrow:'2D · Illustration & Character',
       h1:['2D Stories,','Handcrafted','Style.'],
-      lead:'Illustrated explainers, character animation, and stylized loops with real personality.'
+      lead:'Illustrated explainers, character animation, and stylized loops with real personality.',
+      link:'services/2d-animation.html'
     },
     {
       title:'Video Editing', tag:'Post',
       desc:'Story-first editing, color, and sound for ads, docs, and social.',
       eyebrow:'Post · Editorial · Color · Sound',
       h1:['Video Editing With','Story First','.'],
-      lead:'Sharp cuts, color, and sound for ads, docs, and social — post-production done right.'
+      lead:'Sharp cuts, color, and sound for ads, docs, and social — post-production done right.',
+      link:'services/photography-videography.html'
     },
     {
       title:'Logo & Branding', tag:'Brand',
       desc:'Logos, visual identity systems, and complete brand guidelines.',
       eyebrow:'Brand · Identity Systems',
       h1:['Brands With','Presence','.'],
-      lead:'Logos, identity systems, and guidelines that make your brand impossible to ignore.'
+      lead:'Logos, identity systems, and guidelines that make your brand impossible to ignore.',
+      link:'services/logo-branding.html'
     },
     {
       title:'Photography', tag:'Photo',
       desc:'Product, lifestyle, and campaign photography — studio & on-location.',
       eyebrow:'Photo · Studio & On-Location',
       h1:['Photography With','Purpose','.'],
-      lead:'Product, lifestyle, and campaign photography — studio and on-location, ready to publish.'
+      lead:'Product, lifestyle, and campaign photography — studio and on-location, ready to publish.',
+      link:'services/photography-videography.html'
     },
     {
       title:'Social Media Management', tag:'Social',
       desc:'Content strategy, calendars, and daily creative for every platform.',
       eyebrow:'Social · Content & Community',
       h1:['Social That','Compounds','.'],
-      lead:'Content strategy, calendars, and daily creative built for platform-native growth.'
+      lead:'Content strategy, calendars, and daily creative built for platform-native growth.',
+      link:'services/social-media-management.html'
     },
     {
       title:'CRM & Platform Services', tag:'Platform',
       desc:'Custom CRMs, dashboards, and internal tools built to scale.',
       eyebrow:'Platform · CRM & Internal Tools',
       h1:['Platforms Built to','Scale','.'],
-      lead:'Custom CRMs, dashboards, and internal tools engineered around the way your team actually works.'
+      lead:'Custom CRMs, dashboards, and internal tools engineered around the way your team actually works.',
+      link:'services/platform-web.html'
     },
     {
       title:'Fintech Platform Services', tag:'Fintech',
       desc:'Secure payment, ledger, and financial-product engineering.',
       eyebrow:'Fintech · Payments & Ledger',
       h1:['Fintech Products,','Bank-Grade','.'],
-      lead:'Secure payment, ledger, and financial-product engineering — from MVP to production.'
+      lead:'Secure payment, ledger, and financial-product engineering — from MVP to production.',
+      link:'services/platform-web.html'
     },
   ];
 
@@ -1591,8 +1602,9 @@
   ];
   const grid = document.getElementById('servicesGrid');
   services.forEach((s,i)=>{
-    const el = document.createElement('div');
-    el.className = 'service';
+    const el = document.createElement('a');
+    el.className = 'service reveal';
+    el.href = s.link;
     el.innerHTML = `
       <span class="service-tag">${s.tag}</span>
       <img src="${imgs[i]}" alt="${s.title}" loading="lazy" />
