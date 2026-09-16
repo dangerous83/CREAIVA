@@ -4,6 +4,24 @@ import { extractPage } from './site-content.mjs';
 const root = new URL('../', import.meta.url);
 const pagePath = decodeURIComponent(location.pathname).startsWith(root.pathname)
   ? decodeURIComponent(location.pathname).slice(root.pathname.length) || 'index.html' : 'index.html';
+const lifestyleHref = new URL('services/lifestyle-consultancy.html', root).href;
+const navLinks = document.getElementById('navLinks');
+if (navLinks && !navLinks.querySelector('a[href$="lifestyle-consultancy.html"]')) {
+  const item = document.createElement('li');
+  item.className = 'lifestyle-nav-item';
+  item.innerHTML = `<a href="${lifestyleHref}">Lifestyle Consultancy</a>`;
+  const portfolioLink = [...navLinks.querySelectorAll(':scope > li > a')].find(a => a.textContent.trim() === 'Portfolio');
+  portfolioLink?.parentElement?.after(item);
+  if (!item.isConnected) navLinks.append(item);
+}
+const servicesGrid = navLinks?.querySelector('.has-dd .mega-grid');
+if (servicesGrid && !servicesGrid.querySelector('a[href$="lifestyle-consultancy.html"]')) {
+  const item = document.createElement('a');
+  item.className = 'mega-item';
+  item.href = lifestyleHref;
+  item.innerHTML = '<span class="m-ico"><svg viewBox="0 0 24 24"><path d="M4 12h3l2-5 4 10 2-5h5"/></svg></span><span class="m-txt"><h6>Lifestyle Consultancy</h6><p>Wellbeing and personal growth coaching</p></span>';
+  servicesGrid.append(item);
+}
 const icon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.6 7.2L3 20l1.3-5.4A8 8 0 1 1 20 11.5Z"/><path d="M8 11h.01M12 11h.01M16 11h.01" stroke-width="3" stroke-linecap="round"/></svg>';
 const launchers = document.createElement('div');
 launchers.className = 'ca-launchers';
