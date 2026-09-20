@@ -610,18 +610,27 @@
 </style>
 <style>
   .page-hero{padding-top:150px}
-  .proj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:24px}
-  .proj-card{border-radius:20px;overflow:hidden;border:1px solid var(--border);background:var(--card);transition:transform .3s,border-color .3s;cursor:pointer}
-  .proj-card:hover{transform:translateY(-6px);border-color:var(--brand)}
-  .proj-media{aspect-ratio:16/10;position:relative;overflow:hidden}
-  .proj-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s}
-  .proj-card:hover .proj-media img{transform:scale(1.08)}
-  .proj-body{padding:22px 24px}
+  .proj-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:22px}
+  .proj-card{grid-column:span 5;min-height:440px;border-radius:24px;overflow:hidden;border:1px solid var(--border);background:var(--card);transition:transform .35s,border-color .35s,box-shadow .35s;position:relative;color:inherit;text-decoration:none;isolation:isolate}
+  .proj-card:nth-child(4n+1),.proj-card:nth-child(4n){grid-column:span 7}
+  .proj-card:hover{transform:translateY(-7px);border-color:rgba(16,187,246,.72);box-shadow:0 24px 70px rgba(0,10,28,.48)}
+  .proj-media{position:absolute;inset:0;overflow:hidden}
+  .proj-media:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,8,18,.04) 25%,rgba(3,8,18,.94) 100%)}
+  .proj-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s,filter .4s}
+  .proj-card:hover .proj-media img{transform:scale(1.055);filter:saturate(1.1)}
+  .proj-body{position:absolute;z-index:2;left:0;right:0;bottom:0;padding:30px}
   .proj-cat{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--brand-2);font-weight:700}
-  .proj-body h4{font-family:'Poppins',sans-serif;font-weight:700;font-size:19px;color:#fff;margin:6px 0 8px}
-  .proj-body p{color:var(--muted);font-size:14px;line-height:1.6}
+  .proj-body h4{font-family:'Poppins',sans-serif;font-weight:750;font-size:clamp(22px,2vw,31px);color:#fff;margin:7px 0 8px}
+  .proj-body p{color:#b8c9e6;font-size:14px;line-height:1.65;max-width:560px}
+  .proj-link{display:inline-flex;align-items:center;gap:8px;margin-top:16px;color:#fff;font-weight:650;font-size:13px;letter-spacing:.3px}
+  .proj-link span{display:grid;place-items:center;width:27px;height:27px;border-radius:50%;background:var(--brand);color:#03101c;transition:transform .3s}
+  .proj-card:hover .proj-link span{transform:translate(3px,-3px)}
+  .photo-preview{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:28px}
+  .photo-preview img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:14px;border:1px solid var(--border)}
   .portfolio-note{max-width:820px;margin:60px auto 0;padding:26px 30px;border-radius:16px;border:1px dashed var(--border);background:rgba(15,26,48,.4);text-align:center;color:var(--muted);font-size:14px;line-height:1.7}
   .portfolio-note strong{color:var(--brand-2);font-weight:600}
+  @media(max-width:850px){.proj-card,.proj-card:nth-child(4n+1),.proj-card:nth-child(4n){grid-column:1/-1;min-height:390px}.photo-preview{grid-template-columns:repeat(3,1fr)}.photo-preview img:nth-child(n+4){display:none}}
+  @media(max-width:520px){.proj-grid{gap:16px}.proj-card{min-height:340px;border-radius:18px}.proj-body{padding:22px}.photo-preview{grid-template-columns:repeat(3,1fr);gap:6px}.photo-preview img{border-radius:10px}}
 </style>
 <link rel="stylesheet" href="assets/assistant.css">
 </head>
@@ -631,7 +640,7 @@
 <!-- ============ NAV ============ -->
 <header class="nav" id="nav">
  <div class="nav-inner">
-  <a href="#home" class="logo">
+  <a href="index.html" class="logo" aria-label="CREAIVA home">
     <img src="creaiva-logo-horizontal.png" alt="CREAIVA" />
   </a>
 
@@ -786,7 +795,7 @@
     <div class="section-head reveal" style="text-align:center;max-width:820px;margin-inline:auto">
       <span class="eyebrow">Recent Work</span>
       <h1 class="gradient-head">Selected <span class="accent">Portfolio</span>.</h1>
-      <p>A small slice of what we've been shipping — brand systems, AI campaigns, storefronts, platforms, and interactive experiences. Full case studies available on request.</p>
+      <p>Explore selected AI film, brand identity, digital experiences, and original photography. Every card opens the real project or its complete collection.</p>
     </div>
   </div>
 </section>
@@ -794,57 +803,52 @@
 <section id="work" style="background:linear-gradient(180deg,var(--bg-0),var(--bg-1))">
   <div class="container">
     <div class="proj-grid">
-      <div class="proj-card reveal">
-        <div class="proj-media"><img src="logo-branding-services.png" alt="Aurora Fintech Rebrand" /></div>
+      <a class="proj-card" href="https://drive.google.com/file/d/16orY7UzcgRUdmiViZTgssLTqaND-io3M/view" target="_blank" rel="noopener">
+        <div class="proj-media"><img src="assets/portfolio/cover-ai-video.webp" alt="Cinematic AI video production portfolio" /></div>
         <div class="proj-body">
-          <span class="proj-cat">Brand · Web</span>
-          <h4>Aurora Fintech Rebrand</h4>
-          <p>Full identity system and launch site for a UAE fintech Series A, delivered in six weeks.</p>
+          <span class="proj-cat">AI Video · Cinematic Production</span>
+          <h4>AI Film &amp; Visual Storytelling</h4>
+          <p>Generative filmmaking shaped with art direction, cinematic movement, and polished post-production.</p>
+          <span class="proj-link">Watch the film <span>↗</span></span>
         </div>
-      </div>
-      <div class="proj-card reveal">
-        <div class="proj-media"><img src="ai-video-images-services.png" alt="Nova Motors — AI Campaign" /></div>
+      </a>
+      <a class="proj-card" href="https://dangerous83.github.io/Dar-Albahja---A/" target="_blank" rel="noopener">
+        <div class="proj-media"><img src="assets/portfolio/cover-branding.webp" alt="Premium logo and branding presentation" /></div>
         <div class="proj-body">
-          <span class="proj-cat">AI Video · Motion</span>
-          <h4>Nova Motors — AI Campaign</h4>
-          <p>Photoreal AI hero film and 12-variant paid social campaign for an EV launch.</p>
+          <span class="proj-cat">Logo · Brand Identity</span>
+          <h4>Dar Al Bahja Brand System</h4>
+          <p>A complete identity experience built around a distinctive mark, refined visual language, and digital presentation.</p>
+          <span class="proj-link">View brand project <span>↗</span></span>
         </div>
-      </div>
-      <div class="proj-card reveal">
-        <div class="proj-media"><img src="3d-animation-services.png" alt="Skyline Interiors — Configurator" /></div>
+      </a>
+      <a class="proj-card" href="https://www.alcon-online.site/" target="_blank" rel="noopener">
+        <div class="proj-media"><img src="assets/portfolio/cover-website.webp" alt="Responsive professional website showcase" /></div>
         <div class="proj-body">
-          <span class="proj-cat">3D · Platform</span>
-          <h4>Skyline Interiors — Configurator</h4>
-          <p>Real-time 3D room configurator with photoreal materials, live on their storefront.</p>
+          <span class="proj-cat">Website · Digital Experience</span>
+          <h4>ALCON Online</h4>
+          <p>A responsive business website designed for clarity, credibility, and a smooth journey across every device.</p>
+          <span class="proj-link">Visit live website <span>↗</span></span>
         </div>
-      </div>
-      <div class="proj-card reveal">
-        <div class="proj-media"><img src="photography-services.png" alt="Levant F&B Group" /></div>
+      </a>
+      <a class="proj-card" href="portfolio-photography.html">
+        <div class="proj-media"><img src="assets/portfolio/product-premium-scent.webp" alt="Professional product photography with perfume and atmospheric smoke" /></div>
         <div class="proj-body">
-          <span class="proj-cat">Social · Photography</span>
-          <h4>Levant F&B Group</h4>
-          <p>Full-service social management and monthly production for a group of six restaurants.</p>
+          <span class="proj-cat">Photography · Selected Work</span>
+          <h4>Alvin Photography</h4>
+          <p>Product, beverage, food, family, and wedding photography crafted with detail and natural character.</p>
+          <span class="proj-link">Explore 15 photographs <span>→</span></span>
         </div>
-      </div>
-      <div class="proj-card reveal">
-        <div class="proj-media"><img src="website-services.png" alt="Meridian E-Commerce" /></div>
-        <div class="proj-body">
-          <span class="proj-cat">Web · Growth</span>
-          <h4>Meridian E-Commerce</h4>
-          <p>Shopify + custom back-office build, plus ongoing SEO and CRO — 3× conversion in six months.</p>
-        </div>
-      </div>
-      <div class="proj-card reveal">
-        <div class="proj-media"><img src="crm-platform-services.png" alt="Zenith Sales System" /></div>
-        <div class="proj-body">
-          <span class="proj-cat">Presentation · Interactive</span>
-          <h4>Zenith Sales System</h4>
-          <p>Investor deck plus interactive showroom presentation for a real-estate developer.</p>
-        </div>
-      </div>
+      </a>
+    </div>
+    <div class="photo-preview" aria-label="Photography portfolio preview">
+      <img src="assets/portfolio/product-rose-elegance.webp" alt="Perfume product photography" loading="lazy">
+      <img src="assets/portfolio/beverage-smoothie-bowl.webp" alt="Beverage campaign photography" loading="lazy">
+      <img src="assets/portfolio/food-culinary-masterpiece.webp" alt="Restaurant food photography" loading="lazy">
+      <img src="assets/portfolio/family-intimate-connections.webp" alt="Family lifestyle photography" loading="lazy">
+      <img src="assets/portfolio/wedding-editorial.webp" alt="Wedding editorial photography" loading="lazy">
     </div>
     <div class="portfolio-note reveal">
-      <strong>Note:</strong> Detailed case studies with results, process, and client quotes are shared on request under NDA. <a href="index.html#contact" style="color:var(--brand-2)">Get in touch</a> to see the full portfolio and press coverage.
+      <strong>Have a project in mind?</strong> Tell us what you want to create and we will recommend the right production approach. <a href="contact.html" style="color:var(--brand-2)">Start a conversation →</a>
     </div>
   </div>
 </section>
