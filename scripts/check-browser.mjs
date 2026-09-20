@@ -19,7 +19,13 @@ const server = createServer(async (req, res) => {
 });
 await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
 const base = process.env.CREAIVA_TEST_URL || `http://127.0.0.1:${server.address().port}/CREAIVA/`;
-const browser = await chromium.launch({ headless: true, ...(process.env.CREAIVA_BROWSER_CHANNEL ? { channel: process.env.CREAIVA_BROWSER_CHANNEL } : {}) });
+const browser = await chromium.launch({
+  headless: true,
+  ...(process.env.CREAIVA_BROWSER_CHANNEL ? { channel: process.env.CREAIVA_BROWSER_CHANNEL } : {}),
+  // Allow pointing at a pre-installed Chromium (e.g. CI images that ship their
+  // own build) instead of Playwright's bundled download.
+  ...(process.env.CREAIVA_BROWSER_EXECUTABLE ? { executablePath: process.env.CREAIVA_BROWSER_EXECUTABLE } : {}),
+});
 try {
   const page = await browser.newPage();
   const errors = [];
@@ -81,8 +87,8 @@ try {
   await page.getByText('I couldn’t load the website information just now.',{exact:false}).waitFor();
   await page.unroute('**/site-knowledge.json');
   await page.getByRole('button',{name:'Our services',exact:true}).click();
-  await page.getByText('CREAIVA offers 14 services.',{exact:false}).waitFor();
-  assert.equal(await page.locator('.ca-message').last().locator('.ca-sources a').count(),15);
+  await page.getByText('CREAIVA offers 15 services.',{exact:false}).waitFor();
+  assert.equal(await page.locator('.ca-message').last().locator('.ca-sources a').count(),16);
   assert.deepEqual(errors,[]);
   await mkdir(resolve(root,'test-results'),{recursive:true});
   await page.screenshot({path:resolve(root,'test-results/assistant-mobile.png')});
