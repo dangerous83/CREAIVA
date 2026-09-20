@@ -4,7 +4,8 @@
   "description": "CREAIVA static website and source-grounded site assistant",
   "scripts": {
     "build:knowledge": "node scripts/build-knowledge.mjs",
-    "test": "node scripts/build-knowledge.mjs --check && node --test tests/*.test.mjs",
+    "build:seo": "node scripts/build-seo.mjs",
+    "test": "node scripts/build-knowledge.mjs --check && node scripts/build-seo.mjs --check && node --test tests/*.test.mjs",
     "test:browser": "node scripts/check-browser.mjs"
   },
   "repository": {

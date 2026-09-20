@@ -1,0 +1,6 @@
+# https://creaiva.online robots policy
+User-agent: *
+Allow: /
+Disallow: /sales-pricing.html
+
+Sitemap: https://creaiva.online/sitemap.xml

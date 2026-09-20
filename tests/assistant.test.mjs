@@ -6,8 +6,8 @@ const knowledge = JSON.parse(await readFile(new URL('../assets/site-knowledge.js
 const ask = (q, pagePath = 'index.html', topicPath) => answerQuestion(q, knowledge, { pagePath, topicPath });
 
 test('indexes the entire public site without the internal sales portal', () => {
-  assert.equal(knowledge.pages.length, 25);
-  assert.equal(knowledge.pages.filter(p => p.category === 'service').length, 14);
+  assert.equal(knowledge.pages.length, 26);
+  assert.equal(knowledge.pages.filter(p => p.category === 'service').length, 15);
   assert.equal(knowledge.pages.filter(p => p.category === 'solution').length, 7);
   assert.equal(knowledge.pages.some(p => p.path.includes('sales-pricing')), false);
 });
@@ -22,7 +22,7 @@ for (const page of knowledge.pages) {
 }
 const cases = [
   ['What is CREAIVA?', /headquartered in Dubai/, 'index.html'],
-  ['What services do you offer?', /14 services/, 'index.html'],
+  ['What services do you offer?', /15 services/, 'index.html'],
   ['What solutions do you offer?', /7 packaged solutions/, 'solutions/brand-launch-package.html'],
   ['Do you integrate with Tabby and Tamara?', /BNPL/, 'services/ecommerce.html'],
   ['Which platforms for website design?', /Webflow, Framer/, 'services/website-design.html'],
@@ -55,7 +55,7 @@ test('follow-up remembers the selected service', () => {
 });
 test('page-aware follow-up and global catalog work on nested pages', () => {
   assert.match(ask('What is included on this page?', 'services/3d-animation.html').text, /Product Visualization/);
-  assert.match(ask('What services do you offer?', 'services/3d-animation.html').text, /14 services/);
+  assert.match(ask('What services do you offer?', 'services/3d-animation.html').text, /15 services/);
   assert.match(ask('What is included on this page?', 'services/3d-animation.html', 'services/website-design.html').text, /Product Visualization/);
 });
 test('ambiguous questions ask for the offering instead of guessing', () => {
