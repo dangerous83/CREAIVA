@@ -39,7 +39,7 @@
     --bg-2:#0a1428;
     --brand:#1fa8ff;
     --brand-2:#00d4ff;
-    --brand-glow:rgba(31,168,255,.55);
+    --brand-glow:rgba(31,168,255,.30);
     --text:#e7eefc;
     --muted:#96a4c2;
     --card:rgba(15,26,48,.72);
@@ -78,7 +78,7 @@
   }
   header.nav.scrolled .nav-inner{min-height:54px}
   .logo{display:flex;align-items:center;justify-self:start}
-  .logo img{height:28px;width:auto;filter:drop-shadow(0 0 12px var(--brand-glow))}
+  .logo img{height:28px;width:auto}
   .nav-right{justify-self:end;display:flex;align-items:center;gap:14px}
 
   /* --- centered menu ---
@@ -191,8 +191,8 @@
   .mega-foot a{font-size:12px;font-weight:600;color:var(--brand-2);display:inline-flex;align-items:center;gap:6px;transition:color .2s}
   .mega-foot a:hover{color:#fff}
 
-  .cta{padding:10px 22px;border-radius:999px;background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#001428;font-weight:600;font-size:14px;box-shadow:0 8px 30px rgba(31,168,255,.35);transition:transform .2s,box-shadow .2s;white-space:nowrap}
-  .cta:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(31,168,255,.55)}
+  .cta{padding:10px 22px;border-radius:999px;background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#001428;font-weight:600;font-size:14px;box-shadow:0 6px 18px rgba(31,168,255,.22);transition:transform .2s,box-shadow .2s;white-space:nowrap}
+  .cta:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(31,168,255,.32)}
   .burger{display:none;background:none;border:0;color:var(--text);font-size:24px;cursor:pointer}
 
   /* --- mobile menu --- */
@@ -265,7 +265,7 @@
     position:absolute;border-radius:50%;
     background:radial-gradient(circle at 30% 30%,rgba(103,232,255,.7),rgba(31,168,255,.35) 45%,rgba(31,168,255,0) 70%);
     filter:blur(1px);
-    box-shadow:0 0 30px rgba(31,168,255,.4);
+    box-shadow:0 0 16px rgba(31,168,255,.24);
     opacity:.75;
     will-change:transform;
   }
@@ -314,15 +314,15 @@
   .hero h1 .accent{
     background:linear-gradient(90deg,#1fa8ff 0%,#00d4ff 50%,#67e8ff 100%);
     -webkit-background-clip:text;background-clip:text;color:transparent;
-    filter:drop-shadow(0 0 22px rgba(31,168,255,.55));
+    
   }
   .hero p.lead{max-width:640px;font-size:clamp(15px,1.4vw,17px);color:var(--muted);line-height:1.75;margin:0 auto}
 
   /* ---- shared buttons ---- */
   .btn-outline{padding:14px 28px;border-radius:999px;border:1px solid rgba(200,220,255,.35);color:var(--text);font-weight:500;font-size:15px;transition:border-color .2s,background .2s;display:inline-flex;align-items:center;gap:8px}
   .btn-outline:hover{border-color:var(--brand-2);background:rgba(31,168,255,.08)}
-  .btn-primary{padding:14px 30px;border-radius:999px;background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#001428;font-weight:600;font-size:15px;box-shadow:0 10px 40px rgba(31,168,255,.45);transition:transform .2s,box-shadow .2s;display:inline-flex;align-items:center;gap:8px}
-  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 50px rgba(31,168,255,.65)}
+  .btn-primary{padding:14px 30px;border-radius:999px;background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#001428;font-weight:600;font-size:15px;box-shadow:0 8px 22px rgba(31,168,255,.24);transition:transform .2s,box-shadow .2s;display:inline-flex;align-items:center;gap:8px}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(31,168,255,.36)}
   .btn-primary .arw{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:rgba(0,20,40,.18);font-size:12px}
 
   /* ---- image slider zone (fills entire hero, top-to-bottom) ---- */
@@ -403,7 +403,7 @@
   .stat-bar .metric .n{font-family:'Poppins',sans-serif;font-weight:800;font-size:20px;background:linear-gradient(90deg,#fff,#8ea8cf);-webkit-background-clip:text;background-clip:text;color:transparent}
   .stat-bar .metric .l{font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin-top:2px}
   .stat-bar .tagline{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:11px;letter-spacing:3px;text-transform:uppercase}
-  .stat-bar .tagline .sep{width:6px;height:6px;border-radius:50%;background:var(--brand-2);box-shadow:0 0 10px var(--brand-2)}
+  .stat-bar .tagline .sep{width:6px;height:6px;border-radius:50%;background:var(--brand-2);box-shadow:0 0 6px var(--brand-2)}
   @media(max-width:860px){
     .stat-bar{justify-content:center;text-align:center}
     .stat-bar .metrics{justify-content:center;gap:22px}
@@ -438,7 +438,7 @@
   .section-head h2 .accent,.gradient-head .accent{
     background:linear-gradient(90deg,#1fa8ff 0%,#00d4ff 50%,#67e8ff 100%);
     -webkit-background-clip:text;background-clip:text;color:transparent;
-    filter:drop-shadow(0 0 18px rgba(31,168,255,.4));
+    
   }
   .section-head p{max-width:640px;margin:18px auto 0;color:var(--muted);font-size:17px;line-height:1.7}
 
@@ -454,7 +454,7 @@
   .stat .lbl{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:1.5px;margin-top:6px}
   /* ---- AI Stage (About visual) ---- */
   .about-visual{position:relative;aspect-ratio:1/1;max-width:520px;justify-self:center;width:100%;perspective:1100px}
-  .about-visual::before{content:"";position:absolute;inset:-8%;z-index:0;background:radial-gradient(circle at 50% 45%,var(--brand-glow),transparent 62%);filter:blur(48px);opacity:.9;animation:aiGlowPulse 6s ease-in-out infinite alternate}
+  .about-visual::before{content:"";position:absolute;inset:-8%;z-index:0;background:radial-gradient(circle at 50% 45%,var(--brand-glow),transparent 62%);filter:blur(48px);opacity:.42;animation:aiGlowPulse 6s ease-in-out infinite alternate}
   @keyframes aiGlowPulse{to{opacity:.5;transform:scale(1.07)}}
   .ai-stage{position:absolute;inset:0;display:grid;place-items:center;transform-style:preserve-3d;transition:transform .5s cubic-bezier(.22,1,.36,1);will-change:transform}
   .ai-stage>*{grid-area:1/1}
@@ -470,10 +470,10 @@
   .ai-mesh circle{fill:#7fe6ff;filter:drop-shadow(0 0 5px rgba(0,212,255,.9));animation:aiNode 3.4s ease-in-out infinite}
   @keyframes aiNode{0%,100%{opacity:.35}50%{opacity:1}}
   .ai-core{width:50%;height:50%;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 50% 38%,rgba(24,58,104,.55),rgba(6,13,26,.15) 70%);transform:translateZ(46px);animation:aiFloat 7s ease-in-out infinite}
-  .ai-core img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 0 24px var(--brand-glow)) drop-shadow(0 0 56px rgba(0,212,255,.35))}
+  .ai-core img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 0 12px var(--brand-glow))}
   @keyframes aiFloat{0%,100%{transform:translateZ(46px) translateY(0)}50%{transform:translateZ(46px) translateY(-11px)}}
   .ai-chip{position:absolute;display:inline-flex;align-items:center;gap:7px;padding:8px 13px;border-radius:999px;font-size:12px;font-weight:600;color:#dff2ff;white-space:nowrap;background:rgba(9,20,38,.82);border:1px solid rgba(98,200,255,.32);box-shadow:0 10px 30px rgba(0,0,0,.38);backdrop-filter:blur(10px);transform:translateZ(66px);animation:aiChipFloat 6.5s ease-in-out infinite;transition:border-color .25s,box-shadow .25s}
-  .ai-chip .dot{width:7px;height:7px;border-radius:50%;background:var(--brand-2);box-shadow:0 0 10px var(--brand-2)}
+  .ai-chip .dot{width:7px;height:7px;border-radius:50%;background:var(--brand-2);box-shadow:0 0 6px var(--brand-2)}
   .ai-chip:hover{border-color:var(--brand-2);box-shadow:0 14px 36px rgba(0,212,255,.32)}
   .ai-chip-1{top:4%;left:-3%;animation-delay:-1s}
   .ai-chip-2{top:26%;right:-7%;animation-delay:-2.6s}
@@ -1069,11 +1069,11 @@
 
     <div class="stat-bar">
       <div class="metrics">
-        <div class="metric"><div class="n">11+</div><div class="l">Services</div></div>
+        <div class="metric"><div class="n">15+</div><div class="l">Services</div></div>
         <div class="metric"><div class="n">100%</div><div class="l">In-House</div></div>
         <div class="metric"><div class="n">24/7</div><div class="l">AI-Powered</div></div>
       </div>
-      <div class="tagline">Modern <span class="sep"></span> Fast <span class="sep"></span> Intelligent</div>
+      <div class="tagline">Strategy <span class="sep"></span> Design <span class="sep"></span> Growth</div>
       <a href="#contact" class="btn-primary">Get Free Quote <span class="arw">→</span></a>
     </div>
   </div>
