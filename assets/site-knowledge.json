@@ -246,7 +246,7 @@
       "path": "portfolio.html",
       "title": "AI Creative Agency Portfolio Dubai | CREAIVA",
       "category": "company",
-      "summary": "A small slice of what we've been shipping — brand systems, AI campaigns, storefronts, platforms, and interactive experiences. Full case studies available on request.",
+      "summary": "Explore selected AI film, brand identity, digital experiences, and original photography. Every card opens the real project or its complete collection.",
       "faqs": [],
       "deliverables": [],
       "process": [],
@@ -257,7 +257,7 @@
           "title": "Selected Portfolio.",
           "anchor": "",
           "paragraphs": [
-            "A small slice of what we've been shipping — brand systems, AI campaigns, storefronts, platforms, and interactive experiences. Full case studies available on request."
+            "Explore selected AI film, brand identity, digital experiences, and original photography. Every card opens the real project or its complete collection."
           ]
         },
         {
@@ -268,6 +268,18 @@
           ]
         }
       ]
+    },
+    {
+      "path": "portfolio-photography.html",
+      "title": "Photography Portfolio · CREAIVA",
+      "category": "company",
+      "summary": "Selected product, beverage, food, family and wedding photography by CREAIVA.",
+      "faqs": [],
+      "deliverables": [],
+      "process": [],
+      "contacts": [],
+      "combines": [],
+      "sections": []
     },
     {
       "path": "services/2d-animation.html",

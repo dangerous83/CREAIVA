@@ -2,6 +2,11 @@ import { answerQuestion } from './assistant-engine.mjs';
 import { extractPage } from './site-content.mjs';
 
 const root = new URL('../', import.meta.url);
+const homeHref = new URL('index.html', root).href;
+document.querySelectorAll('a.logo').forEach(link => {
+  link.href = homeHref;
+  link.setAttribute('aria-label', 'CREAIVA home');
+});
 const pagePath = decodeURIComponent(location.pathname).startsWith(root.pathname)
   ? decodeURIComponent(location.pathname).slice(root.pathname.length) || 'index.html' : 'index.html';
 const lifestyleHref = new URL('services/lifestyle-consultancy.html', root).href;
