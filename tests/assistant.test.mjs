@@ -36,7 +36,7 @@ const cases = [
   ['How much ad spend for digital marketing?', /AED 25K\/month/, 'solutions/digital-marketing-suite.html'],
   ['How much hosting for ecommerce web platforms?', /AED 500–3,000/, 'solutions/ecommerce-web-platforms.html'],
   ['Who owns the code for platform web?', /your GitHub/, 'services/platform-web.html'],
-  ['How do I contact you?', /info@creaiva.ae/, 'contact.html'],
+  ['How do I contact you?', /creaiva.ultra@gmail.com/, 'contact.html'],
   ['What are your business hours?', /Sun–Thu/, 'contact.html'],
   ['Where is your office address?', /does not list a street address/, 'contact.html'],
   ['Can you work with international clients?', /GCC, Europe/, 'index.html'],
