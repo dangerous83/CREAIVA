@@ -6,7 +6,7 @@ import { extractPage } from '../assets/site-content.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 // Explicit public roots: the internal sales portal is never crawled or indexed.
-const paths = ['index.html', 'contact.html', 'our-team.html', 'portfolio.html', 'portfolio-photography.html'];
+const paths = ['index.html', 'contact.html', 'our-team.html', 'portfolio.html', 'portfolio-photography.html', 'ecommerce-white-label.html'];
 for (const folder of ['services', 'solutions']) {
   for (const name of (await readdir(resolve(root, folder))).sort()) {
     if (name.endsWith('.html')) paths.push(`${folder}/${name}`);
