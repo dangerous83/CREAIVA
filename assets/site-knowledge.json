@@ -108,13 +108,11 @@
           ]
         },
         {
-          "title": "Selected Projects",
+          "title": "White-Label E-Commerce",
           "anchor": "featured",
           "paragraphs": [
-            "A small slice of what we've been shipping — from brand systems to AI campaigns to full platforms.",
-            "Full identity system and launch site for a UAE fintech Series A, delivered in six weeks.",
-            "Photoreal AI hero film and 12-variant paid social campaign for an EV launch.",
-            "Real-time 3D room configurator with photoreal materials, live on their storefront."
+            "Conversion-led storefronts designed around your products, your customers, and your brand — ready for launch across every screen.",
+            "Launch a polished white-label storefront with flexible merchandising, mobile-first shopping, secure checkout, and a design language made exclusively for your business."
           ]
         },
         {
@@ -280,6 +278,37 @@
       "contacts": [],
       "combines": [],
       "sections": []
+    },
+    {
+      "path": "ecommerce-white-label.html",
+      "title": "White-Label E-Commerce Design Dubai | CREAIVA",
+      "category": "company",
+      "summary": "Explore 15 white-label e-commerce design concepts by CREAIVA for fashion, beauty, food, technology, retail, and lifestyle brands.",
+      "faqs": [],
+      "deliverables": [],
+      "process": [],
+      "contacts": [],
+      "combines": [],
+      "sections": [
+        {
+          "title": "A commerce system shaped around you.",
+          "anchor": "",
+          "paragraphs": [
+            "We combine design, content, development, and launch support in one focused production flow.",
+            "Products, audience, pricing, logistics, and the moments that drive purchase.",
+            "Storefront direction, components, campaigns, and mobile shopping patterns.",
+            "Catalog, payments, delivery, CRM, analytics, and operational integrations.",
+            "SEO, conversion tracking, campaigns, testing, and ongoing iteration."
+          ]
+        },
+        {
+          "title": "Ready to make one of these yours?",
+          "anchor": "",
+          "paragraphs": [
+            "Tell us what you sell, where you operate, and when you want to launch. We will recommend the right commerce approach."
+          ]
+        }
+      ]
     },
     {
       "path": "services/2d-animation.html",

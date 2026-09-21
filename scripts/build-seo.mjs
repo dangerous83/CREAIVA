@@ -13,7 +13,7 @@ const END = '<!-- SEO:END -->';
 
 // Public pages, mirroring scripts/build-knowledge.mjs. The internal
 // sales-pricing.html already carries noindex and is deliberately excluded.
-const rootPages = ['index.html', 'contact.html', 'our-team.html', 'portfolio.html', 'portfolio-photography.html'];
+const rootPages = ['index.html', 'contact.html', 'our-team.html', 'portfolio.html', 'portfolio-photography.html', 'ecommerce-white-label.html'];
 const paths = [...rootPages];
 for (const folder of ['services', 'solutions']) {
   for (const name of (await readdir(resolve(root, folder))).sort()) {
@@ -30,6 +30,7 @@ const ogImages = {
   'our-team.html': LOGO,
   'portfolio.html': LOGO,
   'portfolio-photography.html': `${SITE}/assets/portfolio/product-premium-scent.webp`,
+  'ecommerce-white-label.html': `${SITE}/assets/ecommerce-white-label/fashion.webp`,
   'services/logo-branding.html': `${SITE}/assets/thumbnails/service-branding.jpg`,
   'services/2d-animation.html': `${SITE}/assets/thumbnails/service-2d.jpg`,
   'services/3d-animation.html': `${SITE}/assets/thumbnails/service-3d.jpg`,
@@ -57,6 +58,7 @@ const keywords = {
   'our-team.html': 'creative team Dubai, AI design studio team, digital agency experts UAE',
   'portfolio.html': 'AI creative agency portfolio Dubai, creative agency portfolio Dubai, branding case studies, AI campaign work UAE',
   'portfolio-photography.html': 'professional photographer Dubai, product photography Dubai, food photography UAE, wedding photography Dubai, family photography',
+  'ecommerce-white-label.html': 'white label ecommerce design Dubai, custom ecommerce storefront UAE, ecommerce UI design, online store design Dubai, mobile commerce design',
   'services/logo-branding.html': 'branding agency Dubai, logo design Dubai, brand identity design, visual identity Dubai',
   'services/2d-animation.html': '2D animation studio Dubai, explainer video production, character animation UAE',
   'services/3d-animation.html': '3D animation company Dubai, product visualization, 3D rendering UAE, CGI studio',
