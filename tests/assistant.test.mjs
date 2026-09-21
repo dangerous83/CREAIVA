@@ -6,7 +6,7 @@ const knowledge = JSON.parse(await readFile(new URL('../assets/site-knowledge.js
 const ask = (q, pagePath = 'index.html', topicPath) => answerQuestion(q, knowledge, { pagePath, topicPath });
 
 test('indexes the entire public site without the internal sales portal', () => {
-  assert.equal(knowledge.pages.length, 27);
+  assert.equal(knowledge.pages.length, 28);
   assert.equal(knowledge.pages.filter(p => p.category === 'service').length, 15);
   assert.equal(knowledge.pages.filter(p => p.category === 'solution').length, 7);
   assert.equal(knowledge.pages.some(p => p.path.includes('sales-pricing')), false);
